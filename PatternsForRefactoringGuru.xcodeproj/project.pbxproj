@@ -17,6 +17,7 @@
 		913FF23E2097857B00193902 /* ProjectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2342097857B00193902 /* ProjectorFactory.swift */; };
 		913FF23F2097857B00193902 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2352097857B00193902 /* Projector.swift */; };
 		913FF2402097857B00193902 /* FactoryMethodTests_Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */; };
+		913FF243209785D100193902 /* Singleton_SimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF242209785D100193902 /* Singleton_SimpleExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		913FF2342097857B00193902 /* ProjectorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectorFactory.swift; sourceTree = "<group>"; };
 		913FF2352097857B00193902 /* Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
 		913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodTests_Simple.swift; sourceTree = "<group>"; };
+		913FF242209785D100193902 /* Singleton_SimpleExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton_SimpleExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		9139FAA42088D8D700229150 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				913FF241209785D100193902 /* Singleton */,
 				913FF22A2097857B00193902 /* FactoryMethod */,
 				913FF2282097857B00193902 /* Prototype */,
 			);
@@ -125,6 +128,14 @@
 				913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */,
 			);
 			path = SimpleExample;
+			sourceTree = "<group>";
+		};
+		913FF241209785D100193902 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				913FF242209785D100193902 /* Singleton_SimpleExample.swift */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				913FF23F2097857B00193902 /* Projector.swift in Sources */,
 				913FF23C2097857B00193902 /* AuthView.swift in Sources */,
 				913FF2382097857B00193902 /* AuthViewController.swift in Sources */,
+				913FF243209785D100193902 /* Singleton_SimpleExample.swift in Sources */,
 				913FF2372097857B00193902 /* Prototype_SimpleExample.swift in Sources */,
 				913FF23A2097857B00193902 /* FactoryMethodTests_Real.swift in Sources */,
 			);
