@@ -98,7 +98,7 @@
 		913FF2282097857B00193902 /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				913FF2292097857B00193902 /* Prototype_SimpleExample.swift */,
+				913FF256209C7B9D00193902 /* SimpleExample */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -178,6 +178,22 @@
 				913FF249209C64E400193902 /* FM_Products.swift */,
 			);
 			path = StructureExample;
+			sourceTree = "<group>";
+		};
+		913FF255209C7A1600193902 /* StructureExample */ = {
+			isa = PBXGroup;
+			children = (
+				913FF242209785D100193902 /* SG_Structure_Example.swift */,
+			);
+			path = StructureExample;
+			sourceTree = "<group>";
+		};
+		913FF256209C7B9D00193902 /* SimpleExample */ = {
+			isa = PBXGroup;
+			children = (
+				913FF2292097857B00193902 /* Prototype_SimpleExample.swift */,
+			);
+			path = SimpleExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +278,6 @@
 				913FF23F2097857B00193902 /* Projector.swift in Sources */,
 				913FF23C2097857B00193902 /* AuthView.swift in Sources */,
 				913FF2382097857B00193902 /* FM_AuthViewController.swift in Sources */,
-				913FF243209785D100193902 /* Singleton_SimpleExample.swift in Sources */,
 				913FF243209785D100193902 /* SG_Structure_Example.swift in Sources */,
 				913FF2372097857B00193902 /* Prototype_SimpleExample.swift in Sources */,
 				913FF248209C635400193902 /* FM_Creators.swift in Sources */,
