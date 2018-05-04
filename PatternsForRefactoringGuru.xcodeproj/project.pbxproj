@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		913FF2372097857B00193902 /* Prototype_SimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2292097857B00193902 /* Prototype_SimpleExample.swift */; };
-		913FF2382097857B00193902 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22C2097857B00193902 /* AuthViewController.swift */; };
-		913FF2392097857B00193902 /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22D2097857B00193902 /* AuthFactory.swift */; };
-		913FF23A2097857B00193902 /* FactoryMethodTests_Real.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22E2097857B00193902 /* FactoryMethodTests_Real.swift */; };
+		913FF2382097857B00193902 /* FM_AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22C2097857B00193902 /* FM_AuthViewController.swift */; };
+		913FF2392097857B00193902 /* FM_AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22D2097857B00193902 /* FM_AuthFactory.swift */; };
+		913FF23A2097857B00193902 /* FM_ClientCode_Real.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22E2097857B00193902 /* FM_ClientCode_Real.swift */; };
 		913FF23B2097857B00193902 /* StudentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2302097857B00193902 /* StudentViews.swift */; };
 		913FF23C2097857B00193902 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2312097857B00193902 /* AuthView.swift */; };
 		913FF23D2097857B00193902 /* TeacherViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2322097857B00193902 /* TeacherViews.swift */; };
@@ -27,9 +27,9 @@
 		9139FA8C2088D85F00229150 /* PatternsForRefactoringGuru.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternsForRefactoringGuru.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913FF2292097857B00193902 /* Prototype_SimpleExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prototype_SimpleExample.swift; sourceTree = "<group>"; };
-		913FF22C2097857B00193902 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		913FF22D2097857B00193902 /* AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
-		913FF22E2097857B00193902 /* FactoryMethodTests_Real.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodTests_Real.swift; sourceTree = "<group>"; };
+		913FF22C2097857B00193902 /* FM_AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_AuthViewController.swift; sourceTree = "<group>"; };
+		913FF22D2097857B00193902 /* FM_AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_AuthFactory.swift; sourceTree = "<group>"; };
+		913FF22E2097857B00193902 /* FM_ClientCode_Real.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_ClientCode_Real.swift; sourceTree = "<group>"; };
 		913FF2302097857B00193902 /* StudentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViews.swift; sourceTree = "<group>"; };
 		913FF2312097857B00193902 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		913FF2322097857B00193902 /* TeacherViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherViews.swift; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 		913FF22B2097857B00193902 /* RealWorldExample */ = {
 			isa = PBXGroup;
 			children = (
-				913FF22C2097857B00193902 /* AuthViewController.swift */,
-				913FF22D2097857B00193902 /* AuthFactory.swift */,
-				913FF22E2097857B00193902 /* FactoryMethodTests_Real.swift */,
+				913FF22C2097857B00193902 /* FM_AuthViewController.swift */,
+				913FF22D2097857B00193902 /* FM_AuthFactory.swift */,
+				913FF22E2097857B00193902 /* FM_ClientCode_Real.swift */,
 				913FF22F2097857B00193902 /* Views */,
 			);
 			path = RealWorldExample;
@@ -237,15 +237,15 @@
 				913FF246209C633300193902 /* AF_ClientCode.swift in Sources */,
 				913FF23E2097857B00193902 /* ProjectorFactory.swift in Sources */,
 				913FF23D2097857B00193902 /* TeacherViews.swift in Sources */,
-				913FF2392097857B00193902 /* AuthFactory.swift in Sources */,
+				913FF2392097857B00193902 /* FM_AuthFactory.swift in Sources */,
 				913FF24A209C64E400193902 /* AF_Products.swift in Sources */,
 				913FF23F2097857B00193902 /* Projector.swift in Sources */,
 				913FF23C2097857B00193902 /* AuthView.swift in Sources */,
-				913FF2382097857B00193902 /* AuthViewController.swift in Sources */,
+				913FF2382097857B00193902 /* FM_AuthViewController.swift in Sources */,
 				913FF243209785D100193902 /* Singleton_SimpleExample.swift in Sources */,
 				913FF2372097857B00193902 /* Prototype_SimpleExample.swift in Sources */,
 				913FF248209C635400193902 /* AF_Creators.swift in Sources */,
-				913FF23A2097857B00193902 /* FactoryMethodTests_Real.swift in Sources */,
+				913FF23A2097857B00193902 /* FM_ClientCode_Real.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

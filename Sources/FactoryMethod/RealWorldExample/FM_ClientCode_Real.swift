@@ -1,5 +1,5 @@
 //
-//  FactoryMethodTests_Real.swift
+//  FM_ClientCode_Real.swift
 //  PatternsForRefactoringGuru
 //
 //  Created by Maxim Eremenko on 4/27/18.
@@ -8,9 +8,9 @@
 
 import XCTest
 
-class FactoryMethodTests_Real: XCTestCase {
+class FM_ClientCode_Real: XCTestCase {
     
-    func testFactoryMethodTests_Real() {
+    func testFactoryMethod_Real() {
         
         let authViewController = AuthViewController()
         
