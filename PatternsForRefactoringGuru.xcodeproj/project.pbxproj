@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				913FF22B2097857B00193902 /* RealWorldExample */,
-				913FF2332097857B00193902 /* SimpleExample */,
+				913FF2332097857B00193902 /* StructureExample */,
 			);
 			path = FactoryMethod;
 			sourceTree = "<group>";
@@ -127,14 +127,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		913FF2332097857B00193902 /* SimpleExample */ = {
+		913FF2332097857B00193902 /* StructureExample */ = {
 			isa = PBXGroup;
 			children = (
 				913FF2342097857B00193902 /* ProjectorFactory.swift */,
 				913FF2352097857B00193902 /* Projector.swift */,
 				913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */,
 			);
-			path = SimpleExample;
+			path = StructureExample;
 			sourceTree = "<group>";
 		};
 		913FF241209785D100193902 /* Singleton */ = {
