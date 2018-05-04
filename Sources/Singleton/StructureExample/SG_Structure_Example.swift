@@ -27,9 +27,9 @@ class Singleton {
     
     static var shared: Singleton = {
         let instance = Singleton()
-        
+        // ...
         // configure
-        
+        // ...
         return instance
     }()
     
@@ -40,11 +40,23 @@ class Singleton {
     private init() {}
     
     /**
-     * Finally, singleton has some business logic, which can be executed on
+     * Singleton has some business logic, which can be executed on
      * its instance.
      */
+    
     func someBusinessLogic() -> String {
         // ...
         return "Result of the 'someBusinessLogic' call"
+    }
+}
+
+extension Singleton: NSCopying {
+    
+    /**
+     * Singletons should not be cloneable.
+     */
+    
+    func copy(with zone: NSZone? = nil) -> Any {
+        return self
     }
 }
