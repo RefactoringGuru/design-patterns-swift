@@ -18,9 +18,9 @@
 		913FF23F2097857B00193902 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2352097857B00193902 /* Projector.swift */; };
 		913FF2402097857B00193902 /* FactoryMethodTests_Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */; };
 		913FF243209785D100193902 /* Singleton_SimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF242209785D100193902 /* Singleton_SimpleExample.swift */; };
-		913FF246209C633300193902 /* AF_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF245209C633300193902 /* AF_ClientCode.swift */; };
-		913FF248209C635400193902 /* AF_Creators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF247209C635400193902 /* AF_Creators.swift */; };
-		913FF24A209C64E400193902 /* AF_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF249209C64E400193902 /* AF_Products.swift */; };
+		913FF246209C633300193902 /* FM_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF245209C633300193902 /* FM_ClientCode.swift */; };
+		913FF248209C635400193902 /* FM_Creators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF247209C635400193902 /* FM_Creators.swift */; };
+		913FF24A209C64E400193902 /* FM_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF249209C64E400193902 /* FM_Products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,9 @@
 		913FF2352097857B00193902 /* Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
 		913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodTests_Simple.swift; sourceTree = "<group>"; };
 		913FF242209785D100193902 /* Singleton_SimpleExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton_SimpleExample.swift; sourceTree = "<group>"; };
-		913FF245209C633300193902 /* AF_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_ClientCode.swift; sourceTree = "<group>"; };
-		913FF247209C635400193902 /* AF_Creators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Creators.swift; sourceTree = "<group>"; };
-		913FF249209C64E400193902 /* AF_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Products.swift; sourceTree = "<group>"; };
+		913FF245209C633300193902 /* FM_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_ClientCode.swift; sourceTree = "<group>"; };
+		913FF247209C635400193902 /* FM_Creators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Creators.swift; sourceTree = "<group>"; };
+		913FF249209C64E400193902 /* FM_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,9 @@
 		913FF22A2097857B00193902 /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
+				913FF24C209C724500193902 /* StructureExample */,
 				913FF22B2097857B00193902 /* RealWorldExample */,
-				913FF2332097857B00193902 /* StructureExample */,
+				913FF2332097857B00193902 /* SimpleExample */,
 			);
 			path = FactoryMethod;
 			sourceTree = "<group>";
@@ -127,14 +128,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		913FF2332097857B00193902 /* StructureExample */ = {
+		913FF2332097857B00193902 /* SimpleExample */ = {
 			isa = PBXGroup;
 			children = (
 				913FF2342097857B00193902 /* ProjectorFactory.swift */,
 				913FF2352097857B00193902 /* Projector.swift */,
 				913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */,
 			);
-			path = StructureExample;
+			path = SimpleExample;
 			sourceTree = "<group>";
 		};
 		913FF241209785D100193902 /* Singleton */ = {
@@ -156,9 +157,16 @@
 		913FF24B209C6A8F00193902 /* StructureExample */ = {
 			isa = PBXGroup;
 			children = (
-				913FF245209C633300193902 /* AF_ClientCode.swift */,
-				913FF247209C635400193902 /* AF_Creators.swift */,
-				913FF249209C64E400193902 /* AF_Products.swift */,
+			);
+			path = StructureExample;
+			sourceTree = "<group>";
+		};
+		913FF24C209C724500193902 /* StructureExample */ = {
+			isa = PBXGroup;
+			children = (
+				913FF245209C633300193902 /* FM_ClientCode.swift */,
+				913FF247209C635400193902 /* FM_Creators.swift */,
+				913FF249209C64E400193902 /* FM_Products.swift */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
@@ -234,17 +242,17 @@
 			files = (
 				913FF23B2097857B00193902 /* StudentViews.swift in Sources */,
 				913FF2402097857B00193902 /* FactoryMethodTests_Simple.swift in Sources */,
-				913FF246209C633300193902 /* AF_ClientCode.swift in Sources */,
+				913FF246209C633300193902 /* FM_ClientCode.swift in Sources */,
 				913FF23E2097857B00193902 /* ProjectorFactory.swift in Sources */,
 				913FF23D2097857B00193902 /* TeacherViews.swift in Sources */,
 				913FF2392097857B00193902 /* FM_AuthFactory.swift in Sources */,
-				913FF24A209C64E400193902 /* AF_Products.swift in Sources */,
+				913FF24A209C64E400193902 /* FM_Products.swift in Sources */,
 				913FF23F2097857B00193902 /* Projector.swift in Sources */,
 				913FF23C2097857B00193902 /* AuthView.swift in Sources */,
 				913FF2382097857B00193902 /* FM_AuthViewController.swift in Sources */,
 				913FF243209785D100193902 /* Singleton_SimpleExample.swift in Sources */,
 				913FF2372097857B00193902 /* Prototype_SimpleExample.swift in Sources */,
-				913FF248209C635400193902 /* AF_Creators.swift in Sources */,
+				913FF248209C635400193902 /* FM_Creators.swift in Sources */,
 				913FF23A2097857B00193902 /* FM_ClientCode_Real.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

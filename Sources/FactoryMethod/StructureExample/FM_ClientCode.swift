@@ -1,5 +1,5 @@
 //
-//  AF_ClientCode.swift
+//  FM_ClientCode.swift
 //  PatternsForRefactoringGuru
 //
 //  Created by Maxim Eremenko on 5/4/18.
@@ -20,7 +20,7 @@ import XCTest
  * Declare the factory method, which returns an object of type Product.
  */
 
-class AF_StructureTests: XCTestCase {
+class FM_StructureTests: XCTestCase {
     
     /**
      * Client code produces a concrete creator object of certain kind instead of
@@ -28,7 +28,7 @@ class AF_StructureTests: XCTestCase {
      * base interface, you can make it work with any creator subclass.
      */
     
-    func testAbstractFactory() {
+    func testFactoryMethod() {
         
         /**
          * Application picks a creator's type depending on configuration or
