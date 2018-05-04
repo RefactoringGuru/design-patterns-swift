@@ -21,6 +21,9 @@
 		913FF246209C633300193902 /* FM_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF245209C633300193902 /* FM_ClientCode.swift */; };
 		913FF248209C635400193902 /* FM_Creators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF247209C635400193902 /* FM_Creators.swift */; };
 		913FF24A209C64E400193902 /* FM_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF249209C64E400193902 /* FM_Products.swift */; };
+		913FF250209C75D400193902 /* AF_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF24F209C75D400193902 /* AF_Structure_ClientCode.swift */; };
+		913FF252209C789900193902 /* AF_Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF251209C789900193902 /* AF_Factories.swift */; };
+		913FF254209C78C600193902 /* AF_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF253209C78C600193902 /* AF_Products.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		913FF245209C633300193902 /* FM_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_ClientCode.swift; sourceTree = "<group>"; };
 		913FF247209C635400193902 /* FM_Creators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Creators.swift; sourceTree = "<group>"; };
 		913FF249209C64E400193902 /* FM_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Products.swift; sourceTree = "<group>"; };
+		913FF24F209C75D400193902 /* AF_Structure_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Structure_ClientCode.swift; sourceTree = "<group>"; };
+		913FF251209C789900193902 /* AF_Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Factories.swift; sourceTree = "<group>"; };
+		913FF253209C78C600193902 /* AF_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Products.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +163,9 @@
 		913FF24B209C6A8F00193902 /* StructureExample */ = {
 			isa = PBXGroup;
 			children = (
+				913FF24F209C75D400193902 /* AF_Structure_ClientCode.swift */,
+				913FF251209C789900193902 /* AF_Factories.swift */,
+				913FF253209C78C600193902 /* AF_Products.swift */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
@@ -242,9 +251,12 @@
 			files = (
 				913FF23B2097857B00193902 /* StudentViews.swift in Sources */,
 				913FF2402097857B00193902 /* FactoryMethodTests_Simple.swift in Sources */,
+				913FF254209C78C600193902 /* AF_Products.swift in Sources */,
 				913FF246209C633300193902 /* FM_ClientCode.swift in Sources */,
+				913FF252209C789900193902 /* AF_Factories.swift in Sources */,
 				913FF23E2097857B00193902 /* ProjectorFactory.swift in Sources */,
 				913FF23D2097857B00193902 /* TeacherViews.swift in Sources */,
+				913FF250209C75D400193902 /* AF_Structure_ClientCode.swift in Sources */,
 				913FF2392097857B00193902 /* FM_AuthFactory.swift in Sources */,
 				913FF24A209C64E400193902 /* FM_Products.swift in Sources */,
 				913FF23F2097857B00193902 /* Projector.swift in Sources */,
