@@ -1,5 +1,5 @@
 //
-//  FM_ClientCode.swift
+//  FM_Structure_ClientCode.swift
 //  PatternsForRefactoringGuru
 //
 //  Created by Maxim Eremenko on 5/4/18.
@@ -14,10 +14,6 @@ import XCTest
  * Intent: Define an interface for creating an object, but let subclasses decide
  * which class to instantiate. Factory Method lets a class defer
  * instantiation to subclasses.
- */
-
-/**
- * Declare the factory method, which returns an object of type Product.
  */
 
 class FM_StructureTests: XCTestCase {
@@ -35,10 +31,10 @@ class FM_StructureTests: XCTestCase {
          * environment.
          */
         
-        print("Testing ConcreteCreator1:\n");
+        print("Testing ConcreteCreator1:\n")
         clientCode(creator: ConcreteCreator1())
         
-        print("Testing ConcreteCreator2:\n");
+        print("Testing ConcreteCreator2:\n")
         clientCode(creator: ConcreteCreator2())
     }
     

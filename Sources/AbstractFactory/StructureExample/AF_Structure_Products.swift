@@ -1,5 +1,5 @@
 //
-//  AF_Products.swift
+//  AF_Structure_Products.swift
 //  PatternsForRefactoringGuru
 //
 //  Created by Maxim Eremenko on 5/4/18.
@@ -31,7 +31,7 @@ class ConcreteProductA1: AbstractProductA {
 class ConcreteProductA2: AbstractProductA {
     
     func usefulFunctionA() -> String {
-        return "The result of the A2 product.\n";
+        return "The result of the A2 product.\n"
     }
 }
 

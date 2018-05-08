@@ -25,7 +25,6 @@ class FactoryMethodTests_Simple: XCTestCase {
     }
     
     func projectorFactory(isInternetAvailable: Bool) -> ProjectorFactory {
-        //TODO: should be placed to a separate facoty?
         return isInternetAvailable ? WifiFactory() : BluetoothFactory()
     }
 }

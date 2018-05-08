@@ -1,5 +1,5 @@
 //
-//  AF_Factories.swift
+//  AF_Structure_Factories.swift
 //  PatternsForRefactoringGuru
 //
 //  Created by Maxim Eremenko on 5/4/18.

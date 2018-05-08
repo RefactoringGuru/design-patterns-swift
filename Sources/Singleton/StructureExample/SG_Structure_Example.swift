@@ -8,6 +8,13 @@
 
 import XCTest
 
+/**
+ * Singleton Design Pattern
+ *
+ * Intent: Ensure that class has a single instance, and provide a global
+ * point of access to it.
+ */
+
 class SG_Structure_Example_Tests: XCTestCase {
     
     func testSingletonSimple() {

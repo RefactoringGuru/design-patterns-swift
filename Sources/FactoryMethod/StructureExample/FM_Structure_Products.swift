@@ -1,5 +1,5 @@
 //
-//  FM_Products.swift
+//  FM_Structure_Products.swift
 //  PatternsForRefactoringGuru
 //
 //  Created by Maxim Eremenko on 5/4/18.

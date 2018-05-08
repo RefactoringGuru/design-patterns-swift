@@ -1,5 +1,5 @@
 //
-//  FM_Creators.swift
+//  FM_Structure_Creators.swift
 //  PatternsForRefactoringGuru
 //
 //  Created by Maxim Eremenko on 5/4/18.
@@ -30,6 +30,7 @@ extension Creator {
      * Creator should have some primary business logic. Factory method
      * acts just as a helper in such code.
      */
+    
     func someOperation() -> String {
         
         // Call the factory method to create a Product object.
