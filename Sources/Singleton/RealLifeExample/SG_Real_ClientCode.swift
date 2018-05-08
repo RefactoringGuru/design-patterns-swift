@@ -22,14 +22,15 @@ class SG_Real_ClientCode_Tests: XCTestCase {
         /// There are two view controllers.
         ///
         /// MessagesListVC displays a list of last messages from a user's chats.
-        /// ChatVC displays a chat with a user.
+        /// ChatVC displays a chat with a friend.
         ///
         /// FriendsChatService fetches messages from a server
         /// and provides all subscribers (view controllers in our example)
         /// with new and removed messages.
         ///
         /// FriendsChatService is injected to both view controllers.
-        /// It can be implemented as an instance of a class as well as a global variable.
+        /// It can be implemented as an instance of a class
+        /// as well as a global variable.
         ///
         /// In this example, it is important to have only one instance
         /// that performs resource-intensive work.
