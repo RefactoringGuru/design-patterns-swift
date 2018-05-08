@@ -23,7 +23,6 @@ protocol QueryBuilder {
     var query: Query<Model> { get }
 }
 
-
 class RealmQueryBuilder<Model: DomainModel>: QueryBuilder {
     
     private var operations = [QueryOperation<Model>]()
