@@ -10,6 +10,8 @@ import UIKit
 
 protocol UIFactory {
     
+    /// Abstract factory interface
+    
     func createAlert() -> Alert
     func snapshot(from alert: Alert) -> Snapshot
 }
@@ -36,6 +38,6 @@ class DesktopFactory: UIFactory {
     func snapshot(from alert: Alert) -> Snapshot {
         /// take a screenshot from `alert.contentView` using
         /// macOS instruments
-        return UIImage() /* NSImage */
+        return UIImage() /* return NSImage in the macOS environment */
     }
 }

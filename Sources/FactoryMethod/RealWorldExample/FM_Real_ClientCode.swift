@@ -14,19 +14,19 @@ class FM_ClientCode_Real: XCTestCase {
         
         let authViewController = AuthViewController()
         
-        // A user is a student
+        /// A user is a student
         let studentSignUpView = StudentAuthViewFactory.authView(for: .signUp)
         authViewController.present(authView: studentSignUpView)
         
-        // A student has selected 'Log In' button
+        /// A student has selected 'Log In' button
         let studentLoginView = StudentAuthViewFactory.authView(for: .login)
         authViewController.present(authView: studentLoginView)
         
-        // A user is a teacher
+        /// A user is a teacher
         let teacherSignUpView = TeacherAuthViewFactory.authView(for: .signUp)
         authViewController.present(authView: teacherSignUpView)
         
-        // A teacher has selected 'Log In' button
+        /// A teacher has selected 'Log In' button
         let teacherLoginView = TeacherAuthViewFactory.authView(for: .login)
         authViewController.present(authView: teacherLoginView)
     }

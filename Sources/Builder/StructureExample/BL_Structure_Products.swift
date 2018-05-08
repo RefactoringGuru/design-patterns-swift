@@ -25,6 +25,6 @@ class Product1
     }
     
     func listParts() -> String {
-        return "Product parts: " + parts.flatMap({ $0 + "," }) + "\n\n"
+        return "Product parts: " + parts.flatMap({ $0 + "," }) + "\n"
     }
 }

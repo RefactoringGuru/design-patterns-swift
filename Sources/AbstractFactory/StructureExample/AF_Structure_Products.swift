@@ -24,14 +24,14 @@ protocol AbstractProductA {
 class ConcreteProductA1: AbstractProductA {
     
     func usefulFunctionA() -> String {
-        return "The result of the A1 product.\n"
+        return "The result of the A1 product."
     }
 }
 
 class ConcreteProductA2: AbstractProductA {
     
     func usefulFunctionA() -> String {
-        return "The result of the A2 product.\n"
+        return "The result of the A2 product."
     }
 }
 
@@ -62,7 +62,7 @@ protocol AbstractProductB {
 class ConcreteProductB1: AbstractProductB {
     
     func usefulFunctionB() -> String {
-        return "The result of the B1 product.\n"
+        return "The result of the B1 product."
     }
     
     /**
@@ -78,7 +78,7 @@ class ConcreteProductB1: AbstractProductB {
 class ConcreteProductB2: AbstractProductB {
     
     func usefulFunctionB() -> String {
-        return "The result of the B2 product.\n"
+        return "The result of the B2 product."
     }
     
     /**

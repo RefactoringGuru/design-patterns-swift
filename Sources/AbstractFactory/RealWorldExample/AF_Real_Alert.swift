@@ -10,6 +10,8 @@ import UIKit
 
 protocol Alert {
     
+    /// Abstract (cross-platform) protocol of the alert
+    
     func show(with title: String)
     
     var contentView: ContentView { get }
@@ -35,11 +37,13 @@ class DesktopAlert: Alert {
 }
 
 protocol ContentView {
-    
+    /// Abstract content view.
+    /// Implementation depends on the platform
 }
 
 protocol Snapshot {
-    
+    /// Abstract snapshot image.
+    /// Implementation depends on the platform
 }
 
 /// This extension should be added in macOS environment

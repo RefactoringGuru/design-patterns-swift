@@ -31,36 +31,42 @@ extension Creator {
      * acts just as a helper in such code.
      */
     
+    /// Base behavior. ConcreteCreator2 overrides it.
     func someOperation() -> String {
         
-        // Call the factory method to create a Product object.
+        /// Call the factory method to create a Product object.
         let product = factoryMethod()
         
-        // Now, use product.
+        /// Now, use product.
         return "Same creator's code worked with: " + product.operation()
     }
 }
 
-/**
- * Override the factory method to return an instance of a ConcreteProduct1.
- */
 class ConcreteCreator1: Creator {
+    
+    /**
+     * Override the factory method to return an instance of a ConcreteProduct1.
+     */
     
     public func factoryMethod() -> Product {
         return ConcreteProduct1()
     }
 }
 
-/**
- * Override the factory method to return an instance of a ConcreteProduct2.
- */
 class ConcreteCreator2: Creator {
+    
+    /**
+     * Override the factory method to return an instance of a ConcreteProduct2.
+     */
     
     public func factoryMethod() -> Product {
         return ConcreteProduct2()
     }
     
     func someOperation() -> String {
-        return "ConcreteCreator2 override a default behavior of 'some operation'"
+        
+        let product = factoryMethod()
+        
+        return "ConcreteCreator2 overrides the base behavior: " + product.operation()
     }
 }

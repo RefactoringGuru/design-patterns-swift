@@ -31,17 +31,17 @@ class BL_Structure_ClientCode_Tests: XCTestCase {
         
         let builder = ConcreteBuilder1()
         director.update(builder: builder)
-        print("Standard basic product:\n")
+        print("Standard basic product:")
         
         director.buildMinimalViableProduct()
         print(builder.retrieveProduct().listParts())
-        print("Standard full featured product:\n")
+        print("Standard full featured product:")
         
         director.buildFullFeaturedProduct()
         print(builder.retrieveProduct().listParts())
         
         // By the way, builder can be used without a director.
-        print("Custom product:\n")
+        print("Custom product:")
         builder.producePartA()
         builder.producePartC()
         print(builder.retrieveProduct().listParts())

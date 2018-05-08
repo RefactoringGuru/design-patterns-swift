@@ -31,10 +31,10 @@ class FM_StructureTests: XCTestCase {
          * environment.
          */
         
-        print("Testing ConcreteCreator1:\n")
+        print("Testing ConcreteCreator1:")
         clientCode(creator: ConcreteCreator1())
         
-        print("Testing ConcreteCreator2:\n")
+        print("Testing ConcreteCreator2:")
         clientCode(creator: ConcreteCreator2())
     }
     

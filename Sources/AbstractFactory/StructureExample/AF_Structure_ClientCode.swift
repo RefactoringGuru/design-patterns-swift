@@ -27,10 +27,10 @@ class AF_Structure_ClientCode_Tests: XCTestCase {
         /**
          * The client code can work with any concrete factory class.
          */
-        print("Testing client code with the first factory type:\n")
+        print("Testing client code with the first factory type: ")
         clientCode(factory: ConcreteFactory1())
         
-        print("Testing the same client code with the second factory type:\n")
+        print("Testing the same client code with the second factory type: ")
         clientCode(factory: ConcreteFactory2())
     }
     
