@@ -18,9 +18,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9139FA8B2088D85F00229150"
-               BuildableName = "PatternsForRefactoringGuru.xctest"
-               BlueprintName = "PatternsForRefactoringGuru"
-               ReferencedContainer = "container:PatternsForRefactoringGuru.xcodeproj">
+               BuildableName = "Patterns.RefactoringGuru.xctest"
+               BlueprintName = "Patterns.RefactoringGuru"
+               ReferencedContainer = "container:Patterns.RefactoringGuru.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

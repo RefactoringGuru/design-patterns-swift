@@ -1,6 +1,6 @@
 //
 //  FM_Real_ClientCode.swift
-//  PatternsForRefactoringGuru
+//  Patterns.RefactoringGuru
 //
 //  Created by Maxim Eremenko on 4/27/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.

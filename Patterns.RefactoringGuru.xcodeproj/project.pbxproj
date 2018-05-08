@@ -29,7 +29,7 @@
 		913FF23E2097857B00193902 /* ProjectorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2342097857B00193902 /* ProjectorFactory.swift */; };
 		913FF23F2097857B00193902 /* Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2352097857B00193902 /* Projector.swift */; };
 		913FF2402097857B00193902 /* FactoryMethodTests_Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */; };
-		913FF243209785D100193902 /* SG_Structure_Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF242209785D100193902 /* SG_Structure_Example.swift */; };
+		913FF243209785D100193902 /* SG_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF242209785D100193902 /* SG_Structure_ClientCode.swift */; };
 		913FF246209C633300193902 /* FM_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF245209C633300193902 /* FM_Structure_ClientCode.swift */; };
 		913FF248209C635400193902 /* FM_Structure_Creators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF247209C635400193902 /* FM_Structure_Creators.swift */; };
 		913FF24A209C64E400193902 /* FM_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF249209C64E400193902 /* FM_Structure_Products.swift */; };
@@ -51,7 +51,7 @@
 		911E2CAA20A19AF000F0DADA /* AF_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_ClientCode.swift; sourceTree = "<group>"; };
 		911E2CAC20A1A87300F0DADA /* AF_Real_Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_Factory.swift; sourceTree = "<group>"; };
 		911E2CAE20A1A89F00F0DADA /* AF_Real_Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_Alert.swift; sourceTree = "<group>"; };
-		9139FA8C2088D85F00229150 /* PatternsForRefactoringGuru.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternsForRefactoringGuru.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9139FA8C2088D85F00229150 /* Patterns.RefactoringGuru.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Patterns.RefactoringGuru.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913FF2292097857B00193902 /* Prototype_SimpleExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prototype_SimpleExamples.swift; sourceTree = "<group>"; };
 		913FF22C2097857B00193902 /* FM_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Real_AuthController.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		913FF2342097857B00193902 /* ProjectorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectorFactory.swift; sourceTree = "<group>"; };
 		913FF2352097857B00193902 /* Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projector.swift; sourceTree = "<group>"; };
 		913FF2362097857B00193902 /* FactoryMethodTests_Simple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodTests_Simple.swift; sourceTree = "<group>"; };
-		913FF242209785D100193902 /* SG_Structure_Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Structure_Example.swift; sourceTree = "<group>"; };
+		913FF242209785D100193902 /* SG_Structure_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Structure_ClientCode.swift; sourceTree = "<group>"; };
 		913FF245209C633300193902 /* FM_Structure_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Structure_ClientCode.swift; sourceTree = "<group>"; };
 		913FF247209C635400193902 /* FM_Structure_Creators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Structure_Creators.swift; sourceTree = "<group>"; };
 		913FF249209C64E400193902 /* FM_Structure_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Structure_Products.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		9139FA792088D85C00229150 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9139FA8C2088D85F00229150 /* PatternsForRefactoringGuru.xctest */,
+				9139FA8C2088D85F00229150 /* Patterns.RefactoringGuru.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 		913FF255209C7A1600193902 /* StructureExample */ = {
 			isa = PBXGroup;
 			children = (
-				913FF242209785D100193902 /* SG_Structure_Example.swift */,
+				913FF242209785D100193902 /* SG_Structure_ClientCode.swift */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
@@ -275,9 +275,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9139FA8B2088D85F00229150 /* PatternsForRefactoringGuru */ = {
+		9139FA8B2088D85F00229150 /* Patterns.RefactoringGuru */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "PatternsForRefactoringGuru" */;
+			buildConfigurationList = 9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "Patterns.RefactoringGuru" */;
 			buildPhases = (
 				9139FA882088D85F00229150 /* Sources */,
 				9139FA892088D85F00229150 /* Frameworks */,
@@ -287,9 +287,9 @@
 			);
 			dependencies = (
 			);
-			name = PatternsForRefactoringGuru;
+			name = Patterns.RefactoringGuru;
 			productName = PatternsTests;
-			productReference = 9139FA8C2088D85F00229150 /* PatternsForRefactoringGuru.xctest */;
+			productReference = 9139FA8C2088D85F00229150 /* Patterns.RefactoringGuru.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -308,7 +308,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9139FA732088D85C00229150 /* Build configuration list for PBXProject "PatternsForRefactoringGuru" */;
+			buildConfigurationList = 9139FA732088D85C00229150 /* Build configuration list for PBXProject "Patterns.RefactoringGuru" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -321,7 +321,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9139FA8B2088D85F00229150 /* PatternsForRefactoringGuru */,
+				9139FA8B2088D85F00229150 /* Patterns.RefactoringGuru */,
 			);
 		};
 /* End PBXProject section */
@@ -366,7 +366,7 @@
 				913FF23C2097857B00193902 /* AuthView.swift in Sources */,
 				913FF2382097857B00193902 /* FM_Real_AuthController.swift in Sources */,
 				910A804A20A0534B006AF346 /* BL_Structure_Products.swift in Sources */,
-				913FF243209785D100193902 /* SG_Structure_Example.swift in Sources */,
+				913FF243209785D100193902 /* SG_Structure_ClientCode.swift in Sources */,
 				913FF2372097857B00193902 /* Prototype_SimpleExamples.swift in Sources */,
 				913FF248209C635400193902 /* FM_Structure_Creators.swift in Sources */,
 				913FF23A2097857B00193902 /* FM_Real_ClientCode.swift in Sources */,
@@ -535,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9139FA732088D85C00229150 /* Build configuration list for PBXProject "PatternsForRefactoringGuru" */ = {
+		9139FA732088D85C00229150 /* Build configuration list for PBXProject "Patterns.RefactoringGuru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9139FA932088D85F00229150 /* Debug */,
@@ -544,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "PatternsForRefactoringGuru" */ = {
+		9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "Patterns.RefactoringGuru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9139FA992088D85F00229150 /* Debug */,

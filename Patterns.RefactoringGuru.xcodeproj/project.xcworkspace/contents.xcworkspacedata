@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/devme/Development/iOS/Guru/Patterns/PatternsForRefactoringGuru.xcodeproj">
+      location = "self:/Users/devme/Development/iOS/Guru/Patterns/Patterns.RefactoringGuru.xcodeproj">
    </FileRef>
 </Workspace>
