@@ -19,7 +19,7 @@ class TeacherSignUpView: UIView, AuthView {
     
     var contentView: UIView = TeacherSignUpContentView()
     
-    // The handler will be connected for actions of buttons of this view.
+    /// The handler will be connected for actions of buttons of this view.
     var authHandler: AuthView.AuthAction?
     
     override var description: String {
@@ -38,7 +38,7 @@ class TeacherLoginView: UIView, AuthView {
         return self
     }
     
-    // The handler will be connected for actions of buttons of this view.
+    /// The handler will be connected for actions of buttons of this view.
     var authHandler: AuthView.AuthAction?
     
     override var description: String {

@@ -16,6 +16,7 @@ enum AuthType {
 protocol AuthViewFactory {
     
     static func authView(for type: AuthType) -> AuthView
+    static func authController(for type: AuthType) -> AuthViewController
 }
 
 class StudentAuthViewFactory: AuthViewFactory {
@@ -26,6 +27,10 @@ class StudentAuthViewFactory: AuthViewFactory {
             case .signUp: return StudentSignUpView()
         }
     }
+    
+    static func authController(for type: AuthType) -> AuthViewController {
+        return StudentAuthViewController(contentView: authView(for: type))
+    }
 }
 
 class TeacherAuthViewFactory: AuthViewFactory {
@@ -35,5 +40,9 @@ class TeacherAuthViewFactory: AuthViewFactory {
             case .login: return TeacherLoginView()
             case .signUp: return TeacherSignUpView()
         }
+    }
+    
+    static func authController(for type: AuthType) -> AuthViewController {
+        return TeacherAuthViewController(contentView: authView(for: type))
     }
 }
