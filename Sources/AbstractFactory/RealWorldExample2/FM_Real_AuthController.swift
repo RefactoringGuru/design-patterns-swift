@@ -24,10 +24,10 @@ class AuthViewController: UIViewController {
 
 class StudentAuthViewController: AuthViewController {
     
-    /// Student-oriented view controller
+    /// Student-oriented features
 }
 
 class TeacherAuthViewController: AuthViewController {
     
-    /// Teacher-oriented view controller
+    /// Teacher-oriented features
 }
