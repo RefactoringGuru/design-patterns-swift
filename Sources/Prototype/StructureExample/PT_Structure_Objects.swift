@@ -8,6 +8,8 @@
 
 import UIKit
 
+#if CompatibleWithXcode9_3
+
 struct Wheel {
     
     var size: Int
@@ -58,3 +60,5 @@ class Car: Vehicle {
         super.init(original: original)
     }
 }
+
+#endif

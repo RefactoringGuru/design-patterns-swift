@@ -10,6 +10,8 @@ import Foundation
 
 /// Coping using a custom Copying protocol
 
+#if CompatibleWithXcode9_3
+
 protocol Copying {
     
     init(original: Self)
@@ -22,3 +24,5 @@ extension Copying {
         return Self.init(original: self)
     }
 }
+
+#endif

@@ -13,6 +13,8 @@ class PT_Structure_ClientCode_Tests: XCTestCase {
     /// In Swift, objects can be copied by adopting
     /// NSCopying protocol or providing a custom implementation.
     
+    #if CompatibleWithXcode9_3
+
     func testPrototype_Structure() {
         
         let car = Car.init(color: .blue)
@@ -36,7 +38,7 @@ class PT_Structure_ClientCode_Tests: XCTestCase {
         /// It allows calling 'copy' for each item.
         
         let objectsToCopy = [car1, car2, aircraft]
-        let copies = objectsToCopy.compactMap({ $0.copy() })
+        let copies = objectsToCopy.map({ $0.copy() })
         
         print("Original")
         print(objectsToCopy)
@@ -44,4 +46,6 @@ class PT_Structure_ClientCode_Tests: XCTestCase {
         print("Copies")
         print(copies)
     }
+    
+    #endif
 }
