@@ -1,6 +1,6 @@
 //
 //  PT_Structure_Objects.swift
-//  Patterns.RefactoringGuru
+//  RefactoringGuru.Patterns
 //
 //  Created by Maxim Eremenko on 5/8/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
@@ -46,7 +46,7 @@ class Car: Vehicle {
     
     required init(original: Vehicle) {
         
-        /// Swift does not allow to override constructor
+        /// Swift does not allow to override a constructor
         /// of the parent class with a 'Car' instead of 'Vehicle'.
         ///
         /// Let us know if you have any other solutions for this case.

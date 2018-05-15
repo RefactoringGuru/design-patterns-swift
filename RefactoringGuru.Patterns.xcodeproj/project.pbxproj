@@ -59,7 +59,7 @@
 		911E2CAA20A19AF000F0DADA /* AF_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_ClientCode.swift; sourceTree = "<group>"; };
 		911E2CAC20A1A87300F0DADA /* AF_Real_Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_Factory.swift; sourceTree = "<group>"; };
 		911E2CAE20A1A89F00F0DADA /* AF_Real_Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_Alert.swift; sourceTree = "<group>"; };
-		9139FA8C2088D85F00229150 /* Patterns.RefactoringGuru.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Patterns.RefactoringGuru.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913FF2292097857B00193902 /* PT_NSCopying_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PT_NSCopying_ClientCode.swift; sourceTree = "<group>"; };
 		913FF22C2097857B00193902 /* FM_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Real_AuthController.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		9139FA792088D85C00229150 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9139FA8C2088D85F00229150 /* Patterns.RefactoringGuru.xctest */,
+				9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,9 +315,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9139FA8B2088D85F00229150 /* Patterns.RefactoringGuru */ = {
+		9139FA8B2088D85F00229150 /* RefactoringGuru.Patterns */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "Patterns.RefactoringGuru" */;
+			buildConfigurationList = 9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "RefactoringGuru.Patterns" */;
 			buildPhases = (
 				9139FA882088D85F00229150 /* Sources */,
 				9139FA892088D85F00229150 /* Frameworks */,
@@ -327,9 +327,9 @@
 			);
 			dependencies = (
 			);
-			name = Patterns.RefactoringGuru;
+			name = RefactoringGuru.Patterns;
 			productName = PatternsTests;
-			productReference = 9139FA8C2088D85F00229150 /* Patterns.RefactoringGuru.xctest */;
+			productReference = 9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -349,7 +349,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9139FA732088D85C00229150 /* Build configuration list for PBXProject "Patterns.RefactoringGuru" */;
+			buildConfigurationList = 9139FA732088D85C00229150 /* Build configuration list for PBXProject "RefactoringGuru.Patterns" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -362,7 +362,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9139FA8B2088D85F00229150 /* Patterns.RefactoringGuru */,
+				9139FA8B2088D85F00229150 /* RefactoringGuru.Patterns */,
 			);
 		};
 /* End PBXProject section */
@@ -577,7 +577,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9139FA732088D85C00229150 /* Build configuration list for PBXProject "Patterns.RefactoringGuru" */ = {
+		9139FA732088D85C00229150 /* Build configuration list for PBXProject "RefactoringGuru.Patterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9139FA932088D85F00229150 /* Debug */,
@@ -586,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "Patterns.RefactoringGuru" */ = {
+		9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "RefactoringGuru.Patterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9139FA992088D85F00229150 /* Debug */,

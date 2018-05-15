@@ -1,6 +1,6 @@
 //
 //  PT_NSCopying_ClientCode.swift
-//  Patterns.RefactoringGuru
+//  RefactoringGuru.Patterns
 //
 //  Created by Maxim Eremenko on 4/28/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
@@ -8,12 +8,10 @@
 
 import XCTest
 
-/**
- * Prototype Design Pattern
- *
- * Intent: Specify the kinds of objects to create using a prototypical instance,
- * and create new objects by copying this prototype.
- */
+/// Prototype Design Pattern
+///
+/// Intent: Specify the kinds of objects to create using a prototypical instance,
+/// and create new objects by copying this prototype.
 
 class Prototype_SimpleExample: XCTestCase {
     
