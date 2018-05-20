@@ -13,7 +13,6 @@
 		910A804C20A05369006AF346 /* BL_Structure_Directors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A804B20A05369006AF346 /* BL_Structure_Directors.swift */; };
 		910A805020A05B8C006AF346 /* BL_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A804F20A05B8C006AF346 /* BL_Real_ClientCode.swift */; };
 		910A805220A05BAE006AF346 /* BL_Real_Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A805120A05BAE006AF346 /* BL_Real_Builders.swift */; };
-		910A805520A0925D006AF346 /* BL_Simple_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A805420A0925D006AF346 /* BL_Simple_ClientCode.swift */; };
 		911E2CA120A0AE9300F0DADA /* BL_Real_Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CA020A0AE9300F0DADA /* BL_Real_Query.swift */; };
 		911E2CA320A0AFA200F0DADA /* BL_Real_DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CA220A0AFA200F0DADA /* BL_Real_DataBase.swift */; };
 		911E2CAB20A19AF000F0DADA /* AF_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CAA20A19AF000F0DADA /* AF_Real_ClientCode.swift */; };
@@ -53,7 +52,6 @@
 		910A804B20A05369006AF346 /* BL_Structure_Directors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Structure_Directors.swift; sourceTree = "<group>"; };
 		910A804F20A05B8C006AF346 /* BL_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_ClientCode.swift; sourceTree = "<group>"; };
 		910A805120A05BAE006AF346 /* BL_Real_Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_Builders.swift; sourceTree = "<group>"; };
-		910A805420A0925D006AF346 /* BL_Simple_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Simple_ClientCode.swift; sourceTree = "<group>"; };
 		911E2CA020A0AE9300F0DADA /* BL_Real_Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_Query.swift; sourceTree = "<group>"; };
 		911E2CA220A0AFA200F0DADA /* BL_Real_DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_DataBase.swift; sourceTree = "<group>"; };
 		911E2CAA20A19AF000F0DADA /* AF_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_ClientCode.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 		910A804420A04CA0006AF346 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				910A805320A0924B006AF346 /* SimpleBuilder */,
 				910A804E20A0570E006AF346 /* RealWorldExample */,
 				910A804D20A056FD006AF346 /* StructureExample */,
 			);
@@ -129,14 +126,6 @@
 				911E2CA220A0AFA200F0DADA /* BL_Real_DataBase.swift */,
 			);
 			path = RealWorldExample;
-			sourceTree = "<group>";
-		};
-		910A805320A0924B006AF346 /* SimpleBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				910A805420A0925D006AF346 /* BL_Simple_ClientCode.swift */,
-			);
-			path = SimpleBuilder;
 			sourceTree = "<group>";
 		};
 		911E2CA920A19AE100F0DADA /* RealWorldExample */ = {
@@ -404,7 +393,6 @@
 				910A804C20A05369006AF346 /* BL_Structure_Directors.swift in Sources */,
 				911E2CA320A0AFA200F0DADA /* BL_Real_DataBase.swift in Sources */,
 				910A804620A04CBA006AF346 /* BL_Structure_ClientCode.swift in Sources */,
-				910A805520A0925D006AF346 /* BL_Simple_ClientCode.swift in Sources */,
 				910A805220A05BAE006AF346 /* BL_Real_Builders.swift in Sources */,
 				91A9F68320A1D4F600A016E0 /* PT_Structure_ClientCode.swift in Sources */,
 				911E2CAB20A19AF000F0DADA /* AF_Real_ClientCode.swift in Sources */,
