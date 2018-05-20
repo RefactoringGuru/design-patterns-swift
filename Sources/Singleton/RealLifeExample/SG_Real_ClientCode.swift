@@ -28,7 +28,7 @@ class SG_Real_ClientCode_Tests: XCTestCase {
         /// and provides all subscribers (view controllers in our example)
         /// with new and removed messages.
         ///
-        /// FriendsChatService is injected to both view controllers.
+        /// FriendsChatService is used by both view controllers.
         /// It can be implemented as an instance of a class
         /// as well as a global variable.
         ///
