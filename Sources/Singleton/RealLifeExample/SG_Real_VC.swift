@@ -18,8 +18,12 @@ class BaseVC: UIViewController, MessageSubscriber {
         /// handle removed messages in the base class
     }
     
-    func update(messageService: MessageService) {
-        messageService.add(subscriber: self)
+    func startReceiveMessages() {
+        /// The singleton can be injected as a dependency.
+        /// However, from an informational perspective, this example calls
+        /// FriendsChatService directly to illustrate the intent of the pattern,
+        /// which is: "...to provide the global point of access to the instance..."
+        FriendsChatService.shared.add(subscriber: self)
     }
 }
 

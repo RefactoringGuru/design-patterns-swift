@@ -24,7 +24,7 @@ class FriendsChatService: MessageService {
     
     func startFetching() {
         
-        /// Set up network stack, establish a connection...
+        /// Set up the network stack, establish a connection...
         /// ...and retrieve data from a server
         
         let newMessages = [Message(id: 0, text: "Text0"),

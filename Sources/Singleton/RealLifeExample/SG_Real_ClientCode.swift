@@ -35,13 +35,11 @@ class SG_Real_ClientCode_Tests: XCTestCase {
         /// In this example, it is important to have only one instance
         /// that performs resource-intensive work.
         
-        let service = FriendsChatService.shared
-        
         let listVC = MessagesListVC()
-        listVC.update(messageService: service)
-        
         let chatVC = ChatVC()
-        chatVC.update(messageService: service)
+        
+        listVC.startReceiveMessages()
+        chatVC.startReceiveMessages()
         
         /// ... add view controllers to the navigation stack ...
     }
