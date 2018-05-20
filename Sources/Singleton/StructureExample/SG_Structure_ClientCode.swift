@@ -19,7 +19,14 @@ class SG_Structure_Example_Tests: XCTestCase {
     
     func testSingletonSimple() {
         
-        print(Singleton.shared.someBusinessLogic())
+        let instance1 = Singleton.shared
+        let instance2 = Singleton.shared
+        
+        print(instance1.someBusinessLogic())
+        print(instance2.someBusinessLogic())
+        
+        /// The instances are the same. Otherwise, the assert will fail.
+        XCTAssert(instance1 === instance2)
     }
 }
 
