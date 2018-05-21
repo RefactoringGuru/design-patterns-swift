@@ -11,18 +11,25 @@ import XCTest
 class BL_Real_ClientCode_Tests: XCTestCase {
     
     func testRealBuilder() {
+        clientCode(builder: RealmQueryBuilder<User>())
+        clientCode(builder: CoreDataQueryBuilder<User>())
+    }
+    
+    func clientCode(builder: BaseQueryBuilder<RealmOperationType<User>>) {
         
-        let query = RealmQueryBuilder<User>()
-            .filter({ $0.age > 18 })
-            .limit(2)
-            .query
-        
-        let coreDataQuery = CoreDataQueryBuilder<User>()
-            .filter({ $0.age < 20 })
+        let query = builder.filter({ $0.age < 20 })
             .limit(1)
             .query
         
         _ = RealmDataProvider().fetch(query: query)
-        _ = CoreDataProvider().fetch(query: coreDataQuery)
+    }
+    
+    func clientCode(builder: BaseQueryBuilder<CoreDataOperationType<User>>) {
+        
+        let query = builder.filter({ $0.age < 20 })
+            .limit(1)
+            .query
+        
+        _ = CoreDataProvider().fetch(query: query)
     }
 }
