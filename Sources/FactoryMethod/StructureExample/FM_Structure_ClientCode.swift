@@ -8,28 +8,22 @@
 
 import XCTest
 
-/**
- * Factory Method Design Pattern
- *
- * Intent: Define an interface for creating an object, but let subclasses decide
- * which class to instantiate. Factory Method lets a class defer
- * instantiation to subclasses.
- */
+/// Factory Method Design Pattern
+///
+/// Intent: Define an interface for creating an object, but let subclasses decide
+/// which class to instantiate. Factory Method lets a class defer
+/// instantiation to subclasses.
 
 class FM_StructureTests: XCTestCase {
     
-    /**
-     * Client code produces a concrete creator object of certain kind instead of
-     * base creator's class. As long as client works with creators using
-     * base interface, you can make it work with any creator subclass.
-     */
+    /// Client code produces a concrete creator object of certain kind instead of
+    /// base creator's class. As long as client works with creators using
+    /// base interface, you can make it work with any creator subclass.
     
     func testFactoryMethod() {
         
-        /**
-         * Application picks a creator's type depending on configuration or
-         * environment.
-         */
+        /// Application picks a creator's type depending on configuration or
+        /// environment.
         
         print("Testing ConcreteCreator1:")
         clientCode(creator: ConcreteCreator1())

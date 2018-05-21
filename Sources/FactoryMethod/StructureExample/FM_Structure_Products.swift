@@ -8,18 +8,14 @@
 
 import Foundation
 
-/**
- * Define the interface of objects the factory method creates.
- */
+/// Define the interface of objects the factory method creates.
 
 protocol Product {
     
     func operation() -> String
 }
 
-/**
- * Implement the Product interface.
- */
+/// Implement the Product interface.
 
 class ConcreteProduct1: Product {
     
@@ -28,9 +24,7 @@ class ConcreteProduct1: Product {
     }
 }
 
-/**
- * Implement the Product interface.
- */
+/// Implement the Product interface.
 
 class ConcreteProduct2: Product {
     

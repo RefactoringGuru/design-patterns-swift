@@ -16,10 +16,10 @@ class FactoryMethodTests_Simple: XCTestCase {
         
         let clientCode = FactoryMethod_ClientCode()
         
-        // Present info over WiFi
+        /// Present info over WiFi
         clientCode.present(info: info, with: WifiFactory())
         
-        // Present info over Bluetooth
+        /// Present info over Bluetooth
         clientCode.present(info: info, with: BluetoothFactory())
     }
 }

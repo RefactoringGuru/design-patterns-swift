@@ -8,12 +8,10 @@
 
 import XCTest
 
-/**
- * Singleton Design Pattern
- *
- * Intent: Ensure that class has a single instance, and provide a global
- * point of access to it.
- */
+/// Singleton Design Pattern
+///
+/// Intent: Ensure that class has a single instance, and provide a global
+/// point of access to it.
 
 class SG_Real_ClientCode_Tests: XCTestCase {
     

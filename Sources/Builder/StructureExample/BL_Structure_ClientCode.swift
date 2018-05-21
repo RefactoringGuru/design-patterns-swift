@@ -8,12 +8,10 @@
 
 import XCTest
 
-/**
- * Builder Design Pattern
- *
- * Intent: Separate the construction of a complex object from its representation so
- * that the same construction process can create different representations.
- */
+/// Builder Design Pattern
+///
+/// Intent: Separate the construction of a complex object from its representation so
+/// that the same construction process can create different representations.
 
 class BL_Structure_ClientCode_Tests: XCTestCase {
     
@@ -23,11 +21,9 @@ class BL_Structure_ClientCode_Tests: XCTestCase {
     
     func clientCode(director: Director) {
         
-        /**
-         * Client code may reuse single instance of the Director. It creates builder
-         * objects and passes them to director and then initiates the construction
-         * process. The end result is returned by the builder.
-         */
+        /// Client code may reuse single instance of the Director. It creates builder
+        /// objects and passes them to director and then initiates the construction
+        /// process. The end result is returned by the builder.
         
         let builder = ConcreteBuilder1()
         director.update(builder: builder)
@@ -40,7 +36,7 @@ class BL_Structure_ClientCode_Tests: XCTestCase {
         director.buildFullFeaturedProduct()
         print(builder.retrieveProduct().listParts())
         
-        // By the way, builder can be used without a director.
+        /// By the way, builder can be used without a director.
         print("Custom product:")
         builder.producePartA()
         builder.producePartC()

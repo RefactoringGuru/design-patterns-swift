@@ -8,12 +8,10 @@
 
 import XCTest
 
-/**
- * Singleton Design Pattern
- *
- * Intent: Ensure that class has a single instance, and provide a global
- * point of access to it.
- */
+/// Singleton Design Pattern
+///
+/// Intent: Ensure that class has a single instance, and provide a global
+/// point of access to it.
 
 class SG_Structure_Example_Tests: XCTestCase {
     
@@ -32,12 +30,10 @@ class SG_Structure_Example_Tests: XCTestCase {
 
 class Singleton {
     
-    /**
-     * Static method, which controls access to singleton instance.
-     *
-     * This implementation allows creating singleton subclasses and having
-     * just one instance of each subclcass.
-     */
+    /// Static method, which controls access to singleton instance.
+    ///
+    /// This implementation allows creating singleton subclasses and having
+    /// just one instance of each subclcass.
     
     static var shared: Singleton = {
         let instance = Singleton()
@@ -47,16 +43,12 @@ class Singleton {
         return instance
     }()
     
-    /**
-     * Singleton initializer should always be private.
-     */
+    /// Singleton initializer should always be private.
     
     private init() {}
     
-    /**
-     * Singleton has some business logic, which can be executed on
-     * its instance.
-     */
+    /// Singleton has some business logic, which can be executed on
+    /// its instance.
     
     func someBusinessLogic() -> String {
         // ...
@@ -66,9 +58,7 @@ class Singleton {
 
 extension Singleton: NSCopying {
     
-    /**
-     * Singletons should not be cloneable.
-     */
+    /// Singletons should not be cloneable.
     
     func copy(with zone: NSZone? = nil) -> Any {
         return self
