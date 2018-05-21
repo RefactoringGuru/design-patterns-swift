@@ -13,7 +13,7 @@ import XCTest
 /// Intent: Specify the kinds of objects to create using a prototypical instance,
 /// and create new objects by copying this prototype.
 
-class Prototype_SimpleExample: XCTestCase {
+class PrototypeRealTests: XCTestCase {
     
     /// In Swift, objects can be copied by adopting
     /// NSCopying protocol or providing a custom implementation.

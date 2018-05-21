@@ -1,5 +1,5 @@
 //
-//  FM_Simple_Projector.swift
+//  FM_Real_Projector.swift
 //  Patterns for RefactoringGuru
 //
 //  Created by Maxim Eremenko on 4/19/18.

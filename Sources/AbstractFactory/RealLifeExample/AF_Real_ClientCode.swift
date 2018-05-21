@@ -41,7 +41,7 @@ private class ClientCode {
         self.factoryType = factoryType
     }
     
-    //MARK: - Presentation
+    ///MARK: - Presentation
     
     func presentLogin() {
         let controller = factoryType.authController(for: .login)

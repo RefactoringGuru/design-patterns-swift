@@ -15,7 +15,7 @@ import XCTest
 
 class SG_Structure_Example_Tests: XCTestCase {
     
-    func testSingletonSimple() {
+    func testSingletonStructure() {
         
         let instance1 = Singleton.shared
         let instance2 = Singleton.shared

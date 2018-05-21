@@ -1,5 +1,5 @@
 //
-//  FM_Simple_ClientCode.swift
+//  FM_Real_ClientCode.swift
 //  RefactoringGuru.Patterns
 //
 //  Created by Maxim Eremenko on 4/19/18.
@@ -8,9 +8,9 @@
 
 import XCTest
 
-class FactoryMethodTests_Simple: XCTestCase {
+class FactoryMethodTests_Real: XCTestCase {
     
-    func testFactoryMethod_Simple() {
+    func testFactoryMethodReal() {
         
         let info = "Very important info of the presentation"
         
