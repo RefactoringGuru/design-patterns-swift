@@ -146,8 +146,8 @@
 			children = (
 				914ADA0B20B2D4D200E0A74F /* AF_Real_AuthController.swift */,
 				914ADA0C20B2D4D200E0A74F /* AF_Real_AuthFactory.swift */,
-				914ADA0D20B2D4D200E0A74F /* Views */,
 				914ADA1120B2D4D200E0A74F /* AF_Real_ClientCode.swift */,
+				914ADA0D20B2D4D200E0A74F /* Views */,
 			);
 			path = RealLifeExample;
 			sourceTree = "<group>";
@@ -239,18 +239,10 @@
 		914ADA2720B2D4D200E0A74F /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				914ADA2820B2D4D200E0A74F /* SimpleBuilder */,
 				914ADA2920B2D4D200E0A74F /* StructureExample */,
 				914ADA2E20B2D4D200E0A74F /* RealLifeExample */,
 			);
 			path = Builder;
-			sourceTree = "<group>";
-		};
-		914ADA2820B2D4D200E0A74F /* SimpleBuilder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SimpleBuilder;
 			sourceTree = "<group>";
 		};
 		914ADA2920B2D4D200E0A74F /* StructureExample */ = {
@@ -267,10 +259,10 @@
 		914ADA2E20B2D4D200E0A74F /* RealLifeExample */ = {
 			isa = PBXGroup;
 			children = (
+				914ADA3220B2D4D200E0A74F /* BL_Real_ClientCode.swift */,
 				914ADA2F20B2D4D200E0A74F /* BL_Real_DataBase.swift */,
 				914ADA3020B2D4D200E0A74F /* BL_Real_Builders.swift */,
 				914ADA3120B2D4D200E0A74F /* BL_Real_Query.swift */,
-				914ADA3220B2D4D200E0A74F /* BL_Real_ClientCode.swift */,
 			);
 			path = RealLifeExample;
 			sourceTree = "<group>";

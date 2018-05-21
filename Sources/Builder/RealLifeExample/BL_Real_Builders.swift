@@ -8,42 +8,59 @@
 
 import Foundation
 
-protocol QueryBuilder {
+class BaseQueryBuilder<Operation: OperationType> {
     
-    associatedtype Model: DomainModel
+    typealias Predicate = Operation.FilterClosure
     
-    typealias Predicate = OperationType<Model>.FilterClosure
+    fileprivate var operations = [Operation]()
     
-    @discardableResult
-    func limit(_ limit: Int) -> RealmQueryBuilder<Model>
+    func limit(_ limit: Int) -> BaseQueryBuilder<Operation> {
+        /// This is a base implementation. Should be overridden in subclasses
+        return self
+    }
     
-    @discardableResult
-    func filter(_ predicate: @escaping Predicate) -> RealmQueryBuilder<Model>
+    func filter(_ predicate: @escaping Predicate) -> BaseQueryBuilder<Operation> {
+        /// This is a base implementation. Should be overridden in subclasses
+        return self
+    }
     
-    var query: Query<Model> { get }
+    var query: Query<Operation> {
+        return Query(operations: operations)
+    }
 }
 
-class RealmQueryBuilder<Model: DomainModel>: QueryBuilder {
-    
-    private var operations = [QueryOperation<Model>]()
+class RealmQueryBuilder<Model: DomainModel>: BaseQueryBuilder<RealmOperationType<Model>> {
     
     @discardableResult
-    func limit(_ limit: Int) -> RealmQueryBuilder<Model> {
-        let operation = QueryOperation<Model>(type: .limit(limit))
+    override func limit(_ limit: Int) -> RealmQueryBuilder<Model> {
+        /// Operation of the Realm type will be added
+        let operation = RealmOperationType<Model>.limit(limit)
         operations.append(operation)
         return self
     }
     
-    typealias Predicate = OperationType<Model>.FilterClosure
-    
     @discardableResult
-    func filter(_ predicate: @escaping Predicate) -> RealmQueryBuilder<Model> {
-        let operation = QueryOperation<Model>(type: .filter(predicate))
+    override func filter(_ predicate: @escaping Predicate) -> RealmQueryBuilder<Model> {
+        /// Operation of the Realm type will be added
+        let operation = RealmOperationType<Model>.filter(predicate)
+        operations.append(operation)
+        return self
+    }
+}
+
+class CoreDataQueryBuilder<Model: DomainModel>: BaseQueryBuilder<CoreDataOperationType<Model>> {
+    
+    override func limit(_ limit: Int) -> CoreDataQueryBuilder<Model> {
+        /// Operation of the CoreData type will be added
+        let operation = CoreDataOperationType<Model>.limit(limit)
         operations.append(operation)
         return self
     }
     
-    var query: Query<Model> {
-        return Query(operations: operations)
+    override func filter(_ predicate: @escaping Predicate) -> CoreDataQueryBuilder<Model> {
+        /// Operation of the CoreData type will be added
+        let filter = CoreDataOperationType<Model>.filter(predicate)
+        operations.append(filter)
+        return self
     }
 }

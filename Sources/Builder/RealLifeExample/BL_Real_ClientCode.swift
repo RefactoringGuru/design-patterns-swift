@@ -17,8 +17,12 @@ class BL_Real_ClientCode_Tests: XCTestCase {
             .limit(2)
             .query
         
-        let results = DataBase.shared.fetch(query: query)
+        let coreDataQuery = CoreDataQueryBuilder<User>()
+            .filter({ $0.age < 20 })
+            .limit(1)
+            .query
         
-        XCTAssert(results.count == 2)
+        _ = RealmDataProvider().fetch(query: query)
+        _ = CoreDataProvider().fetch(query: coreDataQuery)
     }
 }

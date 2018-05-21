@@ -18,35 +18,48 @@ struct User: DomainModel {
     let email: String
 }
 
-class DataBase {
+class RealmDataProvider {
     
-    static var shared = DataBase()
-}
-
-extension DataBase {
-    
-    func fetch<Model: DomainModel>(query: Query<Model>) -> [Model] {
-        
-        guard var models = savedModels as? [Model] else { return [] }
+    func fetch<Model: DomainModel>(query: Query<RealmOperationType<Model>>) -> [Model] {
         
         for item in query.operations {
-            switch item.type {
-            case .filter(let predicate):
-                models = models.filter(predicate)
-            case .limit(let limit):
-                guard models.count > limit else { continue }
-                models = Array(models[0..<limit])
+            switch item {
+            case .filter(_):
+                /// Use Realm instance to filter results
+                break
+            case .limit(_):
+                /// Use Realm instance to limit results
+                break
             }
         }
         
-        return models
-    }
-    
-    private var savedModels: [DomainModel] {
-        let user1 = User(id: 0, age: 10, email: "e1@email.com")
-        let user2 = User(id: 1, age: 20, email: "e2@email.com")
-        let user3 = User(id: 2, age: 30, email: "e3@email.com")
-        let user4 = User(id: 3, age: 40, email: "e4@email.com")
-        return [user1, user2, user3, user4]
+        /// Return results from Realm
+        return []
     }
 }
+
+class CoreDataProvider {
+    
+    func fetch<Model: DomainModel>(query: Query<CoreDataOperationType<Model>>) -> [Model] {
+        
+        /// Create a NSFetchRequest
+        
+        for item in query.operations {
+            switch item {
+            case .filter(_):
+                /// Set a 'predicate' for a NSFetchRequest
+                break
+            case .limit(_):
+                /// Set a 'fetchLimit' for a NSFetchRequest
+                break
+            case .includesPropertyValues(_):
+                /// Set an 'includesPropertyValues' for a NSFetchRequest
+                break
+            }
+        }
+        
+        /// Execute a NSFetchRequest and return results
+        return []
+    }
+}
+

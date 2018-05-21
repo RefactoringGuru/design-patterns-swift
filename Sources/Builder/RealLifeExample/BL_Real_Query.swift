@@ -8,28 +8,33 @@
 
 import Foundation
 
-enum OperationType<Model: DomainModel> {
+protocol OperationType {
+    
+    associatedtype Model: DomainModel
     
     typealias FilterClosure = (Model) -> (Bool)
+}
+
+enum RealmOperationType<Model: DomainModel>: OperationType {
+        
+    case filter(FilterClosure)
+    case limit(Int)
+    /// Other Realm operations
+}
+
+enum CoreDataOperationType<Model: DomainModel>: OperationType {
     
     case filter(FilterClosure)
     case limit(Int)
+    case includesPropertyValues(Bool)
+    /// Other CoreData operations
 }
 
-struct QueryOperation<Model: DomainModel> {
+class Query<Operation: OperationType> {
     
-    let type: OperationType<Model>
+    private(set) var operations: [Operation]
     
-    init(type: OperationType<Model>) {
-        self.type = type
-    }
-}
-
-class Query<Model: DomainModel> {
-    
-    private(set) var operations: [QueryOperation<Model>]
-    
-    init(operations: [QueryOperation<Model>]) {
+    init(operations: [Operation]) {
         self.operations = operations
     }
 }
