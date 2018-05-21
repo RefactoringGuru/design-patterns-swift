@@ -1,5 +1,5 @@
 //
-//  AuthView.swift
+//  AF_AuthView.swift
 //  RefactoringGuru.Patterns
 //
 //  Created by Maxim Eremenko on 4/27/18.

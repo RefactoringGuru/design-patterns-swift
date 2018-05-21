@@ -7,77 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		910A804620A04CBA006AF346 /* BL_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A804520A04CBA006AF346 /* BL_Structure_ClientCode.swift */; };
-		910A804820A05323006AF346 /* BL_Structure_Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A804720A05323006AF346 /* BL_Structure_Builders.swift */; };
-		910A804A20A0534B006AF346 /* BL_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A804920A0534B006AF346 /* BL_Structure_Products.swift */; };
-		910A804C20A05369006AF346 /* BL_Structure_Directors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A804B20A05369006AF346 /* BL_Structure_Directors.swift */; };
-		910A805020A05B8C006AF346 /* BL_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A804F20A05B8C006AF346 /* BL_Real_ClientCode.swift */; };
-		910A805220A05BAE006AF346 /* BL_Real_Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910A805120A05BAE006AF346 /* BL_Real_Builders.swift */; };
-		911E2CA120A0AE9300F0DADA /* BL_Real_Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CA020A0AE9300F0DADA /* BL_Real_Query.swift */; };
-		911E2CA320A0AFA200F0DADA /* BL_Real_DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CA220A0AFA200F0DADA /* BL_Real_DataBase.swift */; };
-		911E2CAB20A19AF000F0DADA /* AF_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CAA20A19AF000F0DADA /* AF_Real_ClientCode.swift */; };
-		911E2CAD20A1A87300F0DADA /* AF_Real_Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CAC20A1A87300F0DADA /* AF_Real_Factory.swift */; };
-		911E2CAF20A1A89F00F0DADA /* AF_Real_Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E2CAE20A1A89F00F0DADA /* AF_Real_Alert.swift */; };
-		913FF2372097857B00193902 /* PT_NSCopying_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2292097857B00193902 /* PT_NSCopying_ClientCode.swift */; };
-		913FF2382097857B00193902 /* FM_Real_AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22C2097857B00193902 /* FM_Real_AuthController.swift */; };
-		913FF2392097857B00193902 /* FM_Real_AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22D2097857B00193902 /* FM_Real_AuthFactory.swift */; };
-		913FF23A2097857B00193902 /* FM_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF22E2097857B00193902 /* FM_Real_ClientCode.swift */; };
-		913FF23B2097857B00193902 /* StudentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2302097857B00193902 /* StudentViews.swift */; };
-		913FF23C2097857B00193902 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2312097857B00193902 /* AuthView.swift */; };
-		913FF23D2097857B00193902 /* TeacherViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2322097857B00193902 /* TeacherViews.swift */; };
-		913FF23E2097857B00193902 /* FM_Simple_Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2342097857B00193902 /* FM_Simple_Factory.swift */; };
-		913FF23F2097857B00193902 /* FM_Simple_Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2352097857B00193902 /* FM_Simple_Projector.swift */; };
-		913FF2402097857B00193902 /* FM_Simple_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF2362097857B00193902 /* FM_Simple_ClientCode.swift */; };
-		913FF243209785D100193902 /* SG_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF242209785D100193902 /* SG_Structure_ClientCode.swift */; };
-		913FF246209C633300193902 /* FM_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF245209C633300193902 /* FM_Structure_ClientCode.swift */; };
-		913FF248209C635400193902 /* FM_Structure_Creators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF247209C635400193902 /* FM_Structure_Creators.swift */; };
-		913FF24A209C64E400193902 /* FM_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF249209C64E400193902 /* FM_Structure_Products.swift */; };
-		913FF250209C75D400193902 /* AF_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF24F209C75D400193902 /* AF_Structure_ClientCode.swift */; };
-		913FF252209C789900193902 /* AF_Structure_Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF251209C789900193902 /* AF_Structure_Factories.swift */; };
-		913FF254209C78C600193902 /* AF_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FF253209C78C600193902 /* AF_Structure_Products.swift */; };
-		91A9F67920A1B77F00A016E0 /* SG_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9F67820A1B77F00A016E0 /* SG_Real_ClientCode.swift */; };
-		91A9F67B20A1BC9C00A016E0 /* SG_Real_Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9F67A20A1BC9C00A016E0 /* SG_Real_Service.swift */; };
-		91A9F67D20A1BCB200A016E0 /* SG_Real_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9F67C20A1BCB200A016E0 /* SG_Real_VC.swift */; };
-		91A9F67F20A1BD0F00A016E0 /* SG_Real_Service_IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9F67E20A1BD0F00A016E0 /* SG_Real_Service_IO.swift */; };
-		91E7B3E220A1DEC600D01828 /* PT_NSCopying_Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E7B3E120A1DEC600D01828 /* PT_NSCopying_Prototype.swift */; };
+		914ADA3320B2D4D200E0A74F /* AF_Structure_Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0720B2D4D200E0A74F /* AF_Structure_Factories.swift */; };
+		914ADA3420B2D4D200E0A74F /* AF_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0820B2D4D200E0A74F /* AF_Structure_ClientCode.swift */; };
+		914ADA3520B2D4D200E0A74F /* AF_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0920B2D4D200E0A74F /* AF_Structure_Products.swift */; };
+		914ADA3620B2D4D200E0A74F /* AF_Real_AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0B20B2D4D200E0A74F /* AF_Real_AuthController.swift */; };
+		914ADA3720B2D4D200E0A74F /* AF_Real_AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0C20B2D4D200E0A74F /* AF_Real_AuthFactory.swift */; };
+		914ADA3820B2D4D200E0A74F /* AF_StudentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0E20B2D4D200E0A74F /* AF_StudentViews.swift */; };
+		914ADA3920B2D4D200E0A74F /* AF_TeacherViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0F20B2D4D200E0A74F /* AF_TeacherViews.swift */; };
+		914ADA3A20B2D4D200E0A74F /* AF_AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1020B2D4D200E0A74F /* AF_AuthView.swift */; };
+		914ADA3B20B2D4D200E0A74F /* AF_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1120B2D4D200E0A74F /* AF_Real_ClientCode.swift */; };
+		914ADA3C20B2D4D200E0A74F /* PT_NSCopying_Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1420B2D4D200E0A74F /* PT_NSCopying_Prototype.swift */; };
+		914ADA3D20B2D4D200E0A74F /* PT_NSCopying_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1520B2D4D200E0A74F /* PT_NSCopying_ClientCode.swift */; };
+		914ADA3E20B2D4D200E0A74F /* FM_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1820B2D4D200E0A74F /* FM_Structure_ClientCode.swift */; };
+		914ADA3F20B2D4D200E0A74F /* FM_Structure_Creators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1920B2D4D200E0A74F /* FM_Structure_Creators.swift */; };
+		914ADA4020B2D4D200E0A74F /* FM_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1A20B2D4D200E0A74F /* FM_Structure_Products.swift */; };
+		914ADA4120B2D4D200E0A74F /* FM_Simple_Projector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1C20B2D4D200E0A74F /* FM_Simple_Projector.swift */; };
+		914ADA4220B2D4D200E0A74F /* FM_Simple_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1D20B2D4D200E0A74F /* FM_Simple_ClientCode.swift */; };
+		914ADA4320B2D4D200E0A74F /* FM_Simple_Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA1E20B2D4D200E0A74F /* FM_Simple_Factory.swift */; };
+		914ADA4420B2D4D200E0A74F /* SG_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2120B2D4D200E0A74F /* SG_Structure_ClientCode.swift */; };
+		914ADA4520B2D4D200E0A74F /* SG_Real_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2320B2D4D200E0A74F /* SG_Real_VC.swift */; };
+		914ADA4620B2D4D200E0A74F /* SG_Real_Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2420B2D4D200E0A74F /* SG_Real_Service.swift */; };
+		914ADA4720B2D4D200E0A74F /* SG_Real_Service_IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2520B2D4D200E0A74F /* SG_Real_Service_IO.swift */; };
+		914ADA4820B2D4D200E0A74F /* SG_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2620B2D4D200E0A74F /* SG_Real_ClientCode.swift */; };
+		914ADA4920B2D4D200E0A74F /* BL_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2A20B2D4D200E0A74F /* BL_Structure_ClientCode.swift */; };
+		914ADA4A20B2D4D200E0A74F /* BL_Structure_Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2B20B2D4D200E0A74F /* BL_Structure_Builders.swift */; };
+		914ADA4B20B2D4D200E0A74F /* BL_Structure_Directors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2C20B2D4D200E0A74F /* BL_Structure_Directors.swift */; };
+		914ADA4C20B2D4D200E0A74F /* BL_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2D20B2D4D200E0A74F /* BL_Structure_Products.swift */; };
+		914ADA4D20B2D4D200E0A74F /* BL_Real_DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA2F20B2D4D200E0A74F /* BL_Real_DataBase.swift */; };
+		914ADA4E20B2D4D200E0A74F /* BL_Real_Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA3020B2D4D200E0A74F /* BL_Real_Builders.swift */; };
+		914ADA4F20B2D4D200E0A74F /* BL_Real_Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA3120B2D4D200E0A74F /* BL_Real_Query.swift */; };
+		914ADA5020B2D4D200E0A74F /* BL_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA3220B2D4D200E0A74F /* BL_Real_ClientCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		910A804520A04CBA006AF346 /* BL_Structure_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Structure_ClientCode.swift; sourceTree = "<group>"; };
-		910A804720A05323006AF346 /* BL_Structure_Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Structure_Builders.swift; sourceTree = "<group>"; };
-		910A804920A0534B006AF346 /* BL_Structure_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Structure_Products.swift; sourceTree = "<group>"; };
-		910A804B20A05369006AF346 /* BL_Structure_Directors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Structure_Directors.swift; sourceTree = "<group>"; };
-		910A804F20A05B8C006AF346 /* BL_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_ClientCode.swift; sourceTree = "<group>"; };
-		910A805120A05BAE006AF346 /* BL_Real_Builders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_Builders.swift; sourceTree = "<group>"; };
-		911E2CA020A0AE9300F0DADA /* BL_Real_Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_Query.swift; sourceTree = "<group>"; };
-		911E2CA220A0AFA200F0DADA /* BL_Real_DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_DataBase.swift; sourceTree = "<group>"; };
-		911E2CAA20A19AF000F0DADA /* AF_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_ClientCode.swift; sourceTree = "<group>"; };
-		911E2CAC20A1A87300F0DADA /* AF_Real_Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_Factory.swift; sourceTree = "<group>"; };
-		911E2CAE20A1A89F00F0DADA /* AF_Real_Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Real_Alert.swift; sourceTree = "<group>"; };
 		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		913FF2292097857B00193902 /* PT_NSCopying_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PT_NSCopying_ClientCode.swift; sourceTree = "<group>"; };
-		913FF22C2097857B00193902 /* FM_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Real_AuthController.swift; sourceTree = "<group>"; };
-		913FF22D2097857B00193902 /* FM_Real_AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Real_AuthFactory.swift; sourceTree = "<group>"; };
-		913FF22E2097857B00193902 /* FM_Real_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Real_ClientCode.swift; sourceTree = "<group>"; };
-		913FF2302097857B00193902 /* StudentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViews.swift; sourceTree = "<group>"; };
-		913FF2312097857B00193902 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		913FF2322097857B00193902 /* TeacherViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherViews.swift; sourceTree = "<group>"; };
-		913FF2342097857B00193902 /* FM_Simple_Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Simple_Factory.swift; sourceTree = "<group>"; };
-		913FF2352097857B00193902 /* FM_Simple_Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Simple_Projector.swift; sourceTree = "<group>"; };
-		913FF2362097857B00193902 /* FM_Simple_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Simple_ClientCode.swift; sourceTree = "<group>"; };
-		913FF242209785D100193902 /* SG_Structure_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Structure_ClientCode.swift; sourceTree = "<group>"; };
-		913FF245209C633300193902 /* FM_Structure_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Structure_ClientCode.swift; sourceTree = "<group>"; };
-		913FF247209C635400193902 /* FM_Structure_Creators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Structure_Creators.swift; sourceTree = "<group>"; };
-		913FF249209C64E400193902 /* FM_Structure_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FM_Structure_Products.swift; sourceTree = "<group>"; };
-		913FF24F209C75D400193902 /* AF_Structure_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Structure_ClientCode.swift; sourceTree = "<group>"; };
-		913FF251209C789900193902 /* AF_Structure_Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Structure_Factories.swift; sourceTree = "<group>"; };
-		913FF253209C78C600193902 /* AF_Structure_Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AF_Structure_Products.swift; sourceTree = "<group>"; };
-		91A9F67820A1B77F00A016E0 /* SG_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SG_Real_ClientCode.swift; sourceTree = "<group>"; };
-		91A9F67A20A1BC9C00A016E0 /* SG_Real_Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SG_Real_Service.swift; sourceTree = "<group>"; };
-		91A9F67C20A1BCB200A016E0 /* SG_Real_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SG_Real_VC.swift; sourceTree = "<group>"; };
-		91A9F67E20A1BD0F00A016E0 /* SG_Real_Service_IO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SG_Real_Service_IO.swift; sourceTree = "<group>"; };
-		91E7B3E120A1DEC600D01828 /* PT_NSCopying_Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PT_NSCopying_Prototype.swift; sourceTree = "<group>"; };
+		914ADA0720B2D4D200E0A74F /* AF_Structure_Factories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Structure_Factories.swift; sourceTree = "<group>"; };
+		914ADA0820B2D4D200E0A74F /* AF_Structure_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Structure_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA0920B2D4D200E0A74F /* AF_Structure_Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Structure_Products.swift; sourceTree = "<group>"; };
+		914ADA0B20B2D4D200E0A74F /* AF_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthController.swift; sourceTree = "<group>"; };
+		914ADA0C20B2D4D200E0A74F /* AF_Real_AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthFactory.swift; sourceTree = "<group>"; };
+		914ADA0E20B2D4D200E0A74F /* AF_StudentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_StudentViews.swift; sourceTree = "<group>"; };
+		914ADA0F20B2D4D200E0A74F /* AF_TeacherViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_TeacherViews.swift; sourceTree = "<group>"; };
+		914ADA1020B2D4D200E0A74F /* AF_AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_AuthView.swift; sourceTree = "<group>"; };
+		914ADA1120B2D4D200E0A74F /* AF_Real_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA1420B2D4D200E0A74F /* PT_NSCopying_Prototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PT_NSCopying_Prototype.swift; sourceTree = "<group>"; };
+		914ADA1520B2D4D200E0A74F /* PT_NSCopying_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PT_NSCopying_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA1820B2D4D200E0A74F /* FM_Structure_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Structure_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA1920B2D4D200E0A74F /* FM_Structure_Creators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Structure_Creators.swift; sourceTree = "<group>"; };
+		914ADA1A20B2D4D200E0A74F /* FM_Structure_Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Structure_Products.swift; sourceTree = "<group>"; };
+		914ADA1C20B2D4D200E0A74F /* FM_Simple_Projector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Simple_Projector.swift; sourceTree = "<group>"; };
+		914ADA1D20B2D4D200E0A74F /* FM_Simple_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Simple_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA1E20B2D4D200E0A74F /* FM_Simple_Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FM_Simple_Factory.swift; sourceTree = "<group>"; };
+		914ADA2120B2D4D200E0A74F /* SG_Structure_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Structure_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA2320B2D4D200E0A74F /* SG_Real_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Real_VC.swift; sourceTree = "<group>"; };
+		914ADA2420B2D4D200E0A74F /* SG_Real_Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Real_Service.swift; sourceTree = "<group>"; };
+		914ADA2520B2D4D200E0A74F /* SG_Real_Service_IO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Real_Service_IO.swift; sourceTree = "<group>"; };
+		914ADA2620B2D4D200E0A74F /* SG_Real_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SG_Real_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA2A20B2D4D200E0A74F /* BL_Structure_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Structure_ClientCode.swift; sourceTree = "<group>"; };
+		914ADA2B20B2D4D200E0A74F /* BL_Structure_Builders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Structure_Builders.swift; sourceTree = "<group>"; };
+		914ADA2C20B2D4D200E0A74F /* BL_Structure_Directors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Structure_Directors.swift; sourceTree = "<group>"; };
+		914ADA2D20B2D4D200E0A74F /* BL_Structure_Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Structure_Products.swift; sourceTree = "<group>"; };
+		914ADA2F20B2D4D200E0A74F /* BL_Real_DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Real_DataBase.swift; sourceTree = "<group>"; };
+		914ADA3020B2D4D200E0A74F /* BL_Real_Builders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Real_Builders.swift; sourceTree = "<group>"; };
+		914ADA3120B2D4D200E0A74F /* BL_Real_Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Real_Query.swift; sourceTree = "<group>"; };
+		914ADA3220B2D4D200E0A74F /* BL_Real_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Real_ClientCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,52 +85,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		910A804420A04CA0006AF346 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				910A804E20A0570E006AF346 /* RealWorldExample */,
-				910A804D20A056FD006AF346 /* StructureExample */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		910A804D20A056FD006AF346 /* StructureExample */ = {
-			isa = PBXGroup;
-			children = (
-				910A804520A04CBA006AF346 /* BL_Structure_ClientCode.swift */,
-				910A804720A05323006AF346 /* BL_Structure_Builders.swift */,
-				910A804920A0534B006AF346 /* BL_Structure_Products.swift */,
-				910A804B20A05369006AF346 /* BL_Structure_Directors.swift */,
-			);
-			path = StructureExample;
-			sourceTree = "<group>";
-		};
-		910A804E20A0570E006AF346 /* RealWorldExample */ = {
-			isa = PBXGroup;
-			children = (
-				910A804F20A05B8C006AF346 /* BL_Real_ClientCode.swift */,
-				910A805120A05BAE006AF346 /* BL_Real_Builders.swift */,
-				911E2CA020A0AE9300F0DADA /* BL_Real_Query.swift */,
-				911E2CA220A0AFA200F0DADA /* BL_Real_DataBase.swift */,
-			);
-			path = RealWorldExample;
-			sourceTree = "<group>";
-		};
-		911E2CA920A19AE100F0DADA /* RealWorldExample */ = {
-			isa = PBXGroup;
-			children = (
-				911E2CAA20A19AF000F0DADA /* AF_Real_ClientCode.swift */,
-				911E2CAC20A1A87300F0DADA /* AF_Real_Factory.swift */,
-				911E2CAE20A1A89F00F0DADA /* AF_Real_Alert.swift */,
-			);
-			path = RealWorldExample;
-			sourceTree = "<group>";
-		};
 		9139FA6F2088D85C00229150 = {
 			isa = PBXGroup;
 			children = (
 				913FF2252097835E00193902 /* ProjectBundle */,
-				9139FAA42088D8D700229150 /* Sources */,
+				914ADA0420B2D4D200E0A74F /* Sources */,
 				9139FA792088D85C00229150 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,18 +102,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9139FAA42088D8D700229150 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				913FF244209C632700193902 /* AbstractFactory */,
-				913FF22A2097857B00193902 /* FactoryMethod */,
-				910A804420A04CA0006AF346 /* Builder */,
-				913FF2282097857B00193902 /* Prototype */,
-				913FF241209785D100193902 /* Singleton */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 		913FF2252097835E00193902 /* ProjectBundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,118 +110,167 @@
 			path = ProjectBundle;
 			sourceTree = "<group>";
 		};
-		913FF2282097857B00193902 /* Prototype */ = {
+		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				913FF256209C7B9D00193902 /* StructureExample */,
+				914ADA0520B2D4D200E0A74F /* AbstractFactory */,
+				914ADA1220B2D4D200E0A74F /* Prototype */,
+				914ADA1620B2D4D200E0A74F /* FactoryMethod */,
+				914ADA1F20B2D4D200E0A74F /* Singleton */,
+				914ADA2720B2D4D200E0A74F /* Builder */,
 			);
-			path = Prototype;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		913FF22A2097857B00193902 /* FactoryMethod */ = {
+		914ADA0520B2D4D200E0A74F /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
-				913FF24C209C724500193902 /* StructureExample */,
-				913FF2332097857B00193902 /* RealWorldExample */,
-			);
-			path = FactoryMethod;
-			sourceTree = "<group>";
-		};
-		913FF22B2097857B00193902 /* RealWorldExample2 */ = {
-			isa = PBXGroup;
-			children = (
-				913FF22E2097857B00193902 /* FM_Real_ClientCode.swift */,
-				913FF22C2097857B00193902 /* FM_Real_AuthController.swift */,
-				913FF22D2097857B00193902 /* FM_Real_AuthFactory.swift */,
-				913FF22F2097857B00193902 /* Views */,
-			);
-			path = RealWorldExample2;
-			sourceTree = "<group>";
-		};
-		913FF22F2097857B00193902 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				913FF2302097857B00193902 /* StudentViews.swift */,
-				913FF2312097857B00193902 /* AuthView.swift */,
-				913FF2322097857B00193902 /* TeacherViews.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		913FF2332097857B00193902 /* RealWorldExample */ = {
-			isa = PBXGroup;
-			children = (
-				913FF2362097857B00193902 /* FM_Simple_ClientCode.swift */,
-				913FF2342097857B00193902 /* FM_Simple_Factory.swift */,
-				913FF2352097857B00193902 /* FM_Simple_Projector.swift */,
-			);
-			path = RealWorldExample;
-			sourceTree = "<group>";
-		};
-		913FF241209785D100193902 /* Singleton */ = {
-			isa = PBXGroup;
-			children = (
-				91A9F67720A1B76900A016E0 /* RealLifeExample */,
-				913FF255209C7A1600193902 /* StructureExample */,
-			);
-			path = Singleton;
-			sourceTree = "<group>";
-		};
-		913FF244209C632700193902 /* AbstractFactory */ = {
-			isa = PBXGroup;
-			children = (
-				911E2CA920A19AE100F0DADA /* RealWorldExample */,
-				913FF22B2097857B00193902 /* RealWorldExample2 */,
-				913FF24B209C6A8F00193902 /* StructureExample */,
+				914ADA0620B2D4D200E0A74F /* StructureExample */,
+				914ADA0A20B2D4D200E0A74F /* RealLifeExample */,
 			);
 			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
-		913FF24B209C6A8F00193902 /* StructureExample */ = {
+		914ADA0620B2D4D200E0A74F /* StructureExample */ = {
 			isa = PBXGroup;
 			children = (
-				913FF24F209C75D400193902 /* AF_Structure_ClientCode.swift */,
-				913FF251209C789900193902 /* AF_Structure_Factories.swift */,
-				913FF253209C78C600193902 /* AF_Structure_Products.swift */,
+				914ADA0720B2D4D200E0A74F /* AF_Structure_Factories.swift */,
+				914ADA0820B2D4D200E0A74F /* AF_Structure_ClientCode.swift */,
+				914ADA0920B2D4D200E0A74F /* AF_Structure_Products.swift */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
 		};
-		913FF24C209C724500193902 /* StructureExample */ = {
+		914ADA0A20B2D4D200E0A74F /* RealLifeExample */ = {
 			isa = PBXGroup;
 			children = (
-				913FF245209C633300193902 /* FM_Structure_ClientCode.swift */,
-				913FF247209C635400193902 /* FM_Structure_Creators.swift */,
-				913FF249209C64E400193902 /* FM_Structure_Products.swift */,
+				914ADA0B20B2D4D200E0A74F /* AF_Real_AuthController.swift */,
+				914ADA0C20B2D4D200E0A74F /* AF_Real_AuthFactory.swift */,
+				914ADA0D20B2D4D200E0A74F /* Views */,
+				914ADA1120B2D4D200E0A74F /* AF_Real_ClientCode.swift */,
+			);
+			path = RealLifeExample;
+			sourceTree = "<group>";
+		};
+		914ADA0D20B2D4D200E0A74F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA0E20B2D4D200E0A74F /* AF_StudentViews.swift */,
+				914ADA0F20B2D4D200E0A74F /* AF_TeacherViews.swift */,
+				914ADA1020B2D4D200E0A74F /* AF_AuthView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		914ADA1220B2D4D200E0A74F /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA1320B2D4D200E0A74F /* StructureExample */,
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
+		914ADA1320B2D4D200E0A74F /* StructureExample */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA1420B2D4D200E0A74F /* PT_NSCopying_Prototype.swift */,
+				914ADA1520B2D4D200E0A74F /* PT_NSCopying_ClientCode.swift */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
 		};
-		913FF255209C7A1600193902 /* StructureExample */ = {
+		914ADA1620B2D4D200E0A74F /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
-				913FF242209785D100193902 /* SG_Structure_ClientCode.swift */,
+				914ADA1720B2D4D200E0A74F /* StructureExample */,
+				914ADA1B20B2D4D200E0A74F /* RealLifeExample */,
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		914ADA1720B2D4D200E0A74F /* StructureExample */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA1820B2D4D200E0A74F /* FM_Structure_ClientCode.swift */,
+				914ADA1920B2D4D200E0A74F /* FM_Structure_Creators.swift */,
+				914ADA1A20B2D4D200E0A74F /* FM_Structure_Products.swift */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
 		};
-		913FF256209C7B9D00193902 /* StructureExample */ = {
+		914ADA1B20B2D4D200E0A74F /* RealLifeExample */ = {
 			isa = PBXGroup;
 			children = (
-				913FF2292097857B00193902 /* PT_NSCopying_ClientCode.swift */,
-				91E7B3E120A1DEC600D01828 /* PT_NSCopying_Prototype.swift */,
+				914ADA1C20B2D4D200E0A74F /* FM_Simple_Projector.swift */,
+				914ADA1D20B2D4D200E0A74F /* FM_Simple_ClientCode.swift */,
+				914ADA1E20B2D4D200E0A74F /* FM_Simple_Factory.swift */,
 			);
-			name = StructureExample;
-			path = StructureExample_;
+			path = RealLifeExample;
 			sourceTree = "<group>";
 		};
-		91A9F67720A1B76900A016E0 /* RealLifeExample */ = {
+		914ADA1F20B2D4D200E0A74F /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
-				91A9F67820A1B77F00A016E0 /* SG_Real_ClientCode.swift */,
-				91A9F67E20A1BD0F00A016E0 /* SG_Real_Service_IO.swift */,
-				91A9F67A20A1BC9C00A016E0 /* SG_Real_Service.swift */,
-				91A9F67C20A1BCB200A016E0 /* SG_Real_VC.swift */,
+				914ADA2020B2D4D200E0A74F /* StructureExample */,
+				914ADA2220B2D4D200E0A74F /* RealLifeExample */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		914ADA2020B2D4D200E0A74F /* StructureExample */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA2120B2D4D200E0A74F /* SG_Structure_ClientCode.swift */,
+			);
+			path = StructureExample;
+			sourceTree = "<group>";
+		};
+		914ADA2220B2D4D200E0A74F /* RealLifeExample */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA2320B2D4D200E0A74F /* SG_Real_VC.swift */,
+				914ADA2420B2D4D200E0A74F /* SG_Real_Service.swift */,
+				914ADA2520B2D4D200E0A74F /* SG_Real_Service_IO.swift */,
+				914ADA2620B2D4D200E0A74F /* SG_Real_ClientCode.swift */,
+			);
+			path = RealLifeExample;
+			sourceTree = "<group>";
+		};
+		914ADA2720B2D4D200E0A74F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA2820B2D4D200E0A74F /* SimpleBuilder */,
+				914ADA2920B2D4D200E0A74F /* StructureExample */,
+				914ADA2E20B2D4D200E0A74F /* RealLifeExample */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		914ADA2820B2D4D200E0A74F /* SimpleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SimpleBuilder;
+			sourceTree = "<group>";
+		};
+		914ADA2920B2D4D200E0A74F /* StructureExample */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA2A20B2D4D200E0A74F /* BL_Structure_ClientCode.swift */,
+				914ADA2B20B2D4D200E0A74F /* BL_Structure_Builders.swift */,
+				914ADA2C20B2D4D200E0A74F /* BL_Structure_Directors.swift */,
+				914ADA2D20B2D4D200E0A74F /* BL_Structure_Products.swift */,
+			);
+			path = StructureExample;
+			sourceTree = "<group>";
+		};
+		914ADA2E20B2D4D200E0A74F /* RealLifeExample */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA2F20B2D4D200E0A74F /* BL_Real_DataBase.swift */,
+				914ADA3020B2D4D200E0A74F /* BL_Real_Builders.swift */,
+				914ADA3120B2D4D200E0A74F /* BL_Real_Query.swift */,
+				914ADA3220B2D4D200E0A74F /* BL_Real_ClientCode.swift */,
 			);
 			path = RealLifeExample;
 			sourceTree = "<group>";
@@ -355,39 +345,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A9F67D20A1BCB200A016E0 /* SG_Real_VC.swift in Sources */,
-				913FF23B2097857B00193902 /* StudentViews.swift in Sources */,
-				910A805020A05B8C006AF346 /* BL_Real_ClientCode.swift in Sources */,
-				91A9F67F20A1BD0F00A016E0 /* SG_Real_Service_IO.swift in Sources */,
-				913FF2402097857B00193902 /* FM_Simple_ClientCode.swift in Sources */,
-				91A9F67920A1B77F00A016E0 /* SG_Real_ClientCode.swift in Sources */,
-				913FF254209C78C600193902 /* AF_Structure_Products.swift in Sources */,
-				913FF246209C633300193902 /* FM_Structure_ClientCode.swift in Sources */,
-				913FF252209C789900193902 /* AF_Structure_Factories.swift in Sources */,
-				913FF23E2097857B00193902 /* FM_Simple_Factory.swift in Sources */,
-				913FF23D2097857B00193902 /* TeacherViews.swift in Sources */,
-				913FF250209C75D400193902 /* AF_Structure_ClientCode.swift in Sources */,
-				911E2CAD20A1A87300F0DADA /* AF_Real_Factory.swift in Sources */,
-				913FF2392097857B00193902 /* FM_Real_AuthFactory.swift in Sources */,
-				910A804820A05323006AF346 /* BL_Structure_Builders.swift in Sources */,
-				911E2CAF20A1A89F00F0DADA /* AF_Real_Alert.swift in Sources */,
-				91E7B3E220A1DEC600D01828 /* PT_NSCopying_Prototype.swift in Sources */,
-				910A804C20A05369006AF346 /* BL_Structure_Directors.swift in Sources */,
-				911E2CA320A0AFA200F0DADA /* BL_Real_DataBase.swift in Sources */,
-				910A804620A04CBA006AF346 /* BL_Structure_ClientCode.swift in Sources */,
-				910A805220A05BAE006AF346 /* BL_Real_Builders.swift in Sources */,
-				911E2CAB20A19AF000F0DADA /* AF_Real_ClientCode.swift in Sources */,
-				913FF24A209C64E400193902 /* FM_Structure_Products.swift in Sources */,
-				911E2CA120A0AE9300F0DADA /* BL_Real_Query.swift in Sources */,
-				91A9F67B20A1BC9C00A016E0 /* SG_Real_Service.swift in Sources */,
-				913FF23F2097857B00193902 /* FM_Simple_Projector.swift in Sources */,
-				913FF23C2097857B00193902 /* AuthView.swift in Sources */,
-				913FF2382097857B00193902 /* FM_Real_AuthController.swift in Sources */,
-				910A804A20A0534B006AF346 /* BL_Structure_Products.swift in Sources */,
-				913FF243209785D100193902 /* SG_Structure_ClientCode.swift in Sources */,
-				913FF2372097857B00193902 /* PT_NSCopying_ClientCode.swift in Sources */,
-				913FF248209C635400193902 /* FM_Structure_Creators.swift in Sources */,
-				913FF23A2097857B00193902 /* FM_Real_ClientCode.swift in Sources */,
+				914ADA4020B2D4D200E0A74F /* FM_Structure_Products.swift in Sources */,
+				914ADA4920B2D4D200E0A74F /* BL_Structure_ClientCode.swift in Sources */,
+				914ADA4620B2D4D200E0A74F /* SG_Real_Service.swift in Sources */,
+				914ADA3520B2D4D200E0A74F /* AF_Structure_Products.swift in Sources */,
+				914ADA4B20B2D4D200E0A74F /* BL_Structure_Directors.swift in Sources */,
+				914ADA3720B2D4D200E0A74F /* AF_Real_AuthFactory.swift in Sources */,
+				914ADA4520B2D4D200E0A74F /* SG_Real_VC.swift in Sources */,
+				914ADA3420B2D4D200E0A74F /* AF_Structure_ClientCode.swift in Sources */,
+				914ADA4120B2D4D200E0A74F /* FM_Simple_Projector.swift in Sources */,
+				914ADA3620B2D4D200E0A74F /* AF_Real_AuthController.swift in Sources */,
+				914ADA3920B2D4D200E0A74F /* AF_TeacherViews.swift in Sources */,
+				914ADA4D20B2D4D200E0A74F /* BL_Real_DataBase.swift in Sources */,
+				914ADA4420B2D4D200E0A74F /* SG_Structure_ClientCode.swift in Sources */,
+				914ADA3320B2D4D200E0A74F /* AF_Structure_Factories.swift in Sources */,
+				914ADA3820B2D4D200E0A74F /* AF_StudentViews.swift in Sources */,
+				914ADA4A20B2D4D200E0A74F /* BL_Structure_Builders.swift in Sources */,
+				914ADA3F20B2D4D200E0A74F /* FM_Structure_Creators.swift in Sources */,
+				914ADA4220B2D4D200E0A74F /* FM_Simple_ClientCode.swift in Sources */,
+				914ADA4720B2D4D200E0A74F /* SG_Real_Service_IO.swift in Sources */,
+				914ADA4820B2D4D200E0A74F /* SG_Real_ClientCode.swift in Sources */,
+				914ADA3B20B2D4D200E0A74F /* AF_Real_ClientCode.swift in Sources */,
+				914ADA3E20B2D4D200E0A74F /* FM_Structure_ClientCode.swift in Sources */,
+				914ADA4C20B2D4D200E0A74F /* BL_Structure_Products.swift in Sources */,
+				914ADA5020B2D4D200E0A74F /* BL_Real_ClientCode.swift in Sources */,
+				914ADA4E20B2D4D200E0A74F /* BL_Real_Builders.swift in Sources */,
+				914ADA4F20B2D4D200E0A74F /* BL_Real_Query.swift in Sources */,
+				914ADA3D20B2D4D200E0A74F /* PT_NSCopying_ClientCode.swift in Sources */,
+				914ADA3A20B2D4D200E0A74F /* AF_AuthView.swift in Sources */,
+				914ADA4320B2D4D200E0A74F /* FM_Simple_Factory.swift in Sources */,
+				914ADA3C20B2D4D200E0A74F /* PT_NSCopying_Prototype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
