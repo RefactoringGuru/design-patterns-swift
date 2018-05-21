@@ -105,6 +105,18 @@
 			path = RealLifeExample;
 			sourceTree = "<group>";
 		};
+		91236C3E20B31DF9003133B7 /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+				914ADA0520B2D4D200E0A74F /* AbstractFactory */,
+				914ADA1220B2D4D200E0A74F /* Prototype */,
+				914ADA1620B2D4D200E0A74F /* FactoryMethod */,
+				914ADA1F20B2D4D200E0A74F /* Singleton */,
+				914ADA2720B2D4D200E0A74F /* Builder */,
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
 		9139FA6F2088D85C00229150 = {
 			isa = PBXGroup;
 			children = (
@@ -133,11 +145,7 @@
 		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				914ADA0520B2D4D200E0A74F /* AbstractFactory */,
-				914ADA1220B2D4D200E0A74F /* Prototype */,
-				914ADA1620B2D4D200E0A74F /* FactoryMethod */,
-				914ADA1F20B2D4D200E0A74F /* Singleton */,
-				914ADA2720B2D4D200E0A74F /* Builder */,
+				91236C3E20B31DF9003133B7 /* Creational */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
