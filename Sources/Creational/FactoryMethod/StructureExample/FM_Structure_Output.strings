@@ -1,11 +1,3 @@
-/* 
-  AF_Real_Output.strings
-  RefactoringGuru.Patterns
-
-  Created by Maxim Eremenko on 5/21/18.
-  Copyright © 2018 Eremenko Maxim. All rights reserved.
-*/
-
 /// Testing ConcreteCreator1:
 /// Same creator's code worked with: Result of ConcreteProduct1
 /// Testing ConcreteCreator2:

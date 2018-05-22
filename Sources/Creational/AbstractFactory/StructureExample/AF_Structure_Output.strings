@@ -1,11 +1,3 @@
-/*
-  AF_Structure_Output.strings
-  RefactoringGuru.Patterns
-
-  Created by Maxim Eremenko on 5/21/18.
-  Copyright © 2018 Eremenko Maxim. All rights reserved.
-*/
-
 /// Testing client code with the first factory type:
 /// The result of the B1 product.
 /// The result of the B1 collaborating with the The result of the A1 product.
