@@ -14,12 +14,14 @@ class FriendsChatService: MessageService {
     
     private var subscribers = [MessageSubscriber]()
     
-    private init() {
-        startFetching()
-    }
-    
     func add(subscriber: MessageSubscriber) {
+        
+        /// In this example, fetching starts again by adding a new subscriber
         subscribers.append(subscriber)
+        
+        /// Please note, the first subscriber will receive messages again
+        /// when the second subscriber is added
+        startFetching()
     }
     
     func startFetching() {
