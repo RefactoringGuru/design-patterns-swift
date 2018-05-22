@@ -36,7 +36,11 @@ class AD_Real_ClientCode: XCTestCase {
     /// It just tells a compiler that both SDKs have the same interface.
     
     func testAdapterReal() {
+        
+        print("Starting an authorization via Facebook")
         startAuthorization(with: FacebookAuthSDK())
+        
+        print("Starting an authorization via Twitter.")
         startAuthorization(with: TwitterAuthSDK())
     }
     
@@ -58,6 +62,7 @@ class FacebookAuthSDK {
     
     func presentAuthFlow(from viewController: UIViewController) {
         /// Call SDK methods and pass a view controller
+        print("Facebook WebView has been shown.")
     }
 }
 
@@ -65,6 +70,7 @@ class TwitterAuthSDK {
     
     func startAuthorization(with viewController: UIViewController) {
         /// Call SDK methods and pass a view controller
+        print("Twitter WebView has been shown. Users will be happy :)")
     }
 }
 
@@ -76,6 +82,7 @@ extension TwitterAuthSDK: AuthService {
     /// and just extend an existing one
     
     func presentAuthFlow(from viewController: UIViewController) {
+        print("The Adapter is called! Redirecting to the original method...")
         self.startAuthorization(with: viewController)
     }
 }
