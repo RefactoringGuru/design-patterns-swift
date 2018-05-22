@@ -1,0 +1,9 @@
+/// Start fetching data from Realm
+/// Initializing CoreDataProvider with operations
+/// Retrieving data from Realm
+/// We have fetched: 0 from Realm
+///
+/// Start fetching data from CoreData
+/// Initializing CoreDataProvider with operations
+/// Retrieving data from CoreData
+/// We have fetched: 0 from CoreData

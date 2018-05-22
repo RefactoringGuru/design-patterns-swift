@@ -24,8 +24,8 @@ class BaseQueryBuilder<Operation: OperationType> {
         return self
     }
     
-    var query: Query<Operation> {
-        return Query(operations: operations)
+    func fetch() -> [Operation.Model] {
+        preconditionFailure("Should be overridden in subclasses")
     }
 }
 
@@ -41,10 +41,21 @@ class RealmQueryBuilder<Model: DomainModel>: BaseQueryBuilder<RealmOperationType
     
     @discardableResult
     override func filter(_ predicate: @escaping Predicate) -> RealmQueryBuilder<Model> {
+        
         /// Operation of the Realm type will be added
+        
         let operation = RealmOperationType<Model>.filter(predicate)
         operations.append(operation)
         return self
+    }
+    
+    override func fetch() -> [Model] {
+        
+        /// Fetch models from an appropriate provider.
+        /// Please note, that all logic of fetching is hidden in the provider.
+        
+        print("Initializing CoreDataProvider with operations")
+        return RealmProvider().fetch(operations)
     }
 }
 
@@ -58,9 +69,20 @@ class CoreDataQueryBuilder<Model: DomainModel>: BaseQueryBuilder<CoreDataOperati
     }
     
     override func filter(_ predicate: @escaping Predicate) -> CoreDataQueryBuilder<Model> {
+        
         /// Operation of the CoreData type will be added
+        
         let filter = CoreDataOperationType<Model>.filter(predicate)
         operations.append(filter)
         return self
+    }
+    
+    override func fetch() -> [Model] {
+        
+        /// Fetch models from an appropriate provider.
+        /// Please note, that all logic of fetching is hidden in the provider.
+        
+        print("Initializing CoreDataProvider with operations")
+        return CoreDataProvider().fetch(operations)
     }
 }

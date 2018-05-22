@@ -1,28 +1,23 @@
 //
-//  BL_Real_DataBase.swift
+//  BL_Real_DataProviders.swift
 //  RefactoringGuru.Patterns
 //
-//  Created by Maxim Eremenko on 5/7/18.
+//  Created by Maxim Eremenko on 5/22/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
 //
 
 import Foundation
 
-protocol DomainModel {
-    
-}
+/// Data Providers contain a logic how to fetch models.
+/// Builders accumulate operations and then update providers to fetch the data.
 
-struct User: DomainModel {
-    let id: Int
-    let age: Int
-    let email: String
-}
-
-class RealmDataProvider {
+class RealmProvider {
     
-    func fetch<Model: DomainModel>(query: Query<RealmOperationType<Model>>) -> [Model] {
+    func fetch<Model: DomainModel>(_ operations: [RealmOperationType<Model>]) -> [Model] {
         
-        for item in query.operations {
+        print("Retrieving data from Realm")
+        
+        for item in operations {
             switch item {
             case .filter(_):
                 /// Use Realm instance to filter results
@@ -40,11 +35,13 @@ class RealmDataProvider {
 
 class CoreDataProvider {
     
-    func fetch<Model: DomainModel>(query: Query<CoreDataOperationType<Model>>) -> [Model] {
+    func fetch<Model: DomainModel>(_ operations: [CoreDataOperationType<Model>]) -> [Model] {
         
         /// Create a NSFetchRequest
         
-        for item in query.operations {
+        print("Retrieving data from CoreData")
+        
+        for item in operations {
             switch item {
             case .filter(_):
                 /// Set a 'predicate' for a NSFetchRequest
@@ -62,4 +59,3 @@ class CoreDataProvider {
         return []
     }
 }
-

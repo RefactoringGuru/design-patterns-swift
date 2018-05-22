@@ -11,25 +11,38 @@ import XCTest
 class BL_Real_ClientCode_Tests: XCTestCase {
     
     func testRealBuilder() {
+        print("Start fetching data from Realm")
         clientCode(builder: RealmQueryBuilder<User>())
+        
+        print("Start fetching data from CoreData")
         clientCode(builder: CoreDataQueryBuilder<User>())
     }
     
-    func clientCode(builder: BaseQueryBuilder<RealmOperationType<User>>) {
+    func clientCode(builder: RealmQueryBuilder<User>) {
         
-        let query = builder.filter({ $0.age < 20 })
+        let results = builder.filter({ $0.age < 20 })
             .limit(1)
-            .query
+            .fetch()
         
-        _ = RealmDataProvider().fetch(query: query)
+        print("We have fetched: " + String(results.count) + " from Realm")
     }
     
-    func clientCode(builder: BaseQueryBuilder<CoreDataOperationType<User>>) {
+    func clientCode(builder: CoreDataQueryBuilder<User>) {
         
-        let query = builder.filter({ $0.age < 20 })
-            .limit(1)
-            .query
+        let results = builder.filter({ $0.age > 18 })
+            .limit(2)
+            .fetch()
         
-        _ = CoreDataProvider().fetch(query: query)
+        print("We have fetched: " + String(results.count) + " from CoreData")
     }
+}
+
+protocol DomainModel {
+    /// The protocol groups domain models to the common interface
+}
+
+struct User: DomainModel {
+    let id: Int
+    let age: Int
+    let email: String
 }

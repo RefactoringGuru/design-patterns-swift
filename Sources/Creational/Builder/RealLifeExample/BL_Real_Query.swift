@@ -19,6 +19,7 @@ enum RealmOperationType<Model: DomainModel>: OperationType {
         
     case filter(FilterClosure)
     case limit(Int)
+    
     /// Other Realm operations
 }
 
@@ -27,14 +28,6 @@ enum CoreDataOperationType<Model: DomainModel>: OperationType {
     case filter(FilterClosure)
     case limit(Int)
     case includesPropertyValues(Bool)
+    
     /// Other CoreData operations
-}
-
-class Query<Operation: OperationType> {
-    
-    private(set) var operations: [Operation]
-    
-    init(operations: [Operation]) {
-        self.operations = operations
-    }
 }
