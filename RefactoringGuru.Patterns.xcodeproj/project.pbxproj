@@ -19,6 +19,8 @@
 		91236C4620B48F15003133B7 /* AF_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91236C4520B48F15003133B7 /* AF_Real_Output.strings */; };
 		91236C4820B4A39B003133B7 /* BL_Real_DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91236C4720B4A39B003133B7 /* BL_Real_DataProviders.swift */; };
 		91236C4C20B4AB35003133B7 /* BL_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91236C4B20B4AB35003133B7 /* BL_Real_Output.strings */; };
+		91236C5020B4B12E003133B7 /* AD_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91236C4F20B4B12E003133B7 /* AD_Structure_ClientCode.swift */; };
+		91236C5220B4B42B003133B7 /* AD_Structure_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91236C5120B4B42B003133B7 /* AD_Structure_Output.strings */; };
 		914ADA3320B2D4D200E0A74F /* AF_Structure_Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0720B2D4D200E0A74F /* AF_Structure_Factories.swift */; };
 		914ADA3420B2D4D200E0A74F /* AF_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0820B2D4D200E0A74F /* AF_Structure_ClientCode.swift */; };
 		914ADA3520B2D4D200E0A74F /* AF_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0920B2D4D200E0A74F /* AF_Structure_Products.swift */; };
@@ -63,6 +65,8 @@
 		91236C4520B48F15003133B7 /* AF_Real_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = AF_Real_Output.strings; sourceTree = "<group>"; };
 		91236C4720B4A39B003133B7 /* BL_Real_DataProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BL_Real_DataProviders.swift; sourceTree = "<group>"; };
 		91236C4B20B4AB35003133B7 /* BL_Real_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BL_Real_Output.strings; sourceTree = "<group>"; };
+		91236C4F20B4B12E003133B7 /* AD_Structure_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AD_Structure_ClientCode.swift; sourceTree = "<group>"; };
+		91236C5120B4B42B003133B7 /* AD_Structure_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = AD_Structure_Output.strings; sourceTree = "<group>"; };
 		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914ADA0720B2D4D200E0A74F /* AF_Structure_Factories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Structure_Factories.swift; sourceTree = "<group>"; };
@@ -128,6 +132,23 @@
 			path = Creational;
 			sourceTree = "<group>";
 		};
+		91236C4D20B4B0C5003133B7 /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				91236C4E20B4B0F3003133B7 /* Adapter */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
+		91236C4E20B4B0F3003133B7 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				91236C4F20B4B12E003133B7 /* AD_Structure_ClientCode.swift */,
+				91236C5120B4B42B003133B7 /* AD_Structure_Output.strings */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		9139FA6F2088D85C00229150 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				91236C3E20B31DF9003133B7 /* Creational */,
+				91236C4D20B4B0C5003133B7 /* Structural */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -377,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91236C3820B31B20003133B7 /* FM_Real_Output.strings in Resources */,
+				91236C5220B4B42B003133B7 /* AD_Structure_Output.strings in Resources */,
 				91236C3A20B31BD6003133B7 /* SG_Structure_Output.strings in Resources */,
 				91236C3620B31A4C003133B7 /* FM_Structure_Output.strings in Resources */,
 				91236C4420B48D7F003133B7 /* SG_Real_Output.strings in Resources */,
@@ -402,6 +425,7 @@
 				914ADA3520B2D4D200E0A74F /* AF_Structure_Products.swift in Sources */,
 				914ADA4B20B2D4D200E0A74F /* BL_Structure_Directors.swift in Sources */,
 				914ADA3720B2D4D200E0A74F /* AF_Real_AuthFactory.swift in Sources */,
+				91236C5020B4B12E003133B7 /* AD_Structure_ClientCode.swift in Sources */,
 				914ADA4520B2D4D200E0A74F /* SG_Real_VC.swift in Sources */,
 				914ADA3420B2D4D200E0A74F /* AF_Structure_ClientCode.swift in Sources */,
 				914ADA4120B2D4D200E0A74F /* FM_Real_Projector.swift in Sources */,
