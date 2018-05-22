@@ -28,6 +28,7 @@ class Prototype: NSCopying, Equatable {
         let prototype = type(of: self).init()
         prototype.intValue = intValue
         prototype.stringValue = stringValue
+        print("Prototype values have been cloned!")
         return prototype
     }
     
@@ -50,6 +51,7 @@ class SubPrototype: Prototype {
             return SubPrototype() // smth went wrong
         }
         prototype.boolValue = boolValue
+        print("SubPrototype values have been cloned!")
         return prototype
     }
 }

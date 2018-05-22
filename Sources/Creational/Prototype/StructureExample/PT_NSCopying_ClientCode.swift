@@ -27,6 +27,10 @@ class PrototypeRealTests: XCTestCase {
             XCTAssert(false)
             return
         }
+        
         XCTAssert(anotherPrototype == prototype)
+        
+        /// See implementation of 'Equatable' protocol for more details.
+        print("Prototype is equal to the copied object!")
     }
 }
