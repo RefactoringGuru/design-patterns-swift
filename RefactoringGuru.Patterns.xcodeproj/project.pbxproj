@@ -52,6 +52,8 @@
 		914ADA5020B2D4D200E0A74F /* BL_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA3220B2D4D200E0A74F /* BL_Real_ClientCode.swift */; };
 		91DC8AB520B4C65400C15353 /* AD_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DC8AB420B4C65400C15353 /* AD_Real_ClientCode.swift */; };
 		91DC8AB720B4D79800C15353 /* AD_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91DC8AB620B4D79800C15353 /* AD_Real_Output.strings */; };
+		91DC8ABA20B4D89500C15353 /* BR_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DC8AB920B4D89500C15353 /* BR_Structure_ClientCode.swift */; };
+		91DC8ABE20B4DF7300C15353 /* BR_Structure_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91DC8ABD20B4DF7300C15353 /* BR_Structure_Output.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		914ADA3220B2D4D200E0A74F /* BL_Real_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BL_Real_ClientCode.swift; sourceTree = "<group>"; };
 		91DC8AB420B4C65400C15353 /* AD_Real_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AD_Real_ClientCode.swift; sourceTree = "<group>"; };
 		91DC8AB620B4D79800C15353 /* AD_Real_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = AD_Real_Output.strings; sourceTree = "<group>"; };
+		91DC8AB920B4D89500C15353 /* BR_Structure_ClientCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BR_Structure_ClientCode.swift; sourceTree = "<group>"; };
+		91DC8ABD20B4DF7300C15353 /* BR_Structure_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BR_Structure_Output.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				91236C4E20B4B0F3003133B7 /* Adapter */,
+				91DC8AB820B4D84A00C15353 /* Bridge */,
 			);
 			path = Structural;
 			sourceTree = "<group>";
@@ -360,6 +365,31 @@
 			path = RealLifeExample;
 			sourceTree = "<group>";
 		};
+		91DC8AB820B4D84A00C15353 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				91DC8AC020B4DFC000C15353 /* StructureExample */,
+				91DC8ABF20B4DFA200C15353 /* RealLifeExample */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		91DC8ABF20B4DFA200C15353 /* RealLifeExample */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RealLifeExample;
+			sourceTree = "<group>";
+		};
+		91DC8AC020B4DFC000C15353 /* StructureExample */ = {
+			isa = PBXGroup;
+			children = (
+				91DC8AB920B4D89500C15353 /* BR_Structure_ClientCode.swift */,
+				91DC8ABD20B4DF7300C15353 /* BR_Structure_Output.strings */,
+			);
+			name = StructureExample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +457,7 @@
 				91236C4420B48D7F003133B7 /* SG_Real_Output.strings in Resources */,
 				91236C4020B413A6003133B7 /* PT_Real_Output.strings in Resources */,
 				91236C4C20B4AB35003133B7 /* BL_Real_Output.strings in Resources */,
+				91DC8ABE20B4DF7300C15353 /* BR_Structure_Output.strings in Resources */,
 				91236C3C20B31C1B003133B7 /* BL_Structure_Output.strings in Resources */,
 				91236C4220B489AF003133B7 /* PT_NSCopying_Output.strings in Resources */,
 				91236C3220B319A3003133B7 /* AF_Structure_Output.strings in Resources */,
@@ -473,6 +504,7 @@
 				914ADA4F20B2D4D200E0A74F /* BL_Real_Query.swift in Sources */,
 				914ADA3D20B2D4D200E0A74F /* PT_NSCopying_ClientCode.swift in Sources */,
 				914ADA3A20B2D4D200E0A74F /* AF_AuthView.swift in Sources */,
+				91DC8ABA20B4D89500C15353 /* BR_Structure_ClientCode.swift in Sources */,
 				914ADA4320B2D4D200E0A74F /* FM_Real_Factory.swift in Sources */,
 				914ADA3C20B2D4D200E0A74F /* PT_NSCopying_Prototype.swift in Sources */,
 			);
