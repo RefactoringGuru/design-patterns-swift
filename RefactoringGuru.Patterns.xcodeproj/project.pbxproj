@@ -13,6 +13,7 @@
 		91236C3820B31B20003133B7 /* FM_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91236C3720B31B20003133B7 /* FM_Real_Output.strings */; };
 		91236C3A20B31BD6003133B7 /* SG_Structure_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91236C3920B31BD6003133B7 /* SG_Structure_Output.strings */; };
 		91236C3C20B31C1B003133B7 /* BL_Structure_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91236C3B20B31C1B003133B7 /* BL_Structure_Output.strings */; };
+		91236C4020B413A6003133B7 /* PT_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91236C3F20B413A6003133B7 /* PT_Real_Output.strings */; };
 		914ADA3320B2D4D200E0A74F /* AF_Structure_Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0720B2D4D200E0A74F /* AF_Structure_Factories.swift */; };
 		914ADA3420B2D4D200E0A74F /* AF_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0820B2D4D200E0A74F /* AF_Structure_ClientCode.swift */; };
 		914ADA3520B2D4D200E0A74F /* AF_Structure_Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADA0920B2D4D200E0A74F /* AF_Structure_Products.swift */; };
@@ -52,6 +53,7 @@
 		91236C3720B31B20003133B7 /* FM_Real_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = FM_Real_Output.strings; sourceTree = "<group>"; };
 		91236C3920B31BD6003133B7 /* SG_Structure_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = SG_Structure_Output.strings; sourceTree = "<group>"; };
 		91236C3B20B31C1B003133B7 /* BL_Structure_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BL_Structure_Output.strings; sourceTree = "<group>"; };
+		91236C3F20B413A6003133B7 /* PT_Real_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = PT_Real_Output.strings; sourceTree = "<group>"; };
 		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914ADA0720B2D4D200E0A74F /* AF_Structure_Factories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Structure_Factories.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				91236C2F20B30CD9003133B7 /* PT_Real_ClientCode.swift */,
+				91236C3F20B413A6003133B7 /* PT_Real_Output.strings */,
 			);
 			path = RealLifeExample;
 			sourceTree = "<group>";
@@ -194,8 +197,8 @@
 		914ADA1220B2D4D200E0A74F /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				91236C2E20B30CB2003133B7 /* RealLifeExample */,
 				914ADA1320B2D4D200E0A74F /* StructureExample */,
+				91236C2E20B30CB2003133B7 /* RealLifeExample */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				91236C3820B31B20003133B7 /* FM_Real_Output.strings in Resources */,
 				91236C3A20B31BD6003133B7 /* SG_Structure_Output.strings in Resources */,
 				91236C3620B31A4C003133B7 /* FM_Structure_Output.strings in Resources */,
+				91236C4020B413A6003133B7 /* PT_Real_Output.strings in Resources */,
 				91236C3C20B31C1B003133B7 /* BL_Structure_Output.strings in Resources */,
 				91236C3220B319A3003133B7 /* AF_Structure_Output.strings in Resources */,
 			);

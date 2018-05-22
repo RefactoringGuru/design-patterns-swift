@@ -28,6 +28,10 @@ class PT_Real_ClientCode: XCTestCase {
         
         /// Note that the author is now referencing two objects.
         XCTAssert(author.pagesCount == 2)
+        
+        print("Original title: " + page.title)
+        print("Copied title: " + anotherPage.title)
+        print("Count of pages: " + String(author.pagesCount))
     }
 }
 
@@ -53,8 +57,8 @@ private class Author {
 
 private class Page: NSCopying {
     
-    private var title: String
-    private var contents: String
+    private(set) var title: String
+    private(set) var contents: String
     private weak var author: Author?
     private(set) var comments = [Comment]()
 
@@ -70,8 +74,9 @@ private class Page: NSCopying {
     }
     
     ///MARK: - NSCopying
+    
     func copy(with zone: NSZone? = nil) -> Any {
-        return Page(title: title, contents: contents, author: author)
+        return Page(title: "Copy of '" + title + "'", contents: contents, author: author)
     }
 }
 
