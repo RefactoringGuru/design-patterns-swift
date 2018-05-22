@@ -20,9 +20,11 @@ class AF_ClientCode_Real: XCTestCase {
         
         /// Present LogIn flow
         clientCode.presentLogin()
+        print("Login screen has been presented")
         
         /// Present SignUp flow
         clientCode.presentSignUp()
+        print("Sign up screen has been presented")
     }
 }
 

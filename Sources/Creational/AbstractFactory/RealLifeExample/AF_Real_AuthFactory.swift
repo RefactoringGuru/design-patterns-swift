@@ -22,6 +22,7 @@ protocol AuthViewFactory {
 class StudentAuthViewFactory: AuthViewFactory {
     
     static func authView(for type: AuthType) -> AuthView {
+        print("Student View has been created")
         switch type {
             case .login: return StudentLoginView()
             case .signUp: return StudentSignUpView()
@@ -29,13 +30,16 @@ class StudentAuthViewFactory: AuthViewFactory {
     }
     
     static func authController(for type: AuthType) -> AuthViewController {
-        return StudentAuthViewController(contentView: authView(for: type))
+        let controller = StudentAuthViewController(contentView: authView(for: type))
+        print("Student View Controller has been created")
+        return controller
     }
 }
 
 class TeacherAuthViewFactory: AuthViewFactory {
     
     static func authView(for type: AuthType) -> AuthView {
+        print("Teacher View has been created")
         switch type {
             case .login: return TeacherLoginView()
             case .signUp: return TeacherSignUpView()
@@ -43,6 +47,8 @@ class TeacherAuthViewFactory: AuthViewFactory {
     }
     
     static func authController(for type: AuthType) -> AuthViewController {
-        return TeacherAuthViewController(contentView: authView(for: type))
+        let controller = TeacherAuthViewController(contentView: authView(for: type))
+        print("Teacher View Controller has been created")
+        return controller
     }
 }
