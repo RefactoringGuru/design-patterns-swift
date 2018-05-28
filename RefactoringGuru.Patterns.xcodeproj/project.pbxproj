@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		916B889020BC4B1900BA92DF /* BR_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B888F20BC4B1900BA92DF /* BR_Real_Output.strings */; };
+		916B889320BC4DA400BA92DF /* CompositeStructureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889220BC4DA400BA92DF /* CompositeStructureExample.swift */; };
+		916B889520BC56FD00BA92DF /* CompositeStructureOutput.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B889420BC56FD00BA92DF /* CompositeStructureOutput.strings */; };
 		9187BFEF20B5D0A700266EF8 /* AF_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */; };
 		9187BFF020B5D0A700266EF8 /* AF_Real_AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */; };
 		9187BFF120B5D0A700266EF8 /* AF_Real_AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */; };
@@ -62,6 +64,8 @@
 		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916B888F20BC4B1900BA92DF /* BR_Real_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BR_Real_Output.strings; sourceTree = "<group>"; };
+		916B889220BC4DA400BA92DF /* CompositeStructureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeStructureExample.swift; sourceTree = "<group>"; };
+		916B889420BC56FD00BA92DF /* CompositeStructureOutput.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CompositeStructureOutput.strings; sourceTree = "<group>"; };
 		9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AF_Real_Output.strings; sourceTree = "<group>"; };
 		9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthController.swift; sourceTree = "<group>"; };
 		9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthFactory.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				916B889120BC4D8100BA92DF /* Composite */,
 				9187BFA920B5D0A600266EF8 /* AbstractFactory */,
 				9187BFE020B5D0A700266EF8 /* Adapter */,
 				9187BFDA20B5D0A700266EF8 /* Bridge */,
@@ -160,6 +165,15 @@
 				9187BFC320B5D0A700266EF8 /* Singleton */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		916B889120BC4D8100BA92DF /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				916B889220BC4DA400BA92DF /* CompositeStructureExample.swift */,
+				916B889420BC56FD00BA92DF /* CompositeStructureOutput.strings */,
+			);
+			path = Composite;
 			sourceTree = "<group>";
 		};
 		9187BFA920B5D0A600266EF8 /* AbstractFactory */ = {
@@ -440,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916B889520BC56FD00BA92DF /* CompositeStructureOutput.strings in Resources */,
 				9187BFFC20B5D0A700266EF8 /* FM_Real_Output.strings in Resources */,
 				9187C01920B5D0A700266EF8 /* AD_Structure_Output.strings in Resources */,
 				9187C01120B5D0A700266EF8 /* BL_Structure_Output.strings in Resources */,
@@ -466,6 +481,7 @@
 			files = (
 				9187C00220B5D0A700266EF8 /* SG_Real_VC.swift in Sources */,
 				9187BFF920B5D0A700266EF8 /* AF_Structure_Products.swift in Sources */,
+				916B889320BC4DA400BA92DF /* CompositeStructureExample.swift in Sources */,
 				9187BFF820B5D0A700266EF8 /* AF_Structure_ClientCode.swift in Sources */,
 				9187BFF320B5D0A700266EF8 /* AF_TeacherViews.swift in Sources */,
 				9187BFFD20B5D0A700266EF8 /* FM_Real_Projector.swift in Sources */,

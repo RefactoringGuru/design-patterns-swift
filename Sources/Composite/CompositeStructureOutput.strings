@@ -1,0 +1,16 @@
+/// Client: Using a simple component
+/// Results: Leaf
+
+/// Client: Now I get a composite tree
+/// Results:
+/// Branch(
+/// Branch(Leaf Leaf)
+/// Branch(Leaf Leaf))
+
+/// Two components can be merged without checking their classes
+/// Results:
+///     Branch(
+///         Branch(Leaf Leaf)
+///         Branch(Leaf Leaf)
+///         Leaf
+///     )
