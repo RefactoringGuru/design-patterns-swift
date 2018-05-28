@@ -12,6 +12,8 @@
 		916B889520BC56FD00BA92DF /* CompositeStructureOutput.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B889420BC56FD00BA92DF /* CompositeStructureOutput.strings */; };
 		916B889B20BC587D00BA92DF /* DecoratorStructureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889A20BC587D00BA92DF /* DecoratorStructureExample.swift */; };
 		916B889D20BC5B7600BA92DF /* DecoratorStructureOutput.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B889C20BC5B7600BA92DF /* DecoratorStructureOutput.strings */; };
+		916B88A020BC6E6800BA92DF /* FacadeStructureExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889F20BC6E6800BA92DF /* FacadeStructureExample.swift */; };
+		916B88A220BC717400BA92DF /* FacadeStructureOutput.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B88A120BC717400BA92DF /* FacadeStructureOutput.strings */; };
 		9187BFEF20B5D0A700266EF8 /* AF_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */; };
 		9187BFF020B5D0A700266EF8 /* AF_Real_AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */; };
 		9187BFF120B5D0A700266EF8 /* AF_Real_AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */; };
@@ -70,6 +72,8 @@
 		916B889420BC56FD00BA92DF /* CompositeStructureOutput.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = CompositeStructureOutput.strings; sourceTree = "<group>"; };
 		916B889A20BC587D00BA92DF /* DecoratorStructureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorStructureExample.swift; sourceTree = "<group>"; };
 		916B889C20BC5B7600BA92DF /* DecoratorStructureOutput.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = DecoratorStructureOutput.strings; sourceTree = "<group>"; };
+		916B889F20BC6E6800BA92DF /* FacadeStructureExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeStructureExample.swift; sourceTree = "<group>"; };
+		916B88A120BC717400BA92DF /* FacadeStructureOutput.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = FacadeStructureOutput.strings; sourceTree = "<group>"; };
 		9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AF_Real_Output.strings; sourceTree = "<group>"; };
 		9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthController.swift; sourceTree = "<group>"; };
 		9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthFactory.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				916B889E20BC5C5800BA92DF /* Facade */,
 				9187BFA920B5D0A600266EF8 /* AbstractFactory */,
 				9187BFE020B5D0A700266EF8 /* Adapter */,
 				9187BFDA20B5D0A700266EF8 /* Bridge */,
@@ -204,6 +209,15 @@
 				916B889C20BC5B7600BA92DF /* DecoratorStructureOutput.strings */,
 			);
 			path = StructureExample;
+			sourceTree = "<group>";
+		};
+		916B889E20BC5C5800BA92DF /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				916B889F20BC6E6800BA92DF /* FacadeStructureExample.swift */,
+				916B88A120BC717400BA92DF /* FacadeStructureOutput.strings */,
+			);
+			path = Facade;
 			sourceTree = "<group>";
 		};
 		9187BFA920B5D0A600266EF8 /* AbstractFactory */ = {
@@ -487,6 +501,7 @@
 				916B889520BC56FD00BA92DF /* CompositeStructureOutput.strings in Resources */,
 				9187BFFC20B5D0A700266EF8 /* FM_Real_Output.strings in Resources */,
 				9187C01920B5D0A700266EF8 /* AD_Structure_Output.strings in Resources */,
+				916B88A220BC717400BA92DF /* FacadeStructureOutput.strings in Resources */,
 				9187C01120B5D0A700266EF8 /* BL_Structure_Output.strings in Resources */,
 				9187BFF620B5D0A700266EF8 /* AF_Structure_Output.strings in Resources */,
 				9187C00120B5D0A700266EF8 /* FM_Structure_Output.strings in Resources */,
@@ -532,6 +547,7 @@
 				9187C00020B5D0A700266EF8 /* FM_Structure_Products.swift in Sources */,
 				9187BFFB20B5D0A700266EF8 /* FM_Real_ClientCode.swift in Sources */,
 				9187BFF120B5D0A700266EF8 /* AF_Real_AuthFactory.swift in Sources */,
+				916B88A020BC6E6800BA92DF /* FacadeStructureExample.swift in Sources */,
 				9187C00820B5D0A700266EF8 /* SG_Structure_ClientCode.swift in Sources */,
 				9187BFF420B5D0A700266EF8 /* AF_AuthView.swift in Sources */,
 				9187C00320B5D0A700266EF8 /* SG_Real_Service.swift in Sources */,
