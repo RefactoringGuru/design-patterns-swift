@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916B889020BC4B1900BA92DF /* BR_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B888F20BC4B1900BA92DF /* BR_Real_Output.strings */; };
 		9187BFEF20B5D0A700266EF8 /* AF_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */; };
 		9187BFF020B5D0A700266EF8 /* AF_Real_AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */; };
 		9187BFF120B5D0A700266EF8 /* AF_Real_AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		916B888F20BC4B1900BA92DF /* BR_Real_Output.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BR_Real_Output.strings; sourceTree = "<group>"; };
 		9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AF_Real_Output.strings; sourceTree = "<group>"; };
 		9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthController.swift; sourceTree = "<group>"; };
 		9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthFactory.swift; sourceTree = "<group>"; };
@@ -215,9 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				9187BFBA20B5D0A600266EF8 /* FM_Real_Factory.swift */,
+				9187BFBD20B5D0A600266EF8 /* FM_Real_Projector.swift */,
 				9187BFBB20B5D0A600266EF8 /* FM_Real_ClientCode.swift */,
 				9187BFBC20B5D0A600266EF8 /* FM_Real_Output.strings */,
-				9187BFBD20B5D0A600266EF8 /* FM_Real_Projector.swift */,
 			);
 			path = RealWorldExample;
 			sourceTree = "<group>";
@@ -299,8 +301,8 @@
 		9187BFDA20B5D0A700266EF8 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				9187BFDB20B5D0A700266EF8 /* RealWorldExample */,
 				9187BFDD20B5D0A700266EF8 /* StructureExample */,
+				9187BFDB20B5D0A700266EF8 /* RealWorldExample */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -309,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				9187BFDC20B5D0A700266EF8 /* BR_Real_ClientCode.swift */,
+				916B888F20BC4B1900BA92DF /* BR_Real_Output.strings */,
 			);
 			path = RealWorldExample;
 			sourceTree = "<group>";
@@ -316,8 +319,8 @@
 		9187BFDD20B5D0A700266EF8 /* StructureExample */ = {
 			isa = PBXGroup;
 			children = (
-				9187BFDE20B5D0A700266EF8 /* BR_Structure_Output.strings */,
 				9187BFDF20B5D0A700266EF8 /* BR_Structure_ClientCode.swift */,
+				9187BFDE20B5D0A700266EF8 /* BR_Structure_Output.strings */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
@@ -361,8 +364,8 @@
 		9187BFE820B5D0A700266EF8 /* RealWorldExample */ = {
 			isa = PBXGroup;
 			children = (
-				9187BFE920B5D0A700266EF8 /* PT_Real_Output.strings */,
 				9187BFEA20B5D0A700266EF8 /* PT_Real_ClientCode.swift */,
+				9187BFE920B5D0A700266EF8 /* PT_Real_Output.strings */,
 			);
 			path = RealWorldExample;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				9187BFEF20B5D0A700266EF8 /* AF_Real_Output.strings in Resources */,
 				9187C00D20B5D0A700266EF8 /* BL_Real_Output.strings in Resources */,
 				9187C01620B5D0A700266EF8 /* AD_Real_Output.strings in Resources */,
+				916B889020BC4B1900BA92DF /* BR_Real_Output.strings in Resources */,
 				9187C01420B5D0A700266EF8 /* BR_Structure_Output.strings in Resources */,
 				9187C01A20B5D0A700266EF8 /* PT_Real_Output.strings in Resources */,
 				9187C01C20B5D0A700266EF8 /* PT_NSCopying_Output.strings in Resources */,
