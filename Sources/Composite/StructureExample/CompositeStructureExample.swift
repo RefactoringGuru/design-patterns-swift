@@ -44,11 +44,11 @@ class CompositeStructureExample: XCTestCase {
     }
     
     /// The client code works with all of the components via the base interface.
-    func clientCode(component: Component) {
+    fileprivate func clientCode(component: Component) {
         print("Results: " + component.operation())
     }
     
-    func clientCode2(leftComponent: Component, rightComponent: Component) {
+    fileprivate func clientCode2(leftComponent: Component, rightComponent: Component) {
         
         /// Thanks to the fact that the child-management operations declared in the Base
         /// Component class, the client code can work with any component, simple or
@@ -65,7 +65,7 @@ class CompositeStructureExample: XCTestCase {
 /// The Base Component class declares common operations for both simple and
 /// complex objects of a composition.
 
-protocol Component {
+private protocol Component {
     
     /// Optionally, the base Component can declare an interface for setting and
     /// accessing a parent of the component in a tree structure. It can also
@@ -93,7 +93,7 @@ protocol Component {
     var isComposite: Bool { get }
 }
 
-extension Component {
+private extension Component {
     
     func add(component: Component) {}
 }
@@ -104,7 +104,7 @@ extension Component {
 /// Usually, it's the Leaf objects that do the actual work, whereas Composite
 /// objects only delegate to their sub-components.
 
-class Leaf: Component {
+private class Leaf: Component {
     
     var parent: Component?
     
@@ -122,7 +122,7 @@ class Leaf: Component {
 /// Usually, the Composite objects delegate the actual work to their children and
 /// then "sum-up" the result.
 
-class Composite: Component {
+private class Composite: Component {
     
     private var children = [Component]()
     
