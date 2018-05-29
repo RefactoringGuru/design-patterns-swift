@@ -18,7 +18,7 @@ class BL_Real_ClientCode_Tests: XCTestCase {
         clientCode(builder: CoreDataQueryBuilder<User>())
     }
     
-    func clientCode(builder: RealmQueryBuilder<User>) {
+    fileprivate func clientCode(builder: RealmQueryBuilder<User>) {
         
         let results = builder.filter({ $0.age < 20 })
             .limit(1)
@@ -27,7 +27,7 @@ class BL_Real_ClientCode_Tests: XCTestCase {
         print("We have fetched: " + String(results.count) + " from Realm")
     }
     
-    func clientCode(builder: CoreDataQueryBuilder<User>) {
+    fileprivate func clientCode(builder: CoreDataQueryBuilder<User>) {
         
         let results = builder.filter({ $0.age > 18 })
             .limit(2)
@@ -41,7 +41,7 @@ protocol DomainModel {
     /// The protocol groups domain models to the common interface
 }
 
-struct User: DomainModel {
+private struct User: DomainModel {
     let id: Int
     let age: Int
     let email: String
