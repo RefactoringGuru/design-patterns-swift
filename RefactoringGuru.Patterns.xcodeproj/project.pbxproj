@@ -16,13 +16,13 @@
 		916B88A220BC717400BA92DF /* FacadeStructureOutput.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B88A120BC717400BA92DF /* FacadeStructureOutput.strings */; };
 		916B88A620BD468100BA92DF /* FacadeRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88A520BD468100BA92DF /* FacadeRealExample.swift */; };
 		916B88A820BD537300BA92DF /* FacedeRealOutput.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916B88A720BD537300BA92DF /* FacedeRealOutput.strings */; };
-		9187BFEF20B5D0A700266EF8 /* AF_Real_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */; };
-		9187BFF020B5D0A700266EF8 /* AF_Real_AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */; };
-		9187BFF120B5D0A700266EF8 /* AF_Real_AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */; };
-		9187BFF220B5D0A700266EF8 /* AF_StudentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAF20B5D0A600266EF8 /* AF_StudentViews.swift */; };
-		9187BFF320B5D0A700266EF8 /* AF_TeacherViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB020B5D0A600266EF8 /* AF_TeacherViews.swift */; };
-		9187BFF420B5D0A700266EF8 /* AF_AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB120B5D0A600266EF8 /* AF_AuthView.swift */; };
-		9187BFF520B5D0A700266EF8 /* AF_Real_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB220B5D0A600266EF8 /* AF_Real_ClientCode.swift */; };
+		9187BFEF20B5D0A700266EF8 /* AbstractFactoryRealOutput.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9187BFAB20B5D0A600266EF8 /* AbstractFactoryRealOutput.strings */; };
+		9187BFF020B5D0A700266EF8 /* AbstractFactoryRealControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* AbstractFactoryRealControllers.swift */; };
+		9187BFF120B5D0A700266EF8 /* AbstractFactoryRealFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* AbstractFactoryRealFactories.swift */; };
+		9187BFF220B5D0A700266EF8 /* AbstractFactoryRealStudentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAF20B5D0A600266EF8 /* AbstractFactoryRealStudentViews.swift */; };
+		9187BFF320B5D0A700266EF8 /* AbstractFactoryRealTeacherViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB020B5D0A600266EF8 /* AbstractFactoryRealTeacherViews.swift */; };
+		9187BFF420B5D0A700266EF8 /* AbstractFactoryRealAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB120B5D0A600266EF8 /* AbstractFactoryRealAuthView.swift */; };
+		9187BFF520B5D0A700266EF8 /* AbstractFactoryRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB220B5D0A600266EF8 /* AbstractFactoryRealExample.swift */; };
 		9187BFF620B5D0A700266EF8 /* AF_Structure_Output.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9187BFB420B5D0A600266EF8 /* AF_Structure_Output.strings */; };
 		9187BFF720B5D0A700266EF8 /* AF_Structure_Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB520B5D0A600266EF8 /* AF_Structure_Factories.swift */; };
 		9187BFF820B5D0A700266EF8 /* AF_Structure_ClientCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB620B5D0A600266EF8 /* AF_Structure_ClientCode.swift */; };
@@ -78,13 +78,13 @@
 		916B88A120BC717400BA92DF /* FacadeStructureOutput.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = FacadeStructureOutput.strings; sourceTree = "<group>"; };
 		916B88A520BD468100BA92DF /* FacadeRealExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeRealExample.swift; sourceTree = "<group>"; };
 		916B88A720BD537300BA92DF /* FacedeRealOutput.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = FacedeRealOutput.strings; sourceTree = "<group>"; };
-		9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AF_Real_Output.strings; sourceTree = "<group>"; };
-		9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthController.swift; sourceTree = "<group>"; };
-		9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_AuthFactory.swift; sourceTree = "<group>"; };
-		9187BFAF20B5D0A600266EF8 /* AF_StudentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_StudentViews.swift; sourceTree = "<group>"; };
-		9187BFB020B5D0A600266EF8 /* AF_TeacherViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_TeacherViews.swift; sourceTree = "<group>"; };
-		9187BFB120B5D0A600266EF8 /* AF_AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_AuthView.swift; sourceTree = "<group>"; };
-		9187BFB220B5D0A600266EF8 /* AF_Real_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Real_ClientCode.swift; sourceTree = "<group>"; };
+		9187BFAB20B5D0A600266EF8 /* AbstractFactoryRealOutput.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AbstractFactoryRealOutput.strings; sourceTree = "<group>"; };
+		9187BFAC20B5D0A600266EF8 /* AbstractFactoryRealControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealControllers.swift; sourceTree = "<group>"; };
+		9187BFAD20B5D0A600266EF8 /* AbstractFactoryRealFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealFactories.swift; sourceTree = "<group>"; };
+		9187BFAF20B5D0A600266EF8 /* AbstractFactoryRealStudentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealStudentViews.swift; sourceTree = "<group>"; };
+		9187BFB020B5D0A600266EF8 /* AbstractFactoryRealTeacherViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealTeacherViews.swift; sourceTree = "<group>"; };
+		9187BFB120B5D0A600266EF8 /* AbstractFactoryRealAuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealAuthView.swift; sourceTree = "<group>"; };
+		9187BFB220B5D0A600266EF8 /* AbstractFactoryRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealExample.swift; sourceTree = "<group>"; };
 		9187BFB420B5D0A600266EF8 /* AF_Structure_Output.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AF_Structure_Output.strings; sourceTree = "<group>"; };
 		9187BFB520B5D0A600266EF8 /* AF_Structure_Factories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Structure_Factories.swift; sourceTree = "<group>"; };
 		9187BFB620B5D0A600266EF8 /* AF_Structure_ClientCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AF_Structure_ClientCode.swift; sourceTree = "<group>"; };
@@ -169,8 +169,8 @@
 			children = (
 				916B889E20BC5C5800BA92DF /* Facade */,
 				9187BFA920B5D0A600266EF8 /* AbstractFactory */,
-				9187BFE020B5D0A700266EF8 /* Adapter */,
 				9187BFDA20B5D0A700266EF8 /* Bridge */,
+				9187BFE020B5D0A700266EF8 /* Adapter */,
 				9187BFCD20B5D0A700266EF8 /* Builder */,
 				916B889120BC4D8100BA92DF /* Composite */,
 				916B889620BC582D00BA92DF /* Decorator */,
@@ -254,11 +254,11 @@
 		9187BFAA20B5D0A600266EF8 /* RealWorldExample */ = {
 			isa = PBXGroup;
 			children = (
-				9187BFAB20B5D0A600266EF8 /* AF_Real_Output.strings */,
-				9187BFAC20B5D0A600266EF8 /* AF_Real_AuthController.swift */,
-				9187BFAD20B5D0A600266EF8 /* AF_Real_AuthFactory.swift */,
+				9187BFB220B5D0A600266EF8 /* AbstractFactoryRealExample.swift */,
+				9187BFAC20B5D0A600266EF8 /* AbstractFactoryRealControllers.swift */,
+				9187BFAD20B5D0A600266EF8 /* AbstractFactoryRealFactories.swift */,
+				9187BFAB20B5D0A600266EF8 /* AbstractFactoryRealOutput.strings */,
 				9187BFAE20B5D0A600266EF8 /* Views */,
-				9187BFB220B5D0A600266EF8 /* AF_Real_ClientCode.swift */,
 			);
 			path = RealWorldExample;
 			sourceTree = "<group>";
@@ -266,9 +266,9 @@
 		9187BFAE20B5D0A600266EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9187BFAF20B5D0A600266EF8 /* AF_StudentViews.swift */,
-				9187BFB020B5D0A600266EF8 /* AF_TeacherViews.swift */,
-				9187BFB120B5D0A600266EF8 /* AF_AuthView.swift */,
+				9187BFAF20B5D0A600266EF8 /* AbstractFactoryRealStudentViews.swift */,
+				9187BFB020B5D0A600266EF8 /* AbstractFactoryRealTeacherViews.swift */,
+				9187BFB120B5D0A600266EF8 /* AbstractFactoryRealAuthView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -528,7 +528,7 @@
 				916B88A820BD537300BA92DF /* FacedeRealOutput.strings in Resources */,
 				9187BFF620B5D0A700266EF8 /* AF_Structure_Output.strings in Resources */,
 				9187C00120B5D0A700266EF8 /* FM_Structure_Output.strings in Resources */,
-				9187BFEF20B5D0A700266EF8 /* AF_Real_Output.strings in Resources */,
+				9187BFEF20B5D0A700266EF8 /* AbstractFactoryRealOutput.strings in Resources */,
 				9187C00D20B5D0A700266EF8 /* BL_Real_Output.strings in Resources */,
 				9187C01620B5D0A700266EF8 /* AD_Real_Output.strings in Resources */,
 				916B889020BC4B1900BA92DF /* BR_Real_Output.strings in Resources */,
@@ -553,7 +553,7 @@
 				916B889320BC4DA400BA92DF /* CompositeStructureExample.swift in Sources */,
 				9187BFF820B5D0A700266EF8 /* AF_Structure_ClientCode.swift in Sources */,
 				916B889B20BC587D00BA92DF /* DecoratorStructureExample.swift in Sources */,
-				9187BFF320B5D0A700266EF8 /* AF_TeacherViews.swift in Sources */,
+				9187BFF320B5D0A700266EF8 /* AbstractFactoryRealTeacherViews.swift in Sources */,
 				9187BFFD20B5D0A700266EF8 /* FM_Real_Projector.swift in Sources */,
 				9187C00C20B5D0A700266EF8 /* BL_Real_ClientCode.swift in Sources */,
 				9187C01820B5D0A700266EF8 /* AD_Structure_ClientCode.swift in Sources */,
@@ -564,20 +564,20 @@
 				9187C01D20B5D0A700266EF8 /* PT_NSCopying_Prototype.swift in Sources */,
 				9187C00620B5D0A700266EF8 /* SG_Real_ClientCode.swift in Sources */,
 				9187C00E20B5D0A700266EF8 /* BL_Structure_ClientCode.swift in Sources */,
-				9187BFF020B5D0A700266EF8 /* AF_Real_AuthController.swift in Sources */,
+				9187BFF020B5D0A700266EF8 /* AbstractFactoryRealControllers.swift in Sources */,
 				9187C00920B5D0A700266EF8 /* BL_Real_DataProviders.swift in Sources */,
 				916B88A620BD468100BA92DF /* FacadeRealExample.swift in Sources */,
 				9187C01E20B5D0A700266EF8 /* PT_NSCopying_ClientCode.swift in Sources */,
 				9187C00020B5D0A700266EF8 /* FM_Structure_Products.swift in Sources */,
 				9187BFFB20B5D0A700266EF8 /* FM_Real_ClientCode.swift in Sources */,
-				9187BFF120B5D0A700266EF8 /* AF_Real_AuthFactory.swift in Sources */,
+				9187BFF120B5D0A700266EF8 /* AbstractFactoryRealFactories.swift in Sources */,
 				916B88A020BC6E6800BA92DF /* FacadeStructureExample.swift in Sources */,
 				9187C00820B5D0A700266EF8 /* SG_Structure_ClientCode.swift in Sources */,
-				9187BFF420B5D0A700266EF8 /* AF_AuthView.swift in Sources */,
+				9187BFF420B5D0A700266EF8 /* AbstractFactoryRealAuthView.swift in Sources */,
 				9187C00320B5D0A700266EF8 /* SG_Real_Service.swift in Sources */,
 				9187C00F20B5D0A700266EF8 /* BL_Structure_Builders.swift in Sources */,
 				9187C00A20B5D0A700266EF8 /* BL_Real_Builders.swift in Sources */,
-				9187BFF520B5D0A700266EF8 /* AF_Real_ClientCode.swift in Sources */,
+				9187BFF520B5D0A700266EF8 /* AbstractFactoryRealExample.swift in Sources */,
 				9187BFFF20B5D0A700266EF8 /* FM_Structure_Creators.swift in Sources */,
 				9187BFFE20B5D0A700266EF8 /* FM_Structure_ClientCode.swift in Sources */,
 				9187C01720B5D0A700266EF8 /* AD_Real_ClientCode.swift in Sources */,
@@ -585,7 +585,7 @@
 				9187BFFA20B5D0A700266EF8 /* FM_Real_Factory.swift in Sources */,
 				9187C01020B5D0A700266EF8 /* BL_Structure_Directors.swift in Sources */,
 				9187BFF720B5D0A700266EF8 /* AF_Structure_Factories.swift in Sources */,
-				9187BFF220B5D0A700266EF8 /* AF_StudentViews.swift in Sources */,
+				9187BFF220B5D0A700266EF8 /* AbstractFactoryRealStudentViews.swift in Sources */,
 				9187C01B20B5D0A700266EF8 /* PT_Real_ClientCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
