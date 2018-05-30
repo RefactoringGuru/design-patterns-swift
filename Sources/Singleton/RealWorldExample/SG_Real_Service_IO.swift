@@ -8,25 +8,4 @@
 
 import Foundation
 
-/// Protocol for call-back events
 
-protocol MessageSubscriber {
-    
-    func accept(new messages: [Message])
-    func accept(removed messages: [Message])
-}
-
-/// Protocol for communication with a message service
-
-protocol MessageService {
-    
-    func add(subscriber: MessageSubscriber)
-}
-
-/// Message domain model
-
-struct Message {
-    
-    let id: Int
-    let text: String
-}

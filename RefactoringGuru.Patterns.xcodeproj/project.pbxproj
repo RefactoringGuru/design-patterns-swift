@@ -277,8 +277,8 @@
 			isa = PBXGroup;
 			children = (
 				9187BFB420B5D0A600266EF8 /* AF_Structure_Output.strings */,
-				9187BFB520B5D0A600266EF8 /* AF_Structure_Factories.swift */,
 				9187BFB620B5D0A600266EF8 /* AF_Structure_ClientCode.swift */,
+				9187BFB520B5D0A600266EF8 /* AF_Structure_Factories.swift */,
 				9187BFB720B5D0A600266EF8 /* AF_Structure_Products.swift */,
 			);
 			path = StructureExample;
@@ -296,9 +296,9 @@
 		9187BFB920B5D0A600266EF8 /* RealWorldExample */ = {
 			isa = PBXGroup;
 			children = (
+				9187BFBB20B5D0A600266EF8 /* FM_Real_ClientCode.swift */,
 				9187BFBA20B5D0A600266EF8 /* FM_Real_Factory.swift */,
 				9187BFBD20B5D0A600266EF8 /* FM_Real_Projector.swift */,
-				9187BFBB20B5D0A600266EF8 /* FM_Real_ClientCode.swift */,
 				9187BFBC20B5D0A600266EF8 /* FM_Real_Output.strings */,
 			);
 			path = RealWorldExample;
