@@ -12,50 +12,55 @@ import Foundation
 /// Builders accumulate operations and then update providers to fetch the data.
 
 class RealmProvider {
-    
-    func fetch<Model: DomainModel>(_ operations: [RealmOperationType<Model>]) -> [Model] {
-        
-        print("Retrieving data from Realm")
-        
+
+    func fetch<Model: DomainModel>(_ operations: [RealmQueryBuilder<Model>.Query]) -> [Model] {
+
+        print("RealmProvider: Retrieving data from Realm...")
+
         for item in operations {
             switch item {
             case .filter(_):
-                /// Use Realm instance to filter results
+                print("RealmProvider: executing the 'filter' operation.");
+                /// Use Realm instance to filter results.
                 break
             case .limit(_):
-                /// Use Realm instance to limit results
+                print("RealmProvider: executing the 'limit' operation.");
+                /// Use Realm instance to limit results.
                 break
             }
         }
-        
+
         /// Return results from Realm
         return []
     }
 }
 
 class CoreDataProvider {
-    
-    func fetch<Model: DomainModel>(_ operations: [CoreDataOperationType<Model>]) -> [Model] {
-        
+
+    func fetch<Model: DomainModel>(_ operations: [CoreDataQueryBuilder<Model>.Query]) -> [Model] {
+
         /// Create a NSFetchRequest
-        
-        print("Retrieving data from CoreData")
-        
+
+        print("CoreDataProvider: Retrieving data from CoreData...")
+
         for item in operations {
             switch item {
             case .filter(_):
-                /// Set a 'predicate' for a NSFetchRequest
+                print("CoreDataProvider: executing the 'filter' operation.");
+                /// Set a 'predicate' for a NSFetchRequest.
                 break
             case .limit(_):
-                /// Set a 'fetchLimit' for a NSFetchRequest
+                print("CoreDataProvider: executing the 'limit' operation.");
+                /// Set a 'fetchLimit' for a NSFetchRequest.
                 break
             case .includesPropertyValues(_):
-                /// Set an 'includesPropertyValues' for a NSFetchRequest
+                print("CoreDataProvider: executing the 'includesPropertyValues' operation.");
+                /// Set an 'includesPropertyValues' for a NSFetchRequest.
                 break
             }
         }
-        
-        /// Execute a NSFetchRequest and return results
+
+        /// Execute a NSFetchRequest and return results.
         return []
     }
 }

@@ -1,0 +1,13 @@
+Client: Start fetching data from Realm
+RealmQueryBuilder: Initializing CoreDataProvider with 2 operations:
+RealmProvider: Retrieving data from Realm...
+RealmProvider: executing the 'filter' operation.
+RealmProvider: executing the 'limit' operation.
+Client: I have fetched: 0 records.
+
+Client: Start fetching data from CoreData
+CoreDataQueryBuilder: Initializing CoreDataProvider with 2 operations.
+CoreDataProvider: Retrieving data from CoreData...
+CoreDataProvider: executing the 'filter' operation.
+CoreDataProvider: executing the 'limit' operation.
+Client: I have fetched: 0 records.
