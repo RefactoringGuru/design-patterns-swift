@@ -1,0 +1,3 @@
+Original title: My First Page
+Copied title: Copy of 'My First Page'
+Count of pages: 2

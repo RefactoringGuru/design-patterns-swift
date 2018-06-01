@@ -1,5 +1,0 @@
-/// Client: I get a simple component
-/// Result: ConcreteComponent
-
-/// Client: Now I get a decorated component
-/// Result: ConcreteDecoratorB(ConcreteDecoratorA(ConcreteComponent))

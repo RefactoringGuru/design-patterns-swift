@@ -1,5 +1,5 @@
 //
-//  AF_Real_ClientCode.swift
+//  AbstractFactoryRealExample.swift
 //  RefactoringGuru.Patterns
 //
 //  Created by Maxim Eremenko on 4/27/18.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class AF_ClientCode_Real: XCTestCase {
+class AbstractFactoryRealExample: XCTestCase {
     
     func testFactoryMethod_Real() {
                 

@@ -1,0 +1,9 @@
+MessagesListVC starts receive messages
+MessagesListVC accepted 'new messages'
+MessagesListVC accepted 'removed messages'
+======== At this point, the second subscriber is added ======
+ChatVC starts receive messages
+MessagesListVC accepted 'new messages'
+ChatVC accepted 'new messages'
+MessagesListVC accepted 'removed messages'
+ChatVC accepted 'removed messages'

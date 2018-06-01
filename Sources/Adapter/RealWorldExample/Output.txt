@@ -1,0 +1,6 @@
+Starting an authorization via Facebook
+Facebook WebView has been shown
+///
+Starting an authorization via Twitter
+The Adapter is called! Redirecting to the original method...
+Twitter WebView has been shown. Users will be happy :)

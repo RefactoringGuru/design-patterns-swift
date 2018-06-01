@@ -1,0 +1,2 @@
+Info is presented over Wifi: Very important info of the presentation
+Info is presented over Bluetooth: Very important info of the presentation
