@@ -33,6 +33,7 @@
 		919C8AAA20DD879C006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889220BC4DA400BA92DF /* Example.swift */; };
 		919C8AB220DD87F2006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8AB120DD87F2006EE57D /* Example.swift */; };
 		919C8ACF20DD887F006EE57D /* DecoratorStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889A20BC587D00BA92DF /* DecoratorStructuralExample.swift */; };
+		919C8AD720DD88C6006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C8AD620DD88C6006EE57D /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,9 @@
 		919C8AB320DD87F2006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		919C8AC720DD8873006EE57D /* DecoratorStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8ACB20DD8873006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8AD420DD88C6006EE57D /* DecoratorReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AD620DD88C6006EE57D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		919C8AD820DD88C6006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		919C8AD120DD88C6006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -238,6 +249,7 @@
 				919C8AA220DD878D006EE57D /* CompositeStructure.xctest */,
 				919C8AAF20DD87F2006EE57D /* CompositeReal.xctest */,
 				919C8AC720DD8873006EE57D /* DecoratorStructure.xctest */,
+				919C8AD420DD88C6006EE57D /* DecoratorReal.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,6 +291,7 @@
 		916B889620BC582D00BA92DF /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
+				919C8AD520DD88C6006EE57D /* Real */,
 				919C8AC820DD8873006EE57D /* Structure */,
 			);
 			path = Decorator;
@@ -554,6 +567,15 @@
 			path = Structure;
 			sourceTree = "<group>";
 		};
+		919C8AD520DD88C6006EE57D /* Real */ = {
+			isa = PBXGroup;
+			children = (
+				919C8AD620DD88C6006EE57D /* Example.swift */,
+				919C8AD820DD88C6006EE57D /* Info.plist */,
+			);
+			path = Real;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -795,6 +817,23 @@
 			productReference = 919C8AC720DD8873006EE57D /* DecoratorStructure.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		919C8AD320DD88C6006EE57D /* DecoratorReal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8AD920DD88C6006EE57D /* Build configuration list for PBXNativeTarget "DecoratorReal" */;
+			buildPhases = (
+				919C8AD020DD88C6006EE57D /* Sources */,
+				919C8AD120DD88C6006EE57D /* Frameworks */,
+				919C8AD220DD88C6006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DecoratorReal;
+			productName = DecoratorReal;
+			productReference = 919C8AD420DD88C6006EE57D /* DecoratorReal.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -862,6 +901,10 @@
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
+					919C8AD320DD88C6006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9139FA732088D85C00229150 /* Build configuration list for PBXProject "RefactoringGuru.Patterns" */;
@@ -891,6 +934,7 @@
 				919C8AA120DD878D006EE57D /* CompositeStructure */,
 				919C8AAE20DD87F2006EE57D /* CompositeReal */,
 				919C8AC620DD8873006EE57D /* DecoratorStructure */,
+				919C8AD320DD88C6006EE57D /* DecoratorReal */,
 			);
 		};
 /* End PBXProject section */
@@ -988,6 +1032,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		919C8AC520DD8873006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8AD220DD88C6006EE57D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1118,6 +1169,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				919C8ACF20DD887F006EE57D /* DecoratorStructuralExample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8AD020DD88C6006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8AD720DD88C6006EE57D /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1611,6 +1670,32 @@
 			};
 			name = Release;
 		};
+		919C8ADA20DD88C6006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Decorator/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8ADB20DD88C6006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Decorator/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1745,6 +1830,15 @@
 			buildConfigurations = (
 				919C8ACD20DD8873006EE57D /* Debug */,
 				919C8ACE20DD8873006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8AD920DD88C6006EE57D /* Build configuration list for PBXNativeTarget "DecoratorReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8ADA20DD88C6006EE57D /* Debug */,
+				919C8ADB20DD88C6006EE57D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
