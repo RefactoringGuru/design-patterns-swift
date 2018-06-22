@@ -369,8 +369,8 @@
 				9187BFD520B5D0A700266EF8 /* BL_Structure_ClientCode.swift */,
 				9187BFD620B5D0A700266EF8 /* BL_Structure_Builders.swift */,
 				9187BFD720B5D0A700266EF8 /* BL_Structure_Directors.swift */,
-				9187BFD820B5D0A700266EF8 /* BL_Structure_Output.strings */,
 				9187BFD920B5D0A700266EF8 /* BL_Structure_Products.swift */,
+				9187BFD820B5D0A700266EF8 /* BL_Structure_Output.strings */,
 			);
 			path = StructureExample;
 			sourceTree = "<group>";
