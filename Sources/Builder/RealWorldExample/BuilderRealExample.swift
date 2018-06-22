@@ -11,29 +11,22 @@ import XCTest
 class BuilderRealExample: XCTestCase {
     
     func testRealBuilder() {
-        print("Start fetching data from Realm")
+        print("Client: Start fetching data from Realm")
         clientCode(builder: RealmQueryBuilder<User>())
-        
-        print("Start fetching data from CoreData")
+
+        print()
+
+        print("Client: Start fetching data from CoreData")
         clientCode(builder: CoreDataQueryBuilder<User>())
     }
-    
-    fileprivate func clientCode(builder: RealmQueryBuilder<User>) {
-        
+
+    fileprivate func clientCode(builder: BaseQueryBuilder<User>) {
+
         let results = builder.filter({ $0.age < 20 })
             .limit(1)
             .fetch()
-        
-        print("We have fetched: " + String(results.count) + " from Realm")
-    }
-    
-    fileprivate func clientCode(builder: CoreDataQueryBuilder<User>) {
-        
-        let results = builder.filter({ $0.age > 18 })
-            .limit(2)
-            .fetch()
-        
-        print("We have fetched: " + String(results.count) + " from CoreData")
+
+        print("Client: I have fetched: " + String(results.count) + " records.")
     }
 }
 

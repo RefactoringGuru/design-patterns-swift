@@ -24,7 +24,6 @@
 		9187C00820B5D0A700266EF8 /* SingletonStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFCC20B5D0A700266EF8 /* SingletonStructuralExample.swift */; };
 		9187C00920B5D0A700266EF8 /* BuilderRealDataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFCF20B5D0A700266EF8 /* BuilderRealDataProviders.swift */; };
 		9187C00A20B5D0A700266EF8 /* BuilderRealBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD020B5D0A700266EF8 /* BuilderRealBuilders.swift */; };
-		9187C00B20B5D0A700266EF8 /* BuilderRealQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD120B5D0A700266EF8 /* BuilderRealQuery.swift */; };
 		9187C00C20B5D0A700266EF8 /* BuilderRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD220B5D0A700266EF8 /* BuilderRealExample.swift */; };
 		9187C00E20B5D0A700266EF8 /* BuilderStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD520B5D0A700266EF8 /* BuilderStructuralExample.swift */; };
 		9187C01320B5D0A700266EF8 /* BridgeRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFDC20B5D0A700266EF8 /* BridgeRealExample.swift */; };
@@ -66,7 +65,6 @@
 		9187BFCC20B5D0A700266EF8 /* SingletonStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonStructuralExample.swift; sourceTree = "<group>"; };
 		9187BFCF20B5D0A700266EF8 /* BuilderRealDataProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderRealDataProviders.swift; sourceTree = "<group>"; };
 		9187BFD020B5D0A700266EF8 /* BuilderRealBuilders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderRealBuilders.swift; sourceTree = "<group>"; };
-		9187BFD120B5D0A700266EF8 /* BuilderRealQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderRealQuery.swift; sourceTree = "<group>"; };
 		9187BFD220B5D0A700266EF8 /* BuilderRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderRealExample.swift; sourceTree = "<group>"; };
 		9187BFD320B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFD520B5D0A700266EF8 /* BuilderStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderStructuralExample.swift; sourceTree = "<group>"; };
@@ -306,7 +304,6 @@
 			children = (
 				9187BFCF20B5D0A700266EF8 /* BuilderRealDataProviders.swift */,
 				9187BFD020B5D0A700266EF8 /* BuilderRealBuilders.swift */,
-				9187BFD120B5D0A700266EF8 /* BuilderRealQuery.swift */,
 				9187BFD220B5D0A700266EF8 /* BuilderRealExample.swift */,
 				9187BFD320B5D0A700266EF8 /* Output.txt */,
 			);
@@ -496,7 +493,6 @@
 				9187BFF520B5D0A700266EF8 /* AbstractFactoryRealExample.swift in Sources */,
 				9187BFFE20B5D0A700266EF8 /* FactoryMethodStructuralExample.swift in Sources */,
 				9187C01720B5D0A700266EF8 /* AdapterRealExample.swift in Sources */,
-				9187C00B20B5D0A700266EF8 /* BuilderRealQuery.swift in Sources */,
 				9187BFF220B5D0A700266EF8 /* AbstractFactoryRealStudentViews.swift in Sources */,
 				9187C01B20B5D0A700266EF8 /* PrototypeRealExample.swift in Sources */,
 			);
