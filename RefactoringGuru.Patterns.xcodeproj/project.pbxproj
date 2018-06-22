@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		916B889320BC4DA400BA92DF /* CompositeStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889220BC4DA400BA92DF /* CompositeStructuralExample.swift */; };
 		916B889B20BC587D00BA92DF /* DecoratorStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889A20BC587D00BA92DF /* DecoratorStructuralExample.swift */; };
 		9187BFFB20B5D0A700266EF8 /* FactoryMethodRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFBB20B5D0A600266EF8 /* FactoryMethodRealExample.swift */; };
 		9187BFFE20B5D0A700266EF8 /* FactoryMethodStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFBF20B5D0A600266EF8 /* FactoryMethodStructuralExample.swift */; };
@@ -32,13 +31,14 @@
 		919C8A8F20DD86EB006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD220B5D0A700266EF8 /* Example.swift */; };
 		919C8A9020DD86EB006EE57D /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD020B5D0A700266EF8 /* Builders.swift */; };
 		919C8A9120DD86EB006EE57D /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFCF20B5D0A700266EF8 /* DataProviders.swift */; };
+		919C8AAA20DD879C006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889220BC4DA400BA92DF /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916B888F20BC4B1900BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		916B889220BC4DA400BA92DF /* CompositeStructuralExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeStructuralExample.swift; sourceTree = "<group>"; };
+		916B889220BC4DA400BA92DF /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		916B889420BC56FD00BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		916B889A20BC587D00BA92DF /* DecoratorStructuralExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorStructuralExample.swift; sourceTree = "<group>"; };
 		916B889C20BC5B7600BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
@@ -100,6 +100,8 @@
 		919C8A7E20DD8688006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		919C8A8720DD86DC006EE57D /* BuilderReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuilderReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A8B20DD86DC006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8AA220DD878D006EE57D /* CompositeStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AA620DD878E006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		919C8A9F20DD878D006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -206,6 +215,7 @@
 				919C8A6C20DD858C006EE57D /* AdapterReal.xctest */,
 				919C8A7A20DD8688006EE57D /* BuilderStructure.xctest */,
 				919C8A8720DD86DC006EE57D /* BuilderReal.xctest */,
+				919C8AA220DD878D006EE57D /* CompositeStructure.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,7 +248,7 @@
 		916B889120BC4D8100BA92DF /* Composite */ = {
 			isa = PBXGroup;
 			children = (
-				916B889720BC584300BA92DF /* StructuralExample */,
+				919C8AA320DD878E006EE57D /* Structure */,
 			);
 			path = Composite;
 			sourceTree = "<group>";
@@ -249,15 +259,6 @@
 				916B889920BC585E00BA92DF /* StructuralExample */,
 			);
 			path = Decorator;
-			sourceTree = "<group>";
-		};
-		916B889720BC584300BA92DF /* StructuralExample */ = {
-			isa = PBXGroup;
-			children = (
-				916B889220BC4DA400BA92DF /* CompositeStructuralExample.swift */,
-				916B889420BC56FD00BA92DF /* Output.txt */,
-			);
-			path = StructuralExample;
 			sourceTree = "<group>";
 		};
 		916B889920BC585E00BA92DF /* StructuralExample */ = {
@@ -510,6 +511,16 @@
 			path = Real;
 			sourceTree = "<group>";
 		};
+		919C8AA320DD878E006EE57D /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				916B889220BC4DA400BA92DF /* Example.swift */,
+				916B889420BC56FD00BA92DF /* Output.txt */,
+				919C8AA620DD878E006EE57D /* Info.plist */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -700,6 +711,23 @@
 			productReference = 919C8A8720DD86DC006EE57D /* BuilderReal.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		919C8AA120DD878D006EE57D /* CompositeStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8AA720DD878E006EE57D /* Build configuration list for PBXNativeTarget "CompositeStructure" */;
+			buildPhases = (
+				919C8A9E20DD878D006EE57D /* Sources */,
+				919C8A9F20DD878D006EE57D /* Frameworks */,
+				919C8AA020DD878D006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CompositeStructure;
+			productName = CompositeStructure;
+			productReference = 919C8AA220DD878D006EE57D /* CompositeStructure.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -755,6 +783,10 @@
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
+					919C8AA120DD878D006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9139FA732088D85C00229150 /* Build configuration list for PBXProject "RefactoringGuru.Patterns" */;
@@ -781,6 +813,7 @@
 				919C8A6B20DD858C006EE57D /* AdapterReal */,
 				919C8A7920DD8688006EE57D /* BuilderStructure */,
 				919C8A8620DD86DC006EE57D /* BuilderReal */,
+				919C8AA120DD878D006EE57D /* CompositeStructure */,
 			);
 		};
 /* End PBXProject section */
@@ -863,6 +896,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		919C8AA020DD878D006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -870,7 +910,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				916B889320BC4DA400BA92DF /* CompositeStructuralExample.swift in Sources */,
 				916B889B20BC587D00BA92DF /* DecoratorStructuralExample.swift in Sources */,
 				9187C00620B5D0A700266EF8 /* SingletonRealExample.swift in Sources */,
 				9187C01E20B5D0A700266EF8 /* PrototypeStructuralExample.swift in Sources */,
@@ -965,6 +1004,14 @@
 				919C8A9120DD86EB006EE57D /* DataProviders.swift in Sources */,
 				919C8A8F20DD86EB006EE57D /* Example.swift in Sources */,
 				919C8A9020DD86EB006EE57D /* Builders.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A9E20DD878D006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8AAA20DD879C006EE57D /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1380,6 +1427,32 @@
 			};
 			name = Release;
 		};
+		919C8AA820DD878E006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Composite/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8AA920DD878E006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Composite/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1487,6 +1560,15 @@
 			buildConfigurations = (
 				919C8A8D20DD86DC006EE57D /* Debug */,
 				919C8A8E20DD86DC006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8AA720DD878E006EE57D /* Build configuration list for PBXNativeTarget "CompositeStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8AA820DD878E006EE57D /* Debug */,
+				919C8AA920DD878E006EE57D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
