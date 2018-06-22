@@ -9,15 +9,6 @@
 /* Begin PBXBuildFile section */
 		916B889320BC4DA400BA92DF /* CompositeStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889220BC4DA400BA92DF /* CompositeStructuralExample.swift */; };
 		916B889B20BC587D00BA92DF /* DecoratorStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889A20BC587D00BA92DF /* DecoratorStructuralExample.swift */; };
-		916B88A020BC6E6800BA92DF /* FacadeStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889F20BC6E6800BA92DF /* FacadeStructuralExample.swift */; };
-		916B88A620BD468100BA92DF /* FacadeRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88A520BD468100BA92DF /* FacadeRealExample.swift */; };
-		9187BFF020B5D0A700266EF8 /* AbstractFactoryRealControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* AbstractFactoryRealControllers.swift */; };
-		9187BFF120B5D0A700266EF8 /* AbstractFactoryRealFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* AbstractFactoryRealFactories.swift */; };
-		9187BFF220B5D0A700266EF8 /* AbstractFactoryRealStudentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAF20B5D0A600266EF8 /* AbstractFactoryRealStudentViews.swift */; };
-		9187BFF320B5D0A700266EF8 /* AbstractFactoryRealTeacherViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB020B5D0A600266EF8 /* AbstractFactoryRealTeacherViews.swift */; };
-		9187BFF420B5D0A700266EF8 /* AbstractFactoryRealAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB120B5D0A600266EF8 /* AbstractFactoryRealAuthView.swift */; };
-		9187BFF520B5D0A700266EF8 /* AbstractFactoryRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB220B5D0A600266EF8 /* AbstractFactoryRealExample.swift */; };
-		9187BFF820B5D0A700266EF8 /* AbstractFactoryStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB620B5D0A600266EF8 /* AbstractFactoryStructuralExample.swift */; };
 		9187BFFB20B5D0A700266EF8 /* FactoryMethodRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFBB20B5D0A600266EF8 /* FactoryMethodRealExample.swift */; };
 		9187BFFE20B5D0A700266EF8 /* FactoryMethodStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFBF20B5D0A600266EF8 /* FactoryMethodStructuralExample.swift */; };
 		9187C00620B5D0A700266EF8 /* SingletonRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFC920B5D0A700266EF8 /* SingletonRealExample.swift */; };
@@ -26,12 +17,21 @@
 		9187C00A20B5D0A700266EF8 /* BuilderRealBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD020B5D0A700266EF8 /* BuilderRealBuilders.swift */; };
 		9187C00C20B5D0A700266EF8 /* BuilderRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD220B5D0A700266EF8 /* BuilderRealExample.swift */; };
 		9187C00E20B5D0A700266EF8 /* BuilderStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD520B5D0A700266EF8 /* BuilderStructuralExample.swift */; };
-		9187C01320B5D0A700266EF8 /* BridgeRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFDC20B5D0A700266EF8 /* BridgeRealExample.swift */; };
-		9187C01520B5D0A700266EF8 /* BridgeStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFDF20B5D0A700266EF8 /* BridgeStructuralExample.swift */; };
 		9187C01720B5D0A700266EF8 /* AdapterRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFE320B5D0A700266EF8 /* AdapterRealExample.swift */; };
 		9187C01820B5D0A700266EF8 /* AdapterStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFE520B5D0A700266EF8 /* AdapterStructuralExample.swift */; };
 		9187C01B20B5D0A700266EF8 /* PrototypeRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFEA20B5D0A700266EF8 /* PrototypeRealExample.swift */; };
 		9187C01E20B5D0A700266EF8 /* PrototypeStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFEE20B5D0A700266EF8 /* PrototypeStructuralExample.swift */; };
+		919C89FA20DD7F03006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB220B5D0A600266EF8 /* Example.swift */; };
+		919C89FB20DD7F03006EE57D /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* Controllers.swift */; };
+		919C89FC20DD7F03006EE57D /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* Factories.swift */; };
+		919C89FE20DD7F03006EE57D /* StudentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAF20B5D0A600266EF8 /* StudentViews.swift */; };
+		919C89FF20DD7F03006EE57D /* TeacherViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB020B5D0A600266EF8 /* TeacherViews.swift */; };
+		919C8A0020DD7F03006EE57D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB120B5D0A600266EF8 /* AuthView.swift */; };
+		919C8A0D20DD7F58006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB620B5D0A600266EF8 /* Example.swift */; };
+		919C8A1B20DD81E7006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889F20BC6E6800BA92DF /* Example.swift */; };
+		919C8A2820DD829C006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88A520BD468100BA92DF /* Example.swift */; };
+		919C8A4120DD832C006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFDF20B5D0A700266EF8 /* Example.swift */; };
+		919C8A4E20DD83AA006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFDC20B5D0A700266EF8 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,19 +42,19 @@
 		916B889420BC56FD00BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		916B889A20BC587D00BA92DF /* DecoratorStructuralExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorStructuralExample.swift; sourceTree = "<group>"; };
 		916B889C20BC5B7600BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		916B889F20BC6E6800BA92DF /* FacadeStructuralExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeStructuralExample.swift; sourceTree = "<group>"; };
+		916B889F20BC6E6800BA92DF /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		916B88A120BC717400BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		916B88A520BD468100BA92DF /* FacadeRealExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeRealExample.swift; sourceTree = "<group>"; };
+		916B88A520BD468100BA92DF /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		916B88A720BD537300BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFAB20B5D0A600266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		9187BFAC20B5D0A600266EF8 /* AbstractFactoryRealControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealControllers.swift; sourceTree = "<group>"; };
-		9187BFAD20B5D0A600266EF8 /* AbstractFactoryRealFactories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealFactories.swift; sourceTree = "<group>"; };
-		9187BFAF20B5D0A600266EF8 /* AbstractFactoryRealStudentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealStudentViews.swift; sourceTree = "<group>"; };
-		9187BFB020B5D0A600266EF8 /* AbstractFactoryRealTeacherViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealTeacherViews.swift; sourceTree = "<group>"; };
-		9187BFB120B5D0A600266EF8 /* AbstractFactoryRealAuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealAuthView.swift; sourceTree = "<group>"; };
-		9187BFB220B5D0A600266EF8 /* AbstractFactoryRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryRealExample.swift; sourceTree = "<group>"; };
+		9187BFAC20B5D0A600266EF8 /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
+		9187BFAD20B5D0A600266EF8 /* Factories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		9187BFAF20B5D0A600266EF8 /* StudentViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentViews.swift; sourceTree = "<group>"; };
+		9187BFB020B5D0A600266EF8 /* TeacherViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherViews.swift; sourceTree = "<group>"; };
+		9187BFB120B5D0A600266EF8 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		9187BFB220B5D0A600266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		9187BFB420B5D0A600266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		9187BFB620B5D0A600266EF8 /* AbstractFactoryStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryStructuralExample.swift; sourceTree = "<group>"; };
+		9187BFB620B5D0A600266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		9187BFBB20B5D0A600266EF8 /* FactoryMethodRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodRealExample.swift; sourceTree = "<group>"; };
 		9187BFBC20B5D0A600266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFBF20B5D0A600266EF8 /* FactoryMethodStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethodStructuralExample.swift; sourceTree = "<group>"; };
@@ -69,9 +69,9 @@
 		9187BFD320B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFD520B5D0A700266EF8 /* BuilderStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderStructuralExample.swift; sourceTree = "<group>"; };
 		9187BFD820B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		9187BFDC20B5D0A700266EF8 /* BridgeRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeRealExample.swift; sourceTree = "<group>"; };
+		9187BFDC20B5D0A700266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		9187BFDE20B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		9187BFDF20B5D0A700266EF8 /* BridgeStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeStructuralExample.swift; sourceTree = "<group>"; };
+		9187BFDF20B5D0A700266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		9187BFE220B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFE320B5D0A700266EF8 /* AdapterRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterRealExample.swift; sourceTree = "<group>"; };
 		9187BFE520B5D0A700266EF8 /* AdapterStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterStructuralExample.swift; sourceTree = "<group>"; };
@@ -80,10 +80,64 @@
 		9187BFEA20B5D0A700266EF8 /* PrototypeRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeRealExample.swift; sourceTree = "<group>"; };
 		9187BFEC20B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFEE20B5D0A700266EF8 /* PrototypeStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeStructuralExample.swift; sourceTree = "<group>"; };
+		919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C89F520DD7EE4006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A0920DD7F3C006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8A1320DD81D0006EE57D /* FacadeStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacadeStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A1720DD81D0006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8A2020DD8261006EE57D /* FacadeReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacadeReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A2420DD8261006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8A3920DD82F0006EE57D /* BridgeStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A3D20DD82F0006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8A4620DD8393006EE57D /* BridgeReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A4A20DD8393006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9139FA892088D85F00229150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C89EE20DD7EE4006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A0220DD7F3C006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A1020DD81D0006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A1D20DD8261006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A3620DD82F0006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A4320DD8393006EE57D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,6 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */,
+				919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */,
+				919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */,
+				919C8A1320DD81D0006EE57D /* FacadeStructure.xctest */,
+				919C8A2020DD8261006EE57D /* FacadeReal.xctest */,
+				919C8A3920DD82F0006EE57D /* BridgeStructure.xctest */,
+				919C8A4620DD8393006EE57D /* BridgeReal.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,8 +181,8 @@
 		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				919C8A0E20DD7F7B006EE57D /* AbstractFactory */,
 				916B889E20BC5C5800BA92DF /* Facade */,
-				9187BFA920B5D0A600266EF8 /* AbstractFactory */,
 				9187BFDA20B5D0A700266EF8 /* Bridge */,
 				9187BFE020B5D0A700266EF8 /* Adapter */,
 				9187BFCD20B5D0A700266EF8 /* Builder */,
@@ -172,68 +232,20 @@
 		916B889E20BC5C5800BA92DF /* Facade */ = {
 			isa = PBXGroup;
 			children = (
-				916B88A320BD463D00BA92DF /* StructuralExample */,
-				916B88A420BD465700BA92DF /* RealWorldExample */,
+				919C8A2120DD8261006EE57D /* Real */,
+				919C8A1420DD81D0006EE57D /* Structure */,
 			);
 			path = Facade;
-			sourceTree = "<group>";
-		};
-		916B88A320BD463D00BA92DF /* StructuralExample */ = {
-			isa = PBXGroup;
-			children = (
-				916B889F20BC6E6800BA92DF /* FacadeStructuralExample.swift */,
-				916B88A120BC717400BA92DF /* Output.txt */,
-			);
-			path = StructuralExample;
-			sourceTree = "<group>";
-		};
-		916B88A420BD465700BA92DF /* RealWorldExample */ = {
-			isa = PBXGroup;
-			children = (
-				916B88A520BD468100BA92DF /* FacadeRealExample.swift */,
-				916B88A720BD537300BA92DF /* Output.txt */,
-			);
-			path = RealWorldExample;
-			sourceTree = "<group>";
-		};
-		9187BFA920B5D0A600266EF8 /* AbstractFactory */ = {
-			isa = PBXGroup;
-			children = (
-				9187BFAA20B5D0A600266EF8 /* RealWorldExample */,
-				9187BFB320B5D0A600266EF8 /* StructuralExample */,
-			);
-			path = AbstractFactory;
-			sourceTree = "<group>";
-		};
-		9187BFAA20B5D0A600266EF8 /* RealWorldExample */ = {
-			isa = PBXGroup;
-			children = (
-				9187BFB220B5D0A600266EF8 /* AbstractFactoryRealExample.swift */,
-				9187BFAC20B5D0A600266EF8 /* AbstractFactoryRealControllers.swift */,
-				9187BFAD20B5D0A600266EF8 /* AbstractFactoryRealFactories.swift */,
-				9187BFAB20B5D0A600266EF8 /* Output.txt */,
-				9187BFAE20B5D0A600266EF8 /* Views */,
-			);
-			path = RealWorldExample;
 			sourceTree = "<group>";
 		};
 		9187BFAE20B5D0A600266EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9187BFAF20B5D0A600266EF8 /* AbstractFactoryRealStudentViews.swift */,
-				9187BFB020B5D0A600266EF8 /* AbstractFactoryRealTeacherViews.swift */,
-				9187BFB120B5D0A600266EF8 /* AbstractFactoryRealAuthView.swift */,
+				9187BFAF20B5D0A600266EF8 /* StudentViews.swift */,
+				9187BFB020B5D0A600266EF8 /* TeacherViews.swift */,
+				9187BFB120B5D0A600266EF8 /* AuthView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		9187BFB320B5D0A600266EF8 /* StructuralExample */ = {
-			isa = PBXGroup;
-			children = (
-				9187BFB420B5D0A600266EF8 /* Output.txt */,
-				9187BFB620B5D0A600266EF8 /* AbstractFactoryStructuralExample.swift */,
-			);
-			path = StructuralExample;
 			sourceTree = "<group>";
 		};
 		9187BFB820B5D0A600266EF8 /* FactoryMethod */ = {
@@ -322,28 +334,10 @@
 		9187BFDA20B5D0A700266EF8 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				9187BFDD20B5D0A700266EF8 /* StructuralExample */,
-				9187BFDB20B5D0A700266EF8 /* RealWorldExample */,
+				919C8A4720DD8393006EE57D /* Real */,
+				919C8A3A20DD82F0006EE57D /* Structure */,
 			);
 			path = Bridge;
-			sourceTree = "<group>";
-		};
-		9187BFDB20B5D0A700266EF8 /* RealWorldExample */ = {
-			isa = PBXGroup;
-			children = (
-				9187BFDC20B5D0A700266EF8 /* BridgeRealExample.swift */,
-				916B888F20BC4B1900BA92DF /* Output.txt */,
-			);
-			path = RealWorldExample;
-			sourceTree = "<group>";
-		};
-		9187BFDD20B5D0A700266EF8 /* StructuralExample */ = {
-			isa = PBXGroup;
-			children = (
-				9187BFDF20B5D0A700266EF8 /* BridgeStructuralExample.swift */,
-				9187BFDE20B5D0A700266EF8 /* Output.txt */,
-			);
-			path = StructuralExample;
 			sourceTree = "<group>";
 		};
 		9187BFE020B5D0A700266EF8 /* Adapter */ = {
@@ -400,6 +394,78 @@
 			path = StructuralExample;
 			sourceTree = "<group>";
 		};
+		919C89F220DD7EE4006EE57D /* Real */ = {
+			isa = PBXGroup;
+			children = (
+				9187BFB220B5D0A600266EF8 /* Example.swift */,
+				9187BFAC20B5D0A600266EF8 /* Controllers.swift */,
+				9187BFAD20B5D0A600266EF8 /* Factories.swift */,
+				9187BFAB20B5D0A600266EF8 /* Output.txt */,
+				9187BFAE20B5D0A600266EF8 /* Views */,
+				919C89F520DD7EE4006EE57D /* Info.plist */,
+			);
+			path = Real;
+			sourceTree = "<group>";
+		};
+		919C8A0620DD7F3C006EE57D /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				9187BFB620B5D0A600266EF8 /* Example.swift */,
+				9187BFB420B5D0A600266EF8 /* Output.txt */,
+				919C8A0920DD7F3C006EE57D /* Info.plist */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		919C8A0E20DD7F7B006EE57D /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				919C89F220DD7EE4006EE57D /* Real */,
+				919C8A0620DD7F3C006EE57D /* Structure */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		919C8A1420DD81D0006EE57D /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				916B889F20BC6E6800BA92DF /* Example.swift */,
+				916B88A120BC717400BA92DF /* Output.txt */,
+				919C8A1720DD81D0006EE57D /* Info.plist */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		919C8A2120DD8261006EE57D /* Real */ = {
+			isa = PBXGroup;
+			children = (
+				916B88A520BD468100BA92DF /* Example.swift */,
+				916B88A720BD537300BA92DF /* Output.txt */,
+				919C8A2420DD8261006EE57D /* Info.plist */,
+			);
+			path = Real;
+			sourceTree = "<group>";
+		};
+		919C8A3A20DD82F0006EE57D /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				9187BFDF20B5D0A700266EF8 /* Example.swift */,
+				9187BFDE20B5D0A700266EF8 /* Output.txt */,
+				919C8A3D20DD82F0006EE57D /* Info.plist */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		919C8A4720DD8393006EE57D /* Real */ = {
+			isa = PBXGroup;
+			children = (
+				9187BFDC20B5D0A700266EF8 /* Example.swift */,
+				916B888F20BC4B1900BA92DF /* Output.txt */,
+				919C8A4A20DD8393006EE57D /* Info.plist */,
+			);
+			path = Real;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +486,108 @@
 			productReference = 9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		919C89F020DD7EE4006EE57D /* AbstractFactoryReal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C89F820DD7EE4006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryReal" */;
+			buildPhases = (
+				919C89ED20DD7EE4006EE57D /* Sources */,
+				919C89EE20DD7EE4006EE57D /* Frameworks */,
+				919C89EF20DD7EE4006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AbstractFactoryReal;
+			productName = AbstractFactoryReal;
+			productReference = 919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		919C8A0420DD7F3C006EE57D /* AbstractFactoryStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8A0A20DD7F3C006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryStructure" */;
+			buildPhases = (
+				919C8A0120DD7F3C006EE57D /* Sources */,
+				919C8A0220DD7F3C006EE57D /* Frameworks */,
+				919C8A0320DD7F3C006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AbstractFactoryStructure;
+			productName = AbstractFactoryStructure;
+			productReference = 919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		919C8A1220DD81D0006EE57D /* FacadeStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8A1820DD81D0006EE57D /* Build configuration list for PBXNativeTarget "FacadeStructure" */;
+			buildPhases = (
+				919C8A0F20DD81D0006EE57D /* Sources */,
+				919C8A1020DD81D0006EE57D /* Frameworks */,
+				919C8A1120DD81D0006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacadeStructure;
+			productName = FacadeStructure;
+			productReference = 919C8A1320DD81D0006EE57D /* FacadeStructure.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		919C8A1F20DD8261006EE57D /* FacadeReal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8A2520DD8261006EE57D /* Build configuration list for PBXNativeTarget "FacadeReal" */;
+			buildPhases = (
+				919C8A1C20DD8261006EE57D /* Sources */,
+				919C8A1D20DD8261006EE57D /* Frameworks */,
+				919C8A1E20DD8261006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacadeReal;
+			productName = FacadeReal;
+			productReference = 919C8A2020DD8261006EE57D /* FacadeReal.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		919C8A3820DD82F0006EE57D /* BridgeStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8A3E20DD82F0006EE57D /* Build configuration list for PBXNativeTarget "BridgeStructure" */;
+			buildPhases = (
+				919C8A3520DD82F0006EE57D /* Sources */,
+				919C8A3620DD82F0006EE57D /* Frameworks */,
+				919C8A3720DD82F0006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BridgeStructure;
+			productName = BridgeStructure;
+			productReference = 919C8A3920DD82F0006EE57D /* BridgeStructure.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		919C8A4520DD8393006EE57D /* BridgeReal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8A4B20DD8393006EE57D /* Build configuration list for PBXNativeTarget "BridgeReal" */;
+			buildPhases = (
+				919C8A4220DD8393006EE57D /* Sources */,
+				919C8A4320DD8393006EE57D /* Frameworks */,
+				919C8A4420DD8393006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BridgeReal;
+			productName = BridgeReal;
+			productReference = 919C8A4620DD8393006EE57D /* BridgeReal.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -434,6 +602,30 @@
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9139FA772088D85C00229150;
+					};
+					919C89F020DD7EE4006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					919C8A0420DD7F3C006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					919C8A1220DD81D0006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					919C8A1F20DD8261006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					919C8A3820DD82F0006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					919C8A4520DD8393006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -451,12 +643,60 @@
 			projectRoot = "";
 			targets = (
 				9139FA8B2088D85F00229150 /* RefactoringGuru.Patterns */,
+				919C89F020DD7EE4006EE57D /* AbstractFactoryReal */,
+				919C8A0420DD7F3C006EE57D /* AbstractFactoryStructure */,
+				919C8A1220DD81D0006EE57D /* FacadeStructure */,
+				919C8A1F20DD8261006EE57D /* FacadeReal */,
+				919C8A3820DD82F0006EE57D /* BridgeStructure */,
+				919C8A4520DD8393006EE57D /* BridgeReal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9139FA8A2088D85F00229150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C89EF20DD7EE4006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A0320DD7F3C006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A1120DD81D0006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A1E20DD8261006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A3720DD82F0006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A4420DD8393006EE57D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,30 +711,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				916B889320BC4DA400BA92DF /* CompositeStructuralExample.swift in Sources */,
-				9187BFF820B5D0A700266EF8 /* AbstractFactoryStructuralExample.swift in Sources */,
 				916B889B20BC587D00BA92DF /* DecoratorStructuralExample.swift in Sources */,
-				9187BFF320B5D0A700266EF8 /* AbstractFactoryRealTeacherViews.swift in Sources */,
 				9187C00C20B5D0A700266EF8 /* BuilderRealExample.swift in Sources */,
 				9187C01820B5D0A700266EF8 /* AdapterStructuralExample.swift in Sources */,
-				9187C01320B5D0A700266EF8 /* BridgeRealExample.swift in Sources */,
-				9187C01520B5D0A700266EF8 /* BridgeStructuralExample.swift in Sources */,
 				9187C00620B5D0A700266EF8 /* SingletonRealExample.swift in Sources */,
 				9187C00E20B5D0A700266EF8 /* BuilderStructuralExample.swift in Sources */,
-				9187BFF020B5D0A700266EF8 /* AbstractFactoryRealControllers.swift in Sources */,
 				9187C00920B5D0A700266EF8 /* BuilderRealDataProviders.swift in Sources */,
-				916B88A620BD468100BA92DF /* FacadeRealExample.swift in Sources */,
 				9187C01E20B5D0A700266EF8 /* PrototypeStructuralExample.swift in Sources */,
 				9187BFFB20B5D0A700266EF8 /* FactoryMethodRealExample.swift in Sources */,
-				9187BFF120B5D0A700266EF8 /* AbstractFactoryRealFactories.swift in Sources */,
-				916B88A020BC6E6800BA92DF /* FacadeStructuralExample.swift in Sources */,
 				9187C00820B5D0A700266EF8 /* SingletonStructuralExample.swift in Sources */,
-				9187BFF420B5D0A700266EF8 /* AbstractFactoryRealAuthView.swift in Sources */,
 				9187C00A20B5D0A700266EF8 /* BuilderRealBuilders.swift in Sources */,
-				9187BFF520B5D0A700266EF8 /* AbstractFactoryRealExample.swift in Sources */,
 				9187BFFE20B5D0A700266EF8 /* FactoryMethodStructuralExample.swift in Sources */,
 				9187C01720B5D0A700266EF8 /* AdapterRealExample.swift in Sources */,
-				9187BFF220B5D0A700266EF8 /* AbstractFactoryRealStudentViews.swift in Sources */,
 				9187C01B20B5D0A700266EF8 /* PrototypeRealExample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C89ED20DD7EE4006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C89FB20DD7F03006EE57D /* Controllers.swift in Sources */,
+				919C8A0020DD7F03006EE57D /* AuthView.swift in Sources */,
+				919C89FE20DD7F03006EE57D /* StudentViews.swift in Sources */,
+				919C89FA20DD7F03006EE57D /* Example.swift in Sources */,
+				919C89FC20DD7F03006EE57D /* Factories.swift in Sources */,
+				919C89FF20DD7F03006EE57D /* TeacherViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A0120DD7F3C006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8A0D20DD7F58006EE57D /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A0F20DD81D0006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8A1B20DD81E7006EE57D /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A1C20DD8261006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8A2820DD829C006EE57D /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A3520DD82F0006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8A4120DD832C006EE57D /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A4220DD8393006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8A4E20DD83AA006EE57D /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +932,162 @@
 			};
 			name = Release;
 		};
+		919C89F620DD7EE4006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/AbstractFactory/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C89F720DD7EE4006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/AbstractFactory/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		919C8A0B20DD7F3C006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/AbstractFactory/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8A0C20DD7F3C006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/AbstractFactory/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		919C8A1920DD81D0006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Facade/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8A1A20DD81D0006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Facade/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		919C8A2620DD8261006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Facade/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8A2720DD8261006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Facade/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		919C8A3F20DD82F0006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Bridge/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8A4020DD82F0006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Bridge/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		919C8A4C20DD8393006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Bridge/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8A4D20DD8393006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Bridge/Real/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -667,6 +1105,60 @@
 			buildConfigurations = (
 				9139FA992088D85F00229150 /* Debug */,
 				9139FA9A2088D85F00229150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C89F820DD7EE4006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C89F620DD7EE4006EE57D /* Debug */,
+				919C89F720DD7EE4006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8A0A20DD7F3C006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8A0B20DD7F3C006EE57D /* Debug */,
+				919C8A0C20DD7F3C006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8A1820DD81D0006EE57D /* Build configuration list for PBXNativeTarget "FacadeStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8A1920DD81D0006EE57D /* Debug */,
+				919C8A1A20DD81D0006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8A2520DD8261006EE57D /* Build configuration list for PBXNativeTarget "FacadeReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8A2620DD8261006EE57D /* Debug */,
+				919C8A2720DD8261006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8A3E20DD82F0006EE57D /* Build configuration list for PBXNativeTarget "BridgeStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8A3F20DD82F0006EE57D /* Debug */,
+				919C8A4020DD82F0006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8A4B20DD8393006EE57D /* Build configuration list for PBXNativeTarget "BridgeReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8A4C20DD8393006EE57D /* Debug */,
+				919C8A4D20DD8393006EE57D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
