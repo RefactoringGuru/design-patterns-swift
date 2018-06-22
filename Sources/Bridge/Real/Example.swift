@@ -12,20 +12,22 @@ class BridgeRealExample: XCTestCase {
     
     func testBridgeReal() {
         
-        let newsModel = NewsDomainModel(title: "Bridge example is available for Swift!",
-                                        images: [UIImage()])
+        let newsModel = NewsDomainModel(
+            title: "Bridge example is available for Swift!",
+            images: [UIImage()])
         
-        let appleModel = AppleDomainModel(calories: 47, photo: UIImage())
-        let appleAdapter = AppleSharingAdapter(appleModel,
-                                              title: "Yeah, I wanna share this Apple!")
+        let foodModel = FoodDomainModel(
+            title: "Yeah, I wanna share this Apple!",
+            images: [UIImage(), UIImage()],
+            calories: 47)
         
         let instagram = InstagramSharingService()
         let facebook = FaceBookSharingService()
         
-        print("Sharing an Apple model to social networks")
+        print("Sharing an Food model to social networks")
         /// share apple model
-        share(content: appleAdapter, using: instagram)
-        share(content: appleAdapter, using: facebook)
+        share(content: foodModel, using: instagram)
+        share(content: foodModel, using: facebook)
         
         print("Sharing a News model to social networks")
         /// share news model
@@ -42,6 +44,53 @@ protocol SharingService {
     
     /// Abstraction
     func share(content: Content)
+}
+
+protocol AuthService {
+    
+    func logIn(email: String, password: String)
+    func signUp(email: String, password: String)
+}
+
+///TODO:
+protocol SocialUI {
+    
+    func logIn()
+    func signUp()
+}
+
+class TeacherViewController: UIViewController, SocialUI {
+    
+    func logIn() {
+        service?.logIn(email: email, password: password)
+    }
+    
+    func signUp() {
+        service?.signUp(email: email, password: password)
+    }
+    
+    var email: String {
+        /// Read an email from a text filed
+        return "TeacherScreenEmail"
+    }
+    
+    var password: String {
+        /// Read a password from a text filed
+        return "TeacherScreenPassword"
+    }
+}
+
+class StudentViewController: UIViewController {
+    
+    var email: String {
+        /// Read an email from a text filed
+        return "StudentScreenEmail"
+    }
+    
+    var password: String {
+        /// Read a password from a text filed
+        return "StudentScreenPassword"
+    }
 }
 
 protocol Content: CustomStringConvertible {
@@ -62,33 +111,14 @@ struct NewsDomainModel: Content {
     }
 }
 
-struct AppleDomainModel: CustomStringConvertible {
+struct FoodDomainModel: Content {
     
+    var title: String
+    var images: [UIImage]
     var calories: Int
-    var photo: UIImage
     
     var description: String {
         return "Apple Model"
-    }
-}
-
-struct AppleSharingAdapter: Content {
-    
-    private let food: AppleDomainModel
-    
-    var title: String
-    
-    var images: [UIImage] {
-        return [food.photo]
-    }
-    
-    init(_ food: AppleDomainModel, title: String = "") {
-        self.food = food
-        self.title = title
-    }
-    
-    var description: String {
-        return self.food.description
     }
 }
 
