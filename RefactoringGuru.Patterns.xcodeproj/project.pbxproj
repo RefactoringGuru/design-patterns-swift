@@ -18,7 +18,6 @@
 		9187C00C20B5D0A700266EF8 /* BuilderRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD220B5D0A700266EF8 /* BuilderRealExample.swift */; };
 		9187C00E20B5D0A700266EF8 /* BuilderStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFD520B5D0A700266EF8 /* BuilderStructuralExample.swift */; };
 		9187C01720B5D0A700266EF8 /* AdapterRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFE320B5D0A700266EF8 /* AdapterRealExample.swift */; };
-		9187C01820B5D0A700266EF8 /* AdapterStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFE520B5D0A700266EF8 /* AdapterStructuralExample.swift */; };
 		9187C01B20B5D0A700266EF8 /* PrototypeRealExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFEA20B5D0A700266EF8 /* PrototypeRealExample.swift */; };
 		9187C01E20B5D0A700266EF8 /* PrototypeStructuralExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFEE20B5D0A700266EF8 /* PrototypeStructuralExample.swift */; };
 		919C89FA20DD7F03006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB220B5D0A600266EF8 /* Example.swift */; };
@@ -32,6 +31,7 @@
 		919C8A2820DD829C006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B88A520BD468100BA92DF /* Example.swift */; };
 		919C8A4120DD832C006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFDF20B5D0A700266EF8 /* Example.swift */; };
 		919C8A4E20DD83AA006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFDC20B5D0A700266EF8 /* Example.swift */; };
+		919C8A6720DD84DB006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFE520B5D0A700266EF8 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +74,7 @@
 		9187BFDF20B5D0A700266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		9187BFE220B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFE320B5D0A700266EF8 /* AdapterRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterRealExample.swift; sourceTree = "<group>"; };
-		9187BFE520B5D0A700266EF8 /* AdapterStructuralExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterStructuralExample.swift; sourceTree = "<group>"; };
+		9187BFE520B5D0A700266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		9187BFE620B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFE920B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFEA20B5D0A700266EF8 /* PrototypeRealExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeRealExample.swift; sourceTree = "<group>"; };
@@ -92,6 +92,8 @@
 		919C8A3D20DD82F0006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		919C8A4620DD8393006EE57D /* BridgeReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A4A20DD8393006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C8A5F20DD849A006EE57D /* AdapterStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A6320DD849B006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		919C8A5C20DD849A006EE57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -166,6 +175,7 @@
 				919C8A2020DD8261006EE57D /* FacadeReal.xctest */,
 				919C8A3920DD82F0006EE57D /* BridgeStructure.xctest */,
 				919C8A4620DD8393006EE57D /* BridgeReal.xctest */,
+				919C8A5F20DD849A006EE57D /* AdapterStructure.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -343,8 +353,8 @@
 		9187BFE020B5D0A700266EF8 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				919C8A6020DD849B006EE57D /* Structure */,
 				9187BFE120B5D0A700266EF8 /* RealWorldExample */,
-				9187BFE420B5D0A700266EF8 /* StructuralExample */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -356,15 +366,6 @@
 				9187BFE320B5D0A700266EF8 /* AdapterRealExample.swift */,
 			);
 			path = RealWorldExample;
-			sourceTree = "<group>";
-		};
-		9187BFE420B5D0A700266EF8 /* StructuralExample */ = {
-			isa = PBXGroup;
-			children = (
-				9187BFE520B5D0A700266EF8 /* AdapterStructuralExample.swift */,
-				9187BFE620B5D0A700266EF8 /* Output.txt */,
-			);
-			path = StructuralExample;
 			sourceTree = "<group>";
 		};
 		9187BFE720B5D0A700266EF8 /* Prototype */ = {
@@ -464,6 +465,16 @@
 				919C8A4A20DD8393006EE57D /* Info.plist */,
 			);
 			path = Real;
+			sourceTree = "<group>";
+		};
+		919C8A6020DD849B006EE57D /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				9187BFE520B5D0A700266EF8 /* Example.swift */,
+				9187BFE620B5D0A700266EF8 /* Output.txt */,
+				919C8A6320DD849B006EE57D /* Info.plist */,
+			);
+			path = Structure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,6 +599,23 @@
 			productReference = 919C8A4620DD8393006EE57D /* BridgeReal.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		919C8A5E20DD849A006EE57D /* AdapterStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919C8A6420DD849B006EE57D /* Build configuration list for PBXNativeTarget "AdapterStructure" */;
+			buildPhases = (
+				919C8A5B20DD849A006EE57D /* Sources */,
+				919C8A5C20DD849A006EE57D /* Frameworks */,
+				919C8A5D20DD849A006EE57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdapterStructure;
+			productName = AdapterStructure;
+			productReference = 919C8A5F20DD849A006EE57D /* AdapterStructure.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -627,6 +655,10 @@
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
+					919C8A5E20DD849A006EE57D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9139FA732088D85C00229150 /* Build configuration list for PBXProject "RefactoringGuru.Patterns" */;
@@ -649,6 +681,7 @@
 				919C8A1F20DD8261006EE57D /* FacadeReal */,
 				919C8A3820DD82F0006EE57D /* BridgeStructure */,
 				919C8A4520DD8393006EE57D /* BridgeReal */,
+				919C8A5E20DD849A006EE57D /* AdapterStructure */,
 			);
 		};
 /* End PBXProject section */
@@ -703,6 +736,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		919C8A5D20DD849A006EE57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -713,7 +753,6 @@
 				916B889320BC4DA400BA92DF /* CompositeStructuralExample.swift in Sources */,
 				916B889B20BC587D00BA92DF /* DecoratorStructuralExample.swift in Sources */,
 				9187C00C20B5D0A700266EF8 /* BuilderRealExample.swift in Sources */,
-				9187C01820B5D0A700266EF8 /* AdapterStructuralExample.swift in Sources */,
 				9187C00620B5D0A700266EF8 /* SingletonRealExample.swift in Sources */,
 				9187C00E20B5D0A700266EF8 /* BuilderStructuralExample.swift in Sources */,
 				9187C00920B5D0A700266EF8 /* BuilderRealDataProviders.swift in Sources */,
@@ -777,6 +816,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				919C8A4E20DD83AA006EE57D /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C8A5B20DD849A006EE57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919C8A6720DD84DB006EE57D /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,6 +1135,32 @@
 			};
 			name = Release;
 		};
+		919C8A6520DD849B006EE57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Adapter/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		919C8A6620DD849B006EE57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Adapter/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1159,6 +1232,15 @@
 			buildConfigurations = (
 				919C8A4C20DD8393006EE57D /* Debug */,
 				919C8A4D20DD8393006EE57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919C8A6420DD849B006EE57D /* Build configuration list for PBXNativeTarget "AdapterStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919C8A6520DD849B006EE57D /* Debug */,
+				919C8A6620DD849B006EE57D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
