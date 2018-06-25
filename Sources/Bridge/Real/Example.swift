@@ -93,7 +93,10 @@ class InstagramSharingService: SharingService {
 
 private protocol Testable {
     
-    /// Helps to test view controllers by generating a 'button selection' event
+    /// Note: This protocol helps to test Bridge example
+    /// by generating a 'share button is selected' event
+    ///
+    /// It is used only for demonstration reasons.
     
     func userSelectedShareButton(with content: Content)
     
