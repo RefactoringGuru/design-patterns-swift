@@ -8,107 +8,109 @@
 
 import XCTest
 
-class BridgeRealExample: XCTestCase {
+private class BridgeRealExample: XCTestCase {
     
     func testBridgeReal() {
         
-        let newsModel = NewsDomainModel(
-            title: "Bridge example is available for Swift!",
-            images: [UIImage()])
+        print("Pushing Photos View Controller...")
+        push(viewController: PhotosViewController())
         
-        let foodModel = FoodDomainModel(
-            title: "Yeah, I wanna share this Apple!",
-            images: [UIImage(), UIImage()],
-            calories: 47)
+        print()
+        
+        print("Pushing Feed View Controller...")
+        push(viewController: FeedViewController())
+    }
+    
+    func push(viewController: SharingSupportable & Testable) {
         
         let instagram = InstagramSharingService()
         let facebook = FaceBookSharingService()
         
-        print("Sharing an Food model to social networks")
-        /// share apple model
-        share(content: foodModel, using: instagram)
-        share(content: foodModel, using: facebook)
+        /// ...setting up a navigation stack...
         
-        print("Sharing a News model to social networks")
-        /// share news model
-        share(content: newsModel, using: instagram)
-        share(content: newsModel, using: facebook)
+        print("A user selected a 'food' model")
+        viewController.accept(service: instagram)
+        viewController.userSelectedShareButton(with: foodModel)
+        
+        viewController.accept(service: facebook)
+        viewController.userSelectedShareButton(with: foodModel)
     }
     
-    func share(content: Content, using service: SharingService) {
-        service.share(content: content)
+    var foodModel: Content {
+        return FoodDomainModel(title: "This food is so various and delicious!",
+                               images: [UIImage(), UIImage()],
+                               calories: 47)
+    }
+}
+
+protocol SharingSupportable {
+    
+    /// Abstraction
+    func accept(service: SharingService)
+}
+
+class PhotosViewController: UIViewController, SharingSupportable, Testable {
+    
+    fileprivate var sharingService: SharingService?
+    
+    func accept(service: SharingService) {
+        sharingService = service
+    }
+}
+
+class FeedViewController: UIViewController, SharingSupportable, Testable {
+    
+    fileprivate var sharingService: SharingService?
+    
+    func accept(service: SharingService) {
+        sharingService = service
     }
 }
 
 protocol SharingService {
     
-    /// Abstraction
+    /// Implementation
     func share(content: Content)
 }
 
-protocol AuthService {
+class FaceBookSharingService: SharingService {
     
-    func logIn(email: String, password: String)
-    func signUp(email: String, password: String)
-}
-
-///TODO:
-protocol SocialUI {
-    
-    func logIn()
-    func signUp()
-}
-
-class TeacherViewController: UIViewController, SocialUI {
-    
-    func logIn() {
-        service?.logIn(email: email, password: password)
-    }
-    
-    func signUp() {
-        service?.signUp(email: email, password: password)
-    }
-    
-    var email: String {
-        /// Read an email from a text filed
-        return "TeacherScreenEmail"
-    }
-    
-    var password: String {
-        /// Read a password from a text filed
-        return "TeacherScreenPassword"
+    func share(content: Content) {
+        
+        /// Use FaceBook API to share a content
+        print("\(content) was posted to the Facebook")
     }
 }
 
-class StudentViewController: UIViewController {
+class InstagramSharingService: SharingService {
     
-    var email: String {
-        /// Read an email from a text filed
-        return "StudentScreenEmail"
+    func share(content: Content) {
+        
+        /// Use Instagram API to share a content
+        print("\(content) was posted to the Instagram")
     }
+}
+
+private protocol Testable {
     
-    var password: String {
-        /// Read a password from a text filed
-        return "StudentScreenPassword"
+    /// Helps to test view controllers by generating a 'button selection' event
+    
+    func userSelectedShareButton(with content: Content)
+    
+    var sharingService: SharingService? { get }
+}
+
+extension Testable {
+    
+    func userSelectedShareButton(with content: Content) {
+        sharingService?.share(content: content)
     }
 }
 
 protocol Content: CustomStringConvertible {
     
-    /// Implementation
     var title: String { get }
     var images: [UIImage] { get }
-}
-
-/// Models
-struct NewsDomainModel: Content {
-    
-    var title: String
-    var images: [UIImage]
-    
-    var description: String {
-        return "News Model"
-    }
 }
 
 struct FoodDomainModel: Content {
@@ -118,25 +120,6 @@ struct FoodDomainModel: Content {
     var calories: Int
     
     var description: String {
-        return "Apple Model"
-    }
-}
-
-/// Services
-class FaceBookSharingService: SharingService {
-    
-    func share(content: Content) {
-        /// Use FaceBook API to share a content
-        
-        print("\(content) was posted to the Facebook")
-    }
-}
-
-class InstagramSharingService: SharingService {
-    
-    func share(content: Content) {
-        /// Use Instagram API to share a content
-        
-        print("\(content) was posted to the Instagram")
+        return "Food Model"
     }
 }

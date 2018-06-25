@@ -1,7 +1,9 @@
-Sharing an Apple model to social networks
-Apple Model was posted to the Instagram
-Apple Model was posted to the Facebook
+Pushing Photos View Controller...
+A user selected a 'food' model
+Food Model was posted to the Instagram
+Food Model was posted to the Facebook
 
-Sharing a News model to social networks
-News Model was posted to the Instagram
-News Model was posted to the Facebook
+Pushing Feed View Controller...
+A user selected a 'food' model
+Food Model was posted to the Instagram
+Food Model was posted to the Facebook
