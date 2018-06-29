@@ -14,11 +14,11 @@ class Resizer: ImageDecorator {
     private var yScale: CGFloat = 0
     private var hasAlpha = false
     
-    init(_ editor: ImageEditor, xScale: CGFloat = 0, yScale: CGFloat = 0, hasAlpha: Bool = false) {
+    convenience init(_ editor: ImageEditor, xScale: CGFloat = 0, yScale: CGFloat = 0, hasAlpha: Bool = false) {
+        self.init(editor)
         self.xScale = xScale
         self.yScale = yScale
         self.hasAlpha = hasAlpha
-        super.init(editor)
     }
     
     required init(_ editor: ImageEditor) {
