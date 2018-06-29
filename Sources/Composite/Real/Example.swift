@@ -9,77 +9,73 @@
 import XCTest
 
 class CompositeRealExample: XCTestCase {
-    ///TODO:
-}
-
-class SceneViewController: UIViewController {
     
-    private lazy var drawer = Drawer(canvas: view)
-    
-    /// This action is triggered by a user.
-    /// In this example, actions are triggered by a unit test externally.
-    
-    func userSelectedPointToDraw(point: CGPoint) {
+    func test() {
         
+        print("\nClient: Applying 'default' theme for 'UIButton'")
+        apply(theme: DefaultButtomTheme(), for: UIButton())
+        
+        print("\nClient: Applying 'night' theme for 'UIButton'")
+        apply(theme: NightButtonTheme(), for: UIButton())
+        
+        print("\nClient: Let's use View Controller as a composite!")
+        
+        print("\nClient: Applying 'night button' theme for 'WelcomeViewController'...")
+        apply(theme: NightButtonTheme(), for: WelcomeViewController())
+        print()
     }
     
-    func userSelectedConfigured(view: Component) {
-        
+    func apply<T: Theme>(theme: T, for component: Component) {
+        component.accept(theme: theme)
     }
 }
 
-protocol Component {
+class WelcomeViewController: UIViewController {
     
-    /// applies a prefix to a name of files and folders
-    func apply(prefix: String)
-    
-    /// applies a suffix to a name of files and folders
-    func apply(suffix: String)
-    
-//    func accept(visitor: )
-    
-    /// returns a size of files and folders
-    var contentSize: Double { get }
-}
-
-protocol FilePreviewer {
-    
-}
-
-protocol FolderPreviewer {
-    
-}
-
-protocol ImageComponent {
-    
-    var isPicture: Bool { get }
-    var picturesCount: Int { get }
-}
-
-protocol Shape {
-    
-    func attach(subviews: [UIView])
-    func redraw()
-}
-
-extension UIView: Shape {
-    
-    func attach(subviews: [UIView]) {
-        for item in subviews {
-            addSubview(item)
+    class ContentView: UIView {
+        
+        var titleLabel = UILabel()
+        var actionButton = UIButton()
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            setup()
+        }
+        
+        required init?(coder decoder: NSCoder) {
+            super.init(coder: decoder)
+            setup()
+        }
+        
+        func setup() {
+            addSubview(titleLabel)
+            addSubview(actionButton)
         }
     }
     
-    func redraw() {
-        setNeedsDisplay()
+    override func loadView() {
+        view = ContentView()
     }
 }
 
-class Drawer {
+/// Let's override a description property for the better output
+
+extension WelcomeViewController {
     
-    private var canvas: UIView
+    open override var description: String { return "WelcomeViewController" }
+}
+
+extension WelcomeViewController.ContentView {
     
-    init(canvas: UIView) {
-        self.canvas = canvas
-    }
+    override var description: String { return "ContentView" }
+}
+
+extension UIButton {
+    
+    open override var description: String { return "UIButton" }
+}
+
+extension UILabel {
+    
+    open override var description: String { return "UILabel" }
 }

@@ -1,0 +1,12 @@
+Client: Applying 'default' theme for 'UIButton'
+UIButton: has applied Default Buttom Theme
+
+Client: Applying 'night' theme for 'UIButton'
+UIButton: has applied Night Buttom Theme
+
+Client: Let's use View Controller as a composite!
+
+Client: Applying 'night button' theme for 'WelcomeViewController'...
+ContentView: has applied Night Buttom Theme
+UILabel: has applied Night Buttom Theme
+UIButton: has applied Night Buttom Theme
