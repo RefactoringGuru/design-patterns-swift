@@ -41,7 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringGuru.Patterns.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FF2262097835E00193902 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916B888F20BC4B1900BA92DF /* Output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		916B889220BC4DA400BA92DF /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
@@ -135,13 +134,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9139FA892088D85F00229150 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		919C89EE20DD7EE4006EE57D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,7 +289,6 @@
 		9139FA792088D85C00229150 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */,
 				919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */,
 				919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */,
 				919C8A1320DD81D0006EE57D /* FacadeStructure.xctest */,
@@ -665,23 +656,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9139FA8B2088D85F00229150 /* RefactoringGuru.Patterns */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "RefactoringGuru.Patterns" */;
-			buildPhases = (
-				9139FA882088D85F00229150 /* Sources */,
-				9139FA892088D85F00229150 /* Frameworks */,
-				9139FA8A2088D85F00229150 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RefactoringGuru.Patterns;
-			productName = PatternsTests;
-			productReference = 9139FA8C2088D85F00229150 /* RefactoringGuru.Patterns.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		919C89F020DD7EE4006EE57D /* AbstractFactoryReal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 919C89F820DD7EE4006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryReal" */;
@@ -1032,11 +1006,6 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Eremenko Maxim";
 				TargetAttributes = {
-					9139FA8B2088D85F00229150 = {
-						CreatedOnToolsVersion = 9.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 9139FA772088D85C00229150;
-					};
 					919C89F020DD7EE4006EE57D = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
@@ -1132,17 +1101,16 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9139FA8B2088D85F00229150 /* RefactoringGuru.Patterns */,
 				919C8A0420DD7F3C006EE57D /* AbstractFactoryStructure */,
 				919C89F020DD7EE4006EE57D /* AbstractFactoryReal */,
-				919C8A1220DD81D0006EE57D /* FacadeStructure */,
-				919C8A1F20DD8261006EE57D /* FacadeReal */,
-				919C8A3820DD82F0006EE57D /* BridgeStructure */,
-				919C8A4520DD8393006EE57D /* BridgeReal */,
 				919C8A5E20DD849A006EE57D /* AdapterStructure */,
 				919C8A6B20DD858C006EE57D /* AdapterReal */,
+				919C8A3820DD82F0006EE57D /* BridgeStructure */,
+				919C8A4520DD8393006EE57D /* BridgeReal */,
 				919C8A7920DD8688006EE57D /* BuilderStructure */,
 				919C8A8620DD86DC006EE57D /* BuilderReal */,
+				919C8A1220DD81D0006EE57D /* FacadeStructure */,
+				919C8A1F20DD8261006EE57D /* FacadeReal */,
 				919C8AA120DD878D006EE57D /* CompositeStructure */,
 				919C8AAE20DD87F2006EE57D /* CompositeReal */,
 				919C8AC620DD8873006EE57D /* DecoratorStructure */,
@@ -1158,13 +1126,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9139FA8A2088D85F00229150 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		919C89EF20DD7EE4006EE57D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1309,13 +1270,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9139FA882088D85F00229150 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		919C89ED20DD7EE4006EE57D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1599,42 +1553,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9139FA992088D85F00229150 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ProjectBundle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PatternsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "";
-			};
-			name = Debug;
-		};
-		9139FA9A2088D85F00229150 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ProjectBundle/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PatternsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "";
 			};
 			name = Release;
 		};
@@ -2166,15 +2084,6 @@
 			buildConfigurations = (
 				9139FA932088D85F00229150 /* Debug */,
 				9139FA942088D85F00229150 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9139FA982088D85F00229150 /* Build configuration list for PBXNativeTarget "RefactoringGuru.Patterns" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9139FA992088D85F00229150 /* Debug */,
-				9139FA9A2088D85F00229150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

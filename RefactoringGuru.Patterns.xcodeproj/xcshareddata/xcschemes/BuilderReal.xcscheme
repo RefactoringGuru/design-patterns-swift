@@ -19,7 +19,7 @@
                BlueprintIdentifier = "919C8A8620DD86DC006EE57D"
                BuildableName = "BuilderReal.xctest"
                BlueprintName = "BuilderReal"
-               ReferencedContainer = "container:">
+               ReferencedContainer = "container:RefactoringGuru.Patterns.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
