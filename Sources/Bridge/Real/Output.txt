@@ -1,9 +1,13 @@
-Pushing Photos View Controller...
-A user selected a 'food' model
-Food Model was posted to the Instagram
-Food Model was posted to the Facebook
+Client: Pushing Photo View Controller...
+PhotoViewController: User selected a Food Model to share
+Service: Food Model was posted to the Instagram
 
-Pushing Feed View Controller...
-A user selected a 'food' model
-Food Model was posted to the Instagram
-Food Model was posted to the Facebook
+PhotoViewController: User selected a Food Model to share
+Service: Food Model was posted to the Facebook
+
+Client: Pushing Feed View Controller...
+FeedViewController: User selected a Food Model to share
+Service: Food Model was posted to the Instagram
+
+FeedViewController: User selected a Food Model to share
+Service: Food Model was posted to the Facebook
