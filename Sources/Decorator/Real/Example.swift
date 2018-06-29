@@ -31,7 +31,7 @@ class DecoratorRealExample: XCTestCase {
     func clientCode(editor: ImageEditor) {
         let image = editor.apply()
         /// Note.
-        /// You can stop an execution in Xcode and see an image preview.
+        /// You can stop an execution in Xcode to see an image preview.
         print("Client: all changes have been applied for \(image)")
     }
 }
