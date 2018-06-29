@@ -1,0 +1,7 @@
+Client: set up an editors stack
+
+BlurFilter applies changes
+Resizer applies changes
+Image applies changes
+
+Client: all changes have been applied for Image

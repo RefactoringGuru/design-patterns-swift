@@ -2,67 +2,78 @@
 //  Filters.swift
 //  DecoratorReal
 //
-//  Created by Maxim Eremenko on 6/27/18.
+//  Created by Maxim Eremenko on 6/29/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
 //
 
 import UIKit
 
-protocol Filter: ImageEditor {
+class BaseFilter: ImageDecorator {
     
-    var filter: CIFilter { get set }
+    fileprivate var filter: CIFilter?
     
-    func update(intencity: Double)
-    func update(image: UIImage)
-}
-
-extension Filter {
-    
-    func update(intencity: Double) {
-        if 0...1 ~= intencity {
-            filter.setValue(intencity, forKey: kCIInputIntensityKey)
-        }
+    init(editor: ImageEditor, filterName: String) {
+        self.filter = CIFilter(name: filterName)
+        super.init(editor)
     }
     
-    func update(image: UIImage) {
-        filter.setValue(image.ciImage, forKey: kCIInputImageKey)
+    required init(_ editor: ImageEditor) {
+        super.init(editor)
     }
     
-    func apply() -> UIImage? {
+    override func apply() -> UIImage {
         
+        let image = super.apply()
         let context = CIContext(options: nil)
         
-        guard let output = filter.outputImage else { return nil }
+        filter?.setValue(CIImage(image: image), forKey: kCIInputImageKey)
+        
+        guard let output = filter?.outputImage else { return image }
         guard let coreImage = context.createCGImage(output, from: output.extent) else {
-            return nil
+            return image
         }
         return UIImage(cgImage: coreImage)
     }
-}
-
-class BlurFilter: Filter {
     
-    lazy var filter = CIFilter(name: "CIGaussianBlur")!
-    
-    func update(radius: Double) {
-        filter.setValue(radius, forKey: "inputRadius")
+    override var description: String {
+        return "BaseFilter"
     }
 }
 
-class ColorFilter: Filter {
+class BlurFilter: BaseFilter {
     
-    lazy var filter = CIFilter(name: "CIColorControls")!
+    required init(_ editor: ImageEditor) {
+        super.init(editor: editor, filterName: "CIGaussianBlur")
+    }
+    
+    func update(radius: Double) {
+        filter?.setValue(radius, forKey: "inputRadius")
+    }
+    
+    override var description: String {
+        return "BlurFilter"
+    }
+}
+
+class ColorFilter: BaseFilter {
+    
+    required init(_ editor: ImageEditor) {
+        super.init(editor: editor, filterName: "CIColorControls")
+    }
     
     func update(saturation: Double) {
-        filter.setValue(saturation, forKey: "inputSaturation")
+        filter?.setValue(saturation, forKey: "inputSaturation")
     }
     
     func update(brightness: Double) {
-        filter.setValue(brightness, forKey: "inputBrightness")
+        filter?.setValue(brightness, forKey: "inputBrightness")
     }
     
     func update(contrast: Double) {
-        filter.setValue(contrast, forKey: "inputContrast")
+        filter?.setValue(contrast, forKey: "inputContrast")
+    }
+    
+    override var description: String {
+        return "ColorFilter"
     }
 }
-

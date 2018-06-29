@@ -8,33 +8,39 @@
 
 import UIKit
 
-class ImageResizer: ImageEditor {
+class Resizer: ImageDecorator {
     
-    private var editor: ImageEditor
+    private var xScale: CGFloat = 0
+    private var yScale: CGFloat = 0
+    private var hasAlpha = false
+    
+    init(_ editor: ImageEditor, xScale: CGFloat = 0, yScale: CGFloat = 0, hasAlpha: Bool = false) {
+        self.xScale = xScale
+        self.yScale = yScale
+        self.hasAlpha = hasAlpha
+        super.init(editor)
+    }
     
     required init(_ editor: ImageEditor) {
-        self.editor = editor
+        super.init(editor)
     }
     
-    func apply() -> UIImage? {
-        return editor.apply()
-    }
-}
-
-class UIKitResizer: ImageResizer {
-    
-    override func apply() -> UIImage? {
+    override func apply() -> UIImage {
+        
         let image = super.apply()
-        /// TODO ...resize
-        return image
+        
+        let size = image.size.applying(CGAffineTransform(scaleX: xScale, y: yScale))
+        
+        UIGraphicsBeginImageContextWithOptions(size, !hasAlpha, UIScreen.main.scale)
+        image.draw(in: CGRect(origin: .zero, size: size))
+        
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return scaledImage ?? image
     }
-}
-
-class CoreGraphicsResizer: ImageResizer {
     
-    override func apply() -> UIImage? {
-        let image = super.apply()
-        /// TODO ...resize
-        return image
+    override var description: String {
+        return "Resizer"
     }
 }
