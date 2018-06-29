@@ -34,6 +34,10 @@
 		919C8B0F20DD8B12006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFEA20B5D0A700266EF8 /* Example.swift */; };
 		919C8B1C20DD8B70006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFCC20B5D0A700266EF8 /* Example.swift */; };
 		919C8B2920DD8BC3006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFC920B5D0A700266EF8 /* Example.swift */; };
+		91F0DA9220E397C1001F1C1A /* Resizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F0DA9120E397C1001F1C1A /* Resizers.swift */; };
+		91F0DA9620E6552A001F1C1A /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91F0DA9520E6552A001F1C1A /* Output.txt */; };
+		91F0DA9820E655AF001F1C1A /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F0DA9720E655AF001F1C1A /* Filters.swift */; };
+		91F0DA9A20E655D5001F1C1A /* ImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F0DA9920E655D5001F1C1A /* ImageEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +128,10 @@
 		919C8B1820DD8B59006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		919C8B2120DD8BA9006EE57D /* SingletonReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8B2520DD8BA9006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F0DA9120E397C1001F1C1A /* Resizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resizers.swift; sourceTree = "<group>"; };
+		91F0DA9520E6552A001F1C1A /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91F0DA9720E655AF001F1C1A /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		91F0DA9920E655D5001F1C1A /* ImageEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +593,10 @@
 			isa = PBXGroup;
 			children = (
 				919C8AD620DD88C6006EE57D /* Example.swift */,
+				91F0DA9920E655D5001F1C1A /* ImageEditor.swift */,
+				91F0DA9120E397C1001F1C1A /* Resizers.swift */,
+				91F0DA9720E655AF001F1C1A /* Filters.swift */,
+				91F0DA9520E6552A001F1C1A /* Output.txt */,
 				919C8AD820DD88C6006EE57D /* Info.plist */,
 			);
 			path = Real;
@@ -1248,6 +1260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F0DA9620E6552A001F1C1A /* Output.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1418,7 +1431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F0DA9820E655AF001F1C1A /* Filters.swift in Sources */,
 				919C8AD720DD88C6006EE57D /* Example.swift in Sources */,
+				91F0DA9220E397C1001F1C1A /* Resizers.swift in Sources */,
+				91F0DA9A20E655D5001F1C1A /* ImageEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

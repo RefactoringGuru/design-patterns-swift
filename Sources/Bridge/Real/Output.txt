@@ -1,7 +1,13 @@
-Sharing an Apple model to social networks
-Apple Model was posted to the Instagram
-Apple Model was posted to the Facebook
+Client: Pushing Photo View Controller...
+PhotoViewController: User selected a Food Model to share
+Service: Food Model was posted to the Instagram
 
-Sharing a News model to social networks
-News Model was posted to the Instagram
-News Model was posted to the Facebook
+PhotoViewController: User selected a Food Model to share
+Service: Food Model was posted to the Facebook
+
+Client: Pushing Feed View Controller...
+FeedViewController: User selected a Food Model to share
+Service: Food Model was posted to the Instagram
+
+FeedViewController: User selected a Food Model to share
+Service: Food Model was posted to the Facebook
