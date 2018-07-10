@@ -31,7 +31,7 @@ protocol LabelTheme: Theme {
 
 /// Button Themes
 
-struct DefaultButtomTheme: ButtomTheme {
+struct DefaultButtonTheme: ButtomTheme {
     
     var textColor = UIColor.red
     

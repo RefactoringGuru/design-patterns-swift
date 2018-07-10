@@ -13,15 +13,30 @@ class CompositeRealExample: XCTestCase {
     func test() {
         
         print("\nClient: Applying 'default' theme for 'UIButton'")
-        apply(theme: DefaultButtomTheme(), for: UIButton())
+        apply(theme: DefaultButtonTheme(), for: UIButton())
         
         print("\nClient: Applying 'night' theme for 'UIButton'")
         apply(theme: NightButtonTheme(), for: UIButton())
         
+        
         print("\nClient: Let's use View Controller as a composite!")
         
+        /// Night theme
         print("\nClient: Applying 'night button' theme for 'WelcomeViewController'...")
         apply(theme: NightButtonTheme(), for: WelcomeViewController())
+        print()
+        
+        print("\nClient: Applying 'night label' theme for 'WelcomeViewController'...")
+        apply(theme: NightLabelTheme(), for: WelcomeViewController())
+        print()
+        
+        /// Default Theme
+        print("\nClient: Applying 'default button' theme for 'WelcomeViewController'...")
+        apply(theme: DefaultButtonTheme(), for: WelcomeViewController())
+        print()
+        
+        print("\nClient: Applying 'default label' theme for 'WelcomeViewController'...")
+        apply(theme: DefaultLabelTheme(), for: WelcomeViewController())
         print()
     }
     
