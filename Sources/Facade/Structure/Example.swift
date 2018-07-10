@@ -29,8 +29,8 @@ class FacadeStructuralExample: XCTestCase {
         
         let subsystem1 = Subsystem1()
         let subsystem2 = Subsystem2()
-        let facade = Facade(subsystem1: subsystem1, subsystem2: subsystem2);
-        clientCode(facade: facade);
+        let facade = Facade(subsystem1: subsystem1, subsystem2: subsystem2)
+        clientCode(facade: facade)
     }
     
     func clientCode(facade: Facade) {
@@ -82,7 +82,7 @@ class Facade
 class Subsystem1
 {
     func operation1() -> String {
-        return "Sybsystem1: Ready!\n";
+        return "Sybsystem1: Ready!\n"
     }
     
     func operationN() -> String {
