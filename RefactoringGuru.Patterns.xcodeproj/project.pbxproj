@@ -39,13 +39,13 @@
 		91B1206320F56BFA00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B1206220F56BFA00730C37 /* Output.txt */; };
 		91B1206520F56C0100730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B1206420F56C0100730C37 /* Output.txt */; };
 		91B1206E20F610E400730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1206D20F610E400730C37 /* Example.swift */; };
-		91B1207A20F6114A00730C37 /* ChainOfResponsibilityReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1207920F6114A00730C37 /* ChainOfResponsibilityReal.swift */; };
-		91B1208620F611DA00730C37 /* CommandStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1208520F611DA00730C37 /* CommandStructure.swift */; };
-		91B1209320F6120C00730C37 /* CommandReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1209220F6120C00730C37 /* CommandReal.swift */; };
-		91B120A020F6125500730C37 /* IteratorStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1209F20F6125500730C37 /* IteratorStructure.swift */; };
-		91B120AC20F6127400730C37 /* IteratorReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120AB20F6127400730C37 /* IteratorReal.swift */; };
-		91B120B920F6130A00730C37 /* ProxyStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120B820F6130A00730C37 /* ProxyStructure.swift */; };
-		91B120C520F6132E00730C37 /* ProxyReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120C420F6132E00730C37 /* ProxyReal.swift */; };
+		91B1207A20F6114A00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1207920F6114A00730C37 /* Example.swift */; };
+		91B1208620F611DA00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1208520F611DA00730C37 /* Example.swift */; };
+		91B1209320F6120C00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1209220F6120C00730C37 /* Example.swift */; };
+		91B120A020F6125500730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1209F20F6125500730C37 /* Example.swift */; };
+		91B120AC20F6127400730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120AB20F6127400730C37 /* Example.swift */; };
+		91B120B920F6130A00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120B820F6130A00730C37 /* Example.swift */; };
+		91B120C520F6132E00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120C420F6132E00730C37 /* Example.swift */; };
 		91B120CB20F61BAD00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CA20F61BAD00730C37 /* Output.txt */; };
 		91B120CD20F61BBC00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CC20F61BBC00730C37 /* Output.txt */; };
 		91B120CF20F61BC600730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CE20F61BC600730C37 /* Output.txt */; };
@@ -162,25 +162,25 @@
 		91B1206D20F610E400730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1206F20F610E400730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B1207720F6114A00730C37 /* ChainOfResponsibilityReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainOfResponsibilityReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B1207920F6114A00730C37 /* ChainOfResponsibilityReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibilityReal.swift; sourceTree = "<group>"; };
+		91B1207920F6114A00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1207B20F6114A00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B1208320F611DA00730C37 /* CommandStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B1208520F611DA00730C37 /* CommandStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandStructure.swift; sourceTree = "<group>"; };
+		91B1208520F611DA00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1208720F611DA00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B1209020F6120C00730C37 /* CommandReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B1209220F6120C00730C37 /* CommandReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandReal.swift; sourceTree = "<group>"; };
+		91B1209220F6120C00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1209420F6120C00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B1209D20F6125500730C37 /* IteratorStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IteratorStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B1209F20F6125500730C37 /* IteratorStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorStructure.swift; sourceTree = "<group>"; };
+		91B1209F20F6125500730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120A120F6125500730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B120A920F6127400730C37 /* IteratorReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IteratorReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B120AB20F6127400730C37 /* IteratorReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorReal.swift; sourceTree = "<group>"; };
+		91B120AB20F6127400730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120AD20F6127400730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B120B620F6130900730C37 /* ProxyStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B120B820F6130A00730C37 /* ProxyStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyStructure.swift; sourceTree = "<group>"; };
+		91B120B820F6130A00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120BA20F6130A00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B120C220F6132E00730C37 /* ProxyReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		91B120C420F6132E00730C37 /* ProxyReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyReal.swift; sourceTree = "<group>"; };
+		91B120C420F6132E00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120C620F6132E00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B120CA20F61BAD00730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		91B120CC20F61BBC00730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
@@ -859,7 +859,7 @@
 			isa = PBXGroup;
 			children = (
 				91B120CC20F61BBC00730C37 /* Output.txt */,
-				91B1207920F6114A00730C37 /* ChainOfResponsibilityReal.swift */,
+				91B1207920F6114A00730C37 /* Example.swift */,
 				91B1207B20F6114A00730C37 /* Info.plist */,
 			);
 			path = Real;
@@ -868,9 +868,9 @@
 		91B1208420F611DA00730C37 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				91B120D020F61BD000730C37 /* Output.txt */,
-				91B1208520F611DA00730C37 /* CommandStructure.swift */,
+				91B1208520F611DA00730C37 /* Example.swift */,
 				91B1208720F611DA00730C37 /* Info.plist */,
+				91B120D020F61BD000730C37 /* Output.txt */,
 			);
 			path = Structure;
 			sourceTree = "<group>";
@@ -888,7 +888,7 @@
 			isa = PBXGroup;
 			children = (
 				91B120CE20F61BC600730C37 /* Output.txt */,
-				91B1209220F6120C00730C37 /* CommandReal.swift */,
+				91B1209220F6120C00730C37 /* Example.swift */,
 				91B1209420F6120C00730C37 /* Info.plist */,
 			);
 			path = Real;
@@ -907,7 +907,7 @@
 			isa = PBXGroup;
 			children = (
 				91B120D420F61BE300730C37 /* Output.txt */,
-				91B1209F20F6125500730C37 /* IteratorStructure.swift */,
+				91B1209F20F6125500730C37 /* Example.swift */,
 				91B120A120F6125500730C37 /* Info.plist */,
 			);
 			path = Structure;
@@ -917,7 +917,7 @@
 			isa = PBXGroup;
 			children = (
 				91B120D220F61BDA00730C37 /* Output.txt */,
-				91B120AB20F6127400730C37 /* IteratorReal.swift */,
+				91B120AB20F6127400730C37 /* Example.swift */,
 				91B120AD20F6127400730C37 /* Info.plist */,
 			);
 			path = Real;
@@ -936,7 +936,7 @@
 			isa = PBXGroup;
 			children = (
 				91B120D820F61BF000730C37 /* Output.txt */,
-				91B120B820F6130A00730C37 /* ProxyStructure.swift */,
+				91B120B820F6130A00730C37 /* Example.swift */,
 				91B120BA20F6130A00730C37 /* Info.plist */,
 			);
 			path = Structure;
@@ -946,7 +946,7 @@
 			isa = PBXGroup;
 			children = (
 				91B120D620F61BE900730C37 /* Output.txt */,
-				91B120C420F6132E00730C37 /* ProxyReal.swift */,
+				91B120C420F6132E00730C37 /* Example.swift */,
 				91B120C620F6132E00730C37 /* Info.plist */,
 			);
 			path = Real;
@@ -2070,7 +2070,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B1207A20F6114A00730C37 /* ChainOfResponsibilityReal.swift in Sources */,
+				91B1207A20F6114A00730C37 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2078,7 +2078,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B1208620F611DA00730C37 /* CommandStructure.swift in Sources */,
+				91B1208620F611DA00730C37 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2086,7 +2086,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B1209320F6120C00730C37 /* CommandReal.swift in Sources */,
+				91B1209320F6120C00730C37 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2094,7 +2094,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B120A020F6125500730C37 /* IteratorStructure.swift in Sources */,
+				91B120A020F6125500730C37 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2102,7 +2102,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B120AC20F6127400730C37 /* IteratorReal.swift in Sources */,
+				91B120AC20F6127400730C37 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2110,7 +2110,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B120B920F6130A00730C37 /* ProxyStructure.swift in Sources */,
+				91B120B920F6130A00730C37 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2118,7 +2118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B120C520F6132E00730C37 /* ProxyReal.swift in Sources */,
+				91B120C520F6132E00730C37 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
