@@ -39,7 +39,7 @@ class FlyweightStructureExample: XCTestCase {
                 ["BMW", "X6", "white"]
             ])
         
-        factory.listFlyweights()
+        factory.printFlyweights()
         
         addCarToPoliceDatabase(factory,
                                "CL234IR",
@@ -54,7 +54,7 @@ class FlyweightStructureExample: XCTestCase {
                                "BMW",
                                "X1",
                                "red")
-        factory.listFlyweights()
+        factory.printFlyweights()
     }
     
     func addCarToPoliceDatabase(
@@ -145,7 +145,7 @@ class FlyweightFactory {
         return foundFlyweight
     }
     
-    func listFlyweights() {
+    func printFlyweights() {
         print("FlyweightFactory: I have \(flyweights.count) flyweights:\n")
         for item in flyweights {
             print(item.key)
