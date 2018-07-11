@@ -46,6 +46,14 @@
 		91B120AC20F6127400730C37 /* IteratorReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120AB20F6127400730C37 /* IteratorReal.swift */; };
 		91B120B920F6130A00730C37 /* ProxyStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120B820F6130A00730C37 /* ProxyStructure.swift */; };
 		91B120C520F6132E00730C37 /* ProxyReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120C420F6132E00730C37 /* ProxyReal.swift */; };
+		91B120CB20F61BAD00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CA20F61BAD00730C37 /* Output.txt */; };
+		91B120CD20F61BBC00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CC20F61BBC00730C37 /* Output.txt */; };
+		91B120CF20F61BC600730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CE20F61BC600730C37 /* Output.txt */; };
+		91B120D120F61BD000730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D020F61BD000730C37 /* Output.txt */; };
+		91B120D320F61BDA00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D220F61BDA00730C37 /* Output.txt */; };
+		91B120D520F61BE300730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D420F61BE300730C37 /* Output.txt */; };
+		91B120D720F61BE900730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D620F61BE900730C37 /* Output.txt */; };
+		91B120D920F61BF000730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D820F61BF000730C37 /* Output.txt */; };
 		91F0DA9220E397C1001F1C1A /* Resizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F0DA9120E397C1001F1C1A /* Resizers.swift */; };
 		91F0DA9620E6552A001F1C1A /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91F0DA9520E6552A001F1C1A /* Output.txt */; };
 		91F0DA9820E655AF001F1C1A /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F0DA9720E655AF001F1C1A /* Filters.swift */; };
@@ -174,6 +182,14 @@
 		91B120C220F6132E00730C37 /* ProxyReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B120C420F6132E00730C37 /* ProxyReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyReal.swift; sourceTree = "<group>"; };
 		91B120C620F6132E00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91B120CA20F61BAD00730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91B120CC20F61BBC00730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91B120CE20F61BC600730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91B120D020F61BD000730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91B120D220F61BDA00730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91B120D420F61BE300730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91B120D620F61BE900730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
+		91B120D820F61BF000730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		91F0DA9120E397C1001F1C1A /* Resizers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resizers.swift; sourceTree = "<group>"; };
 		91F0DA9520E6552A001F1C1A /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		91F0DA9720E655AF001F1C1A /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
@@ -834,6 +850,7 @@
 			children = (
 				91B1206D20F610E400730C37 /* Example.swift */,
 				91B1206F20F610E400730C37 /* Info.plist */,
+				91B120CA20F61BAD00730C37 /* Output.txt */,
 			);
 			path = Structure;
 			sourceTree = "<group>";
@@ -841,6 +858,7 @@
 		91B1207820F6114A00730C37 /* Real */ = {
 			isa = PBXGroup;
 			children = (
+				91B120CC20F61BBC00730C37 /* Output.txt */,
 				91B1207920F6114A00730C37 /* ChainOfResponsibilityReal.swift */,
 				91B1207B20F6114A00730C37 /* Info.plist */,
 			);
@@ -850,6 +868,7 @@
 		91B1208420F611DA00730C37 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
+				91B120D020F61BD000730C37 /* Output.txt */,
 				91B1208520F611DA00730C37 /* CommandStructure.swift */,
 				91B1208720F611DA00730C37 /* Info.plist */,
 			);
@@ -868,6 +887,7 @@
 		91B1209120F6120C00730C37 /* Real */ = {
 			isa = PBXGroup;
 			children = (
+				91B120CE20F61BC600730C37 /* Output.txt */,
 				91B1209220F6120C00730C37 /* CommandReal.swift */,
 				91B1209420F6120C00730C37 /* Info.plist */,
 			);
@@ -886,6 +906,7 @@
 		91B1209E20F6125500730C37 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
+				91B120D420F61BE300730C37 /* Output.txt */,
 				91B1209F20F6125500730C37 /* IteratorStructure.swift */,
 				91B120A120F6125500730C37 /* Info.plist */,
 			);
@@ -895,6 +916,7 @@
 		91B120AA20F6127400730C37 /* Real */ = {
 			isa = PBXGroup;
 			children = (
+				91B120D220F61BDA00730C37 /* Output.txt */,
 				91B120AB20F6127400730C37 /* IteratorReal.swift */,
 				91B120AD20F6127400730C37 /* Info.plist */,
 			);
@@ -913,6 +935,7 @@
 		91B120B720F6130A00730C37 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
+				91B120D820F61BF000730C37 /* Output.txt */,
 				91B120B820F6130A00730C37 /* ProxyStructure.swift */,
 				91B120BA20F6130A00730C37 /* Info.plist */,
 			);
@@ -922,6 +945,7 @@
 		91B120C320F6132E00730C37 /* Real */ = {
 			isa = PBXGroup;
 			children = (
+				91B120D620F61BE900730C37 /* Output.txt */,
 				91B120C420F6132E00730C37 /* ProxyReal.swift */,
 				91B120C620F6132E00730C37 /* Info.plist */,
 			);
@@ -1647,7 +1671,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B1206320F56BFA00730C37 /* Output.txt in Resources */,
+				91B120D920F61BF000730C37 /* Output.txt in Resources */,
+				91B120D720F61BE900730C37 /* Output.txt in Resources */,
+				91B120D520F61BE300730C37 /* Output.txt in Resources */,
+				91B120D120F61BD000730C37 /* Output.txt in Resources */,
+				91B120CF20F61BC600730C37 /* Output.txt in Resources */,
+				91B120CD20F61BBC00730C37 /* Output.txt in Resources */,
+				91B120CB20F61BAD00730C37 /* Output.txt in Resources */,
 				91B1206520F56C0100730C37 /* Output.txt in Resources */,
+				91B120D320F61BDA00730C37 /* Output.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
