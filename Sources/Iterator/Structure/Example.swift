@@ -85,12 +85,8 @@ extension WordsCollection: Sequence {
             var index = self.items.count - 1
             
             return AnyIterator {
-                
-                guard index >= 0 else { return nil }
-                
-                let item = self.items[index]
-                index -= 1
-                return item
+                defer { index -= 1 }
+                return index >= 0 ? self.items[index] : nil
             }
         }
     }
@@ -112,10 +108,7 @@ class CustomIterator: IteratorProtocol {
     }
     
     func next() -> String? {
-        guard index < collection.items.count else { return nil }
-        
-        let item = collection.items[index]
-        index += 1
-        return item
+        defer { index += 1 }
+        return index < collection.items.count ? collection.items[index] : nil
     }
 }
