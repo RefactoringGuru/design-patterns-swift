@@ -906,8 +906,8 @@
 		91B1209E20F6125500730C37 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				91B120D420F61BE300730C37 /* Output.txt */,
 				91B1209F20F6125500730C37 /* Example.swift */,
+				91B120D420F61BE300730C37 /* Output.txt */,
 				91B120A120F6125500730C37 /* Info.plist */,
 			);
 			path = Structure;
