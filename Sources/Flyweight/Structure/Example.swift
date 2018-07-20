@@ -28,7 +28,7 @@ class FlyweightStructureExample: XCTestCase {
     /// RU: Клиентский код обычно создает кучу предварительно заполненных легковесов
     /// на этапе инициализации приложения.
     
-    func test() {
+    func testFlyweight() {
         
         let factory = FlyweightFactory(states:
             [
