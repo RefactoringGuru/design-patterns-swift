@@ -87,7 +87,7 @@ struct Animal {
     /// This is an external context that contains specific values
     /// and an object with a common state.
     ///
-    /// Note: The object of appearance will be lazily created when it's needed
+    /// Note: The object of appearance will be lazily created when it is needed
     
     let name: String
     let country: String
