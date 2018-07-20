@@ -175,6 +175,7 @@ struct BankAccount {
 }
 
 enum ProfileError: LocalizedError {
+    
     case accessDenied
     
     var errorDescription: String? {
