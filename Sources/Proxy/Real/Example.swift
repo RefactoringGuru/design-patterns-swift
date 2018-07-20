@@ -58,7 +58,7 @@ class ProxyRealExample: XCTestCase {
             print("Client: Error: " + error.localizedSummary)
         }
     }
-}
+} 
 
 enum AccessField {
     
