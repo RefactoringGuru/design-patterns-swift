@@ -14,16 +14,16 @@ class FlyweightRealExample: XCTestCase {
     func testFlyweight() {
         
         let maineCoon = Animal(name: "Maine Coon",
-                         country: "USA",
-                         type: .cat)
+                               country: "USA",
+                               type: .cat)
         
         let sphynx = Animal(name: "Sphynx",
-                         country: "Egypt",
-                         type: .cat)
+                            country: "Egypt",
+                            type: .cat)
         
         let bulldog = Animal(name: "Bulldog",
-                         country: "England",
-                         type: .dog)
+                             country: "England",
+                             type: .dog)
         
         print("Client: I created a number of objects to display")
         
