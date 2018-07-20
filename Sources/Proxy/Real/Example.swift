@@ -132,7 +132,7 @@ class Keychain: ProfileService {
     }
     
     private func loadBankAccount() -> BankAccount {
-        /// Gets these fields from a secure storage
+        /// Gets these fields from a secure storage.
         return BankAccount(id: 12345, amount: 999)
     }
 }
