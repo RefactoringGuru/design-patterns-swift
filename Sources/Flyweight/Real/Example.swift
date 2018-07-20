@@ -85,7 +85,7 @@ class Cell {
 struct Animal {
     
     /// This is an external context that contains specific values
-    /// and object with a common state.
+    /// and an object with a common state.
     ///
     /// Note: The object of appearance will be lazily created when it's needed
     
