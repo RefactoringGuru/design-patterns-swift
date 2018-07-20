@@ -58,7 +58,7 @@ class ProxyRealExample: XCTestCase {
             print("Client: Error: " + error.localizedSummary)
         }
     }
-} 
+}
 
 enum AccessField {
     
@@ -125,7 +125,7 @@ class Keychain: ProfileService {
     }
     
     private func loadBasicProfile() -> [String : String] {
-        /// Gets these fields from a secure storage
+        /// Gets these fields from a secure storage.
         return [Profile.Keys.firstName.raw : "Vasya",
                 Profile.Keys.lastName.raw : "Pupkin",
                 Profile.Keys.email.raw : "vasya.pupkin@gmail.com"]
