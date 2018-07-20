@@ -1,0 +1,8 @@
+Client: Loading a profile WITHOUT proxy
+Client: Basic profile is loaded
+Client: Basic profile with a bank account is loaded
+
+Client: Let's load a profile WITH proxy
+Client: Basic profile is loaded
+Client: Cannot load a profile with a bank account
+Client: Error: Access is denied. Please enter a valid password
