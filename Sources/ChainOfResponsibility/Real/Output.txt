@@ -1,0 +1,8 @@
+Client: Let's test Login flow!
+Login View Controller: User selected Login button
+Login View Controller: Preconditions are successfully validated
+
+Client: Let's test SignUp flow!
+SignUp View Controller: User selected SignUp button
+SignUp View Controller: something went wrong
+SignUp View Controller: Error -> Please turn notifications on
