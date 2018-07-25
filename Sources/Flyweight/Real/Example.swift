@@ -45,6 +45,9 @@ class FlyweightRealExample: XCTestCase {
         
         display(animals: [germanShepherd])
     }
+}
+
+extension FlyweightRealExample {
     
     func display(animals: [Animal]) {
         
@@ -54,7 +57,7 @@ class FlyweightRealExample: XCTestCase {
             cells[index].update(with: animals[index])
         }
         
-        print("Using updated cells (count: \(cells.count))\n")
+        /// Using cells...
     }
     
     func loadCells(count: Int) -> [Cell] {
@@ -74,15 +77,13 @@ class Cell {
     
     func update(with animal: Animal) {
         self.animal = animal
-        update(appearance: animal.appearance)
-    }
-    
-    private func update(appearance: Appearance) {
-        print("Updating appearance of a \(appearance.key.rawValue)-cell.\n")
+        let type = animal.type.rawValue
+        let photos = "photos \(animal.appearance.photos.count)"
+        print("Cell: Updating an appearance of a \(type)-cell: \(photos)\n")
     }
 }
 
-struct Animal {
+struct Animal: Equatable {
     
     /// This is an external context that contains specific values
     /// and an object with a common state.
@@ -94,25 +95,37 @@ struct Animal {
     let type: Type
     
     var appearance: Appearance {
-        return AppearanceFactory.info(for: type)
+        return AppearanceFactory.appearance(for: type)
     }
 }
 
-struct Appearance {
+struct Appearance: Equatable {
     
     /// This object contains a predefined appearance of every cell
     
-    let key: Type
     let photos: [UIImage]
     let backgroundColor: UIColor
-    let animation: CAAnimation
+}
+
+extension Animal: CustomStringConvertible {
+    
+    var description: String {
+        return "\(name), \(country), \(type.rawValue) + \(appearance.description)"
+    }
+}
+
+extension Appearance: CustomStringConvertible {
+    
+    var description: String {
+        return "photos: \(photos.count), \(backgroundColor)"
+    }
 }
 
 class AppearanceFactory {
     
     private static var cache = [Type: Appearance]()
     
-    static func info(for key: Type) -> Appearance {
+    static func appearance(for key: Type) -> Appearance {
         
         guard cache[key] == nil else {
             print("AppearanceFactory: Reusing an existing \(key.rawValue)-appearance.")
@@ -130,18 +143,15 @@ class AppearanceFactory {
         
         return cache[key]!
     }
+}
+
+extension AppearanceFactory {
     
     private static var catInfo: Appearance {
-        return Appearance(key: .cat,
-                    photos: [UIImage()],
-                    backgroundColor: .red,
-                    animation: CABasicAnimation())
+        return Appearance(photos: [UIImage()], backgroundColor: .red)
     }
     
     private static var dogInfo: Appearance {
-        return Appearance(key: .dog,
-                    photos: [UIImage(), UIImage()],
-                    backgroundColor: .blue,
-                    animation: CAKeyframeAnimation())
+        return Appearance(photos: [UIImage(), UIImage()], backgroundColor: .blue)
     }
 }
