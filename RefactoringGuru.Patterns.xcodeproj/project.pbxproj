@@ -12,6 +12,7 @@
 		91884D7B21028FC2004A3013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A03C521028E1800CCAC40 /* ViewController.swift */; };
 		91884D7C21028FCB004A3013 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A03C921028E5E00CCAC40 /* Handler.swift */; };
 		91884D7D21028FD1004A3013 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A03C721028E3500CCAC40 /* Request.swift */; };
+		91884D832103A1BA004A3013 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91884D812103A163004A3013 /* Commands.swift */; };
 		919C89FA20DD7F03006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB220B5D0A600266EF8 /* Example.swift */; };
 		919C89FB20DD7F03006EE57D /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAC20B5D0A600266EF8 /* Controllers.swift */; };
 		919C89FC20DD7F03006EE57D /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFAD20B5D0A600266EF8 /* Factories.swift */; };
@@ -120,6 +121,7 @@
 		9187BFEA20B5D0A700266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		9187BFEC20B5D0A700266EF8 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		9187BFEE20B5D0A700266EF8 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		91884D812103A163004A3013 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
 		919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C89F520DD7EE4006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -887,8 +889,8 @@
 		91B1208B20F611EF00730C37 /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				91B1209120F6120C00730C37 /* Real */,
 				91B1208420F611DA00730C37 /* Structure */,
+				91B1209120F6120C00730C37 /* Real */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -896,8 +898,9 @@
 		91B1209120F6120C00730C37 /* Real */ = {
 			isa = PBXGroup;
 			children = (
-				91B120CE20F61BC600730C37 /* Output.txt */,
 				91B1209220F6120C00730C37 /* Example.swift */,
+				91884D812103A163004A3013 /* Commands.swift */,
+				91B120CE20F61BC600730C37 /* Output.txt */,
 				91B1209420F6120C00730C37 /* Info.plist */,
 			);
 			path = Real;
@@ -925,8 +928,8 @@
 		91B120AA20F6127400730C37 /* Real */ = {
 			isa = PBXGroup;
 			children = (
-				91B120D220F61BDA00730C37 /* Output.txt */,
 				91B120AB20F6127400730C37 /* Example.swift */,
+				91B120D220F61BDA00730C37 /* Output.txt */,
 				91B120AD20F6127400730C37 /* Info.plist */,
 			);
 			path = Real;
@@ -2099,6 +2102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B1209320F6120C00730C37 /* Example.swift in Sources */,
+				91884D832103A1BA004A3013 /* Commands.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

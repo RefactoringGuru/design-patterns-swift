@@ -1,0 +1,13 @@
+User: Hey Siri, I am leaving my home
+Siri: performing leaveHome-action
+
+User: Hey Siri, I am leaving my work in 3 minutes
+Siri: performing leaveWork-action
+
+User: Hey Siri, I am still working
+Siri: canceling leaveWork-action
+
+DoorCommand: Doors are closed via HomeKit.
+WindowCommand: Windows are closed via HomeKit.
+TaxiCommand: operation is canceled
+

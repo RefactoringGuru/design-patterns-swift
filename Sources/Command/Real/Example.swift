@@ -8,28 +8,86 @@
 
 import XCTest
 
-class CommandReal: XCTestCase {
+class CommandRealExample: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test() {
+        prepareTestEnvironment {
+            
+            let siri = SiriShortcuts()
+            
+            print("User: Hey Siri, I am leaving my home")
+            siri.perform(.leaveHome)
+            
+            print("User: Hey Siri, I am leaving my work in 3 minutes")
+            siri.perform(.leaveWork, delay: 3) /// for simplicity, we are using seconds
+            
+            print("User: Hey Siri, I am still working")
+            siri.cancel(.leaveWork)
+        }
+    }
+}
+
+extension CommandRealExample {
+    
+    struct ExecutionTime {
+        static let max: TimeInterval = 5
+        static let waiting: TimeInterval = 4
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func prepareTestEnvironment(_ execution: () -> ()) {
+        
+        /// This method tells Xcode to wait for async operations.
+        /// Otherwise the main test is done immediately.
+        
+        let expectation = self.expectation(description: "Expectation for async operations")
+        
+        let deadline = DispatchTime.now() + ExecutionTime.waiting
+        DispatchQueue.main.asyncAfter(deadline: deadline) { expectation.fulfill() }
+        
+        execution()
+        
+        wait(for: [expectation], timeout: ExecutionTime.max)
+    }
+}
+
+class SiriShortcuts {
+    
+    private lazy var queue = OperationQueue()
+    
+    enum Action: String {
+        case leaveHome
+        case leaveWork
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func perform(_ action: Action, delay: TimeInterval = 0) {
+        print("Siri: performing \(action)-action\n")
+        switch action {
+        case .leaveHome:
+            add(operation: WindowCommand(delay))
+            add(operation: DoorCommand(delay))
+        case .leaveWork:
+            add(operation: TaxiCommand(delay))
         }
     }
     
+    func cancel(_ action: Action) {
+        print("Siri: canceling \(action)-action\n")
+        switch action {
+        case .leaveHome:
+            cancelOperation(with: WindowCommand.self)
+            cancelOperation(with: DoorCommand.self)
+        case .leaveWork:
+            cancelOperation(with: TaxiCommand.self)
+        }
+    }
+    
+    private func cancelOperation(with operationType: Operation.Type) {
+        queue.operations.filter { operation in
+            return type(of: operation) == operationType
+        }.forEach({ $0.cancel() })
+    }
+    
+    private func add(operation: Operation) {
+        queue.addOperation(operation)
+    }
 }
