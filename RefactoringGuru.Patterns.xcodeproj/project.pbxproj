@@ -19,7 +19,7 @@
 		912C5D4D210BC6A8007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D4C210BC6A8007DC364 /* Example.swift */; };
 		912C5D59210BC6F1007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D58210BC6F1007DC364 /* Example.swift */; };
 		912C5D65210BC749007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D64210BC749007DC364 /* Example.swift */; };
-		912C5D72210BC7B1007DC364 /* TemplateMethodReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D71210BC7B1007DC364 /* TemplateMethodReal.swift */; };
+		912C5D72210BC7B1007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D71210BC7B1007DC364 /* Example.swift */; };
 		91301AD520F55C25003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AD420F55C25003B4FC0 /* Example.swift */; };
 		91301AE220F55CAA003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AE120F55CAA003B4FC0 /* Example.swift */; };
 		91884D7B21028FC2004A3013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A03C521028E1800CCAC40 /* ViewController.swift */; };
@@ -115,7 +115,7 @@
 		912C5D64210BC749007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D66210BC749007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		912C5D6F210BC7B1007DC364 /* TemplateMethodReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateMethodReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		912C5D71210BC7B1007DC364 /* TemplateMethodReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodReal.swift; sourceTree = "<group>"; };
+		912C5D71210BC7B1007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D73210BC7B1007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91301AD220F55C25003B4FC0 /* FlyweightStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91301AD420F55C25003B4FC0 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
@@ -710,7 +710,7 @@
 		912C5D70210BC7B1007DC364 /* Real */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D71210BC7B1007DC364 /* TemplateMethodReal.swift */,
+				912C5D71210BC7B1007DC364 /* Example.swift */,
 				912C5D73210BC7B1007DC364 /* Info.plist */,
 			);
 			path = Real;
@@ -2636,7 +2636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				912C5D72210BC7B1007DC364 /* TemplateMethodReal.swift in Sources */,
+				912C5D72210BC7B1007DC364 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
