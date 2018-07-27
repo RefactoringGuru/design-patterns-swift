@@ -865,11 +865,6 @@
 		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D77210BC80B007DC364 /* Visitor */,
-				912C5D6A210BC750007DC364 /* TemplateMethod */,
-				912C5D45210BC687007DC364 /* Strategy */,
-				912C5D38210BC5EB007DC364 /* State */,
-				912C5D13210BC53A007DC364 /* Observer */,
 				919C8A0E20DD7F7B006EE57D /* AbstractFactory */,
 				916B889E20BC5C5800BA92DF /* Facade */,
 				9187BFDA20B5D0A700266EF8 /* Bridge */,
@@ -885,8 +880,13 @@
 				91B1208B20F611EF00730C37 /* Command */,
 				91B1209820F6124200730C37 /* Iterator */,
 				91B120B120F612F600730C37 /* Proxy */,
-				912C5D01210BC4A5007DC364 /* Memento */,
 				912C5CE7210BC34E007DC364 /* Mediator */,
+				912C5D01210BC4A5007DC364 /* Memento */,
+				912C5D13210BC53A007DC364 /* Observer */,
+				912C5D38210BC5EB007DC364 /* State */,
+				912C5D45210BC687007DC364 /* Strategy */,
+				912C5D6A210BC750007DC364 /* TemplateMethod */,
+				912C5D77210BC80B007DC364 /* Visitor */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
