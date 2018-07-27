@@ -12,6 +12,7 @@
 		912C5D05210BC4A5007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D03210BC4A5007DC364 /* Example.swift */; };
 		912C5D06210BC4A5007DC364 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912C5D04210BC4A5007DC364 /* Info.plist */; };
 		912C5D0E210BC4D9007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D0D210BC4D9007DC364 /* Example.swift */; };
+		912C5D1B210BC553007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D1A210BC553007DC364 /* Example.swift */; };
 		91301AD520F55C25003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AD420F55C25003B4FC0 /* Example.swift */; };
 		91301AE220F55CAA003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AE120F55CAA003B4FC0 /* Example.swift */; };
 		91884D7B21028FC2004A3013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A03C521028E1800CCAC40 /* ViewController.swift */; };
@@ -85,6 +86,9 @@
 		912C5D0B210BC4D8007DC364 /* MementoReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MementoReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D0D210BC4D9007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D0F210BC4D9007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		912C5D18210BC553007DC364 /* ObserverStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D1A210BC553007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		912C5D1C210BC553007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91301AD220F55C25003B4FC0 /* FlyweightStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91301AD420F55C25003B4FC0 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91301AD620F55C25003B4FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -247,6 +251,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		912C5D08210BC4D8007DC364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912C5D15210BC553007DC364 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -520,6 +531,23 @@
 			path = Real;
 			sourceTree = "<group>";
 		};
+		912C5D13210BC53A007DC364 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				912C5D19210BC553007DC364 /* Structure */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		912C5D19210BC553007DC364 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				912C5D1A210BC553007DC364 /* Example.swift */,
+				912C5D1C210BC553007DC364 /* Info.plist */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
 		91301AD320F55C25003B4FC0 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +623,7 @@
 				912C5CEC210BC3A4007DC364 /* MediatorReal.xctest */,
 				912C5CF8210BC3F5007DC364 /* MementoStructure.xctest */,
 				912C5D0B210BC4D8007DC364 /* MementoReal.xctest */,
+				912C5D18210BC553007DC364 /* ObserverStructure.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -610,8 +639,7 @@
 		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D01210BC4A5007DC364 /* Memento */,
-				912C5CE7210BC34E007DC364 /* Mediator */,
+				912C5D13210BC53A007DC364 /* Observer */,
 				919C8A0E20DD7F7B006EE57D /* AbstractFactory */,
 				916B889E20BC5C5800BA92DF /* Facade */,
 				9187BFDA20B5D0A700266EF8 /* Bridge */,
@@ -627,6 +655,8 @@
 				91B1208B20F611EF00730C37 /* Command */,
 				91B1209820F6124200730C37 /* Iterator */,
 				91B120B120F612F600730C37 /* Proxy */,
+				912C5D01210BC4A5007DC364 /* Memento */,
+				912C5CE7210BC34E007DC364 /* Mediator */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1138,6 +1168,23 @@
 			name = MementoReal;
 			productName = MementoReal;
 			productReference = 912C5D0B210BC4D8007DC364 /* MementoReal.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		912C5D17210BC553007DC364 /* ObserverStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912C5D1D210BC553007DC364 /* Build configuration list for PBXNativeTarget "ObserverStructure" */;
+			buildPhases = (
+				912C5D14210BC553007DC364 /* Sources */,
+				912C5D15210BC553007DC364 /* Frameworks */,
+				912C5D16210BC553007DC364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObserverStructure;
+			productName = ObserverStructure;
+			productReference = 912C5D18210BC553007DC364 /* ObserverStructure.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		91301AD120F55C25003B4FC0 /* FlyweightStructure */ = {
@@ -1676,6 +1723,10 @@
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
+					912C5D17210BC553007DC364 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 					91301AD120F55C25003B4FC0 = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
@@ -1845,6 +1896,7 @@
 				912C5CEB210BC3A4007DC364 /* MediatorReal */,
 				912C5CF7210BC3F5007DC364 /* MementoStructure */,
 				912C5D0A210BC4D8007DC364 /* MementoReal */,
+				912C5D17210BC553007DC364 /* ObserverStructure */,
 			);
 		};
 /* End PBXProject section */
@@ -1873,6 +1925,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		912C5D09210BC4D8007DC364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912C5D16210BC553007DC364 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2133,6 +2192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				912C5D0E210BC4D9007DC364 /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912C5D14210BC553007DC364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912C5D1B210BC553007DC364 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2493,6 +2560,32 @@
 				INFOPLIST_FILE = Sources/Memento/Real/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoReal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		912C5D1E210BC553007DC364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Observer/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		912C5D1F210BC553007DC364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Observer/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverStructure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3427,6 +3520,15 @@
 			buildConfigurations = (
 				912C5D11210BC4D9007DC364 /* Debug */,
 				912C5D12210BC4D9007DC364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		912C5D1D210BC553007DC364 /* Build configuration list for PBXNativeTarget "ObserverStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912C5D1E210BC553007DC364 /* Debug */,
+				912C5D1F210BC553007DC364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
