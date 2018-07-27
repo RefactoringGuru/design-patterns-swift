@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		912C5CE2210BC33E007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5CE1210BC33E007DC364 /* Example.swift */; };
 		91301AD520F55C25003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AD420F55C25003B4FC0 /* Example.swift */; };
 		91301AE220F55CAA003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AE120F55CAA003B4FC0 /* Example.swift */; };
 		91884D7B21028FC2004A3013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914A03C521028E1800CCAC40 /* ViewController.swift */; };
@@ -68,6 +69,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		912C5CDF210BC33D007DC364 /* MediatorStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5CE1210BC33E007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		912C5CE3210BC33E007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91301AD220F55C25003B4FC0 /* FlyweightStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91301AD420F55C25003B4FC0 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91301AD620F55C25003B4FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -208,6 +212,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		912C5CDC210BC33D007DC364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91301ACF20F55C25003B4FC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +432,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		912C5CE0210BC33D007DC364 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				912C5CE1210BC33E007DC364 /* Example.swift */,
+				912C5CE3210BC33E007DC364 /* Info.plist */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		912C5CE7210BC34E007DC364 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				912C5CE0210BC33D007DC364 /* Structure */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
 		91301AD320F55C25003B4FC0 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +520,7 @@
 				91B120A920F6127400730C37 /* IteratorReal.xctest */,
 				91B120B620F6130900730C37 /* ProxyStructure.xctest */,
 				91B120C220F6132E00730C37 /* ProxyReal.xctest */,
+				912C5CDF210BC33D007DC364 /* MediatorStructure.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -507,6 +536,7 @@
 		914ADA0420B2D4D200E0A74F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				912C5CE7210BC34E007DC364 /* Mediator */,
 				919C8A0E20DD7F7B006EE57D /* AbstractFactory */,
 				916B889E20BC5C5800BA92DF /* Facade */,
 				9187BFDA20B5D0A700266EF8 /* Bridge */,
@@ -967,6 +997,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		912C5CDE210BC33D007DC364 /* MediatorStructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 912C5CE4210BC33E007DC364 /* Build configuration list for PBXNativeTarget "MediatorStructure" */;
+			buildPhases = (
+				912C5CDB210BC33D007DC364 /* Sources */,
+				912C5CDC210BC33D007DC364 /* Frameworks */,
+				912C5CDD210BC33D007DC364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediatorStructure;
+			productName = MediatorStructure;
+			productReference = 912C5CDF210BC33D007DC364 /* MediatorStructure.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		91301AD120F55C25003B4FC0 /* FlyweightStructure */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91301AD720F55C25003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightStructure" */;
@@ -1487,6 +1534,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Eremenko Maxim";
 				TargetAttributes = {
+					912C5CDE210BC33D007DC364 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 					91301AD120F55C25003B4FC0 = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
@@ -1652,11 +1703,19 @@
 				91B120A820F6127400730C37 /* IteratorReal */,
 				91B120B520F6130900730C37 /* ProxyStructure */,
 				91B120C120F6132E00730C37 /* ProxyReal */,
+				912C5CDE210BC33D007DC364 /* MediatorStructure */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		912C5CDD210BC33D007DC364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91301AD020F55C25003B4FC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1882,6 +1941,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		912C5CDB210BC33D007DC364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				912C5CE2210BC33E007DC364 /* Example.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91301ACE20F55C25003B4FC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2141,6 +2208,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		912C5CE5210BC33E007DC364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Mediator/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		912C5CE6210BC33E007DC364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Sources/Mediator/Structure/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorStructure;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		91301AD820F55C25003B4FC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3037,6 +3130,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		912C5CE4210BC33E007DC364 /* Build configuration list for PBXNativeTarget "MediatorStructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				912C5CE5210BC33E007DC364 /* Debug */,
+				912C5CE6210BC33E007DC364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		91301AD720F55C25003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightStructure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
