@@ -13,7 +13,7 @@ class CommandRealExample: XCTestCase {
     func test() {
         prepareTestEnvironment {
             
-            let siri = SiriShortcuts()
+            let siri = SiriShortcuts.shared
             
             print("User: Hey Siri, I am leaving my home")
             siri.perform(.leaveHome)
@@ -52,7 +52,10 @@ extension CommandRealExample {
 
 class SiriShortcuts {
     
+    static let shared = SiriShortcuts()
     private lazy var queue = OperationQueue()
+    
+    private init() {}
     
     enum Action: String {
         case leaveHome
