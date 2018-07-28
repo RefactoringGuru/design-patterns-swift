@@ -10,4 +10,3 @@ Siri: canceling leaveWork-action
 DoorCommand: Doors are closed via HomeKit.
 WindowCommand: Windows are closed via HomeKit.
 TaxiCommand: operation is canceled
-
