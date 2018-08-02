@@ -1,5 +1,5 @@
 //
-//  Commands.swift
+//  Operations.swift
 //  AbstractFactoryStructure
 //
 //  Created by Maxim Eremenko on 7/21/18.
@@ -64,29 +64,29 @@ class DelayedOperation: Operation {
     }
 }
 
-class WindowCommand: DelayedOperation {
+class WindowOperation: DelayedOperation {
     
     override func main() {
         print("\(self): Windows are closed via HomeKit.")
     }
     
-    override var description: String { return "WindowCommand" }
+    override var description: String { return "WindowOperation" }
 }
 
-class DoorCommand: DelayedOperation {
+class DoorOperation: DelayedOperation {
     
     override func main() {
         print("\(self): Doors are closed via HomeKit.")
     }
     
-    override var description: String { return "DoorCommand" }
+    override var description: String { return "DoorOperation" }
 }
 
-class TaxiCommand: DelayedOperation {
+class TaxiOperation: DelayedOperation {
     
     override func main() {
         print("\(self): Taxi is ordered via Uber")
     }
     
-    override var description: String { return "TaxiCommand" }
+    override var description: String { return "TaxiOperation" }
 }

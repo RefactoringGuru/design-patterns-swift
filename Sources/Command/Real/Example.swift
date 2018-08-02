@@ -1,6 +1,6 @@
 //
 //  CommandReal.swift
-//  CommandReal
+//  Example
 //
 //  Created by Maxim Eremenko on 7/11/18.
 //  Copyright © 2018 Eremenko Maxim. All rights reserved.
@@ -66,10 +66,10 @@ class SiriShortcuts {
         print("Siri: performing \(action)-action\n")
         switch action {
         case .leaveHome:
-            add(operation: WindowCommand(delay))
-            add(operation: DoorCommand(delay))
+            add(operation: WindowOperation(delay))
+            add(operation: DoorOperation(delay))
         case .leaveWork:
-            add(operation: TaxiCommand(delay))
+            add(operation: TaxiOperation(delay))
         }
     }
     
@@ -77,10 +77,10 @@ class SiriShortcuts {
         print("Siri: canceling \(action)-action\n")
         switch action {
         case .leaveHome:
-            cancelOperation(with: WindowCommand.self)
-            cancelOperation(with: DoorCommand.self)
+            cancelOperation(with: WindowOperation.self)
+            cancelOperation(with: DoorOperation.self)
         case .leaveWork:
-            cancelOperation(with: TaxiCommand.self)
+            cancelOperation(with: TaxiOperation.self)
         }
     }
     

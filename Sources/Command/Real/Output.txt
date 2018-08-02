@@ -7,6 +7,6 @@ Siri: performing leaveWork-action
 User: Hey Siri, I am still working
 Siri: canceling leaveWork-action
 
-DoorCommand: Doors are closed via HomeKit.
-WindowCommand: Windows are closed via HomeKit.
-TaxiCommand: operation is canceled
+DoorOperation: Doors are closed via HomeKit.
+WindowOperation: Windows are closed via HomeKit.
+TaxiOperation: operation is canceled
