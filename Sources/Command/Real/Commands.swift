@@ -8,11 +8,6 @@
 
 import Foundation
 
-protocol Command {
-    
-    func start()
-}
-
 class DelayedOperation: Operation {
     
     private var delay: TimeInterval
@@ -69,7 +64,7 @@ class DelayedOperation: Operation {
     }
 }
 
-class WindowCommand: DelayedOperation, Command {
+class WindowCommand: DelayedOperation {
     
     override func main() {
         print("\(self): Windows are closed via HomeKit.")
@@ -78,7 +73,7 @@ class WindowCommand: DelayedOperation, Command {
     override var description: String { return "WindowCommand" }
 }
 
-class DoorCommand: DelayedOperation, Command {
+class DoorCommand: DelayedOperation {
     
     override func main() {
         print("\(self): Doors are closed via HomeKit.")
@@ -87,7 +82,7 @@ class DoorCommand: DelayedOperation, Command {
     override var description: String { return "DoorCommand" }
 }
 
-class TaxiCommand: DelayedOperation, Command {
+class TaxiCommand: DelayedOperation {
     
     override func main() {
         print("\(self): Taxi is ordered via Uber")
