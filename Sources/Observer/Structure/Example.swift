@@ -33,7 +33,7 @@ import XCTest
 
 class ObserverStructure: XCTestCase {
     
-    /// Note: There are a number of ways to implement and use Observer pattern.
+    /// There are a number of ways to implement and use Observer pattern.
     ///
     /// KVO
     /// Here is a great example of how to implement it in a dozen lines of code.
@@ -42,7 +42,9 @@ class ObserverStructure: XCTestCase {
     /// NotificationCenter
     /// https://developer.apple.com/documentation/foundation/notificationcenter
     ///
-    /// Custom implementation of this pattern.
+    /// Rx
+    ///
+    /// And any other custom implementation of this pattern.
     
     func test() {
         
@@ -63,11 +65,7 @@ class ObserverStructure: XCTestCase {
 
 protocol Observer: class {
     
-    func update(subject: Observable)
-}
-
-protocol Observable {
-
+    func update(subject: Subject)
 }
 
 /// EN: The Subject owns some important state and notifies observers when the
@@ -76,7 +74,7 @@ protocol Observable {
 /// RU: Издатель владеет некоторым важным состоянием и оповещает наблюдателей о
 /// его изменениях.
 
-class Subject: Observable
+class Subject
 {
     /// For the sake of simplicity, the Subject's state, essential to all subscribers,
     /// is stored in this variable.
@@ -145,9 +143,7 @@ class Subject: Observable
 
 class ConcreteObserverA: Observer {
     
-    func update(subject: Observable) {
-        
-        guard let subject = subject as? Subject else { return }
+    func update(subject: Subject) {
         
         if subject.state < 3 {
             print("ConcreteObserverA: Reacted to the event.\n")
@@ -157,8 +153,7 @@ class ConcreteObserverA: Observer {
 
 class ConcreteObserverB: Observer {
     
-    func update(subject: Observable) {
-        guard let subject = subject as? Subject else { return }
+    func update(subject: Subject) {
         
         if subject.state >= 3 {
             print("ConcreteObserverB: Reacted to the event.\n")
