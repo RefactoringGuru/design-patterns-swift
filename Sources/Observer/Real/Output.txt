@@ -1,0 +1,14 @@
+CartManager: I'am adding a new subscriber: UINavigationBar
+CartManager: I'am adding a new subscriber: CartViewController
+
+CartManager: I'am adding a new product: Apple
+UINavigationBar: Updating an appearance of navigation items
+CartViewController: Updating an appearance of a list view with products
+
+CartManager: I'am adding a new product: T-shirt
+UINavigationBar: Updating an appearance of navigation items
+CartViewController: Updating an appearance of a list view with products
+
+CartManager: Product 'Apple' is removed from a cart
+UINavigationBar: Updating an appearance of navigation items
+CartViewController: Updating an appearance of a list view with products
