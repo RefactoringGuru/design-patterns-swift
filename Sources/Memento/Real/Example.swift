@@ -10,7 +10,10 @@ import XCTest
 
 class MementoReal: XCTestCase {
     
-    /// Note: UndoManager can be used as an alternative
+    /// State and Command are often used together when the previous state
+    /// of the object should be restored in case of failure of some operation.
+    ///
+    /// Note: UndoManager can be used as an alternative.
     
     func test() {
         
