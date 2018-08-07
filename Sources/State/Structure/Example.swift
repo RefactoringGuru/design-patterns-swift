@@ -18,7 +18,7 @@ import XCTest
 /// Назначение: Позволяет объекту менять поведение при изменении его внутреннего
 /// состояния. Со стороны может казаться, что объект меняет свой класс.
 
-class StateStructure: XCTestCase {
+class StateStructureExample: XCTestCase {
     
     func test() {
         let context = Context(ConcreteStateA())

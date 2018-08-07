@@ -751,8 +751,8 @@
 		912C5D63210BC749007DC364 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				913E014D210CA5AE00B7D71E /* Output.txt */,
 				912C5D64210BC749007DC364 /* Example.swift */,
+				913E014D210CA5AE00B7D71E /* Output.txt */,
 				912C5D66210BC749007DC364 /* Info.plist */,
 			);
 			path = Structure;
@@ -761,8 +761,8 @@
 		912C5D6A210BC750007DC364 /* TemplateMethod */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D70210BC7B1007DC364 /* Real */,
 				912C5D63210BC749007DC364 /* Structure */,
+				912C5D70210BC7B1007DC364 /* Real */,
 			);
 			path = TemplateMethod;
 			sourceTree = "<group>";
@@ -780,8 +780,8 @@
 		912C5D77210BC80B007DC364 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D89210BC865007DC364 /* Real */,
 				912C5D7D210BC81E007DC364 /* Structure */,
+				912C5D89210BC865007DC364 /* Real */,
 			);
 			path = Visitor;
 			sourceTree = "<group>";
@@ -789,8 +789,8 @@
 		912C5D7D210BC81E007DC364 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				913E014F210CA5B800B7D71E /* Output.txt */,
 				912C5D7E210BC81E007DC364 /* Example.swift */,
+				913E014F210CA5B800B7D71E /* Output.txt */,
 				912C5D80210BC81E007DC364 /* Info.plist */,
 			);
 			path = Structure;

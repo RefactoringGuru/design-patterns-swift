@@ -8,7 +8,7 @@
 
 import XCTest
 
-class StateReal: XCTestCase {
+class StateRealExample: XCTestCase {
     
     func test() {
         
