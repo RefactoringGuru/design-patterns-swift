@@ -1,0 +1,22 @@
+Text: First Change
+Date: hour: 12 minute: 21 second: 50 nanosecond: 821737051 isLeapMonth: false
+Color: nil
+Range: {12, 0}
+
+Text: Second Change
+Date: hour: 12 minute: 21 second: 50 nanosecond: 826483011 isLeapMonth: false
+Color: nil
+Range: {13, 0}
+
+Text: Second Change & Third Change
+Date: hour: 12 minute: 21 second: 50 nanosecond: 829187035 isLeapMonth: false
+Color: Optional(UIExtendedSRGBColorSpace 1 0 0 1)
+Range: {28, 0}
+
+
+Client: Perform Undo operation 2 times
+
+Text: First Change
+Date: hour: 12 minute: 21 second: 50 nanosecond: 821737051 isLeapMonth: false
+Color: nil
+Range: {12, 0}
