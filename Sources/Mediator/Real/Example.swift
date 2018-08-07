@@ -9,5 +9,8 @@
 import XCTest
 
 class MediatorReal: XCTestCase {
+    
+    func test() {
         
+    }
 }
