@@ -8,150 +8,164 @@
 
 import XCTest
 
-/// EN: Factory Method Design Pattern
+/// EN: Template Method Design Pattern
 ///
-/// Intent: Define an interface for creating an object, but let subclasses decide
-/// which class to instantiate. Factory Method lets a class defer instantiation
-/// to subclasses.
+/// Intent: Define the skeleton of an algorithm, deferring implementation of some
+/// steps to subclasses. Template Method lets subclasses redefine specific steps
+/// of an algorithm without changing the algorithm's structure.
 ///
-/// RU: Паттерн Фабричный Метод
+/// RU: Паттерн Шаблонный метод
 ///
-/// Назначение: Определяет интерфейс для создания объекта, но позволяет
-/// подклассам решать, какого класса создавать экземпляр. Фабричный Метод
-/// позволяет классу делегировать создание экземпляра подклассам.
+/// Назначение: Определяет общую схему алгоритма, перекладывая реализацию
+/// некоторых шагов  на подклассы. Шаблонный метод позволяет подклассам
+/// переопределять отдельные шаги алгоритма без изменения структуры алгоритма.
 
-class TemplateMethodStructure: XCTestCase {
+class TemplateMethodStructureExample: XCTestCase {
+    
+    /// EN: The Abstract Protocol defines a template method that contains a skeleton of
+    /// some algorithm, composed of calls to (usually) abstract primitive operations.
+    ///
+    /// Concrete subclasses should implement these operations, but leave the template
+    /// method itself intact.
+    ///
+    /// RU: Абстрактный Класс определяет шаблонный метод, содержащий скелет
+    /// некоторого алгоритма, состоящего из вызовов (обычно) абстрактных примитивных
+    /// операций.
+    ///
+    /// Конкретные подклассы должны реализовать эти операции, но оставить сам
+    /// шаблонный метод без изменений.
     
     func test() {
         
-        /// EN: The client code works with an instance of a concrete creator, albeit
-        /// through its base interface. As long as the client keeps working with the
-        /// creator via the base interface, you can pass it any creator's subclass.
+        /// EN: The client code calls the template method to execute the algorithm.
+        /// Client code does not have to know the concrete class of an object it works
+        /// with, as long as it works with objects through the interface of their
+        /// base class.
         ///
-        /// RU: Клиентский код работает с экземпляром конкретного создателя, хотя и через
-        /// его базовый интерфейс. Пока клиент продолжает работать с создателем через
-        /// базовый интерфейс, вы можете передать ему любой подкласс создателя.
+        /// RU: Клиентский код вызывает шаблонный метод для выполнения алгоритма.
+        /// Клиентский код не должен знать конкретный класс объекта, с которым работает,
+        /// при условии, что он работает с объектами через интерфейс их базового класса.
         
-        /// EN: The Application picks a creator's type depending on the configuration
-        /// or environment.
-        ///
-        /// RU: Приложение выбирает тип создателя в зависимости от конфигурации или среды.
+        print("Same client code can work with different subclasses:\n")
+        clientCode(use: ConcreteClass1())
         
-        print("App: Launched with the ConcreteCreator1.\n")
-        clientCode(creator: ConcreteCreator1())
-        
-        print("\n\nApp: Launched with the ConcreteCreator2.\n")
-        clientCode(creator: ConcreteCreator2())
+        print("\nSame client code can work with different subclasses:\n")
+        clientCode(use: ConcreteClass2())
     }
     
-    func clientCode(creator: Creator) {
-        let result = creator.someOperation()
-        print("Client: I'm not aware of the creator's class, but it still works.\n")
-        print("Client: Result -> \(result)")
+    func clientCode(use object: AbstractProtocol) {
+        object.templateMethod()
     }
 }
 
-/// EN: The Creator protocol declares the factory method that is supposed to return
-/// an object of a Product class. The Creator's subclasses usually provide the
-/// implementation of this method.
-///
-/// RU: Класс Создатель объявляет фабричный метод, который должен возвращать
-/// объект класса Продукт. Подклассы Создателя обычно предоставляют реализацию
-/// этого метода.
-
-protocol Creator {
+protocol AbstractProtocol {
     
-    /// EN: Note that the Creator may also provide some default implementation of
-    /// the factory method.
+    /// EN: The template method defines the skeleton of an algorithm.
     ///
-    /// RU: Обратите внимание, что Создатель может также обеспечить реализацию
-    /// фабричного метода по умолчанию.
+    /// RU: Шаблонный метод определяет скелет алгоритма.
     
-    func factoryMethod() -> Product
+    func templateMethod()
     
-    /// EN: Also note that, despite its name, the Creator's primary
-    /// responsibility is not creating products. Usually, it contains some core
-    /// business logic that relies on Product objects, returned by the factory
-    /// method. Subclasses can indirectly change that business logic by
-    /// overriding the factory method and returning a different type of product
-    /// from it.
+    /// EN: These operations already have implementations.
     ///
-    /// RU: Также заметьте, что, несмотря на название,  основная обязанность
-    /// Создателя не заключается в создании продуктов.  Обычно он содержит
-    /// некоторую базовую бизнес-логику, которая основана  на объектах Продуктов,
-    /// возвращаемых фабричным методом.  Подклассы могут косвенно изменять эту
-    /// бизнес-логику, переопределяя фабричный метод и возвращая из него другой
-    /// тип продукта.
+    /// RU: Эти операции уже имеют реализации.
     
-    func someOperation() -> String
-}
-
-extension Creator {
+    func baseOperation1()
     
-    func someOperation() -> String {
-        /// Call the factory method to create a Product object.
-        let product = factoryMethod()
-        /// Now, use the product.
-        let text = "Creator: The same creator's code has just worked with "
-        return text + product.operation()
-    }
-}
-
-/// EN: Concrete Creators override the factory method in order to change the
-/// resulting product's type.
-///
-/// RU: Конкретные Создатели переопределяют фабричный метод для того, чтобы
-/// изменить тип результирующего продукта.
-
-class ConcreteCreator1: Creator {
+    func baseOperation2()
     
-    /// EN: Note that the signature of the method still uses the abstract product
-    /// type, even though the concrete product is actually returned from the
-    /// method. This way the Creator can stay independent of concrete product
-    /// classes.
+    func baseOperation3()
+    
+    /// EN: These operations have to be implemented in subclasses.
     ///
-    /// RU: Обратите внимание, что сигнатура метода по-прежнему использует тип
-    /// абстрактного продукта, хотя  фактически из метода возвращается конкретный
-    /// продукт. Таким образом, Создатель может оставаться независимым от
-    /// конкретных классов продуктов.
+    /// RU: А эти операции должны быть реализованы в подклассах.
     
-    func factoryMethod() -> Product {
-        return ConcreteProduct1()
-    }
+    func requiredOperations1()
+    func requiredOperation2()
+    
+    /// EN: These are "hooks." Subclasses may override them, but it's not
+    /// mandatory since the hooks already have default (but empty) implementation.
+    /// Hooks provide additional extension points in some crucial places
+    /// of the algorithm.
+    ///
+    /// RU: Это «хуки». Подклассы могут переопределять их, но это не обязательно,
+    /// поскольку у хуков уже есть стандартная (но пустая) реализация. Хуки
+    /// предоставляют дополнительные точки расширения в некоторых критических
+    /// местах алгоритма.
+    
+    func hook1()
+    func hook2()
 }
 
-class ConcreteCreator2: Creator {
+extension AbstractProtocol {
     
-    func factoryMethod() -> Product {
-        return ConcreteProduct2()
+    func templateMethod() {
+        baseOperation1()
+        requiredOperations1()
+        baseOperation2()
+        hook1()
+        requiredOperation2()
+        baseOperation3()
+        hook2()
     }
+    
+    /// EN: These operations already have implementations.
+    ///
+    /// RU: Эти операции уже имеют реализации.
+    
+    func baseOperation1() {
+        print("AbstractProtocol says: I am doing the bulk of the work\n")
+    }
+    
+    func baseOperation2() {
+        print("AbstractProtocol says: But I let subclasses override some operations\n")
+    }
+    
+    func baseOperation3() {
+        print("AbstractProtocol says: But I am doing the bulk of the work anyway\n")
+    }
+    
+    func hook1() {}
+    func hook2() {}
 }
 
-/// EN: The Product interface declares the operations that all concrete products
-/// must implement.
+/// EN: Concrete classes have to implement all abstract operations of the base
+/// class. They can also override some operations with a default implementation.
 ///
-/// RU: Интерфейс Продукта объявляет операции, которые должны выполнять все
-/// конкретные продукты.
+/// RU: Конкретные классы должны реализовать все абстрактные операции базового
+/// класса. Они также могут переопределить некоторые операции с реализацией по
+/// умолчанию.
 
-protocol Product {
+class ConcreteClass1: AbstractProtocol {
     
-    func operation() -> String
-}
-
-/// EN: Concrete Products provide various implementations of the Product interface.
-///
-/// RU: Конкретные Продукты предоставляют различные реализации интерфейса Продукта.
-
-class ConcreteProduct1: Product {
+    func requiredOperations1() {
+        print("ConcreteClass1 says: Implemented Operation1\n")
+    }
     
-    func operation() -> String {
-        return "{Result of the ConcreteProduct1}"
+    func requiredOperation2() {
+        print("ConcreteClass1 says: Implemented Operation2\n")
+    }
+    
+    func hook2() {
+        print("ConcreteClass1 says: Overridden Hook2\n")
     }
 }
 
-class ConcreteProduct2: Product {
+/// EN: Usually, concrete classes override only a fraction of base class' operations.
+///
+/// RU: Обычно конкретные классы переопределяют только часть операций базового класса.
+
+class ConcreteClass2: AbstractProtocol {
     
-    func operation() -> String {
-        return "{Result of the ConcreteProduct2}"
+    func requiredOperations1() {
+        print("ConcreteClass2 says: Implemented Operation1\n")
+    }
+    
+    func requiredOperation2() {
+        print("ConcreteClass2 says: Implemented Operation2\n")
+    }
+    
+    func hook1() {
+        print("ConcreteClass2 says: Overridden Hook1\n")
     }
 }

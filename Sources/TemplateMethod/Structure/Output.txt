@@ -1,12 +1,28 @@
-App: Launched with the ConcreteCreator1.
+Same client code can work with different subclasses:
 
-Client: I'm not aware of the creator's class, but it still works.
+AbstractProtocol says: I am doing the bulk of the work
 
-Client: Result -> Creator: The same creator's code has just worked with {Result of the ConcreteProduct1}
+ConcreteClass1 says: Implemented Operation1
+
+AbstractProtocol says: But I let subclasses override some operations
+
+ConcreteClass1 says: Implemented Operation2
+
+AbstractProtocol says: But I am doing the bulk of the work anyway
+
+ConcreteClass1 says: Overridden Hook2
 
 
-App: Launched with the ConcreteCreator2.
+Same client code can work with different subclasses:
 
-Client: I'm not aware of the creator's class, but it still works.
+AbstractProtocol says: I am doing the bulk of the work
 
-Client: Result -> Creator: The same creator's code has just worked with {Result of the ConcreteProduct2}
+ConcreteClass2 says: Implemented Operation1
+
+AbstractProtocol says: But I let subclasses override some operations
+
+ConcreteClass2 says: Overridden Hook1
+
+ConcreteClass2 says: Implemented Operation2
+
+AbstractProtocol says: But I am doing the bulk of the work anyway
