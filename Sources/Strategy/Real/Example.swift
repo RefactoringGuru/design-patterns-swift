@@ -10,98 +10,108 @@ import XCTest
 
 class StrategyReal: XCTestCase {
     
+    /// This example shows a simple implementation of a list controller that
+    /// is able to display models from different data sources:
+    ///
+    /// (MemoryStorage, CoreDataStorage, RealmStorage)
+    
     func test() {
         
-        let manager = TravelManager()
+        let controller = ListController()
         
-        let carPrice = manager.price(for: .car(trafficJams: true), distance: 20)
-        print("Client: Price of jorney by car: \(carPrice)")
+        let memoryStorage = MemoryStorage<User>()
+        memoryStorage.add(usersFromNetwork())
         
-        let trainPrice = manager.price(for: .train(luggageWeight: 12.4, isStudent: false),
-                                     distance: 20)
-        print("Client: Price of jorney by train: \(trainPrice)")
+        clientCode(use: controller, with: memoryStorage)
+        
+        clientCode(use: controller, with: CoreDataStorage())
+        
+        clientCode(use: controller, with: RealmStorage())
+    }
+    
+    func clientCode(use controller: ListController, with dataSource: DataSource) {
+        
+        controller.update(dataSource: dataSource)
+        controller.displayModels()
+    }
+    
+    private func usersFromNetwork() -> [User] {
+        let firstUser = User(id: 1, username: "username1")
+        let secondUser = User(id: 2, username: "username2")
+        return [firstUser, secondUser]
     }
 }
 
-class TravelManager {
+class ListController {
     
-    enum TravelType {
-        case car(trafficJams: Bool)
-        case train(luggageWeight: Double, isStudent: Bool)
+    private var dataSource: DataSource?
+    
+    func update(dataSource: DataSource) {
+        /// ... resest current states ...
+        self.dataSource = dataSource
     }
     
-    func price(for type: TravelType, distance: Double) -> Double {
-        return strategy(for: type).price(for: distance)
-    }
-    
-    private func strategy(for type: TravelType) -> PriceCalculator {
-        switch type {
-        case .car(let trafficJams):
-            return CarPriceCalculator(trafficJams: trafficJams)
-        case .train(let luggageWeight, let isStudent):
-            return TrainPriceCalculator(luggageWeight: luggageWeight, isStudent: isStudent)
-        }
+    func displayModels() {
+        
+        guard let dataSource = dataSource else { return }
+        let models = dataSource.loadModels() as [User]
+        
+        /// Bind models to cells of a list view...
+        print("\nListController: Displaying models...")
+        models.forEach({ print($0) })
     }
 }
 
-protocol PriceCalculator {
+protocol DataSource {
     
-    func price(for distance: Double) -> Double
+    func loadModels<T: DomainModel>() -> [T]
 }
 
-class CarPriceCalculator: PriceCalculator {
+class MemoryStorage<Model>: DataSource {
     
-    struct Constant {
-        static let basePrice = 33.0
-        static let distanceFactor = 1.4
+    private lazy var items = [Model]()
+    
+    func add(_ items: [Model]) {
+        self.items.append(contentsOf: items)
     }
     
-    private let includeTrafficJams: Bool
-    
-    init(trafficJams: Bool) {
-        self.includeTrafficJams = trafficJams
-    }
-    
-    func price(for distance: Double) -> Double {
-        
-        let distancePrice = distance * Constant.distanceFactor
-        
-        var trafficJamsPrice = 0.0
-        if includeTrafficJams {
-            trafficJamsPrice += distance * 0.1
-        }
-        
-        return Constant.basePrice + distancePrice + trafficJamsPrice
+    func loadModels<T: DomainModel>() -> [T] {
+        guard T.self == User.self else { return [] }
+        return items as! [T]
     }
 }
 
-class TrainPriceCalculator: PriceCalculator {
+class CoreDataStorage: DataSource {
     
-    struct Constant {
-        static let studentDiscount = 0.9
-        static let distanceFactor = 1.1
-        static let basePrice = 12.0
+    func loadModels<T: DomainModel>() -> [T] {
+        guard T.self == User.self else { return [] }
+        
+        let firstUser = User(id: 3, username: "username3")
+        let secondUser = User(id: 4, username: "username4")
+        
+        return [firstUser, secondUser] as! [T]
     }
+}
+
+class RealmStorage: DataSource {
     
-    private let luggageWeight: Double
-    private let isStudent: Bool
-    
-    init(luggageWeight: Double, isStudent: Bool) {
-        self.luggageWeight = luggageWeight
-        self.isStudent = isStudent
+    func loadModels<T: DomainModel>() -> [T] {
+        guard T.self == User.self else { return [] }
+        
+        let firstUser = User(id: 5, username: "username5")
+        let secondUser = User(id: 6, username: "username6")
+        
+        return [firstUser, secondUser] as! [T]
     }
+}
+
+protocol DomainModel {
     
-    func price(for distance: Double) -> Double {
-        
-        let distancePrice = distance * Constant.distanceFactor
-        let luggagePrice = luggageWeight * 1.3
-        
-        var result = Constant.basePrice + distancePrice + luggagePrice
-        
-        if isStudent {
-            result *= Constant.studentDiscount
-        }
-        
-        return result
-    }
+    var id: Int { get }
+}
+
+struct User: DomainModel {
+    
+    var id: Int
+    var username: String
 }
