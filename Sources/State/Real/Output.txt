@@ -1,0 +1,29 @@
+Client: I'm starting working with a location tracker
+
+EnabledTrackingState: startTracking is invoked
+EnabledTrackingState: tracking location....1
+EnabledTrackingState: tracking location....2
+EnabledTrackingState: tracking location....3
+
+EnabledTrackingState: Received 'pause tracking' for 2.0 seconds
+EnabledTrackingState: Changing state to 'disabled'...
+DisabledTrackingState: Pause tracking for 2.0 seconds
+DisabledTrackingState: pause...0
+DisabledTrackingState: pause...1
+DisabledTrackingState: pause...2
+DisabledTrackingState: Time is over
+DisabledTrackingState: Returing to 'enabled state'...
+
+EnabledTrackingState: startTracking is invoked
+EnabledTrackingState: tracking location....1
+EnabledTrackingState: tracking location....2
+EnabledTrackingState: tracking location....3
+
+EnabledTrackingState: performing check-in at the current location
+
+EnabledTrackingState: searching for children...
+
+EnabledTrackingState: Received 'stop tracking'
+EnabledTrackingState: Changing state to 'disabled'...
+DisabledTrackingState: Received 'stop tracking'
+DisabledTrackingState: Do nothing...
