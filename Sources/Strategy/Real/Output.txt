@@ -1,0 +1,11 @@
+ListController: Displaying models...
+User(id: 1, username: "username1")
+User(id: 2, username: "username2")
+
+ListController: Displaying models...
+User(id: 3, username: "username3")
+User(id: 4, username: "username4")
+
+ListController: Displaying models...
+User(id: 5, username: "username5")
+User(id: 6, username: "username6")
