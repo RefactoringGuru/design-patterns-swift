@@ -18,29 +18,29 @@ class MementoReal: XCTestCase {
     func test() {
         
         let textView = UITextView()
-        let careTaker = CareTaker(textView)
+        let undoStack = UndoStack(textView)
         
         textView.text = "First Change"
-        careTaker.save()
+        undoStack.save()
         
         textView.text = "Second Change"
-        careTaker.save()
+        undoStack.save()
         
         textView.text = (textView.text ?? "") + " & Third Change"
         textView.textColor = .red
-        careTaker.save()
+        undoStack.save()
         
-        print(careTaker)
+        print(undoStack)
         
         print("Client: Perform Undo operation 2 times\n")
-        careTaker.undo()
-        careTaker.undo()
+        undoStack.undo()
+        undoStack.undo()
         
-        print(careTaker)
+        print(undoStack)
     }
 }
 
-class CareTaker: CustomStringConvertible {
+class UndoStack: CustomStringConvertible {
     
     private lazy var mementos = [Memento]()
     private let textView: UITextView
@@ -69,23 +69,6 @@ protocol Memento: CustomStringConvertible {
     var date: Date { get }
 }
 
-struct TextViewMemento: Memento {
-    
-    let text: String
-    let date = Date()
-    
-    let textColor: UIColor?
-    let selectedRange: NSRange
-    
-    var description: String {
-        let time = Calendar.current.dateComponents([.hour, .minute, .second, .nanosecond],
-                                                   from: date)
-        let color = String(describing: textColor)
-        return "Text: \(text)\n" + "Date: \(time.description)\n"
-            + "Color: \(color)\n" + "Range: \(selectedRange)\n\n"
-    }
-}
-
 extension UITextView {
     
     var memento: Memento {
@@ -100,5 +83,22 @@ extension UITextView {
         text = textViewMemento.text
         textColor = textViewMemento.textColor
         selectedRange = textViewMemento.selectedRange
+    }
+    
+    struct TextViewMemento: Memento {
+        
+        let text: String
+        let date = Date()
+        
+        let textColor: UIColor?
+        let selectedRange: NSRange
+        
+        var description: String {
+            let time = Calendar.current.dateComponents([.hour, .minute, .second, .nanosecond],
+                                                       from: date)
+            let color = String(describing: textColor)
+            return "Text: \(text)\n" + "Date: \(time.description)\n"
+                + "Color: \(color)\n" + "Range: \(selectedRange)\n\n"
+        }
     }
 }
