@@ -19,7 +19,7 @@ class CommandRealExample: XCTestCase {
             siri.perform(.leaveHome)
             
             print("User: Hey Siri, I am leaving my work in 3 minutes")
-            siri.perform(.leaveWork, delay: 3) /// for simplicity, we are using seconds
+            siri.perform(.leaveWork, delay: 3) /// for simplicity, we use seconds
             
             print("User: Hey Siri, I am still working")
             siri.cancel(.leaveWork)

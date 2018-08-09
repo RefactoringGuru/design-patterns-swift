@@ -799,8 +799,8 @@
 		912C5D89210BC865007DC364 /* Real */ = {
 			isa = PBXGroup;
 			children = (
-				913E0151210CA5BE00B7D71E /* Output.txt */,
 				912C5D8A210BC865007DC364 /* Example.swift */,
+				913E0151210CA5BE00B7D71E /* Output.txt */,
 				912C5D8C210BC865007DC364 /* Info.plist */,
 			);
 			path = Real;
