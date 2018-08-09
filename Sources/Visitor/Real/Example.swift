@@ -12,7 +12,7 @@ class VisitorRealExample: XCTestCase {
     
     func test() {
         
-        let notifications: [Notification] = [Email(), SMS(), PushNotification()]
+        let notifications: [Notification] = [Email(), SMS(), Push()]
         
         clientCode(handle: notifications, with: DefaultPolicy())
         
@@ -88,7 +88,7 @@ struct SMS: Notification {
     var description: String { return "SMS" }
 }
 
-struct PushNotification: Notification {
+struct Push: Notification {
     
     func isNotificationOn(for policy: NotificationPolicy) -> Bool {
         return policy.isPushOn
