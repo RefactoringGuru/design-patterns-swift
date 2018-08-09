@@ -1,0 +1,10 @@
+Client: Using Default Policy:
+    Email notification will be shown
+    SMS notification will be shown
+    Push notification will be shown
+
+Client: Using Night Policy:
+    Email notification will be silenced
+    SMS notification will be shown
+    Push notification will be silenced
+
