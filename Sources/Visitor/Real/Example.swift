@@ -12,87 +12,43 @@ class VisitorRealExample: XCTestCase {
     
     func test() {
         
-        let notifications: [Notification] = [Email(), SMS(), Push()]
+        let email = Email(emailOfSender: "some@email.com")
+        let sms = SMS(phoneNumberOfSender: "+3806700000")
+        let push = Push(usernameOfSender: "Spammer")
         
-        clientCode(handle: notifications, with: DefaultPolicy())
+        let notifications: [Notification] = [email, sms, push]
         
-        clientCode(handle: notifications, with: NightPolicy())
+        let blackList = createBlackList()
+        
+        clientCode(handle: notifications, with: DefaultPolicyVisitor(), and: blackList)
+        
+        clientCode(handle: notifications, with: NightPolicyVisitor(), and: blackList)
     }
     
-    func clientCode(handle notifications: [Notification], with policy: NotificationPolicy) {
+    func clientCode(handle notifications: [Notification],
+                    with policy: SilencePolicy,
+                    and blackList: BlackList) {
+        
         print("\nClient: Using \(policy.description):")
         
         notifications.forEach { item in
-            if item.isNotificationOn(for: policy) {
+            
+            guard !item.isSenderBanned(by: blackList) else {
+                print("\tWARNING: " + item.description + " is in a black list")
+                return
+            }
+            
+            if item.isNotificationTurnedOn(for: policy) {
                 print("\t" + item.description + " notification will be shown")
             } else {
                 print("\t" + item.description + " notification will be silenced")
             }
         }
     }
-}
-
-/// Policy
-
-protocol NotificationPolicy: CustomStringConvertible {
     
-    var isEmailOn: Bool { get }
-    var isSMSOn: Bool { get }
-    var isPushOn: Bool { get }
-}
-
-class NightPolicy: NotificationPolicy {
-    
-    var isEmailOn: Bool { return false }
-    
-    var isSMSOn: Bool { return true }
-    
-    var isPushOn: Bool { return false }
-    
-    var description: String { return "Night Policy" }
-}
-
-class DefaultPolicy: NotificationPolicy {
-    
-    var isEmailOn: Bool { return true }
-    
-    var isSMSOn: Bool { return true }
-    
-    var isPushOn: Bool { return true }
-    
-    var description: String { return "Default Policy" }
-}
-
-/// Notifications
-
-protocol Notification: CustomStringConvertible {
-    
-    func isNotificationOn(for policy: NotificationPolicy) -> Bool
-}
-
-struct Email: Notification {
-    
-    func isNotificationOn(for policy: NotificationPolicy) -> Bool {
-        return policy.isEmailOn
+    private func createBlackList() -> BlackListVisitor {
+        return BlackListVisitor(emails: ["banned@email.com"],
+                                phones: ["000000000", "1234325232"],
+                                usernames: ["Spammer"])
     }
-    
-    var description: String { return "Email" }
-}
-
-struct SMS: Notification {
-    
-    func isNotificationOn(for policy: NotificationPolicy) -> Bool {
-        return policy.isSMSOn
-    }
-    
-    var description: String { return "SMS" }
-}
-
-struct Push: Notification {
-    
-    func isNotificationOn(for policy: NotificationPolicy) -> Bool {
-        return policy.isPushOn
-    }
-    
-    var description: String { return "Push" }
 }
