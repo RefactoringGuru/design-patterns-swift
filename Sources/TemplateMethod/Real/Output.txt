@@ -1,0 +1,6 @@
+You have access to Camera
+
+You have access to Microphone
+
+PhotoLibrary Accessor: Rejected with access. Updating analytics...
+You do not have access to PhotoLibrary
