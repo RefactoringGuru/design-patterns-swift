@@ -1,0 +1,25 @@
+News Feed: User LIKED all news models
+News Feed: I am telling to mediator about it...
+
+Screen Mediator: Received a liked news model with id 1
+News Feed: Received a liked news model with id 1
+News Detail: Received a liked news model with id 1
+Profile: Received a liked news model with id 1
+Screen Mediator: Received a liked news model with id 2
+News Feed: Received a liked news model with id 2
+News Detail: Received a liked news model with id 2
+Profile: Received a liked news model with id 2
+
+
+News Feed: User DISLIKED all news models
+News Feed: I am telling to mediator about it...
+
+ScreenMediator: Received a disliked news model with id 1
+News Feed: Received a disliked news model with id 1
+News Detail: Received a disliked news model with id 1
+Profile: Received a disliked news model with id 1
+ScreenMediator: Received a disliked news model with id 2
+News Feed: Received a disliked news model with id 2
+News Detail: Received a disliked news model with id 2
+Profile: Received a disliked news model with id 2
+
