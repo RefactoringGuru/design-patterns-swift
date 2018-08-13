@@ -19,9 +19,9 @@ class MediatorReal: XCTestCase {
         
         let mediator = ScreenMediator()
         
-        let feedVC = NewsFeedViewController(newsArray, mediator)
-        let newsDetailVC = NewsDetailViewController(newsArray.first!, mediator)
-        let profileVC = ProfileViewController(numberOfGivenLikes, mediator)
+        let feedVC = NewsFeedViewController(mediator, newsArray)
+        let newsDetailVC = NewsDetailViewController(mediator, newsArray.first!)
+        let profileVC = ProfileViewController(mediator, numberOfGivenLikes)
         
         mediator.update([feedVC, newsDetailVC, profileVC])
         
@@ -35,7 +35,7 @@ class NewsFeedViewController: ScreenUpdatable {
     private var newsArray: [News]
     private weak var mediator: ScreenUpdatable?
     
-    init(_ newsArray: [News], _ mediator: ScreenUpdatable?) {
+    init(_ mediator: ScreenUpdatable?, _ newsArray: [News]) {
         self.newsArray = newsArray
         self.mediator = mediator
     }
@@ -80,7 +80,7 @@ class NewsDetailViewController: ScreenUpdatable {
     private var news: News
     private weak var mediator: ScreenUpdatable?
     
-    init(_ news: News, _ mediator: ScreenUpdatable?) {
+    init(_ mediator: ScreenUpdatable?, _ news: News) {
         self.news = news
         self.mediator = mediator
     }
@@ -105,7 +105,7 @@ class ProfileViewController: ScreenUpdatable {
     private var numberOfGivenLikes: Int
     private weak var mediator: ScreenUpdatable?
     
-    init(_ numberOfGivenLikes: Int, _ mediator: ScreenUpdatable?) {
+    init(_ mediator: ScreenUpdatable?, _ numberOfGivenLikes: Int) {
         self.numberOfGivenLikes = numberOfGivenLikes
         self.mediator = mediator
     }
