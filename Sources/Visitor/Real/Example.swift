@@ -18,11 +18,9 @@ class VisitorRealExample: XCTestCase {
         
         let notifications: [Notification] = [email, sms, push]
         
-        let blackList = createBlackList()
+        clientCode(handle: notifications, with: DefaultPolicyVisitor())
         
-        clientCode(handle: notifications, with: DefaultPolicyVisitor(), and: blackList)
-        
-        clientCode(handle: notifications, with: NightPolicyVisitor(), and: blackList)
+        clientCode(handle: notifications, with: NightPolicyVisitor())
     }
 }
 
@@ -32,20 +30,20 @@ extension VisitorRealExample {
     /// a notification is in a blacklist and should be shown in accordance with
     /// a current SilencePolicy
     
-    func clientCode(handle notifications: [Notification],
-                    with policy: SilencePolicy,
-                    and blackList: BlackList) {
+    func clientCode(handle notifications: [Notification], with policy: NotificationPolicy) {
         
-        print("\nClient: Using \(policy.description):")
+        let blackList = createBlackList()
+        
+        print("\nClient: Using \(policy.description) and \(blackList.description)")
         
         notifications.forEach { item in
             
-            guard !item.isSenderBanned(by: blackList) else {
+            guard !item.accept(visitor: blackList) else {
                 print("\tWARNING: " + item.description + " is in a black list")
                 return
             }
             
-            if item.isNotificationTurnedOn(for: policy) {
+            if item.accept(visitor: policy) {
                 print("\t" + item.description + " notification will be shown")
             } else {
                 print("\t" + item.description + " notification will be silenced")

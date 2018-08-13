@@ -1,9 +1,9 @@
-Client: Using Default Policy Visitor:
+Client: Using Default Policy Visitor and Black List Visitor
     Email notification will be shown
     SMS notification will be shown
     WARNING: Push is in a black list
 
-Client: Using Night Policy Visitor:
+Client: Using Night Policy Visitor and Black List Visitor
     Email notification will be silenced
     SMS notification will be shown
     WARNING: Push is in a black list

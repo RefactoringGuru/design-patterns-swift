@@ -10,9 +10,7 @@ import Foundation
 
 protocol Notification: CustomStringConvertible {
     
-    func isNotificationTurnedOn(for policy: SilencePolicy) -> Bool
-    
-    func isSenderBanned(by policy: BlackList) -> Bool
+    func accept(visitor: NotificationPolicy) -> Bool
 }
 
 struct Email {
@@ -38,33 +36,21 @@ struct Push {
 
 extension Email: Notification {
     
-    func isNotificationTurnedOn(for policy: SilencePolicy) -> Bool {
-        return policy.isEmailTurnedOn
-    }
-    
-    func isSenderBanned(by policy: BlackList) -> Bool {
-        return policy.inBlackList(email: self)
+    func accept(visitor: NotificationPolicy) -> Bool {
+        return visitor.isTurnedOn(for: self)
     }
 }
 
 extension SMS: Notification {
     
-    func isNotificationTurnedOn(for policy: SilencePolicy) -> Bool {
-        return policy.isSMSTurnedOn
-    }
-    
-    func isSenderBanned(by policy: BlackList) -> Bool {
-        return policy.inBlackList(sms: self)
+    func accept(visitor: NotificationPolicy) -> Bool {
+        return visitor.isTurnedOn(for: self)
     }
 }
 
 extension Push: Notification {
     
-    func isNotificationTurnedOn(for policy: SilencePolicy) -> Bool {
-        return policy.isPushTurnedOn
-    }
-    
-    func isSenderBanned(by policy: BlackList) -> Bool {
-        return policy.inBlackList(push: self)
+    func accept(visitor: NotificationPolicy) -> Bool {
+        return visitor.isTurnedOn(for: self)
     }
 }
