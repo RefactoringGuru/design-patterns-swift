@@ -683,8 +683,8 @@
 		912C5D25210BC594007DC364 /* Real */ = {
 			isa = PBXGroup;
 			children = (
-				913E0141210CA57900B7D71E /* Output.txt */,
 				912C5D26210BC594007DC364 /* Example.swift */,
+				913E0141210CA57900B7D71E /* Output.txt */,
 				912C5D28210BC594007DC364 /* Info.plist */,
 			);
 			path = Real;
@@ -712,8 +712,8 @@
 		912C5D3E210BC62D007DC364 /* Real */ = {
 			isa = PBXGroup;
 			children = (
-				913E0145210CA58900B7D71E /* Output.txt */,
 				912C5D3F210BC62D007DC364 /* Example.swift */,
+				913E0145210CA58900B7D71E /* Output.txt */,
 				912C5D41210BC62D007DC364 /* Info.plist */,
 			);
 			path = Real;
@@ -722,8 +722,8 @@
 		912C5D45210BC687007DC364 /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D57210BC6F1007DC364 /* Real */,
 				912C5D4B210BC6A8007DC364 /* Structure */,
+				912C5D57210BC6F1007DC364 /* Real */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -731,8 +731,8 @@
 		912C5D4B210BC6A8007DC364 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				913E0149210CA59A00B7D71E /* Output.txt */,
 				912C5D4C210BC6A8007DC364 /* Example.swift */,
+				913E0149210CA59A00B7D71E /* Output.txt */,
 				912C5D4E210BC6A8007DC364 /* Info.plist */,
 			);
 			path = Structure;
@@ -741,8 +741,8 @@
 		912C5D57210BC6F1007DC364 /* Real */ = {
 			isa = PBXGroup;
 			children = (
-				913E0147210CA59400B7D71E /* Output.txt */,
 				912C5D58210BC6F1007DC364 /* Example.swift */,
+				913E0147210CA59400B7D71E /* Output.txt */,
 				912C5D5A210BC6F1007DC364 /* Info.plist */,
 			);
 			path = Real;
