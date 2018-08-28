@@ -673,8 +673,8 @@
 		912C5D19210BC553007DC364 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				913E013F210CA57200B7D71E /* Output.txt */,
 				912C5D1A210BC553007DC364 /* Example.swift */,
+				913E013F210CA57200B7D71E /* Output.txt */,
 				912C5D1C210BC553007DC364 /* Info.plist */,
 			);
 			path = Structure;
@@ -693,8 +693,8 @@
 		912C5D31210BC5E1007DC364 /* Structure */ = {
 			isa = PBXGroup;
 			children = (
-				913E0143210CA58300B7D71E /* Output.txt */,
 				912C5D32210BC5E1007DC364 /* Example.swift */,
+				913E0143210CA58300B7D71E /* Output.txt */,
 				912C5D34210BC5E1007DC364 /* Info.plist */,
 			);
 			path = Structure;
