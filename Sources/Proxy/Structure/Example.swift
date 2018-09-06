@@ -20,9 +20,9 @@ import XCTest
 /// другие обязанности.
 
 class ProxyStructureExample: XCTestCase {
-    
+
     func test() {
-        
+
         /// EN: The client code is supposed to work with all objects (both subjects and
         /// proxies) via the Subject interface in order to support both real subjects and
         /// proxies. In real life, however, clients mostly work with their real subjects
@@ -34,17 +34,17 @@ class ProxyStructureExample: XCTestCase {
         /// субъекты, так и заместителей. В реальной жизни, однако, клиенты в основном
         /// работают с реальными субъектами напрямую. В этом случае, для более простой
         /// реализации паттерна, можно расширить заместителя из класса реального субъекта.
-        
+
         print("Client: Executing the client code with a real subject:")
-        
+
         let realSubject = RealSubject()
         clientCode(subject: realSubject)
-        
+
         print("\nClient: Executing the same client code with a proxy:")
         let proxy = Proxy(realSubject)
         clientCode(subject: proxy)
     }
-    
+
     func clientCode(subject: Subject) {
         // ...
         print(subject.request())
@@ -61,7 +61,7 @@ class ProxyStructureExample: XCTestCase {
 /// этот интерфейс,  вы сможете передать ему заместителя вместо реального субъекта.
 
 protocol Subject {
-    
+
     func request()
 }
 
@@ -77,7 +77,7 @@ protocol Subject {
 /// Реального Субъекта.
 
 class RealSubject: Subject {
-    
+
     func request() {
         print("RealSubject: Handling request.")
     }
@@ -88,19 +88,19 @@ class RealSubject: Subject {
 /// RU: Интерфейс Заместителя идентичен интерфейсу Реального Субъекта.
 
 class Proxy: Subject {
-    
+
     private var realSubject: RealSubject
-    
+
     /// EN: The Proxy maintains a reference to an object of the RealSubject
     /// class. It can be either lazy-loaded or passed to the Proxy by the client.
     ///
     /// RU: Заместитель хранит ссылку на объект класса РеальныйСубъект. Клиент
     /// может либо лениво загрузить его, либо передать Заместителю.
-    
+
     init(_ realSubject: RealSubject) {
         self.realSubject = realSubject
     }
-    
+
     /// EN: The most common applications of the Proxy pattern are lazy loading,
     /// caching, controlling the access, logging, etc. A Proxy can perform one of
     /// these things and then, depending on the result, pass the execution to the
@@ -111,26 +111,26 @@ class Proxy: Subject {
     /// и т.д. Заместитель может выполнить одну из этих задач, а затем, в
     /// зависимости от результата, передать выполнение одноимённому методу в
     /// связанном объекте класса РеальныйСубъект.
-    
+
     func request() {
-        
+
         if (checkAccess()) {
             realSubject.request()
             logAccess()
         }
     }
-    
+
     private func checkAccess() -> Bool {
-        
+
         /// EN: Some real checks should go here.
         ///
         /// RU: Некоторые реальные проверки должны проходить здесь.
-        
+
         print("Proxy: Checking access prior to firing a real request.")
-        
+
         return true
     }
-    
+
     private func logAccess() {
         print("Proxy: Logging the time of request.")
     }

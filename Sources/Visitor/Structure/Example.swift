@@ -20,9 +20,9 @@ import XCTest
 /// объектов, над которыми эти операции могут выполняться.
 
 class VisitorStructure: XCTestCase {
-    
+
     func test() {
-        
+
         /// EN: The client code can run visitor operations over any set of elements
         /// without figuring out their concrete classes. The accept operation directs a
         /// call to the appropriate operation in the visitor object.
@@ -30,18 +30,18 @@ class VisitorStructure: XCTestCase {
         /// RU: Клиентский код может выполнять операции посетителя над любым набором
         /// элементов, не выясняя их конкретных классов. Операция принятия направляет
         /// вызов к соответствующей операции в объекте посетителя.
-        
+
         let components: [Component] = [ConcreteComponentA(), ConcreteComponentB()]
-        
+
         print("The client code works with all visitors via the base Visitor interface:\n")
         let visitor1 = ConcreteVisitor1()
         clientCode(components: components, visitor: visitor1)
-        
+
         print("\nIt allows the same client code to work with different types of visitors:\n")
         let visitor2 = ConcreteVisitor2()
         clientCode(components: components, visitor: visitor2)
     }
-    
+
     func clientCode(components: [Component], visitor: Visitor) {
         components.forEach({ $0.accept(visitor) })
     }
@@ -54,7 +54,7 @@ class VisitorStructure: XCTestCase {
 /// аргумента может получать любой объект, реализующий интерфейс посетителя.
 
 protocol Component {
-    
+
     func accept(_ visitor: Visitor)
 }
 
@@ -65,7 +65,7 @@ protocol Component {
 /// образом, чтобы он вызывал метод посетителя, соотвествующий классу компонента.
 
 class ConcreteComponentA: Component {
-    
+
     /// EN: Note that we're calling `visitConcreteComponentA`, which matches the
     /// current class name. This way we let the visitor know the class of the
     /// component it works with.
@@ -73,11 +73,11 @@ class ConcreteComponentA: Component {
     /// RU: Обратите внимание, мы вызываем visitConcreteComponentA, что
     /// соответствует названию текущего класса. Таким образом мы позволяем
     /// посетителю узнать, с каким классом компонента он работает.
-    
+
     func accept(_ visitor: Visitor) {
         visitor.visitConcreteComponentA(element: self)
     }
-    
+
     /// EN: Concrete Components may have special methods that don't exist in
     /// their base class or interface. The Visitor is still able to use these
     /// methods since it's aware of the component's concrete class.
@@ -92,7 +92,7 @@ class ConcreteComponentA: Component {
 }
 
 class ConcreteComponentB: Component {
-    
+
     /// EN: Same here: visitConcreteComponentB => ConcreteComponentB
     ///
     /// RU: То же самое здесь: visitConcreteComponentB => ConcreteComponentB
@@ -100,7 +100,7 @@ class ConcreteComponentB: Component {
     func accept(_ visitor: Visitor) {
         visitor.visitConcreteComponentB(element: self)
     }
-    
+
     func specialMethodOfConcreteComponentB() -> String {
         return "B"
     }
@@ -115,7 +115,7 @@ class ConcreteComponentB: Component {
 /// определить конкретный класс компонента, с которым он имеет дело.
 
 protocol Visitor {
-    
+
     func visitConcreteComponentA(element: ConcreteComponentA)
     func visitConcreteComponentB(element: ConcreteComponentB)
 }
@@ -137,22 +137,22 @@ protocol Visitor {
 /// выполнении методов посетителя над различными объектами структуры.
 
 class ConcreteVisitor1: Visitor {
-    
+
     func visitConcreteComponentA(element: ConcreteComponentA) {
         print(element.exclusiveMethodOfConcreteComponentA() + " + ConcreteVisitor1\n")
     }
-    
+
     func visitConcreteComponentB(element: ConcreteComponentB) {
         print(element.specialMethodOfConcreteComponentB() + " + ConcreteVisitor1\n")
     }
 }
 
 class ConcreteVisitor2: Visitor {
-    
+
     func visitConcreteComponentA(element: ConcreteComponentA) {
         print(element.exclusiveMethodOfConcreteComponentA() + " + ConcreteVisitor2\n")
     }
-    
+
     func visitConcreteComponentB(element: ConcreteComponentB) {
         print(element.specialMethodOfConcreteComponentB() + " + ConcreteVisitor2\n")
     }

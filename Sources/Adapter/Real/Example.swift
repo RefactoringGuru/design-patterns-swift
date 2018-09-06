@@ -16,7 +16,7 @@ import UIKit
 /// incompatible interfaces.
 
 class AdapterRealExample: XCTestCase {
-    
+
     /// Example.
     /// Let's assume that our app perfectly works with Facebook authorization.
     /// However, users ask you to add sign in via Twitter.
@@ -34,32 +34,32 @@ class AdapterRealExample: XCTestCase {
     /// already implemented by Facebook SDK.
     ///
     /// It just tells a compiler that both SDKs have the same interface.
-    
+
     func testAdapterReal() {
-        
+
         print("Starting an authorization via Facebook")
         startAuthorization(with: FacebookAuthSDK())
-        
+
         print("Starting an authorization via Twitter.")
         startAuthorization(with: TwitterAuthSDK())
     }
-    
+
     func startAuthorization(with service: AuthService) {
-        
+
         /// The current top view controller of the app
         let topViewController = UIViewController()
-        
+
         service.presentAuthFlow(from: topViewController)
     }
 }
 
 protocol AuthService {
-    
+
     func presentAuthFlow(from viewController: UIViewController)
 }
 
 class FacebookAuthSDK {
-    
+
     func presentAuthFlow(from viewController: UIViewController) {
         /// Call SDK methods and pass a view controller
         print("Facebook WebView has been shown.")
@@ -67,7 +67,7 @@ class FacebookAuthSDK {
 }
 
 class TwitterAuthSDK {
-    
+
     func startAuthorization(with viewController: UIViewController) {
         /// Call SDK methods and pass a view controller
         print("Twitter WebView has been shown. Users will be happy :)")
@@ -75,12 +75,12 @@ class TwitterAuthSDK {
 }
 
 extension TwitterAuthSDK: AuthService {
-    
+
     /// This is an adapter
     ///
     /// Yeah, we are able to not create another class
     /// and just extend an existing one
-    
+
     func presentAuthFlow(from viewController: UIViewController) {
         print("The Adapter is called! Redirecting to the original method...")
         self.startAuthorization(with: viewController)

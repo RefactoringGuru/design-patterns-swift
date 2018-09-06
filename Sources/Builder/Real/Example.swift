@@ -9,7 +9,7 @@
 import XCTest
 
 class BuilderRealExample: XCTestCase {
-    
+
     func testRealBuilder() {
         print("Client: Start fetching data from Realm")
         clientCode(builder: RealmQueryBuilder<User>())

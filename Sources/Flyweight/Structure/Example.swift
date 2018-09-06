@@ -21,15 +21,15 @@ import XCTest
 /// объектов между ними, вместо хранения  одинаковых данных в каждом объекте.
 
 class FlyweightStructureExample: XCTestCase {
-    
+
     /// EN: The client code usually creates a bunch of pre-populated flyweights in
     /// the initialization stage of the application.
     ///
     /// RU: Клиентский код обычно создает кучу предварительно заполненных легковесов
     /// на этапе инициализации приложения.
-    
+
     func testFlyweight() {
-        
+
         let factory = FlyweightFactory(states:
             [
                 ["Chevrolet", "Camaro2018", "pink"],
@@ -38,16 +38,16 @@ class FlyweightStructureExample: XCTestCase {
                 ["BMW", "M5", "red"],
                 ["BMW", "X6", "white"]
             ])
-        
+
         factory.printFlyweights()
-        
+
         addCarToPoliceDatabase(factory,
                                "CL234IR",
                                "James Doe",
                                "BMW",
                                "M5",
                                "red")
-        
+
         addCarToPoliceDatabase(factory,
                                "CL234IR",
                                "James Doe",
@@ -56,7 +56,7 @@ class FlyweightStructureExample: XCTestCase {
                                "red")
         factory.printFlyweights()
     }
-    
+
     func addCarToPoliceDatabase(
         _ factory: FlyweightFactory,
         _ plates: String,
@@ -64,11 +64,11 @@ class FlyweightStructureExample: XCTestCase {
         _ brand: String,
         _ model: String,
         _ color: String) {
-        
+
         print("Client: Adding a car to database.\n")
-        
+
         let flyweight = factory.flyweight(for: [brand, model, color])
-        
+
         /// EN: The client code either stores or calculates extrinsic state and
         /// passes it to the flyweight's methods.
         ///
@@ -89,13 +89,13 @@ class FlyweightStructureExample: XCTestCase {
 /// для каждого объекта)  через его параметры метода.
 
 class Flyweight {
-    
+
     private let sharedState: [String]
-    
+
     init(sharedState: [String]) {
         self.sharedState = sharedState
     }
-    
+
     func operation(uniqueState: [String]) {
         print("Flyweight: Displaying shared (\(sharedState)) and unique (\(uniqueState) state.\n")
     }
@@ -112,30 +112,30 @@ class Flyweight {
 /// если он ещё не существует.
 
 class FlyweightFactory {
-    
+
     private var flyweights: [String: Flyweight]
-    
+
     init(states: [[String]]) {
-        
+
         var flyweights = [String: Flyweight]()
-        
+
         for state in states {
             flyweights[state.key] = Flyweight(sharedState: state)
         }
-        
+
         self.flyweights = flyweights
     }
-    
+
     /// EN: Returns an existing Flyweight with a given state or creates a new one.
     ///
     /// RU: Возвращает существующий Легковес с заданным состоянием или создает новый.
-    
+
     func flyweight(for state: [String]) -> Flyweight {
-        
+
         let key = state.key
-        
+
         guard let foundFlyweight = flyweights[key] else {
-            
+
             print("FlyweightFactory: Can't find a flyweight, creating new one.\n")
             let flyweight = Flyweight(sharedState: state)
             flyweights.updateValue(flyweight, forKey: key)
@@ -144,7 +144,7 @@ class FlyweightFactory {
         print("FlyweightFactory: Reusing existing flyweight.\n")
         return foundFlyweight
     }
-    
+
     func printFlyweights() {
         print("FlyweightFactory: I have \(flyweights.count) flyweights:\n")
         for item in flyweights {
@@ -154,11 +154,11 @@ class FlyweightFactory {
 }
 
 extension Array where Element == String {
-    
+
     /// EN: Returns a Flyweight's string hash for a given state.
     ///
     /// RU: Возвращает хеш строки Легковеса для данного состояния.
-    
+
     var key: String {
         return self.joined()
     }

@@ -32,7 +32,7 @@ import XCTest
 /// и то же.
 
 class ObserverStructure: XCTestCase {
-    
+
     /// There are a number of ways to implement and use Observer pattern.
     ///
     /// KVO
@@ -45,17 +45,17 @@ class ObserverStructure: XCTestCase {
     /// Rx
     ///
     /// And any other custom implementation of this pattern.
-    
+
     func test() {
-        
+
         let subject = Subject()
-        
+
         let observer1 = ConcreteObserverA()
         let observer2 = ConcreteObserverB()
-        
+
         subject.attach(observer1)
         subject.attach(observer2)
-        
+
         subject.someBusinessLogic()
         subject.someBusinessLogic()
         subject.detach(observer2)
@@ -64,7 +64,7 @@ class ObserverStructure: XCTestCase {
 }
 
 protocol Observer: class {
-    
+
     func update(subject: Subject)
 }
 
@@ -81,42 +81,42 @@ class Subject
     ///
     /// RU: Для удобства в этой переменной хранится состояние Издателя,
     /// необходимое всем подписчикам.
-    
+
     var state: Int = { return Int(arc4random_uniform(10)) }()
-    
+
     /// EN: @var array List of subscribers. In real life, the list of subscribers
     /// can be stored more comprehensively (categorized by event type, etc.).
     ///
     /// RU: @var array Список подписчиков. В реальной жизни список подписчиков
     /// может храниться в более подробном виде (классифицируется по типу события и т.д.)
-    
+
     private lazy var observers = [Observer]()
-    
+
     /// EN: The subscription management methods.
     ///
     /// RU: Методы управления подпиской.
-    
+
     func attach(_ observer: Observer) {
         print("Subject: Attached an observer.\n")
         observers.append(observer)
     }
-    
+
     func detach(_ observer: Observer) {
         if let idx = observers.index(where: { $0 === observer }) {
             observers.remove(at: idx)
             print("Subject: Detached an observer.\n")
         }
     }
-    
+
     /// EN: Trigger an update in each subscriber.
     ///
     /// RU: Запуск обновления в каждом подписчике.
-    
+
     func notify() {
         print("Subject: Notifying observers...\n")
         observers.forEach({ $0.update(subject: self)})
     }
-    
+
     /// EN: Usually, the subscription logic is only a fraction of what a Subject
     /// can really do. Subjects commonly hold some important business logic, that
     /// triggers a notification method whenever something important is about to
@@ -126,7 +126,7 @@ class Subject
     /// Издатели часто содержат некоторую важную бизнес-логику, которая запускает
     /// метод уведомления всякий раз, когда должно произойти что-то важное (или
     /// после этого).
-    
+
     func someBusinessLogic() {
         print("\nSubject: I'm doing something important.\n")
         state = Int(arc4random_uniform(10))
@@ -142,9 +142,9 @@ class Subject
 /// которому они прикреплены.
 
 class ConcreteObserverA: Observer {
-    
+
     func update(subject: Subject) {
-        
+
         if subject.state < 3 {
             print("ConcreteObserverA: Reacted to the event.\n")
         }
@@ -152,9 +152,9 @@ class ConcreteObserverA: Observer {
 }
 
 class ConcreteObserverB: Observer {
-    
+
     func update(subject: Subject) {
-        
+
         if subject.state >= 3 {
             print("ConcreteObserverB: Reacted to the event.\n")
         }

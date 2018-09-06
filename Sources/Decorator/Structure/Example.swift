@@ -15,29 +15,29 @@ import XCTest
 /// functionality.
 
 class DecoratorStructuralExample: XCTestCase {
-    
+
     func testDecoratorStructure() {
-        
+
         /// This way the client code can support both simple components...
         print("Client: I get a simple component")
         let simple = ConcreteComponent()
         clientCode(component: simple)
-        
+
         /// ...as well as decorated ones.
-            
+
         /// Note how decorators can wrap not only simple components but the other
         /// decorators as well.
-        
+
         let decorator1 = ConcreteDecoratorA(simple)
         let decorator2 = ConcreteDecoratorB(decorator1)
         print("Client: Now I get a decorated component")
         clientCode(component: decorator2)
     }
-    
+
     /// The client code works with all objects using the Component interface. This
     /// way it can stay independent of the concrete classes of components it works
     /// with.
-    
+
     fileprivate func clientCode(component: Component) {
         print("Result: " + component.operation())
     }
@@ -47,7 +47,7 @@ class DecoratorStructuralExample: XCTestCase {
 /// decorators.
 
 private protocol Component {
-    
+
     func operation() -> String
 }
 
@@ -55,7 +55,7 @@ private protocol Component {
 /// might be several variations of these classes.
 
 class ConcreteComponent: Component {
-    
+
     func operation() -> String {
         return "ConcreteComponent"
     }
@@ -68,13 +68,13 @@ class ConcreteComponent: Component {
 /// it.
 
 private class Decorator: Component {
-    
+
     private var component: Component
-    
+
     init(_ component: Component) {
         self.component = component
     }
-    
+
     /// The Decorator delegates all work to the wrapped component.
     func operation() -> String {
         return component.operation()
@@ -84,11 +84,11 @@ private class Decorator: Component {
 /// Concrete Decorators call the wrapped object and alter its result in some way.
 
 private class ConcreteDecoratorA: Decorator {
-    
+
     /// Decorators may call parent implementation of the operation, instead of
     /// calling the wrapped object directly. This approach simplifies extension
     /// of decorator classes.
-    
+
     override func operation() -> String {
         return "ConcreteDecoratorA(" + super.operation() + ")"
     }
@@ -98,7 +98,7 @@ private class ConcreteDecoratorA: Decorator {
 /// wrapped object.
 
 private class ConcreteDecoratorB: Decorator {
-    
+
     override func operation() -> String {
         return "ConcreteDecoratorB(" + super.operation() + ")"
     }
