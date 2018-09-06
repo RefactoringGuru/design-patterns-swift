@@ -4,11 +4,12 @@ This repository is part of the [Refactoring.Guru](https://refactoring.guru/desig
 
 It contains Swift examples for all classic GoF design patterns.
 
-Each pattern includes two examples:
+There are two examples for each of the patterns:
 
-- **Structural** examples show the internal structure of patterns, including detailed comments.
+- **Structural** examples illustrate the internal structure of a pattern, explained with detailed comments.
 
-- **RealWorld** examples show how patterns can be used in real-world Swift applications.
+- **RealWorld** examples illustrate how patterns can be used in real-world Swift applications.
+
 
 ## Requirements
 
@@ -17,9 +18,11 @@ For the best experience, we recommend working with examples with [Swift 4](https
 
 ## Usage
 
-Each example is included into own Unit Test Target.
+For the sake of simplicity, we tried to limit the scope of these examples to the code, related to the actual patterns. That's why didn't implement full-blown Swift apps, accompanied with Run targets. Instead, our examples are packaged as unit tests, where each Unit Test target executes a specific example of a pattern.
 
-Select an appropriate scheme in Xcode and press `Cmd + U` to run it.
+To run an example, browse it in the project directory, select the Unit Test scheme and launch the example.
+
+![How tou launch an example](/readme.gif?raw=true)
 
 
 ## FAQ
