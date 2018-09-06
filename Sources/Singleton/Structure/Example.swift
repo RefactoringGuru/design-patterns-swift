@@ -18,29 +18,13 @@ import XCTest
 /// Назначение: Гарантирует существование единственного экземпляра класса и
 /// предоставляет глобальную точку доступа к нему.
 
-class SingletonStructuralExample: XCTestCase {
 
-    /// EN: The client code.
-    ///
-    /// RU: Клиентский код.
-
-    func testSingletonStructure() {
-
-        let instance1 = Singleton.shared
-        let instance2 = Singleton.shared
-
-        print(instance1.someBusinessLogic())
-        print(instance2.someBusinessLogic())
-
-        /// EN: Both variables contain the same object. Otherwise, the assert would fail.
-        ///
-        /// RU: Обе переменные содержат один и тот же объект, иначе бы эта проверка не прошла.
-        XCTAssert(instance1 === instance2)
-    }
-}
-
+/// EN: The Singleton class defines the `shared` field that lets clients
+/// access the unique singleton instance.
+///
+/// RU: Класс Одиночка предоставляет поле `shared`, которое позволяет
+/// клиентам получать доступ к уникальному экземпляру одиночки.
 class Singleton {
-
     /// EN: The static field that controls the access to the singleton instance.
     ///
     /// This implementation let you extend the Singleton class while keeping
@@ -50,8 +34,6 @@ class Singleton {
     ///
     /// Эта реализация позволяет вам расширять класс Одиночки,
     /// сохраняя повсюду только один экземпляр каждого подкласса.
-
-
     static var shared: Singleton = {
         let instance = Singleton()
         // EN: ...
@@ -69,7 +51,6 @@ class Singleton {
     ///
     /// RU: Инициализатор Одиночки всегда должен быть скрытым, чтобы предотвратить
     /// прямое создание объекта через инициализатор.
-
     private init() {}
 
     /// EN: Finally, any singleton should define some business logic, which can
@@ -77,20 +58,46 @@ class Singleton {
     ///
     /// RU: Наконец, любой одиночка должен содержать некоторую бизнес-логику,
     /// которая может быть выполнена на его экземпляре.
-
     func someBusinessLogic() -> String {
         // ...
         return "Result of the 'someBusinessLogic' call"
     }
 }
 
+/// EN: Singletons should not be cloneable.
+///
+/// RU: Одиночки не должны быть клонируемыми.
 extension Singleton: NSCopying {
-
-    /// EN: Singletons should not be cloneable.
-    ///
-    /// RU: Одиночки не должны быть клонируемыми.
-
     func copy(with zone: NSZone? = nil) -> Any {
         return self
+    }
+}
+
+/// EN: The client code.
+///
+/// RU: Клиентский код.
+class Client {
+    // ...
+    static func someClientCode() {
+        let instance1 = Singleton.shared
+        let instance2 = Singleton.shared
+
+        print(instance1.someBusinessLogic())
+        print(instance2.someBusinessLogic())
+
+        /// EN: Both variables contain the same object. Otherwise, the assert would fail.
+        ///
+        /// RU: Обе переменные содержат один и тот же объект, иначе бы эта проверка не прошла.
+        XCTAssert(instance1 === instance2)
+    }
+    // ...
+}
+
+/// EN: Let's see how it all works.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class SingletonStructuralExample: XCTestCase {
+    func testSingletonStructure() {
+        Client.someClientCode();
     }
 }

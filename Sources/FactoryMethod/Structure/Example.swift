@@ -20,37 +20,6 @@ import XCTest
 /// подклассам решать, какого класса создавать экземпляр. Фабричный Метод
 /// позволяет классу делегировать создание экземпляра подклассам.
 
-class FactoryMethodStructuralExample: XCTestCase {
-
-    /// EN: The client code works with an instance of a concrete creator, albeit
-    /// through its base protocol. As long as the client keeps working with the
-    /// creator via the base protocol, you can pass it any creator's subclass.
-    ///
-    /// RU: Клиентский код работает с экземпляром конкретного создателя, хотя и через
-    /// его базовый протокол. Пока клиент продолжает работать с создателем через
-    /// базовый протокол, вы можете передать ему любой подкласс создателя.
-
-    func testFactoryMethod() {
-
-        /// EN: The Application picks a creator's type depending on the configuration or
-        /// environment.
-        ///
-        /// RU: Приложение выбирает тип создателя в зависимости от конфигурации или
-        /// среды.
-
-        print("Testing ConcreteCreator1:")
-        clientCode(creator: ConcreteCreator1())
-
-        print("Testing ConcreteCreator2:")
-        clientCode(creator: ConcreteCreator2())
-    }
-
-    func clientCode(creator: Creator) {
-        // ...
-        print(creator.someOperation())
-        // ...
-    }
-}
 
 /// EN: The Creator protocol declares the factory method that's supposed to return
 /// a new object of a Product class. The Creator's subclasses usually provide the
@@ -59,15 +28,12 @@ class FactoryMethodStructuralExample: XCTestCase {
 /// RU: Класс Создатель объявляет фабричный метод, который должен возвращать
 /// объект класса Продукт. Подклассы Создателя обычно предоставляют реализацию
 /// этого метода.
-
 protocol Creator {
-
     /// EN: Note that the Creator may also provide some default implementation of
     /// the factory method.
     ///
     /// RU: Обратите внимание, что Создатель может также обеспечить реализацию
     /// фабричного метода по умолчанию.
-
     func factoryMethod() -> Product
 
     /// EN: Also note that, despite its name, the Creator's primary
@@ -83,7 +49,6 @@ protocol Creator {
     /// возвращаемых фабричным методом.  Подклассы могут косвенно изменять эту
     /// бизнес-логику, переопределяя фабричный метод и возвращая из него другой
     /// тип продукта.
-
     func someOperation() -> String
 }
 
@@ -92,11 +57,8 @@ protocol Creator {
 ///
 /// RU: Это расширение реализует базовое поведение Создателя. Оно может
 /// быть переопределено в подклассах.
-
 extension Creator {
-
     func someOperation() -> String {
-
         // EN: Call the factory method to create a Product object.
         //
         // RU: Вызываем фабричный метод, чтобы получить объект-продукт.
@@ -109,15 +71,12 @@ extension Creator {
     }
 }
 
-
 /// EN: Concrete Creators override the factory method in order to change the
 /// resulting product's type.
 ///
 /// RU: Конкретные Создатели переопределяют фабричный метод для того, чтобы
 /// изменить тип результирующего продукта.
-
 class ConcreteCreator1: Creator {
-
     /// EN: Note that the signature of the method still uses the abstract product
     /// type, even though the concrete product is actually returned from the
     /// method. This way the Creator can stay independent of concrete product
@@ -127,26 +86,17 @@ class ConcreteCreator1: Creator {
     /// абстрактного продукта, хотя  фактически из метода возвращается конкретный
     /// продукт. Таким образом, Создатель может оставаться независимым от
     /// конкретных классов продуктов.
-
     public func factoryMethod() -> Product {
         return ConcreteProduct1()
     }
 }
 
-/// EN: Concrete Creators override the factory method in order to change the
-/// resulting product's type.
-///
-/// RU: Конкретные Создатели переопределяют фабричный метод для того, чтобы
-/// изменить тип результирующего продукта.
-
 class ConcreteCreator2: Creator {
-
     public func factoryMethod() -> Product {
         return ConcreteProduct2()
     }
 
     func someOperation() -> String {
-
         let product = factoryMethod()
 
         return "ConcreteCreator2 overrides the base behavior: " + product.operation()
@@ -158,9 +108,7 @@ class ConcreteCreator2: Creator {
 ///
 /// RU: Протокол Продукта объявляет операции, которые должны выполнять все
 /// конкретные продукты.
-
 protocol Product {
-
     func operation() -> String
 }
 
@@ -169,23 +117,50 @@ protocol Product {
 ///
 /// RU: Конкретные Продукты предоставляют различные реализации протокола
 /// Продукта.
-
 class ConcreteProduct1: Product {
-
     func operation() -> String {
         return "Result of ConcreteProduct1"
     }
 }
 
-/// EN: Concrete Products provide various implementations of the Product
-/// protocol.
-///
-/// RU: Конкретные Продукты предоставляют различные реализации протокола
-/// Продукта.
-
 class ConcreteProduct2: Product {
-
     func operation() -> String {
         return "Result of ConcreteProduct2"
+    }
+}
+
+
+/// EN: The client code works with an instance of a concrete creator, albeit
+/// through its base protocol. As long as the client keeps working with the
+/// creator via the base protocol, you can pass it any creator's subclass.
+///
+/// RU: Клиентский код работает с экземпляром конкретного создателя, хотя и через
+/// его базовый протокол. Пока клиент продолжает работать с создателем через
+/// базовый протокол, вы можете передать ему любой подкласс создателя.
+class Client {
+    // ...
+    static func someClientCode(creator: Creator) {
+        print(creator.someOperation())
+    }
+    // ...
+}
+
+/// EN: Let's see how it all works.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class FactoryMethodStructuralExample: XCTestCase {
+    func testFactoryMethod() {
+
+        /// EN: The Application picks a creator's type depending on the configuration or
+        /// environment.
+        ///
+        /// RU: Приложение выбирает тип создателя в зависимости от конфигурации или
+        /// среды.
+
+        print("Testing ConcreteCreator1:")
+        Client.someClientCode(creator: ConcreteCreator1())
+
+        print("Testing ConcreteCreator2:")
+        Client.someClientCode(creator: ConcreteCreator2())
     }
 }
