@@ -26,3 +26,5 @@ DerivedData
 fastlane/report.xml
 
 Pods/
+
+.idea
