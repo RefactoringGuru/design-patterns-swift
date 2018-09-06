@@ -980,16 +980,8 @@
 			children = (
 				919C8AEE20DD897E006EE57D /* Structure */,
 				919C8AE120DD893E006EE57D /* Real */,
-				9187BFBE20B5D0A600266EF8 /* StructuralExample */,
 			);
 			path = FactoryMethod;
-			sourceTree = "<group>";
-		};
-		9187BFBE20B5D0A600266EF8 /* StructuralExample */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StructuralExample;
 			sourceTree = "<group>";
 		};
 		9187BFC320B5D0A700266EF8 /* Singleton */ = {
