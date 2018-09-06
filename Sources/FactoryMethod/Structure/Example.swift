@@ -8,22 +8,35 @@
 
 import XCTest
 
-/// Factory Method Design Pattern
+/// EN: Factory Method Design Pattern
 ///
 /// Intent: Define an interface for creating an object, but let subclasses decide
-/// which class to instantiate. Factory Method lets a class defer
-/// instantiation to subclasses.
+/// which class to instantiate. Factory Method lets a class defer instantiation
+/// to subclasses.
+///
+/// RU: Паттерн Фабричный Метод
+///
+/// Назначение: Определяет интерфейс для создания объекта, но позволяет
+/// подклассам решать, какого класса создавать экземпляр. Фабричный Метод
+/// позволяет классу делегировать создание экземпляра подклассам.
 
 class FactoryMethodStructuralExample: XCTestCase {
 
-    /// Client code produces a concrete creator object of certain kind instead of
-    /// base creator's class. As long as client works with creators using
-    /// base interface, you can make it work with any creator subclass.
+    /// EN: The client code works with an instance of a concrete creator, albeit
+    /// through its base protocol. As long as the client keeps working with the
+    /// creator via the base protocol, you can pass it any creator's subclass.
+    ///
+    /// RU: Клиентский код работает с экземпляром конкретного создателя, хотя и через
+    /// его базовый протокол. Пока клиент продолжает работать с создателем через
+    /// базовый протокол, вы можете передать ему любой подкласс создателя.
 
     func testFactoryMethod() {
 
-        /// Application picks a creator's type depending on configuration or
+        /// EN: The Application picks a creator's type depending on the configuration or
         /// environment.
+        ///
+        /// RU: Приложение выбирает тип создателя в зависимости от конфигурации или
+        /// среды.
 
         print("Testing ConcreteCreator1:")
         clientCode(creator: ConcreteCreator1())
@@ -39,47 +52,94 @@ class FactoryMethodStructuralExample: XCTestCase {
     }
 }
 
+/// EN: The Creator protocol declares the factory method that's supposed to return
+/// a new object of a Product class. The Creator's subclasses usually provide the
+/// implementation of this method.
+///
+/// RU: Класс Создатель объявляет фабричный метод, который должен возвращать
+/// объект класса Продукт. Подклассы Создателя обычно предоставляют реализацию
+/// этого метода.
+
 protocol Creator {
 
-    /// Creator may also define a default implementation of the factory
-    /// method that returns a default ConcreteProduct object.
+    /// EN: Note that the Creator may also provide some default implementation of
+    /// the factory method.
+    ///
+    /// RU: Обратите внимание, что Создатель может также обеспечить реализацию
+    /// фабричного метода по умолчанию.
 
     func factoryMethod() -> Product
+
+    /// EN: Also note that, despite its name, the Creator's primary
+    /// responsibility is not creating products. Usually, it contains some core
+    /// business logic that relies on Product objects, returned by the factory
+    /// method. Subclasses can indirectly change that business logic by
+    /// overriding the factory method and returning a different type of product
+    /// from it.
+    ///
+    /// RU: Также заметьте, что, несмотря на название,  основная обязанность
+    /// Создателя не заключается в создании продуктов.  Обычно он содержит
+    /// некоторую базовую бизнес-логику, которая основана  на объектах Продуктов,
+    /// возвращаемых фабричным методом.  Подклассы могут косвенно изменять эту
+    /// бизнес-логику, переопределяя фабричный метод и возвращая из него другой
+    /// тип продукта.
 
     func someOperation() -> String
 }
 
-/// This extension implements a default behavior of abstract Creator.
-/// The behavior can be overridden in subclasses.
+/// EN: This extension implements the default behavior of the Creator.
+/// This behavior can be overridden in subclasses.
+///
+/// RU: Это расширение реализует базовое поведение Создателя. Оно может
+/// быть переопределено в подклассах.
 
 extension Creator {
 
-    /// Creator should have some primary business logic. Factory method
-    /// acts just as a helper in such code.
-
-    /// Base behavior. ConcreteCreator2 overrides it.
     func someOperation() -> String {
 
-        /// Call the factory method to create a Product object.
+        // EN: Call the factory method to create a Product object.
+        //
+        // RU: Вызываем фабричный метод, чтобы получить объект-продукт.
         let product = factoryMethod()
 
-        /// Now, use product.
+        // EN: Now, use the product.
+        //
+        // RU: Далее, работаем с этим продуктом.
         return "Same creator's code worked with: " + product.operation()
     }
 }
 
+
+/// EN: Concrete Creators override the factory method in order to change the
+/// resulting product's type.
+///
+/// RU: Конкретные Создатели переопределяют фабричный метод для того, чтобы
+/// изменить тип результирующего продукта.
+
 class ConcreteCreator1: Creator {
 
-    /// Override the factory method to return an instance of a ConcreteProduct1.
+    /// EN: Note that the signature of the method still uses the abstract product
+    /// type, even though the concrete product is actually returned from the
+    /// method. This way the Creator can stay independent of concrete product
+    /// classes.
+    ///
+    /// RU: Обратите внимание, что сигнатура метода по-прежнему использует тип
+    /// абстрактного продукта, хотя  фактически из метода возвращается конкретный
+    /// продукт. Таким образом, Создатель может оставаться независимым от
+    /// конкретных классов продуктов.
 
     public func factoryMethod() -> Product {
         return ConcreteProduct1()
     }
 }
 
-class ConcreteCreator2: Creator {
+/// EN: Concrete Creators override the factory method in order to change the
+/// resulting product's type.
+///
+/// RU: Конкретные Создатели переопределяют фабричный метод для того, чтобы
+/// изменить тип результирующего продукта.
 
-    /// Override the factory method to return an instance of a ConcreteProduct2.
+class ConcreteCreator2: Creator {
 
     public func factoryMethod() -> Product {
         return ConcreteProduct2()
@@ -93,14 +153,22 @@ class ConcreteCreator2: Creator {
     }
 }
 
-/// Define the interface of objects the factory method creates.
+/// EN: The Product protocol declares the operations that all concrete products
+/// must implement.
+///
+/// RU: Протокол Продукта объявляет операции, которые должны выполнять все
+/// конкретные продукты.
 
 protocol Product {
 
     func operation() -> String
 }
 
-/// Implement the Product interface.
+/// EN: Concrete Products provide various implementations of the Product
+/// protocol.
+///
+/// RU: Конкретные Продукты предоставляют различные реализации протокола
+/// Продукта.
 
 class ConcreteProduct1: Product {
 
@@ -109,7 +177,11 @@ class ConcreteProduct1: Product {
     }
 }
 
-/// Implement the Product interface.
+/// EN: Concrete Products provide various implementations of the Product
+/// protocol.
+///
+/// RU: Конкретные Продукты предоставляют различные реализации протокола
+/// Продукта.
 
 class ConcreteProduct2: Product {
 

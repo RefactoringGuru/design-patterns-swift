@@ -8,43 +8,55 @@
 
 import XCTest
 
-/// Prototype Design Pattern
+/// EN: Prototype Design Pattern
 ///
-/// Intent: Specify the kinds of objects to create using a prototypical instance,
-/// and create new objects by copying this prototype.
+/// Intent: Produce new objects by copying existing ones without compromising
+/// their internal structure.
+///
+/// RU: Паттерн Прототип
+///
+/// Назначение: Создаёт новые объекты, копируя существующие без нарушения их
+/// внутренней структуры.
 
 class PrototypeStructuralExample: XCTestCase {
 
-    /// In Swift, objects can be copied by adopting
-    /// NSCopying protocol or providing a custom implementation.
+    /// EN: The client code.
+    ///
+    /// RU: Клиентский код.
 
     func testPrototype_NSCopying() {
 
-        let prototype = SubPrototype()
-        prototype.update(intValue: 2, stringValue: "Value2")
+        let original = SubClass(intValue: 2, stringValue: "Value2")
 
-        guard let anotherPrototype = prototype.copy() as? SubPrototype else {
+        guard let copy = original.copy() as? SubClass else {
             XCTAssert(false)
             return
         }
 
-        XCTAssert(anotherPrototype == prototype)
+        /// EN: See implementation of `Equatable` protocol for more details.
+        ///
+        /// RU: См. реализацию протокола `Equatable`.
+        XCTAssert(copy == original)
 
-        /// See implementation of 'Equatable' protocol for more details.
-        print("Prototype is equal to the copied object!")
+        print("The original object is equal to the copied object!")
     }
 }
 
-/// Coping using NSCopying
+/// EN: Swift has built-in cloning support. To add cloning support to your
+/// class, you need to implement the NSCopying protocol in that class
+/// and provide the implementation for the `copy` method.
+///
+/// RU: Swift имеет встроенную поддержку клонирования. Чтобы сделать класс
+/// клонируемым, вам нужно реализовать в нём протокол NSCopying, а именно
+/// метод `copy`.
 
-class Prototype: NSCopying, Equatable {
+class BaseClass: NSCopying, Equatable {
 
     private var intValue = 1
     private var stringValue = "Value"
 
-    required init() {}
+    required init(intValue: Int = 1, stringValue: String = "Value") {
 
-    func update(intValue: Int = 1, stringValue: String = "Value") {
         self.intValue = intValue
         self.stringValue = stringValue
     }
@@ -55,17 +67,24 @@ class Prototype: NSCopying, Equatable {
         let prototype = type(of: self).init()
         prototype.intValue = intValue
         prototype.stringValue = stringValue
-        print("Prototype values have been cloned!")
+        print("BaseClass' values have been cloned!")
         return prototype
     }
 
     /// MARK: - Equatable
-    static func == (lhs: Prototype, rhs: Prototype) -> Bool {
+    static func == (lhs: BaseClass, rhs: BaseClass) -> Bool {
         return lhs.intValue == rhs.intValue && lhs.stringValue == rhs.stringValue
     }
 }
 
-class SubPrototype: Prototype {
+/// EN: Subclasses can override the base `copy` method to copy their own data
+/// into the resulting object. But you should always call the base method first.
+///
+/// RU: Подклассы могет переопределять базовый метод `copy`, чтобы дополнительно
+/// скопировать данные собственного класса. Но в этом случае всегда сперва
+/// вызывайте родительскую реализацию метод копирования.
+
+class SubClass: BaseClass {
 
     private var boolValue = true
 
@@ -74,11 +93,11 @@ class SubPrototype: Prototype {
     }
 
     override func copy(with zone: NSZone?) -> Any {
-        guard let prototype = super.copy(with: zone) as? SubPrototype else {
-            return SubPrototype() // smth went wrong
+        guard let prototype = super.copy(with: zone) as? SubClass else {
+            return SubClass() // oops
         }
         prototype.boolValue = boolValue
-        print("SubPrototype values have been cloned!")
+        print("SubClass' values have been cloned!")
         return prototype
     }
 }

@@ -48,11 +48,11 @@ class AbstractFactoryStructuralExample: XCTestCase {
     }
 }
 
-/// EN: Each distinct product of a product family should have a base interface.
-/// All variations of the product must implement this interface.
+/// EN: Each distinct product of a product family should have a base proocol.
+/// All variations of the product must implement this proocol.
 ///
 /// RU: Каждый отдельный продукт семейства продуктов должен иметь базовый
-/// интерфейс. Все вариации продукта должны реализовывать этот интерфейс.
+/// протокол. Все вариации продукта должны реализовывать этот протокол.
 
 protocol AbstractProductA {
 
@@ -77,11 +77,11 @@ class ConcreteProductA2: AbstractProductA {
     }
 }
 
-/// EN: The base interface of another product. All products can interact with
+/// EN: The base protocol of another product. All products can interact with
 /// each other, but proper interaction is possible only between products of the
 /// same concrete variation.
 ///
-/// RU: Базовый интерфейс другого продукта. Все продукты могут взаимодействовать
+/// RU: Базовый протокол другого продукта. Все продукты могут взаимодействовать
 /// друг с другом, но правильное взаимодействие возможно только между продуктами
 /// одной и той же конкретной вариации.
 
@@ -151,14 +151,14 @@ class ConcreteProductB2: AbstractProductB {
     }
 }
 
-/// EN: The Abstract Factory interface declares a set of methods that return
+/// EN: The Abstract Factory protocol declares a set of methods that return
 /// different abstract products. These products are called a family and are
 /// related by a high-level theme or concept. Products of one family are usually
 /// able to collaborate among themselves. A family of products may have several
 /// variations, but the products of one variation are incompatible with products
 /// of another.
 ///
-/// RU: Интерфейс Абстрактной Фабрики объявляет набор методов, которые возвращают
+/// RU: Протокол Абстрактной Фабрики объявляет набор методов, которые возвращают
 /// различные абстрактные продукты.  Эти продукты называются семейством и связаны
 /// темой или концепцией высокого уровня. Продукты одного семейства обычно могут
 /// взаимодействовать между собой. Семейство продуктов может иметь несколько

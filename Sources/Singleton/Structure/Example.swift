@@ -8,12 +8,21 @@
 
 import XCTest
 
-/// Singleton Design Pattern
+/// EN: Singleton Design Pattern
 ///
-/// Intent: Ensure that class has a single instance, and provide a global
-/// point of access to it.
+/// Intent: Ensure that a class has a single instance, and provide a global point
+/// of access to it.
+///
+/// RU: Паттерн Одиночка
+///
+/// Назначение: Гарантирует существование единственного экземпляра класса и
+/// предоставляет глобальную точку доступа к нему.
 
-class SGStructuralExample: XCTestCase {
+class SingletonStructuralExample: XCTestCase {
+
+    /// EN: The client code.
+    ///
+    /// RU: Клиентский код.
 
     func testSingletonStructure() {
 
@@ -23,32 +32,51 @@ class SGStructuralExample: XCTestCase {
         print(instance1.someBusinessLogic())
         print(instance2.someBusinessLogic())
 
-        /// The instances are the same. Otherwise, the assert will fail.
+        /// EN: Both variables contain the same object. Otherwise, the assert would fail.
+        ///
+        /// RU: Обе переменные содержат один и тот же объект, иначе бы эта проверка не прошла.
         XCTAssert(instance1 === instance2)
     }
 }
 
 class Singleton {
 
-    /// Static method, which controls access to singleton instance.
+    /// EN: The static field that controls the access to the singleton instance.
     ///
-    /// This implementation allows creating singleton subclasses and having
-    /// just one instance of each subclcass.
+    /// This implementation let you extend the Singleton class while keeping
+    /// just one instance of each subclass around.
+    ///
+    /// RU: Статическое поле, управляющие доступом к экземпляру одиночки.
+    ///
+    /// Эта реализация позволяет вам расширять класс Одиночки,
+    /// сохраняя повсюду только один экземпляр каждого подкласса.
+
 
     static var shared: Singleton = {
         let instance = Singleton()
+        // EN: ...
+        // configure the instance
         // ...
-        // configure
+        //
+        // RU: ...
+        // настройка объекта
         // ...
         return instance
     }()
 
-    /// Singleton initializer should always be private.
+    /// EN: The Singleton's initializer should always be private to prevent
+    /// direct construction calls with the `new` operator.
+    ///
+    /// RU: Инициализатор Одиночки всегда должен быть скрытым, чтобы предотвратить
+    /// прямое создание объекта через инициализатор.
 
     private init() {}
 
-    /// Singleton has some business logic, which can be executed on
-    /// its instance.
+    /// EN: Finally, any singleton should define some business logic, which can
+    /// be executed on its instance.
+    ///
+    /// RU: Наконец, любой одиночка должен содержать некоторую бизнес-логику,
+    /// которая может быть выполнена на его экземпляре.
 
     func someBusinessLogic() -> String {
         // ...
@@ -58,7 +86,9 @@ class Singleton {
 
 extension Singleton: NSCopying {
 
-    /// Singletons should not be cloneable.
+    /// EN: Singletons should not be cloneable.
+    ///
+    /// RU: Одиночки не должны быть клонируемыми.
 
     func copy(with zone: NSZone? = nil) -> Any {
         return self
