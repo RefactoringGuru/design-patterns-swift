@@ -82,13 +82,13 @@ protocol AbstractProductA {
 /// RU: Конкретные продукты создаются соответствующими Конкретными Фабриками.
 class ConcreteProductA1: AbstractProductA {
     func usefulFunctionA() -> String {
-        return "The result of the A1 product."
+        return "The result of the product A1."
     }
 }
 
 class ConcreteProductA2: AbstractProductA {
     func usefulFunctionA() -> String {
-        return "The result of the A2 product."
+        return "The result of the product A2."
     }
 }
 
@@ -122,7 +122,7 @@ protocol AbstractProductB {
 /// RU: Конкретные Продукты создаются соответствующими Конкретными Фабриками.
 class ConcreteProductB1: AbstractProductB {
     func usefulFunctionB() -> String {
-        return "The result of the B1 product."
+        return "The result of the product B1."
     }
 
     /// EN: This variant, Product B1, is only able to work correctly with the
@@ -134,13 +134,13 @@ class ConcreteProductB1: AbstractProductB {
     /// аргумента.
     func anotherUsefulFunctionB(collaborator: AbstractProductA) -> String {
         let result = collaborator.usefulFunctionA()
-        return "The result of the B1 collaborating with the \(result)"
+        return "The result of the B1 collaborating with the (\(result))"
     }
 }
 
 class ConcreteProductB2: AbstractProductB {
     func usefulFunctionB() -> String {
-        return "The result of the B2 product."
+        return "The result of the product B2."
     }
 
     /// EN: This variant, Product B2, is only able to work correctly with the
@@ -152,7 +152,7 @@ class ConcreteProductB2: AbstractProductB {
     /// аргумента.
     func anotherUsefulFunctionB(collaborator: AbstractProductA) -> String {
         let result = collaborator.usefulFunctionA()
-        return "The result of the B2 collaborating with the \(result)"
+        return "The result of the B2 collaborating with the (\(result))"
     }
 }
 
@@ -181,14 +181,14 @@ class Client {
 class AbstractFactoryStructuralExample: XCTestCase {
     func testAbstractFactoryStructure() {
 
-         * EN: The client code can work with any concrete factory class.
-         *
-         * RU: Клиентский код может работать с любым конкретным классом фабрики.
+        /// EN: The client code can work with any concrete factory class.
+        ///
+        /// RU: Клиентский код может работать с любым конкретным классом фабрики.
 
-        print("Testing client code with the first factory type: ")
+        print("Client: Testing client code with the first factory type:")
         Client.someClientCode(factory: ConcreteFactory1())
 
-        print("Testing the same client code with the second factory type: ")
+        print("Client: Testing the same client code with the second factory type:")
         Client.someClientCode(factory: ConcreteFactory2())
     }
 }

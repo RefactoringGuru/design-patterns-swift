@@ -67,7 +67,7 @@ extension Creator {
         // EN: Now, use the product.
         //
         // RU: Далее, работаем с этим продуктом.
-        return "Same creator's code worked with: " + product.operation()
+        return "Creator: The same creator's code has just worked with " + product.operation()
     }
 }
 
@@ -95,12 +95,6 @@ class ConcreteCreator2: Creator {
     public func factoryMethod() -> Product {
         return ConcreteProduct2()
     }
-
-    func someOperation() -> String {
-        let product = factoryMethod()
-
-        return "ConcreteCreator2 overrides the base behavior: " + product.operation()
-    }
 }
 
 /// EN: The Product protocol declares the operations that all concrete products
@@ -119,13 +113,13 @@ protocol Product {
 /// Продукта.
 class ConcreteProduct1: Product {
     func operation() -> String {
-        return "Result of ConcreteProduct1"
+        return "{Result of the ConcreteProduct1}"
     }
 }
 
 class ConcreteProduct2: Product {
     func operation() -> String {
-        return "Result of ConcreteProduct2"
+        return "{Result of the ConcreteProduct2}"
     }
 }
 
@@ -140,7 +134,8 @@ class ConcreteProduct2: Product {
 class Client {
     // ...
     static func someClientCode(creator: Creator) {
-        print(creator.someOperation())
+        print("Client: I'm not aware of the creator's class, but it still works.\n"
+            + creator.someOperation());
     }
     // ...
 }
@@ -157,10 +152,10 @@ class FactoryMethodStructuralExample: XCTestCase {
         /// RU: Приложение выбирает тип создателя в зависимости от конфигурации или
         /// среды.
 
-        print("Testing ConcreteCreator1:")
+        print("App: Launched with the ConcreteCreator1.");
         Client.someClientCode(creator: ConcreteCreator1())
 
-        print("Testing ConcreteCreator2:")
+        print("\nApp: Launched with the ConcreteCreator2.");
         Client.someClientCode(creator: ConcreteCreator2())
     }
 }

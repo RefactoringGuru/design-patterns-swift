@@ -82,13 +82,11 @@ class Client {
         let instance1 = Singleton.shared
         let instance2 = Singleton.shared
 
-        print(instance1.someBusinessLogic())
-        print(instance2.someBusinessLogic())
-
-        /// EN: Both variables contain the same object. Otherwise, the assert would fail.
-        ///
-        /// RU: Обе переменные содержат один и тот же объект, иначе бы эта проверка не прошла.
-        XCTAssert(instance1 === instance2)
+        if (instance1 === instance2) {
+            print("Singleton works, both variables contain the same instance.");
+        } else {
+            print("Singleton failed, variables contain different instances.");
+        }
     }
     // ...
 }

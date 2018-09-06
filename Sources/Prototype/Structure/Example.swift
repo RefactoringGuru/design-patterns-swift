@@ -41,7 +41,7 @@ class BaseClass: NSCopying, Equatable {
         let prototype = type(of: self).init()
         prototype.intValue = intValue
         prototype.stringValue = stringValue
-        print("BaseClass' values have been cloned!")
+        print("Values defined in BaseClass have been cloned!")
         return prototype
     }
 
@@ -69,7 +69,7 @@ class SubClass: BaseClass {
             return SubClass() // oops
         }
         prototype.boolValue = boolValue
-        print("SubClass' values have been cloned!")
+        print("Values defined in SubClass have been cloned!")
         return prototype
     }
 }

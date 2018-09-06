@@ -82,7 +82,7 @@ class AdapterStructuralExample: XCTestCase {
 
         let adaptee = Adaptee()
         print("Client: The Adaptee class has a weird interface. See, I don't understand it:")
-        print(adaptee.specificRequest())
+        print("Adaptee: " + adaptee.specificRequest())
 
         print("Client: But I can work with it via the Adapter:")
         Client.someClientCode(target: Adapter(adaptee))
