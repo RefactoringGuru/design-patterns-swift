@@ -23,7 +23,7 @@ import XCTest
 class CommandStructureExample: XCTestCase {
 
     func test() {
-        /// EN: The client code can parametrize an invoker with any commands.
+        /// EN: The client code can parameterize an invoker with any commands.
         ///
         /// RU: Клиентский код может параметризовать отправителя любыми командами.
 
