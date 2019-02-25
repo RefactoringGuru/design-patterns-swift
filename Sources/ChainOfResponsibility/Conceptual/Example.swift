@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Chain of Responsibility Design Pattern
 ///
 /// Intent: Avoid coupling a sender of a request to its receiver by giving more
@@ -13,63 +11,13 @@ import XCTest
 /// цепочку объекты-получатели, а затем передаёт запрос по цепочке, пока некий
 /// получатель не обработает его.
 
-class ChainOfResponsibilityStructureExample: XCTestCase {
-
-    func test() {
-
-        /// EN: The other part of the client code constructs the actual chain.
-        ///
-        /// RU: Другая часть клиентского кода создает саму цепочку.
-
-        let monkey = MonkeyHandler()
-        let squirrel = SquirrelHandler()
-        let dog = DogHandler()
-        monkey.setNext(handler: squirrel).setNext(handler: dog)
-
-        /// EN: The client should be able to send a request to any handler,
-        /// not just the first one in the chain.
-        ///
-        /// RU: Клиент должен иметь возможность отправлять запрос любому
-        /// обработчику, а не только первому в цепочке.
-
-        print("Chain: Monkey > Squirrel > Dog\n\n")
-        clientCode(handler: monkey)
-        print()
-        print("Subchain: Squirrel > Dog\n\n")
-        clientCode(handler: squirrel)
-    }
-
-    /// EN: The client code is usually suited to work with a single handler.
-    /// In most cases, it is not even aware that the handler is part of a chain.
-    ///
-    /// RU: Обычно клиентский код приспособлен для работы с единственным
-    /// обработчиком. В большинстве случаев клиенту даже неизвестно, что этот
-    /// обработчик является частью цепочки.
-
-    func clientCode(handler: Handler) {
-
-        let food = ["Nut", "Banana", "Cup of coffee"]
-
-        for item in food {
-
-            print("Client: Who wants a " + item + "?\n")
-
-            guard let result = handler.handle(request: item) else {
-                print("  " + item + " was left untouched.\n")
-                return
-            }
-
-            print("  " + result)
-        }
-    }
-}
+import XCTest
 
 /// EN: The Handler interface declares a method for building the chain of
 /// handlers. It also declares a method for executing a request.
 ///
 /// RU: Интерфейс Обработчика объявляет метод построения цепочки обработчиков. Он
 /// также объявляет метод для выполнения запроса.
-
 protocol Handler: class {
 
     @discardableResult
@@ -105,7 +53,6 @@ extension Handler {
 ///
 /// RU: Все Конкретные Обработчики либо обрабатывают запрос, либо передают его
 /// следующему обработчику в цепочке.
-
 class MonkeyHandler: Handler {
 
     var nextHandler: Handler?
@@ -145,3 +92,60 @@ class DogHandler: Handler {
         }
     }
 }
+
+/// EN: The client code is usually suited to work with a single handler.
+/// In most cases, it is not even aware that the handler is part of a chain.
+///
+/// RU: Обычно клиентский код приспособлен для работы с единственным
+/// обработчиком. В большинстве случаев клиенту даже неизвестно, что этот
+/// обработчик является частью цепочки.
+class Client {
+    // ...
+    static func someClientCode(handler: Handler) {
+
+        let food = ["Nut", "Banana", "Cup of coffee"]
+
+        for item in food {
+
+            print("Client: Who wants a " + item + "?\n")
+
+            guard let result = handler.handle(request: item) else {
+                print("  " + item + " was left untouched.\n")
+                return
+            }
+
+            print("  " + result)
+        }
+    }
+    // ...
+}
+
+/// EN: Let's see how it all works.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class ChainOfResponsibilityStructureExample: XCTestCase {
+    func test() {
+
+        /// EN: The other part of the client code constructs the actual chain.
+        ///
+        /// RU: Другая часть клиентского кода создает саму цепочку.
+
+        let monkey = MonkeyHandler()
+        let squirrel = SquirrelHandler()
+        let dog = DogHandler()
+        monkey.setNext(handler: squirrel).setNext(handler: dog)
+
+        /// EN: The client should be able to send a request to any handler,
+        /// not just the first one in the chain.
+        ///
+        /// RU: Клиент должен иметь возможность отправлять запрос любому
+        /// обработчику, а не только первому в цепочке.
+
+        print("Chain: Monkey > Squirrel > Dog\n\n")
+        Client.someClientCode(handler: monkey)
+        print()
+        print("Subchain: Squirrel > Dog\n\n")
+        Client.someClientCode(handler: squirrel)
+    }
+}
+

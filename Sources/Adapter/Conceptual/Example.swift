@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Adapter Design Pattern
 ///
 /// Intent: Convert the interface of a class into the interface clients expect.
@@ -11,6 +9,7 @@ import XCTest
 /// Назначение: Преобразует интерфейс класса в интерфейс, ожидаемый клиентами.
 /// Адаптер позволяет классам с несовместимыми интерфейсами работать вместе.
 
+import XCTest
 
 /// EN: The Target defines the domain-specific interface used by the client code.
 ///

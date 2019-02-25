@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Builder Design Pattern
 ///
 /// Intent: Separate the construction of a complex object from its representation
@@ -11,6 +9,7 @@ import XCTest
 /// представления так,  что один и тот же процесс построения может создавать
 /// разные представления объекта.
 
+import XCTest
 
 /// EN: The Builder interface specifies methods for creating the different parts
 /// of the Product objects.

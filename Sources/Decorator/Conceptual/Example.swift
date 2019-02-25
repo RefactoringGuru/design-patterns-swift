@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Decorator Design Pattern
 ///
 /// Intent: Attach additional responsibilities to an object dynamically.
@@ -12,6 +10,7 @@ import XCTest
 /// Декораторы предоставляют гибкую альтернативу практике создания подклассов для
 /// расширения функциональности.
 
+import XCTest
 
 /// EN: The base Component interface defines operations that can be altered by
 /// decorators.

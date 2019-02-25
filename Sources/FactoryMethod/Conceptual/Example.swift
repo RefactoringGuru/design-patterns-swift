@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Factory Method Design Pattern
 ///
 /// Intent: Define an interface for creating an object, but let subclasses decide
@@ -12,6 +10,7 @@ import XCTest
 /// подклассам решать, какого класса создавать экземпляр. Фабричный Метод
 /// позволяет классу делегировать создание экземпляра подклассам.
 
+import XCTest
 
 /// EN: The Creator protocol declares the factory method that's supposed to return
 /// a new object of a Product class. The Creator's subclasses usually provide the

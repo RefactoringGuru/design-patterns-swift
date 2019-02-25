@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Abstract Factory Design Pattern
 ///
 /// Intent: Provide an interface for creating families of related or dependent
@@ -10,6 +8,7 @@ import XCTest
 /// Назначение: Предоставляет интерфейс для создания семейств связанных или
 /// зависимых объектов без привязки к их конкретным классам.
 
+import XCTest
 
 /// EN: The Abstract Factory protocol declares a set of methods that return
 /// different abstract products. These products are called a family and are

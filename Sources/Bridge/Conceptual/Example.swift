@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Bridge Design Pattern
 ///
 /// Intent: Decouple an abstraction from its implementation so that the two can
@@ -23,6 +21,7 @@ import XCTest
 ///       Aa1 Aa2  Ab1 Ab2
 ///
 
+import XCTest
 
 /// EN: The Abstraction defines the interface for the "control" part of the two
 /// class hierarchies. It maintains a reference to an object of the

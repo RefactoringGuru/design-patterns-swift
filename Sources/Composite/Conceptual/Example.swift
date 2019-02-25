@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Composite Design Pattern
 ///
 /// Intent: Compose objects into tree structures to represent part-whole
@@ -12,6 +10,7 @@ import XCTest
 /// иерархий часть-целое. Компоновщик позволяет клиентам обрабатывать отдельные
 /// объекты и группы объектов одинаковым образом.
 
+import XCTest
 
 /// EN: The base Component class declares common operations for both simple and
 /// complex objects of a composition.

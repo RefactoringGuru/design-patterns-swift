@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Command Design Pattern
 ///
 /// Intent: Encapsulate a request as an object, thereby letting you parameterize
@@ -12,26 +10,11 @@ import XCTest
 /// самым параметризовать клиентов с различными запросами (например, запросами
 /// очереди или логирования) и поддерживать отмену операций.
 
-class CommandStructureExample: XCTestCase {
-
-    func test() {
-        /// EN: The client code can parameterize an invoker with any commands.
-        ///
-        /// RU: Клиентский код может параметризовать отправителя любыми командами.
-
-        let invoker = Invoker()
-        invoker.setOnStart(SimpleCommand("Say Hi!"))
-
-        let receiver = Receiver()
-        invoker.setOnFinish(ComplexCommand(receiver, "Send email", "Save report"))
-        invoker.doSomethingImportant()
-    }
-}
+import XCTest
 
 /// EN: The Command interface declares a method for executing a command.
 ///
 /// RU: Интерфейс Команды объявляет метод для выполнения команд.
-
 protocol Command {
 
     func execute()
@@ -40,7 +23,6 @@ protocol Command {
 /// EN: Some commands can implement simple operations on their own.
 ///
 /// RU: Некоторые команды способны выполнять простые операции самостоятельно.
-
 class SimpleCommand: Command {
 
     private var payload: String
@@ -59,7 +41,6 @@ class SimpleCommand: Command {
 ///
 /// RU: Но есть и команды, которые делегируют более сложные операции другим
 /// объектам, называемым «получателями».
-
 class ComplexCommand: Command {
 
     private var receiver: Receiver
@@ -67,7 +48,6 @@ class ComplexCommand: Command {
     /// EN: Context data, required for launching the receiver's methods.
     ///
     /// RU: Данные о контексте, необходимые для запуска методов получателя.
-
     private var a: String
     private var b: String
 
@@ -76,7 +56,6 @@ class ComplexCommand: Command {
     ///
     /// RU: Сложные команды могут принимать один или несколько
     /// объектов-получателей вместе с любыми данными о контексте через конструктор.
-
     init(_ receiver: Receiver, _ a: String, _ b: String) {
         self.receiver = receiver
         self.a = a
@@ -86,7 +65,6 @@ class ComplexCommand: Command {
     /// EN: Commands can delegate to any methods of a receiver.
     ///
     /// RU: Команды могут делегировать выполнение любым методам получателя.
-
     func execute() {
         print("ComplexCommand: Complex stuff should be done by a receiver object.\n")
         receiver.doSomething(a)
@@ -101,7 +79,6 @@ class ComplexCommand: Command {
 /// RU: Классы Получателей содержат некую важную бизнес-логику. Они умеют
 /// выполнять все виды операций, связанных с выполнением запроса. Фактически,
 /// любой класс может выступать Получателем.
-
 class Receiver {
 
     func doSomething(_ a: String) {
@@ -118,7 +95,6 @@ class Receiver {
 ///
 /// RU: Отпрвитель связан с одной или несколькими командами. Он отправляет запрос
 /// команде.
-
 class Invoker {
 
     private var onStart: Command?
@@ -128,7 +104,6 @@ class Invoker {
     /// EN: Initialize commands.
     ///
     /// RU: Инициализация команд.
-
     func setOnStart(_ command: Command) {
         onStart = command
     }
@@ -142,7 +117,6 @@ class Invoker {
     ///
     /// RU: Отправитель не зависит от классов конкретных команд и получателей.
     /// Отправитель передаёт запрос получателю косвенно, выполняя команду.
-
     func doSomethingImportant() {
 
         print("Invoker: Does anybody want something done before I begin?")
@@ -155,3 +129,20 @@ class Invoker {
         onFinish?.execute()
     }
 }
+
+class CommandStructureExample: XCTestCase {
+    func test() {
+        /// EN: The client code can parameterize an invoker with any commands.
+        ///
+        /// RU: Клиентский код может параметризовать отправителя любыми командами.
+
+        let invoker = Invoker()
+        invoker.setOnStart(SimpleCommand("Say Hi!"))
+
+        let receiver = Receiver()
+        invoker.setOnFinish(ComplexCommand(receiver, "Send email", "Save report"))
+        invoker.doSomethingImportant()
+    }
+}
+
+

@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Flyweight Design Pattern
 ///
 /// Intent: Use sharing to fit more objects into the available amount of RAM by
@@ -10,65 +8,9 @@ import XCTest
 ///
 /// Назначение: Позволяет вместить бóльшее количество объектов в отведённую
 /// оперативную память. Легковес экономит память, разделяя общее состояние
-/// объектов между ними, вместо хранения  одинаковых данных в каждом объекте.
+/// объектов между ними, вместо хранения одинаковых данных в каждом объекте.
 
-class FlyweightStructureExample: XCTestCase {
-
-    /// EN: The client code usually creates a bunch of pre-populated flyweights in
-    /// the initialization stage of the application.
-    ///
-    /// RU: Клиентский код обычно создает кучу предварительно заполненных легковесов
-    /// на этапе инициализации приложения.
-
-    func testFlyweight() {
-
-        let factory = FlyweightFactory(states:
-            [
-                ["Chevrolet", "Camaro2018", "pink"],
-                ["Mercedes Benz", "C300", "black"],
-                ["Mercedes Benz", "C500", "red"],
-                ["BMW", "M5", "red"],
-                ["BMW", "X6", "white"]
-            ])
-
-        factory.printFlyweights()
-
-        addCarToPoliceDatabase(factory,
-                               "CL234IR",
-                               "James Doe",
-                               "BMW",
-                               "M5",
-                               "red")
-
-        addCarToPoliceDatabase(factory,
-                               "CL234IR",
-                               "James Doe",
-                               "BMW",
-                               "X1",
-                               "red")
-        factory.printFlyweights()
-    }
-
-    func addCarToPoliceDatabase(
-        _ factory: FlyweightFactory,
-        _ plates: String,
-        _ owner: String,
-        _ brand: String,
-        _ model: String,
-        _ color: String) {
-
-        print("Client: Adding a car to database.\n")
-
-        let flyweight = factory.flyweight(for: [brand, model, color])
-
-        /// EN: The client code either stores or calculates extrinsic state and
-        /// passes it to the flyweight's methods.
-        ///
-        /// RU: Клиентский код либо сохраняет, либо вычисляет внешнее состояние и
-        /// передает его методам легковеса.
-        flyweight.operation(uniqueState: [plates, owner])
-    }
-}
+import XCTest
 
 /// EN: The Flyweight stores a common portion of the state (also called intrinsic
 /// state) that belongs to multiple real business entities. The Flyweight accepts
@@ -79,7 +21,6 @@ class FlyweightStructureExample: XCTestCase {
 /// состоянием), которая принадлежит нескольким реальным бизнес-объектам.
 /// Легковес принимает  оставшуюся часть состояния (внешнее состояние, уникальное
 /// для каждого объекта)  через его параметры метода.
-
 class Flyweight {
 
     private let sharedState: [String]
@@ -102,7 +43,6 @@ class Flyweight {
 /// обеспечивает правильное разделение легковесов. Когда клиент запрашивает
 /// легковес, фабрика либо возвращает существующий экземпляр, либо создает новый,
 /// если он ещё не существует.
-
 class FlyweightFactory {
 
     private var flyweights: [String: Flyweight]
@@ -121,7 +61,6 @@ class FlyweightFactory {
     /// EN: Returns an existing Flyweight with a given state or creates a new one.
     ///
     /// RU: Возвращает существующий Легковес с заданным состоянием или создает новый.
-
     func flyweight(for state: [String]) -> Flyweight {
 
         let key = state.key
@@ -150,8 +89,70 @@ extension Array where Element == String {
     /// EN: Returns a Flyweight's string hash for a given state.
     ///
     /// RU: Возвращает хеш строки Легковеса для данного состояния.
-
     var key: String {
         return self.joined()
     }
 }
+
+
+class FlyweightStructureExample: XCTestCase {
+
+    func testFlyweight() {
+
+        /// EN: The client code usually creates a bunch of pre-populated flyweights in
+        /// the initialization stage of the application.
+        ///
+        /// RU: Клиентский код обычно создает кучу предварительно заполненных легковесов
+        /// на этапе инициализации приложения.
+
+        let factory = FlyweightFactory(states:
+        [
+            ["Chevrolet", "Camaro2018", "pink"],
+            ["Mercedes Benz", "C300", "black"],
+            ["Mercedes Benz", "C500", "red"],
+            ["BMW", "M5", "red"],
+            ["BMW", "X6", "white"]
+        ])
+
+        factory.printFlyweights()
+
+        /// ...
+
+        addCarToPoliceDatabase(factory,
+                "CL234IR",
+                "James Doe",
+                "BMW",
+                "M5",
+                "red")
+
+        addCarToPoliceDatabase(factory,
+                "CL234IR",
+                "James Doe",
+                "BMW",
+                "X1",
+                "red")
+
+        factory.printFlyweights()
+    }
+
+    func addCarToPoliceDatabase(
+            _ factory: FlyweightFactory,
+            _ plates: String,
+            _ owner: String,
+            _ brand: String,
+            _ model: String,
+            _ color: String) {
+
+        print("Client: Adding a car to database.\n")
+
+        let flyweight = factory.flyweight(for: [brand, model, color])
+
+        /// EN: The client code either stores or calculates extrinsic state and
+        /// passes it to the flyweight's methods.
+        ///
+        /// RU: Клиентский код либо сохраняет, либо вычисляет внешнее состояние и
+        /// передает его методам легковеса.
+        flyweight.operation(uniqueState: [plates, owner])
+    }
+}
+
