@@ -1,11 +1,3 @@
-//
-//  SingletonStructuralExample.swift
-//  RefactoringGuru.Patterns
-//
-//  Created by Maxim Eremenko on 4/30/18.
-//  Copyright © 2018 Eremenko Maxim. All rights reserved.
-//
-
 import XCTest
 
 /// EN: Singleton Design Pattern

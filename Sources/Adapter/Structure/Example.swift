@@ -1,11 +1,3 @@
-//
-//  ADStructuralExample.swift
-//  RefactoringGuru.Patterns
-//
-//  Created by Maxim Eremenko on 5/22/18.
-//  Copyright © 2018 Eremenko Maxim. All rights reserved.
-//
-
 import XCTest
 
 /// EN: Adapter Design Pattern

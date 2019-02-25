@@ -6,7 +6,7 @@ It contains Swift examples for all classic GoF design patterns.
 
 There are two examples for each of the patterns:
 
-- **Structural** examples illustrate the internal structure of a pattern, explained with detailed comments.
+- **Conceptual** examples illustrate the internal structure of a pattern, explained with detailed comments.
 
 - **RealWorld** examples illustrate how patterns can be used in real-world Swift applications.
 
@@ -22,7 +22,7 @@ For the sake of simplicity, we tried to limit the scope of these examples to the
 
 To run an example, browse it in the project directory, select the Unit Test scheme and launch the example.
 
-![How tou launch an example](/readme.gif?raw=true)
+![How to launch an example](/readme.gif?raw=true)
 
 
 ## FAQ
@@ -41,3 +41,8 @@ Take a look at the structural example first. There you'll find detailed descript
 This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+
+
+## Credits
+
+"Design Patterns in Swift" were created by [Maxim Eremenko](https://www.linkedin.com/in/maxim-eremenko/) for Refactoring.Guru.

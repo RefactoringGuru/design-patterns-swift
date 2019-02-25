@@ -1,11 +1,3 @@
-//
-//  BuilderRealDataProviders.swift
-//  RefactoringGuru.Patterns
-//
-//  Created by Maxim Eremenko on 5/22/18.
-//  Copyright © 2018 Eremenko Maxim. All rights reserved.
-//
-
 import Foundation
 
 /// Data Providers contain a logic how to fetch models.

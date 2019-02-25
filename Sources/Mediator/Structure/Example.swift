@@ -1,11 +1,3 @@
-//
-//  MediatorStructure.swift
-//  MediatorStructure
-//
-//  Created by Maxim Eremenko on 7/28/18.
-//  Copyright © 2018 Eremenko Maxim. All rights reserved.
-//
-
 /// EN: Mediator Design Pattern
 ///
 /// Intent: Define an object that encapsulates how a set of objects interact.

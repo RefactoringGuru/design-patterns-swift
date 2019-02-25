@@ -1,11 +1,3 @@
-//
-//  SilencePolicy.swift
-//  AbstractFactoryStructure
-//
-//  Created by Maxim Eremenko on 8/10/18.
-//  Copyright © 2018 Eremenko Maxim. All rights reserved.
-//
-
 import Foundation
 
 protocol NotificationPolicy: CustomStringConvertible {

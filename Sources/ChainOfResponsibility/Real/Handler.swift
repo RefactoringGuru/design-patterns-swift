@@ -1,11 +1,3 @@
-//
-//  Handler.swift
-//  AbstractFactoryStructure
-//
-//  Created by Maxim Eremenko on 7/21/18.
-//  Copyright © 2018 Eremenko Maxim. All rights reserved.
-//
-
 import Foundation
 
 protocol Handler {

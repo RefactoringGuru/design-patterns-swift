@@ -1,11 +1,3 @@
-//
-//  DecoratorStructuralExample.swift
-//  RefactoringGuru.Patterns
-//
-//  Created by Maxim Eremenko on 5/28/18.
-//  Copyright © 2018 Eremenko Maxim. All rights reserved.
-//
-
 import XCTest
 
 /// EN: Decorator Design Pattern
