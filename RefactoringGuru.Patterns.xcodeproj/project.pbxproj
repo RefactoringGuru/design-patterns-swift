@@ -98,52 +98,52 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		912C5CDF210BC33D007DC364 /* MediatorStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5CDF210BC33D007DC364 /* MediatorConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5CE1210BC33E007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5CE3210BC33E007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5CEC210BC3A4007DC364 /* MediatorReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5CEC210BC3A4007DC364 /* MediatorRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediatorRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5CEE210BC3A4007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5CF0210BC3A4007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5CF8210BC3F5007DC364 /* MementoStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MementoStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5CF8210BC3F5007DC364 /* MementoConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MementoConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D03210BC4A5007DC364 /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D04210BC4A5007DC364 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D0B210BC4D8007DC364 /* MementoReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MementoReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D0B210BC4D8007DC364 /* MementoRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MementoRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D0D210BC4D9007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D0F210BC4D9007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D18210BC553007DC364 /* ObserverStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D18210BC553007DC364 /* ObserverConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D1A210BC553007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D1C210BC553007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D24210BC594007DC364 /* ObserverReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D24210BC594007DC364 /* ObserverRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D26210BC594007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D28210BC594007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D30210BC5E1007DC364 /* StateStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D30210BC5E1007DC364 /* StateConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D32210BC5E1007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D34210BC5E1007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D3D210BC62D007DC364 /* StateReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D3D210BC62D007DC364 /* StateRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D3F210BC62D007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D41210BC62D007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D4A210BC6A8007DC364 /* StrategyStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D4A210BC6A8007DC364 /* StrategyConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D4C210BC6A8007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D4E210BC6A8007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D56210BC6F0007DC364 /* StrategyReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D56210BC6F0007DC364 /* StrategyRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D58210BC6F1007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D5A210BC6F1007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D62210BC749007DC364 /* TemplateMethodStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateMethodStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D62210BC749007DC364 /* TemplateMethodConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateMethodConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D64210BC749007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D66210BC749007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D6F210BC7B1007DC364 /* TemplateMethodReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateMethodReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D6F210BC7B1007DC364 /* TemplateMethodRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateMethodRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D71210BC7B1007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D73210BC7B1007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D7C210BC81E007DC364 /* VisitorStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitorStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D7C210BC81E007DC364 /* VisitorConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitorConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D7E210BC81E007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D80210BC81E007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		912C5D88210BC865007DC364 /* VisitorReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitorReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		912C5D88210BC865007DC364 /* VisitorRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitorRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C5D8A210BC865007DC364 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		912C5D8C210BC865007DC364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91301AD220F55C25003B4FC0 /* FlyweightStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91301AD220F55C25003B4FC0 /* FlyweightConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91301AD420F55C25003B4FC0 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91301AD620F55C25003B4FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91301ADF20F55CAA003B4FC0 /* FlyweightReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91301ADF20F55CAA003B4FC0 /* FlyweightRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyweightRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91301AE120F55CAA003B4FC0 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91301AE320F55CAA003B4FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913E0137210CA53800B7D71E /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
@@ -210,72 +210,72 @@
 		91884D812103A163004A3013 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		918D508E211DB78700DEFB61 /* SilencePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilencePolicy.swift; sourceTree = "<group>"; };
 		918D5092211DB7DE00DEFB61 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C89F120DD7EE4006EE57D /* AbstractFactoryRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C89F520DD7EE4006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A0520DD7F3C006EE57D /* AbstractFactoryConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractFactoryConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A0920DD7F3C006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A1320DD81D0006EE57D /* FacadeStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacadeStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A1320DD81D0006EE57D /* FacadeConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacadeConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A1720DD81D0006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A2020DD8261006EE57D /* FacadeReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacadeReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A2020DD8261006EE57D /* FacadeRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacadeRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A2420DD8261006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A3920DD82F0006EE57D /* BridgeStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A3920DD82F0006EE57D /* BridgeConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A3D20DD82F0006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A4620DD8393006EE57D /* BridgeReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A4620DD8393006EE57D /* BridgeRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BridgeRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A4A20DD8393006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A5F20DD849A006EE57D /* AdapterStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A5F20DD849A006EE57D /* AdapterConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A6320DD849B006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A6C20DD858C006EE57D /* AdapterReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A6C20DD858C006EE57D /* AdapterRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdapterRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A7020DD858C006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A7A20DD8688006EE57D /* BuilderStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuilderStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A7A20DD8688006EE57D /* BuilderConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuilderConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A7E20DD8688006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8A8720DD86DC006EE57D /* BuilderReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuilderReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8A8720DD86DC006EE57D /* BuilderRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuilderRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8A8B20DD86DC006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8AA220DD878D006EE57D /* CompositeStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AA220DD878D006EE57D /* CompositeConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8AA620DD878E006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8AAF20DD87F2006EE57D /* CompositeReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AAF20DD87F2006EE57D /* CompositeRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositeRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8AB120DD87F2006EE57D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		919C8AB320DD87F2006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8AC720DD8873006EE57D /* DecoratorStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AC720DD8873006EE57D /* DecoratorConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8ACB20DD8873006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8AD420DD88C6006EE57D /* DecoratorReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AD420DD88C6006EE57D /* DecoratorRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8AD620DD88C6006EE57D /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		919C8AD820DD88C6006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8AE020DD893E006EE57D /* FactoryMethodReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryMethodReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AE020DD893E006EE57D /* FactoryMethodRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryMethodRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8AE420DD893E006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8AED20DD897E006EE57D /* FactoryMethodStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryMethodStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AED20DD897E006EE57D /* FactoryMethodConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryMethodConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8AF120DD897E006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8AFA20DD8A98006EE57D /* PrototypeStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8AFA20DD8A98006EE57D /* PrototypeConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8AFE20DD8A98006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8B0720DD8AF0006EE57D /* PrototypeReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8B0720DD8AF0006EE57D /* PrototypeRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8B0B20DD8AF0006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8B1420DD8B59006EE57D /* SingletonStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8B1420DD8B59006EE57D /* SingletonConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8B1820DD8B59006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		919C8B2120DD8BA9006EE57D /* SingletonReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		919C8B2120DD8BA9006EE57D /* SingletonRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		919C8B2520DD8BA9006EE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B1206220F56BFA00730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
 		91B1206420F56C0100730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
-		91B1206B20F610E400730C37 /* ChainOfResponsibilityStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainOfResponsibilityStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B1206B20F610E400730C37 /* ChainOfResponsibilityConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainOfResponsibilityConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1206D20F610E400730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1206F20F610E400730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B1207720F6114A00730C37 /* ChainOfResponsibilityReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainOfResponsibilityReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B1207720F6114A00730C37 /* ChainOfResponsibilityRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainOfResponsibilityRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1207920F6114A00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1207B20F6114A00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B1208320F611DA00730C37 /* CommandStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B1208320F611DA00730C37 /* CommandConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1208520F611DA00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1208720F611DA00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B1209020F6120C00730C37 /* CommandReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B1209020F6120C00730C37 /* CommandRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1209220F6120C00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B1209420F6120C00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B1209D20F6125500730C37 /* IteratorStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IteratorStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B1209D20F6125500730C37 /* IteratorConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IteratorConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B1209F20F6125500730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120A120F6125500730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B120A920F6127400730C37 /* IteratorReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IteratorReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B120A920F6127400730C37 /* IteratorRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IteratorRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B120AB20F6127400730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120AD20F6127400730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B120B620F6130900730C37 /* ProxyStructure.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyStructure.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B120B620F6130900730C37 /* ProxyConceptual.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyConceptual.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B120B820F6130A00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120BA20F6130A00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91B120C220F6132E00730C37 /* ProxyReal.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyReal.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B120C220F6132E00730C37 /* ProxyRealWorld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProxyRealWorld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B120C420F6132E00730C37 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		91B120C620F6132E00730C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91B120CA20F61BAD00730C37 /* Output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output.txt; sourceTree = "<group>"; };
@@ -607,200 +607,200 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		912C5CE0210BC33D007DC364 /* Structure */ = {
+		912C5CE0210BC33D007DC364 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				912C5CE1210BC33E007DC364 /* Example.swift */,
 				912C5CE3210BC33E007DC364 /* Info.plist */,
 				913E0137210CA53800B7D71E /* Output.txt */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
 		912C5CE7210BC34E007DC364 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
-				912C5CE0210BC33D007DC364 /* Structure */,
-				912C5CED210BC3A4007DC364 /* Real */,
+				912C5CE0210BC33D007DC364 /* Conceptual */,
+				912C5CED210BC3A4007DC364 /* RealWorld */,
 			);
 			path = Mediator;
 			sourceTree = "<group>";
 		};
-		912C5CED210BC3A4007DC364 /* Real */ = {
+		912C5CED210BC3A4007DC364 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				912C5CEE210BC3A4007DC364 /* Example.swift */,
 				913E0139210CA54F00B7D71E /* Output.txt */,
 				912C5CF0210BC3A4007DC364 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		912C5D01210BC4A5007DC364 /* Memento */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D02210BC4A5007DC364 /* Structure */,
-				912C5D0C210BC4D9007DC364 /* Real */,
+				912C5D02210BC4A5007DC364 /* Conceptual */,
+				912C5D0C210BC4D9007DC364 /* RealWorld */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
 		};
-		912C5D02210BC4A5007DC364 /* Structure */ = {
+		912C5D02210BC4A5007DC364 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D03210BC4A5007DC364 /* Example.swift */,
 				913E013B210CA55A00B7D71E /* Output.txt */,
 				912C5D04210BC4A5007DC364 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		912C5D0C210BC4D9007DC364 /* Real */ = {
+		912C5D0C210BC4D9007DC364 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D0D210BC4D9007DC364 /* Example.swift */,
 				913E013D210CA56000B7D71E /* Output.txt */,
 				912C5D0F210BC4D9007DC364 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		912C5D13210BC53A007DC364 /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D19210BC553007DC364 /* Structure */,
-				912C5D25210BC594007DC364 /* Real */,
+				912C5D19210BC553007DC364 /* Conceptual */,
+				912C5D25210BC594007DC364 /* RealWorld */,
 			);
 			path = Observer;
 			sourceTree = "<group>";
 		};
-		912C5D19210BC553007DC364 /* Structure */ = {
+		912C5D19210BC553007DC364 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D1A210BC553007DC364 /* Example.swift */,
 				913E013F210CA57200B7D71E /* Output.txt */,
 				912C5D1C210BC553007DC364 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		912C5D25210BC594007DC364 /* Real */ = {
+		912C5D25210BC594007DC364 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D26210BC594007DC364 /* Example.swift */,
 				913E0141210CA57900B7D71E /* Output.txt */,
 				912C5D28210BC594007DC364 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		912C5D31210BC5E1007DC364 /* Structure */ = {
+		912C5D31210BC5E1007DC364 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D32210BC5E1007DC364 /* Example.swift */,
 				913E0143210CA58300B7D71E /* Output.txt */,
 				912C5D34210BC5E1007DC364 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
 		912C5D38210BC5EB007DC364 /* State */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D31210BC5E1007DC364 /* Structure */,
-				912C5D3E210BC62D007DC364 /* Real */,
+				912C5D31210BC5E1007DC364 /* Conceptual */,
+				912C5D3E210BC62D007DC364 /* RealWorld */,
 			);
 			path = State;
 			sourceTree = "<group>";
 		};
-		912C5D3E210BC62D007DC364 /* Real */ = {
+		912C5D3E210BC62D007DC364 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D3F210BC62D007DC364 /* Example.swift */,
 				913E0145210CA58900B7D71E /* Output.txt */,
 				912C5D41210BC62D007DC364 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		912C5D45210BC687007DC364 /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D4B210BC6A8007DC364 /* Structure */,
-				912C5D57210BC6F1007DC364 /* Real */,
+				912C5D4B210BC6A8007DC364 /* Conceptual */,
+				912C5D57210BC6F1007DC364 /* RealWorld */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
 		};
-		912C5D4B210BC6A8007DC364 /* Structure */ = {
+		912C5D4B210BC6A8007DC364 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D4C210BC6A8007DC364 /* Example.swift */,
 				913E0149210CA59A00B7D71E /* Output.txt */,
 				912C5D4E210BC6A8007DC364 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		912C5D57210BC6F1007DC364 /* Real */ = {
+		912C5D57210BC6F1007DC364 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D58210BC6F1007DC364 /* Example.swift */,
 				913E0147210CA59400B7D71E /* Output.txt */,
 				912C5D5A210BC6F1007DC364 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		912C5D63210BC749007DC364 /* Structure */ = {
+		912C5D63210BC749007DC364 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D64210BC749007DC364 /* Example.swift */,
 				913E014D210CA5AE00B7D71E /* Output.txt */,
 				912C5D66210BC749007DC364 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
 		912C5D6A210BC750007DC364 /* TemplateMethod */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D63210BC749007DC364 /* Structure */,
-				912C5D70210BC7B1007DC364 /* Real */,
+				912C5D63210BC749007DC364 /* Conceptual */,
+				912C5D70210BC7B1007DC364 /* RealWorld */,
 			);
 			path = TemplateMethod;
 			sourceTree = "<group>";
 		};
-		912C5D70210BC7B1007DC364 /* Real */ = {
+		912C5D70210BC7B1007DC364 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D71210BC7B1007DC364 /* Example.swift */,
 				913E014B210CA5A200B7D71E /* Output.txt */,
 				912C5D73210BC7B1007DC364 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		912C5D77210BC80B007DC364 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
-				912C5D7D210BC81E007DC364 /* Structure */,
-				912C5D89210BC865007DC364 /* Real */,
+				912C5D7D210BC81E007DC364 /* Conceptual */,
+				912C5D89210BC865007DC364 /* RealWorld */,
 			);
 			path = Visitor;
 			sourceTree = "<group>";
 		};
-		912C5D7D210BC81E007DC364 /* Structure */ = {
+		912C5D7D210BC81E007DC364 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D7E210BC81E007DC364 /* Example.swift */,
 				913E014F210CA5B800B7D71E /* Output.txt */,
 				912C5D80210BC81E007DC364 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		912C5D89210BC865007DC364 /* Real */ = {
+		912C5D89210BC865007DC364 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				912C5D8A210BC865007DC364 /* Example.swift */,
@@ -809,36 +809,36 @@
 				913E0151210CA5BE00B7D71E /* Output.txt */,
 				912C5D8C210BC865007DC364 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		91301AD320F55C25003B4FC0 /* Structure */ = {
+		91301AD320F55C25003B4FC0 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				91301AD420F55C25003B4FC0 /* Example.swift */,
 				91301AD620F55C25003B4FC0 /* Info.plist */,
 				91B1206420F56C0100730C37 /* Output.txt */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
 		91301ADA20F55C4E003B4FC0 /* Flyweight */ = {
 			isa = PBXGroup;
 			children = (
-				91301AE020F55CAA003B4FC0 /* Real */,
-				91301AD320F55C25003B4FC0 /* Structure */,
+				91301AE020F55CAA003B4FC0 /* RealWorld */,
+				91301AD320F55C25003B4FC0 /* Conceptual */,
 			);
 			path = Flyweight;
 			sourceTree = "<group>";
 		};
-		91301AE020F55CAA003B4FC0 /* Real */ = {
+		91301AE020F55CAA003B4FC0 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				91301AE120F55CAA003B4FC0 /* Example.swift */,
 				91301AE320F55CAA003B4FC0 /* Info.plist */,
 				91B1206220F56BFA00730C37 /* Output.txt */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		9139FA6F2088D85C00229150 = {
@@ -853,50 +853,50 @@
 		9139FA792088D85C00229150 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */,
-				919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */,
-				919C8A1320DD81D0006EE57D /* FacadeStructure.xctest */,
-				919C8A2020DD8261006EE57D /* FacadeReal.xctest */,
-				919C8A3920DD82F0006EE57D /* BridgeStructure.xctest */,
-				919C8A4620DD8393006EE57D /* BridgeReal.xctest */,
-				919C8A5F20DD849A006EE57D /* AdapterStructure.xctest */,
-				919C8A6C20DD858C006EE57D /* AdapterReal.xctest */,
-				919C8A7A20DD8688006EE57D /* BuilderStructure.xctest */,
-				919C8A8720DD86DC006EE57D /* BuilderReal.xctest */,
-				919C8AA220DD878D006EE57D /* CompositeStructure.xctest */,
-				919C8AAF20DD87F2006EE57D /* CompositeReal.xctest */,
-				919C8AC720DD8873006EE57D /* DecoratorStructure.xctest */,
-				919C8AD420DD88C6006EE57D /* DecoratorReal.xctest */,
-				919C8AE020DD893E006EE57D /* FactoryMethodReal.xctest */,
-				919C8AED20DD897E006EE57D /* FactoryMethodStructure.xctest */,
-				919C8AFA20DD8A98006EE57D /* PrototypeStructure.xctest */,
-				919C8B0720DD8AF0006EE57D /* PrototypeReal.xctest */,
-				919C8B1420DD8B59006EE57D /* SingletonStructure.xctest */,
-				919C8B2120DD8BA9006EE57D /* SingletonReal.xctest */,
-				91301AD220F55C25003B4FC0 /* FlyweightStructure.xctest */,
-				91301ADF20F55CAA003B4FC0 /* FlyweightReal.xctest */,
-				91B1206B20F610E400730C37 /* ChainOfResponsibilityStructure.xctest */,
-				91B1207720F6114A00730C37 /* ChainOfResponsibilityReal.xctest */,
-				91B1208320F611DA00730C37 /* CommandStructure.xctest */,
-				91B1209020F6120C00730C37 /* CommandReal.xctest */,
-				91B1209D20F6125500730C37 /* IteratorStructure.xctest */,
-				91B120A920F6127400730C37 /* IteratorReal.xctest */,
-				91B120B620F6130900730C37 /* ProxyStructure.xctest */,
-				91B120C220F6132E00730C37 /* ProxyReal.xctest */,
-				912C5CDF210BC33D007DC364 /* MediatorStructure.xctest */,
-				912C5CEC210BC3A4007DC364 /* MediatorReal.xctest */,
-				912C5CF8210BC3F5007DC364 /* MementoStructure.xctest */,
-				912C5D0B210BC4D8007DC364 /* MementoReal.xctest */,
-				912C5D18210BC553007DC364 /* ObserverStructure.xctest */,
-				912C5D24210BC594007DC364 /* ObserverReal.xctest */,
-				912C5D30210BC5E1007DC364 /* StateStructure.xctest */,
-				912C5D3D210BC62D007DC364 /* StateReal.xctest */,
-				912C5D4A210BC6A8007DC364 /* StrategyStructure.xctest */,
-				912C5D56210BC6F0007DC364 /* StrategyReal.xctest */,
-				912C5D62210BC749007DC364 /* TemplateMethodStructure.xctest */,
-				912C5D6F210BC7B1007DC364 /* TemplateMethodReal.xctest */,
-				912C5D7C210BC81E007DC364 /* VisitorStructure.xctest */,
-				912C5D88210BC865007DC364 /* VisitorReal.xctest */,
+				919C89F120DD7EE4006EE57D /* AbstractFactoryRealWorld.xctest */,
+				919C8A0520DD7F3C006EE57D /* AbstractFactoryConceptual.xctest */,
+				919C8A1320DD81D0006EE57D /* FacadeConceptual.xctest */,
+				919C8A2020DD8261006EE57D /* FacadeRealWorld.xctest */,
+				919C8A3920DD82F0006EE57D /* BridgeConceptual.xctest */,
+				919C8A4620DD8393006EE57D /* BridgeRealWorld.xctest */,
+				919C8A5F20DD849A006EE57D /* AdapterConceptual.xctest */,
+				919C8A6C20DD858C006EE57D /* AdapterRealWorld.xctest */,
+				919C8A7A20DD8688006EE57D /* BuilderConceptual.xctest */,
+				919C8A8720DD86DC006EE57D /* BuilderRealWorld.xctest */,
+				919C8AA220DD878D006EE57D /* CompositeConceptual.xctest */,
+				919C8AAF20DD87F2006EE57D /* CompositeRealWorld.xctest */,
+				919C8AC720DD8873006EE57D /* DecoratorConceptual.xctest */,
+				919C8AD420DD88C6006EE57D /* DecoratorRealWorld.xctest */,
+				919C8AE020DD893E006EE57D /* FactoryMethodRealWorld.xctest */,
+				919C8AED20DD897E006EE57D /* FactoryMethodConceptual.xctest */,
+				919C8AFA20DD8A98006EE57D /* PrototypeConceptual.xctest */,
+				919C8B0720DD8AF0006EE57D /* PrototypeRealWorld.xctest */,
+				919C8B1420DD8B59006EE57D /* SingletonConceptual.xctest */,
+				919C8B2120DD8BA9006EE57D /* SingletonRealWorld.xctest */,
+				91301AD220F55C25003B4FC0 /* FlyweightConceptual.xctest */,
+				91301ADF20F55CAA003B4FC0 /* FlyweightRealWorld.xctest */,
+				91B1206B20F610E400730C37 /* ChainOfResponsibilityConceptual.xctest */,
+				91B1207720F6114A00730C37 /* ChainOfResponsibilityRealWorld.xctest */,
+				91B1208320F611DA00730C37 /* CommandConceptual.xctest */,
+				91B1209020F6120C00730C37 /* CommandRealWorld.xctest */,
+				91B1209D20F6125500730C37 /* IteratorConceptual.xctest */,
+				91B120A920F6127400730C37 /* IteratorRealWorld.xctest */,
+				91B120B620F6130900730C37 /* ProxyConceptual.xctest */,
+				91B120C220F6132E00730C37 /* ProxyRealWorld.xctest */,
+				912C5CDF210BC33D007DC364 /* MediatorConceptual.xctest */,
+				912C5CEC210BC3A4007DC364 /* MediatorRealWorld.xctest */,
+				912C5CF8210BC3F5007DC364 /* MementoConceptual.xctest */,
+				912C5D0B210BC4D8007DC364 /* MementoRealWorld.xctest */,
+				912C5D18210BC553007DC364 /* ObserverConceptual.xctest */,
+				912C5D24210BC594007DC364 /* ObserverRealWorld.xctest */,
+				912C5D30210BC5E1007DC364 /* StateConceptual.xctest */,
+				912C5D3D210BC62D007DC364 /* StateRealWorld.xctest */,
+				912C5D4A210BC6A8007DC364 /* StrategyConceptual.xctest */,
+				912C5D56210BC6F0007DC364 /* StrategyRealWorld.xctest */,
+				912C5D62210BC749007DC364 /* TemplateMethodConceptual.xctest */,
+				912C5D6F210BC7B1007DC364 /* TemplateMethodRealWorld.xctest */,
+				912C5D7C210BC81E007DC364 /* VisitorConceptual.xctest */,
+				912C5D88210BC865007DC364 /* VisitorRealWorld.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -941,8 +941,8 @@
 		916B889120BC4D8100BA92DF /* Composite */ = {
 			isa = PBXGroup;
 			children = (
-				919C8AB020DD87F2006EE57D /* Real */,
-				919C8AA320DD878E006EE57D /* Structure */,
+				919C8AB020DD87F2006EE57D /* RealWorld */,
+				919C8AA320DD878E006EE57D /* Conceptual */,
 			);
 			path = Composite;
 			sourceTree = "<group>";
@@ -950,8 +950,8 @@
 		916B889620BC582D00BA92DF /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
-				919C8AD520DD88C6006EE57D /* Real */,
-				919C8AC820DD8873006EE57D /* Structure */,
+				919C8AD520DD88C6006EE57D /* RealWorld */,
+				919C8AC820DD8873006EE57D /* Conceptual */,
 			);
 			path = Decorator;
 			sourceTree = "<group>";
@@ -959,8 +959,8 @@
 		916B889E20BC5C5800BA92DF /* Facade */ = {
 			isa = PBXGroup;
 			children = (
-				919C8A2120DD8261006EE57D /* Real */,
-				919C8A1420DD81D0006EE57D /* Structure */,
+				919C8A2120DD8261006EE57D /* RealWorld */,
+				919C8A1420DD81D0006EE57D /* Conceptual */,
 			);
 			path = Facade;
 			sourceTree = "<group>";
@@ -978,8 +978,8 @@
 		9187BFB820B5D0A600266EF8 /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
-				919C8AEE20DD897E006EE57D /* Structure */,
-				919C8AE120DD893E006EE57D /* Real */,
+				919C8AEE20DD897E006EE57D /* Conceptual */,
+				919C8AE120DD893E006EE57D /* RealWorld */,
 			);
 			path = FactoryMethod;
 			sourceTree = "<group>";
@@ -987,8 +987,8 @@
 		9187BFC320B5D0A700266EF8 /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
-				919C8B2220DD8BA9006EE57D /* Real */,
-				919C8B1520DD8B59006EE57D /* Structure */,
+				919C8B2220DD8BA9006EE57D /* RealWorld */,
+				919C8B1520DD8B59006EE57D /* Conceptual */,
 			);
 			path = Singleton;
 			sourceTree = "<group>";
@@ -996,8 +996,8 @@
 		9187BFCD20B5D0A700266EF8 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				919C8A8820DD86DC006EE57D /* Real */,
-				919C8A7B20DD8688006EE57D /* Structure */,
+				919C8A8820DD86DC006EE57D /* RealWorld */,
+				919C8A7B20DD8688006EE57D /* Conceptual */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -1005,8 +1005,8 @@
 		9187BFDA20B5D0A700266EF8 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				919C8A4720DD8393006EE57D /* Real */,
-				919C8A3A20DD82F0006EE57D /* Structure */,
+				919C8A4720DD8393006EE57D /* RealWorld */,
+				919C8A3A20DD82F0006EE57D /* Conceptual */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -1014,8 +1014,8 @@
 		9187BFE020B5D0A700266EF8 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				919C8A6D20DD858C006EE57D /* Real */,
-				919C8A6020DD849B006EE57D /* Structure */,
+				919C8A6D20DD858C006EE57D /* RealWorld */,
+				919C8A6020DD849B006EE57D /* Conceptual */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -1023,13 +1023,13 @@
 		9187BFE720B5D0A700266EF8 /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				919C8B0820DD8AF0006EE57D /* Real */,
-				919C8AFB20DD8A98006EE57D /* Structure */,
+				919C8B0820DD8AF0006EE57D /* RealWorld */,
+				919C8AFB20DD8A98006EE57D /* Conceptual */,
 			);
 			path = Prototype;
 			sourceTree = "<group>";
 		};
-		919C89F220DD7EE4006EE57D /* Real */ = {
+		919C89F220DD7EE4006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFB220B5D0A600266EF8 /* Example.swift */,
@@ -1039,99 +1039,99 @@
 				9187BFAE20B5D0A600266EF8 /* Views */,
 				919C89F520DD7EE4006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8A0620DD7F3C006EE57D /* Structure */ = {
+		919C8A0620DD7F3C006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFB620B5D0A600266EF8 /* Example.swift */,
 				9187BFB420B5D0A600266EF8 /* Output.txt */,
 				919C8A0920DD7F3C006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
 		919C8A0E20DD7F7B006EE57D /* AbstractFactory */ = {
 			isa = PBXGroup;
 			children = (
-				919C89F220DD7EE4006EE57D /* Real */,
-				919C8A0620DD7F3C006EE57D /* Structure */,
+				919C89F220DD7EE4006EE57D /* RealWorld */,
+				919C8A0620DD7F3C006EE57D /* Conceptual */,
 			);
 			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
-		919C8A1420DD81D0006EE57D /* Structure */ = {
+		919C8A1420DD81D0006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				916B889F20BC6E6800BA92DF /* Example.swift */,
 				916B88A120BC717400BA92DF /* Output.txt */,
 				919C8A1720DD81D0006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8A2120DD8261006EE57D /* Real */ = {
+		919C8A2120DD8261006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				916B88A520BD468100BA92DF /* Example.swift */,
 				916B88A720BD537300BA92DF /* Output.txt */,
 				919C8A2420DD8261006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8A3A20DD82F0006EE57D /* Structure */ = {
+		919C8A3A20DD82F0006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFDF20B5D0A700266EF8 /* Example.swift */,
 				9187BFDE20B5D0A700266EF8 /* Output.txt */,
 				919C8A3D20DD82F0006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8A4720DD8393006EE57D /* Real */ = {
+		919C8A4720DD8393006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFDC20B5D0A700266EF8 /* Example.swift */,
 				916B888F20BC4B1900BA92DF /* Output.txt */,
 				919C8A4A20DD8393006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8A6020DD849B006EE57D /* Structure */ = {
+		919C8A6020DD849B006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFE520B5D0A700266EF8 /* Example.swift */,
 				9187BFE620B5D0A700266EF8 /* Output.txt */,
 				919C8A6320DD849B006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8A6D20DD858C006EE57D /* Real */ = {
+		919C8A6D20DD858C006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFE320B5D0A700266EF8 /* Example.swift */,
 				9187BFE220B5D0A700266EF8 /* Output.txt */,
 				919C8A7020DD858C006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8A7B20DD8688006EE57D /* Structure */ = {
+		919C8A7B20DD8688006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFD520B5D0A700266EF8 /* Example.swift */,
 				9187BFD820B5D0A700266EF8 /* Output.txt */,
 				919C8A7E20DD8688006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8A8820DD86DC006EE57D /* Real */ = {
+		919C8A8820DD86DC006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFD220B5D0A700266EF8 /* Example.swift */,
@@ -1140,20 +1140,20 @@
 				9187BFD320B5D0A700266EF8 /* Output.txt */,
 				919C8A8B20DD86DC006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8AA320DD878E006EE57D /* Structure */ = {
+		919C8AA320DD878E006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				916B889220BC4DA400BA92DF /* Example.swift */,
 				916B889420BC56FD00BA92DF /* Output.txt */,
 				919C8AA620DD878E006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8AB020DD87F2006EE57D /* Real */ = {
+		919C8AB020DD87F2006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				919C8AB120DD87F2006EE57D /* Example.swift */,
@@ -1162,20 +1162,20 @@
 				91F0DAAC20E68AAD001F1C1A /* Output.txt */,
 				919C8AB320DD87F2006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8AC820DD8873006EE57D /* Structure */ = {
+		919C8AC820DD8873006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				916B889A20BC587D00BA92DF /* Example.swift */,
 				916B889C20BC5B7600BA92DF /* Output.txt */,
 				919C8ACB20DD8873006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8AD520DD88C6006EE57D /* Real */ = {
+		919C8AD520DD88C6006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				919C8AD620DD88C6006EE57D /* Example.swift */,
@@ -1185,89 +1185,89 @@
 				91F0DA9520E6552A001F1C1A /* Output.txt */,
 				919C8AD820DD88C6006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8AE120DD893E006EE57D /* Real */ = {
+		919C8AE120DD893E006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFBB20B5D0A600266EF8 /* Example.swift */,
 				9187BFBC20B5D0A600266EF8 /* Output.txt */,
 				919C8AE420DD893E006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8AEE20DD897E006EE57D /* Structure */ = {
+		919C8AEE20DD897E006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFBF20B5D0A600266EF8 /* Example.swift */,
 				9187BFC220B5D0A600266EF8 /* Output.txt */,
 				919C8AF120DD897E006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8AFB20DD8A98006EE57D /* Structure */ = {
+		919C8AFB20DD8A98006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFEE20B5D0A700266EF8 /* Example.swift */,
 				9187BFEC20B5D0A700266EF8 /* Output.txt */,
 				919C8AFE20DD8A98006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8B0820DD8AF0006EE57D /* Real */ = {
+		919C8B0820DD8AF0006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFEA20B5D0A700266EF8 /* Example.swift */,
 				9187BFE920B5D0A700266EF8 /* Output.txt */,
 				919C8B0B20DD8AF0006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		919C8B1520DD8B59006EE57D /* Structure */ = {
+		919C8B1520DD8B59006EE57D /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFCC20B5D0A700266EF8 /* Example.swift */,
 				9187BFCB20B5D0A700266EF8 /* Output.txt */,
 				919C8B1820DD8B59006EE57D /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		919C8B2220DD8BA9006EE57D /* Real */ = {
+		919C8B2220DD8BA9006EE57D /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				9187BFC920B5D0A700266EF8 /* Example.swift */,
 				9187BFC820B5D0A700266EF8 /* Output.txt */,
 				919C8B2520DD8BA9006EE57D /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		91B1206620F610B600730C37 /* ChainOfResponsibility */ = {
 			isa = PBXGroup;
 			children = (
-				91B1206C20F610E400730C37 /* Structure */,
-				91B1207820F6114A00730C37 /* Real */,
+				91B1206C20F610E400730C37 /* Conceptual */,
+				91B1207820F6114A00730C37 /* RealWorld */,
 			);
 			path = ChainOfResponsibility;
 			sourceTree = "<group>";
 		};
-		91B1206C20F610E400730C37 /* Structure */ = {
+		91B1206C20F610E400730C37 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				91B1206D20F610E400730C37 /* Example.swift */,
 				91B1206F20F610E400730C37 /* Info.plist */,
 				91B120CA20F61BAD00730C37 /* Output.txt */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		91B1207820F6114A00730C37 /* Real */ = {
+		91B1207820F6114A00730C37 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				91B1207920F6114A00730C37 /* Example.swift */,
@@ -1277,29 +1277,29 @@
 				91B120CC20F61BBC00730C37 /* Output.txt */,
 				91B1207B20F6114A00730C37 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
-		91B1208420F611DA00730C37 /* Structure */ = {
+		91B1208420F611DA00730C37 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				91B1208520F611DA00730C37 /* Example.swift */,
 				91B1208720F611DA00730C37 /* Info.plist */,
 				91B120D020F61BD000730C37 /* Output.txt */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
 		91B1208B20F611EF00730C37 /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				91B1208420F611DA00730C37 /* Structure */,
-				91B1209120F6120C00730C37 /* Real */,
+				91B1208420F611DA00730C37 /* Conceptual */,
+				91B1209120F6120C00730C37 /* RealWorld */,
 			);
 			path = Command;
 			sourceTree = "<group>";
 		};
-		91B1209120F6120C00730C37 /* Real */ = {
+		91B1209120F6120C00730C37 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				91B1209220F6120C00730C37 /* Example.swift */,
@@ -1307,73 +1307,73 @@
 				91B120CE20F61BC600730C37 /* Output.txt */,
 				91B1209420F6120C00730C37 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		91B1209820F6124200730C37 /* Iterator */ = {
 			isa = PBXGroup;
 			children = (
-				91B120AA20F6127400730C37 /* Real */,
-				91B1209E20F6125500730C37 /* Structure */,
+				91B120AA20F6127400730C37 /* RealWorld */,
+				91B1209E20F6125500730C37 /* Conceptual */,
 			);
 			path = Iterator;
 			sourceTree = "<group>";
 		};
-		91B1209E20F6125500730C37 /* Structure */ = {
+		91B1209E20F6125500730C37 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				91B1209F20F6125500730C37 /* Example.swift */,
 				91B120D420F61BE300730C37 /* Output.txt */,
 				91B120A120F6125500730C37 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		91B120AA20F6127400730C37 /* Real */ = {
+		91B120AA20F6127400730C37 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				91B120AB20F6127400730C37 /* Example.swift */,
 				91B120D220F61BDA00730C37 /* Output.txt */,
 				91B120AD20F6127400730C37 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 		91B120B120F612F600730C37 /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
-				91B120C320F6132E00730C37 /* Real */,
-				91B120B720F6130A00730C37 /* Structure */,
+				91B120C320F6132E00730C37 /* RealWorld */,
+				91B120B720F6130A00730C37 /* Conceptual */,
 			);
 			path = Proxy;
 			sourceTree = "<group>";
 		};
-		91B120B720F6130A00730C37 /* Structure */ = {
+		91B120B720F6130A00730C37 /* Conceptual */ = {
 			isa = PBXGroup;
 			children = (
 				91B120B820F6130A00730C37 /* Example.swift */,
 				91B120D820F61BF000730C37 /* Output.txt */,
 				91B120BA20F6130A00730C37 /* Info.plist */,
 			);
-			path = Structure;
+			path = Conceptual;
 			sourceTree = "<group>";
 		};
-		91B120C320F6132E00730C37 /* Real */ = {
+		91B120C320F6132E00730C37 /* RealWorld */ = {
 			isa = PBXGroup;
 			children = (
 				91B120C420F6132E00730C37 /* Example.swift */,
 				91B120D620F61BE900730C37 /* Output.txt */,
 				91B120C620F6132E00730C37 /* Info.plist */,
 			);
-			path = Real;
+			path = RealWorld;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		912C5CDE210BC33D007DC364 /* MediatorStructure */ = {
+		912C5CDE210BC33D007DC364 /* MediatorConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5CE4210BC33E007DC364 /* Build configuration list for PBXNativeTarget "MediatorStructure" */;
+			buildConfigurationList = 912C5CE4210BC33E007DC364 /* Build configuration list for PBXNativeTarget "MediatorConceptual" */;
 			buildPhases = (
 				912C5CDB210BC33D007DC364 /* Sources */,
 				912C5CDC210BC33D007DC364 /* Frameworks */,
@@ -1383,14 +1383,14 @@
 			);
 			dependencies = (
 			);
-			name = MediatorStructure;
-			productName = MediatorStructure;
-			productReference = 912C5CDF210BC33D007DC364 /* MediatorStructure.xctest */;
+			name = MediatorConceptual;
+			productName = MediatorConceptual;
+			productReference = 912C5CDF210BC33D007DC364 /* MediatorConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5CEB210BC3A4007DC364 /* MediatorReal */ = {
+		912C5CEB210BC3A4007DC364 /* MediatorRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5CF1210BC3A4007DC364 /* Build configuration list for PBXNativeTarget "MediatorReal" */;
+			buildConfigurationList = 912C5CF1210BC3A4007DC364 /* Build configuration list for PBXNativeTarget "MediatorRealWorld" */;
 			buildPhases = (
 				912C5CE8210BC3A4007DC364 /* Sources */,
 				912C5CE9210BC3A4007DC364 /* Frameworks */,
@@ -1400,14 +1400,14 @@
 			);
 			dependencies = (
 			);
-			name = MediatorReal;
-			productName = MediatorReal;
-			productReference = 912C5CEC210BC3A4007DC364 /* MediatorReal.xctest */;
+			name = MediatorRealWorld;
+			productName = MediatorRealWorld;
+			productReference = 912C5CEC210BC3A4007DC364 /* MediatorRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5CF7210BC3F5007DC364 /* MementoStructure */ = {
+		912C5CF7210BC3F5007DC364 /* MementoConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5CFD210BC3F5007DC364 /* Build configuration list for PBXNativeTarget "MementoStructure" */;
+			buildConfigurationList = 912C5CFD210BC3F5007DC364 /* Build configuration list for PBXNativeTarget "MementoConceptual" */;
 			buildPhases = (
 				912C5CF4210BC3F5007DC364 /* Sources */,
 				912C5CF5210BC3F5007DC364 /* Frameworks */,
@@ -1417,14 +1417,14 @@
 			);
 			dependencies = (
 			);
-			name = MementoStructure;
-			productName = MementoStructure;
-			productReference = 912C5CF8210BC3F5007DC364 /* MementoStructure.xctest */;
+			name = MementoConceptual;
+			productName = MementoConceptual;
+			productReference = 912C5CF8210BC3F5007DC364 /* MementoConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D0A210BC4D8007DC364 /* MementoReal */ = {
+		912C5D0A210BC4D8007DC364 /* MementoRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D10210BC4D9007DC364 /* Build configuration list for PBXNativeTarget "MementoReal" */;
+			buildConfigurationList = 912C5D10210BC4D9007DC364 /* Build configuration list for PBXNativeTarget "MementoRealWorld" */;
 			buildPhases = (
 				912C5D07210BC4D8007DC364 /* Sources */,
 				912C5D08210BC4D8007DC364 /* Frameworks */,
@@ -1434,14 +1434,14 @@
 			);
 			dependencies = (
 			);
-			name = MementoReal;
-			productName = MementoReal;
-			productReference = 912C5D0B210BC4D8007DC364 /* MementoReal.xctest */;
+			name = MementoRealWorld;
+			productName = MementoRealWorld;
+			productReference = 912C5D0B210BC4D8007DC364 /* MementoRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D17210BC553007DC364 /* ObserverStructure */ = {
+		912C5D17210BC553007DC364 /* ObserverConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D1D210BC553007DC364 /* Build configuration list for PBXNativeTarget "ObserverStructure" */;
+			buildConfigurationList = 912C5D1D210BC553007DC364 /* Build configuration list for PBXNativeTarget "ObserverConceptual" */;
 			buildPhases = (
 				912C5D14210BC553007DC364 /* Sources */,
 				912C5D15210BC553007DC364 /* Frameworks */,
@@ -1451,14 +1451,14 @@
 			);
 			dependencies = (
 			);
-			name = ObserverStructure;
-			productName = ObserverStructure;
-			productReference = 912C5D18210BC553007DC364 /* ObserverStructure.xctest */;
+			name = ObserverConceptual;
+			productName = ObserverConceptual;
+			productReference = 912C5D18210BC553007DC364 /* ObserverConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D23210BC594007DC364 /* ObserverReal */ = {
+		912C5D23210BC594007DC364 /* ObserverRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D29210BC594007DC364 /* Build configuration list for PBXNativeTarget "ObserverReal" */;
+			buildConfigurationList = 912C5D29210BC594007DC364 /* Build configuration list for PBXNativeTarget "ObserverRealWorld" */;
 			buildPhases = (
 				912C5D20210BC594007DC364 /* Sources */,
 				912C5D21210BC594007DC364 /* Frameworks */,
@@ -1468,14 +1468,14 @@
 			);
 			dependencies = (
 			);
-			name = ObserverReal;
-			productName = ObserverReal;
-			productReference = 912C5D24210BC594007DC364 /* ObserverReal.xctest */;
+			name = ObserverRealWorld;
+			productName = ObserverRealWorld;
+			productReference = 912C5D24210BC594007DC364 /* ObserverRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D2F210BC5E1007DC364 /* StateStructure */ = {
+		912C5D2F210BC5E1007DC364 /* StateConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D35210BC5E1007DC364 /* Build configuration list for PBXNativeTarget "StateStructure" */;
+			buildConfigurationList = 912C5D35210BC5E1007DC364 /* Build configuration list for PBXNativeTarget "StateConceptual" */;
 			buildPhases = (
 				912C5D2C210BC5E1007DC364 /* Sources */,
 				912C5D2D210BC5E1007DC364 /* Frameworks */,
@@ -1485,14 +1485,14 @@
 			);
 			dependencies = (
 			);
-			name = StateStructure;
-			productName = StateStructure;
-			productReference = 912C5D30210BC5E1007DC364 /* StateStructure.xctest */;
+			name = StateConceptual;
+			productName = StateConceptual;
+			productReference = 912C5D30210BC5E1007DC364 /* StateConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D3C210BC62D007DC364 /* StateReal */ = {
+		912C5D3C210BC62D007DC364 /* StateRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D42210BC62D007DC364 /* Build configuration list for PBXNativeTarget "StateReal" */;
+			buildConfigurationList = 912C5D42210BC62D007DC364 /* Build configuration list for PBXNativeTarget "StateRealWorld" */;
 			buildPhases = (
 				912C5D39210BC62D007DC364 /* Sources */,
 				912C5D3A210BC62D007DC364 /* Frameworks */,
@@ -1502,14 +1502,14 @@
 			);
 			dependencies = (
 			);
-			name = StateReal;
-			productName = StateReal;
-			productReference = 912C5D3D210BC62D007DC364 /* StateReal.xctest */;
+			name = StateRealWorld;
+			productName = StateRealWorld;
+			productReference = 912C5D3D210BC62D007DC364 /* StateRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D49210BC6A8007DC364 /* StrategyStructure */ = {
+		912C5D49210BC6A8007DC364 /* StrategyConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D4F210BC6A8007DC364 /* Build configuration list for PBXNativeTarget "StrategyStructure" */;
+			buildConfigurationList = 912C5D4F210BC6A8007DC364 /* Build configuration list for PBXNativeTarget "StrategyConceptual" */;
 			buildPhases = (
 				912C5D46210BC6A8007DC364 /* Sources */,
 				912C5D47210BC6A8007DC364 /* Frameworks */,
@@ -1519,14 +1519,14 @@
 			);
 			dependencies = (
 			);
-			name = StrategyStructure;
-			productName = StrategyStructure;
-			productReference = 912C5D4A210BC6A8007DC364 /* StrategyStructure.xctest */;
+			name = StrategyConceptual;
+			productName = StrategyConceptual;
+			productReference = 912C5D4A210BC6A8007DC364 /* StrategyConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D55210BC6F0007DC364 /* StrategyReal */ = {
+		912C5D55210BC6F0007DC364 /* StrategyRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D5B210BC6F1007DC364 /* Build configuration list for PBXNativeTarget "StrategyReal" */;
+			buildConfigurationList = 912C5D5B210BC6F1007DC364 /* Build configuration list for PBXNativeTarget "StrategyRealWorld" */;
 			buildPhases = (
 				912C5D52210BC6F0007DC364 /* Sources */,
 				912C5D53210BC6F0007DC364 /* Frameworks */,
@@ -1536,14 +1536,14 @@
 			);
 			dependencies = (
 			);
-			name = StrategyReal;
-			productName = StrategyReal;
-			productReference = 912C5D56210BC6F0007DC364 /* StrategyReal.xctest */;
+			name = StrategyRealWorld;
+			productName = StrategyRealWorld;
+			productReference = 912C5D56210BC6F0007DC364 /* StrategyRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D61210BC749007DC364 /* TemplateMethodStructure */ = {
+		912C5D61210BC749007DC364 /* TemplateMethodConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D67210BC749007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodStructure" */;
+			buildConfigurationList = 912C5D67210BC749007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodConceptual" */;
 			buildPhases = (
 				912C5D5E210BC749007DC364 /* Sources */,
 				912C5D5F210BC749007DC364 /* Frameworks */,
@@ -1553,14 +1553,14 @@
 			);
 			dependencies = (
 			);
-			name = TemplateMethodStructure;
-			productName = TemplateMethodStructure;
-			productReference = 912C5D62210BC749007DC364 /* TemplateMethodStructure.xctest */;
+			name = TemplateMethodConceptual;
+			productName = TemplateMethodConceptual;
+			productReference = 912C5D62210BC749007DC364 /* TemplateMethodConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D6E210BC7B1007DC364 /* TemplateMethodReal */ = {
+		912C5D6E210BC7B1007DC364 /* TemplateMethodRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D74210BC7B1007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodReal" */;
+			buildConfigurationList = 912C5D74210BC7B1007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodRealWorld" */;
 			buildPhases = (
 				912C5D6B210BC7B1007DC364 /* Sources */,
 				912C5D6C210BC7B1007DC364 /* Frameworks */,
@@ -1570,14 +1570,14 @@
 			);
 			dependencies = (
 			);
-			name = TemplateMethodReal;
-			productName = TemplateMethodReal;
-			productReference = 912C5D6F210BC7B1007DC364 /* TemplateMethodReal.xctest */;
+			name = TemplateMethodRealWorld;
+			productName = TemplateMethodRealWorld;
+			productReference = 912C5D6F210BC7B1007DC364 /* TemplateMethodRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D7B210BC81E007DC364 /* VisitorStructure */ = {
+		912C5D7B210BC81E007DC364 /* VisitorConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D81210BC81E007DC364 /* Build configuration list for PBXNativeTarget "VisitorStructure" */;
+			buildConfigurationList = 912C5D81210BC81E007DC364 /* Build configuration list for PBXNativeTarget "VisitorConceptual" */;
 			buildPhases = (
 				912C5D78210BC81E007DC364 /* Sources */,
 				912C5D79210BC81E007DC364 /* Frameworks */,
@@ -1587,14 +1587,14 @@
 			);
 			dependencies = (
 			);
-			name = VisitorStructure;
-			productName = VisitorStructure;
-			productReference = 912C5D7C210BC81E007DC364 /* VisitorStructure.xctest */;
+			name = VisitorConceptual;
+			productName = VisitorConceptual;
+			productReference = 912C5D7C210BC81E007DC364 /* VisitorConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		912C5D87210BC865007DC364 /* VisitorReal */ = {
+		912C5D87210BC865007DC364 /* VisitorRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 912C5D8D210BC865007DC364 /* Build configuration list for PBXNativeTarget "VisitorReal" */;
+			buildConfigurationList = 912C5D8D210BC865007DC364 /* Build configuration list for PBXNativeTarget "VisitorRealWorld" */;
 			buildPhases = (
 				912C5D84210BC865007DC364 /* Sources */,
 				912C5D85210BC865007DC364 /* Frameworks */,
@@ -1604,14 +1604,14 @@
 			);
 			dependencies = (
 			);
-			name = VisitorReal;
-			productName = VisitorReal;
-			productReference = 912C5D88210BC865007DC364 /* VisitorReal.xctest */;
+			name = VisitorRealWorld;
+			productName = VisitorRealWorld;
+			productReference = 912C5D88210BC865007DC364 /* VisitorRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91301AD120F55C25003B4FC0 /* FlyweightStructure */ = {
+		91301AD120F55C25003B4FC0 /* FlyweightConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91301AD720F55C25003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightStructure" */;
+			buildConfigurationList = 91301AD720F55C25003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightConceptual" */;
 			buildPhases = (
 				91301ACE20F55C25003B4FC0 /* Sources */,
 				91301ACF20F55C25003B4FC0 /* Frameworks */,
@@ -1621,14 +1621,14 @@
 			);
 			dependencies = (
 			);
-			name = FlyweightStructure;
-			productName = FlyweightStructure;
-			productReference = 91301AD220F55C25003B4FC0 /* FlyweightStructure.xctest */;
+			name = FlyweightConceptual;
+			productName = FlyweightConceptual;
+			productReference = 91301AD220F55C25003B4FC0 /* FlyweightConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91301ADE20F55CAA003B4FC0 /* FlyweightReal */ = {
+		91301ADE20F55CAA003B4FC0 /* FlyweightRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91301AE420F55CAA003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightReal" */;
+			buildConfigurationList = 91301AE420F55CAA003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightRealWorld" */;
 			buildPhases = (
 				91301ADB20F55CAA003B4FC0 /* Sources */,
 				91301ADC20F55CAA003B4FC0 /* Frameworks */,
@@ -1638,14 +1638,14 @@
 			);
 			dependencies = (
 			);
-			name = FlyweightReal;
-			productName = FlyweightReal;
-			productReference = 91301ADF20F55CAA003B4FC0 /* FlyweightReal.xctest */;
+			name = FlyweightRealWorld;
+			productName = FlyweightRealWorld;
+			productReference = 91301ADF20F55CAA003B4FC0 /* FlyweightRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C89F020DD7EE4006EE57D /* AbstractFactoryReal */ = {
+		919C89F020DD7EE4006EE57D /* AbstractFactoryRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C89F820DD7EE4006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryReal" */;
+			buildConfigurationList = 919C89F820DD7EE4006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryRealWorld" */;
 			buildPhases = (
 				919C89ED20DD7EE4006EE57D /* Sources */,
 				919C89EE20DD7EE4006EE57D /* Frameworks */,
@@ -1655,14 +1655,14 @@
 			);
 			dependencies = (
 			);
-			name = AbstractFactoryReal;
-			productName = AbstractFactoryReal;
-			productReference = 919C89F120DD7EE4006EE57D /* AbstractFactoryReal.xctest */;
+			name = AbstractFactoryRealWorld;
+			productName = AbstractFactoryRealWorld;
+			productReference = 919C89F120DD7EE4006EE57D /* AbstractFactoryRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A0420DD7F3C006EE57D /* AbstractFactoryStructure */ = {
+		919C8A0420DD7F3C006EE57D /* AbstractFactoryConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A0A20DD7F3C006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryStructure" */;
+			buildConfigurationList = 919C8A0A20DD7F3C006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryConceptual" */;
 			buildPhases = (
 				919C8A0120DD7F3C006EE57D /* Sources */,
 				919C8A0220DD7F3C006EE57D /* Frameworks */,
@@ -1672,14 +1672,14 @@
 			);
 			dependencies = (
 			);
-			name = AbstractFactoryStructure;
-			productName = AbstractFactoryStructure;
-			productReference = 919C8A0520DD7F3C006EE57D /* AbstractFactoryStructure.xctest */;
+			name = AbstractFactoryConceptual;
+			productName = AbstractFactoryConceptual;
+			productReference = 919C8A0520DD7F3C006EE57D /* AbstractFactoryConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A1220DD81D0006EE57D /* FacadeStructure */ = {
+		919C8A1220DD81D0006EE57D /* FacadeConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A1820DD81D0006EE57D /* Build configuration list for PBXNativeTarget "FacadeStructure" */;
+			buildConfigurationList = 919C8A1820DD81D0006EE57D /* Build configuration list for PBXNativeTarget "FacadeConceptual" */;
 			buildPhases = (
 				919C8A0F20DD81D0006EE57D /* Sources */,
 				919C8A1020DD81D0006EE57D /* Frameworks */,
@@ -1689,14 +1689,14 @@
 			);
 			dependencies = (
 			);
-			name = FacadeStructure;
-			productName = FacadeStructure;
-			productReference = 919C8A1320DD81D0006EE57D /* FacadeStructure.xctest */;
+			name = FacadeConceptual;
+			productName = FacadeConceptual;
+			productReference = 919C8A1320DD81D0006EE57D /* FacadeConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A1F20DD8261006EE57D /* FacadeReal */ = {
+		919C8A1F20DD8261006EE57D /* FacadeRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A2520DD8261006EE57D /* Build configuration list for PBXNativeTarget "FacadeReal" */;
+			buildConfigurationList = 919C8A2520DD8261006EE57D /* Build configuration list for PBXNativeTarget "FacadeRealWorld" */;
 			buildPhases = (
 				919C8A1C20DD8261006EE57D /* Sources */,
 				919C8A1D20DD8261006EE57D /* Frameworks */,
@@ -1706,14 +1706,14 @@
 			);
 			dependencies = (
 			);
-			name = FacadeReal;
-			productName = FacadeReal;
-			productReference = 919C8A2020DD8261006EE57D /* FacadeReal.xctest */;
+			name = FacadeRealWorld;
+			productName = FacadeRealWorld;
+			productReference = 919C8A2020DD8261006EE57D /* FacadeRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A3820DD82F0006EE57D /* BridgeStructure */ = {
+		919C8A3820DD82F0006EE57D /* BridgeConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A3E20DD82F0006EE57D /* Build configuration list for PBXNativeTarget "BridgeStructure" */;
+			buildConfigurationList = 919C8A3E20DD82F0006EE57D /* Build configuration list for PBXNativeTarget "BridgeConceptual" */;
 			buildPhases = (
 				919C8A3520DD82F0006EE57D /* Sources */,
 				919C8A3620DD82F0006EE57D /* Frameworks */,
@@ -1723,14 +1723,14 @@
 			);
 			dependencies = (
 			);
-			name = BridgeStructure;
-			productName = BridgeStructure;
-			productReference = 919C8A3920DD82F0006EE57D /* BridgeStructure.xctest */;
+			name = BridgeConceptual;
+			productName = BridgeConceptual;
+			productReference = 919C8A3920DD82F0006EE57D /* BridgeConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A4520DD8393006EE57D /* BridgeReal */ = {
+		919C8A4520DD8393006EE57D /* BridgeRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A4B20DD8393006EE57D /* Build configuration list for PBXNativeTarget "BridgeReal" */;
+			buildConfigurationList = 919C8A4B20DD8393006EE57D /* Build configuration list for PBXNativeTarget "BridgeRealWorld" */;
 			buildPhases = (
 				919C8A4220DD8393006EE57D /* Sources */,
 				919C8A4320DD8393006EE57D /* Frameworks */,
@@ -1740,14 +1740,14 @@
 			);
 			dependencies = (
 			);
-			name = BridgeReal;
-			productName = BridgeReal;
-			productReference = 919C8A4620DD8393006EE57D /* BridgeReal.xctest */;
+			name = BridgeRealWorld;
+			productName = BridgeRealWorld;
+			productReference = 919C8A4620DD8393006EE57D /* BridgeRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A5E20DD849A006EE57D /* AdapterStructure */ = {
+		919C8A5E20DD849A006EE57D /* AdapterConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A6420DD849B006EE57D /* Build configuration list for PBXNativeTarget "AdapterStructure" */;
+			buildConfigurationList = 919C8A6420DD849B006EE57D /* Build configuration list for PBXNativeTarget "AdapterConceptual" */;
 			buildPhases = (
 				919C8A5B20DD849A006EE57D /* Sources */,
 				919C8A5C20DD849A006EE57D /* Frameworks */,
@@ -1757,14 +1757,14 @@
 			);
 			dependencies = (
 			);
-			name = AdapterStructure;
-			productName = AdapterStructure;
-			productReference = 919C8A5F20DD849A006EE57D /* AdapterStructure.xctest */;
+			name = AdapterConceptual;
+			productName = AdapterConceptual;
+			productReference = 919C8A5F20DD849A006EE57D /* AdapterConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A6B20DD858C006EE57D /* AdapterReal */ = {
+		919C8A6B20DD858C006EE57D /* AdapterRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A7120DD858C006EE57D /* Build configuration list for PBXNativeTarget "AdapterReal" */;
+			buildConfigurationList = 919C8A7120DD858C006EE57D /* Build configuration list for PBXNativeTarget "AdapterRealWorld" */;
 			buildPhases = (
 				919C8A6820DD858C006EE57D /* Sources */,
 				919C8A6920DD858C006EE57D /* Frameworks */,
@@ -1774,14 +1774,14 @@
 			);
 			dependencies = (
 			);
-			name = AdapterReal;
-			productName = AdapterReal;
-			productReference = 919C8A6C20DD858C006EE57D /* AdapterReal.xctest */;
+			name = AdapterRealWorld;
+			productName = AdapterRealWorld;
+			productReference = 919C8A6C20DD858C006EE57D /* AdapterRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A7920DD8688006EE57D /* BuilderStructure */ = {
+		919C8A7920DD8688006EE57D /* BuilderConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A7F20DD8688006EE57D /* Build configuration list for PBXNativeTarget "BuilderStructure" */;
+			buildConfigurationList = 919C8A7F20DD8688006EE57D /* Build configuration list for PBXNativeTarget "BuilderConceptual" */;
 			buildPhases = (
 				919C8A7620DD8688006EE57D /* Sources */,
 				919C8A7720DD8688006EE57D /* Frameworks */,
@@ -1791,14 +1791,14 @@
 			);
 			dependencies = (
 			);
-			name = BuilderStructure;
-			productName = BuilderStructure;
-			productReference = 919C8A7A20DD8688006EE57D /* BuilderStructure.xctest */;
+			name = BuilderConceptual;
+			productName = BuilderConceptual;
+			productReference = 919C8A7A20DD8688006EE57D /* BuilderConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8A8620DD86DC006EE57D /* BuilderReal */ = {
+		919C8A8620DD86DC006EE57D /* BuilderRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8A8C20DD86DC006EE57D /* Build configuration list for PBXNativeTarget "BuilderReal" */;
+			buildConfigurationList = 919C8A8C20DD86DC006EE57D /* Build configuration list for PBXNativeTarget "BuilderRealWorld" */;
 			buildPhases = (
 				919C8A8320DD86DC006EE57D /* Sources */,
 				919C8A8420DD86DC006EE57D /* Frameworks */,
@@ -1808,14 +1808,14 @@
 			);
 			dependencies = (
 			);
-			name = BuilderReal;
-			productName = BuilderReal;
-			productReference = 919C8A8720DD86DC006EE57D /* BuilderReal.xctest */;
+			name = BuilderRealWorld;
+			productName = BuilderRealWorld;
+			productReference = 919C8A8720DD86DC006EE57D /* BuilderRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8AA120DD878D006EE57D /* CompositeStructure */ = {
+		919C8AA120DD878D006EE57D /* CompositeConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8AA720DD878E006EE57D /* Build configuration list for PBXNativeTarget "CompositeStructure" */;
+			buildConfigurationList = 919C8AA720DD878E006EE57D /* Build configuration list for PBXNativeTarget "CompositeConceptual" */;
 			buildPhases = (
 				919C8A9E20DD878D006EE57D /* Sources */,
 				919C8A9F20DD878D006EE57D /* Frameworks */,
@@ -1825,14 +1825,14 @@
 			);
 			dependencies = (
 			);
-			name = CompositeStructure;
-			productName = CompositeStructure;
-			productReference = 919C8AA220DD878D006EE57D /* CompositeStructure.xctest */;
+			name = CompositeConceptual;
+			productName = CompositeConceptual;
+			productReference = 919C8AA220DD878D006EE57D /* CompositeConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8AAE20DD87F2006EE57D /* CompositeReal */ = {
+		919C8AAE20DD87F2006EE57D /* CompositeRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8AB420DD87F2006EE57D /* Build configuration list for PBXNativeTarget "CompositeReal" */;
+			buildConfigurationList = 919C8AB420DD87F2006EE57D /* Build configuration list for PBXNativeTarget "CompositeRealWorld" */;
 			buildPhases = (
 				919C8AAB20DD87F2006EE57D /* Sources */,
 				919C8AAC20DD87F2006EE57D /* Frameworks */,
@@ -1842,14 +1842,14 @@
 			);
 			dependencies = (
 			);
-			name = CompositeReal;
-			productName = CompositeReal;
-			productReference = 919C8AAF20DD87F2006EE57D /* CompositeReal.xctest */;
+			name = CompositeRealWorld;
+			productName = CompositeRealWorld;
+			productReference = 919C8AAF20DD87F2006EE57D /* CompositeRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8AC620DD8873006EE57D /* DecoratorStructure */ = {
+		919C8AC620DD8873006EE57D /* DecoratorConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8ACC20DD8873006EE57D /* Build configuration list for PBXNativeTarget "DecoratorStructure" */;
+			buildConfigurationList = 919C8ACC20DD8873006EE57D /* Build configuration list for PBXNativeTarget "DecoratorConceptual" */;
 			buildPhases = (
 				919C8AC320DD8873006EE57D /* Sources */,
 				919C8AC420DD8873006EE57D /* Frameworks */,
@@ -1859,14 +1859,14 @@
 			);
 			dependencies = (
 			);
-			name = DecoratorStructure;
-			productName = DecoratorStructure;
-			productReference = 919C8AC720DD8873006EE57D /* DecoratorStructure.xctest */;
+			name = DecoratorConceptual;
+			productName = DecoratorConceptual;
+			productReference = 919C8AC720DD8873006EE57D /* DecoratorConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8AD320DD88C6006EE57D /* DecoratorReal */ = {
+		919C8AD320DD88C6006EE57D /* DecoratorRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8AD920DD88C6006EE57D /* Build configuration list for PBXNativeTarget "DecoratorReal" */;
+			buildConfigurationList = 919C8AD920DD88C6006EE57D /* Build configuration list for PBXNativeTarget "DecoratorRealWorld" */;
 			buildPhases = (
 				919C8AD020DD88C6006EE57D /* Sources */,
 				919C8AD120DD88C6006EE57D /* Frameworks */,
@@ -1876,14 +1876,14 @@
 			);
 			dependencies = (
 			);
-			name = DecoratorReal;
-			productName = DecoratorReal;
-			productReference = 919C8AD420DD88C6006EE57D /* DecoratorReal.xctest */;
+			name = DecoratorRealWorld;
+			productName = DecoratorRealWorld;
+			productReference = 919C8AD420DD88C6006EE57D /* DecoratorRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8ADF20DD893E006EE57D /* FactoryMethodReal */ = {
+		919C8ADF20DD893E006EE57D /* FactoryMethodRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8AE520DD893E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodReal" */;
+			buildConfigurationList = 919C8AE520DD893E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodRealWorld" */;
 			buildPhases = (
 				919C8ADC20DD893E006EE57D /* Sources */,
 				919C8ADD20DD893E006EE57D /* Frameworks */,
@@ -1893,14 +1893,14 @@
 			);
 			dependencies = (
 			);
-			name = FactoryMethodReal;
-			productName = FactoryMethodReal;
-			productReference = 919C8AE020DD893E006EE57D /* FactoryMethodReal.xctest */;
+			name = FactoryMethodRealWorld;
+			productName = FactoryMethodRealWorld;
+			productReference = 919C8AE020DD893E006EE57D /* FactoryMethodRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8AEC20DD897E006EE57D /* FactoryMethodStructure */ = {
+		919C8AEC20DD897E006EE57D /* FactoryMethodConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8AF220DD897E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodStructure" */;
+			buildConfigurationList = 919C8AF220DD897E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodConceptual" */;
 			buildPhases = (
 				919C8AE920DD897E006EE57D /* Sources */,
 				919C8AEA20DD897E006EE57D /* Frameworks */,
@@ -1910,14 +1910,14 @@
 			);
 			dependencies = (
 			);
-			name = FactoryMethodStructure;
-			productName = FactoryStructure;
-			productReference = 919C8AED20DD897E006EE57D /* FactoryMethodStructure.xctest */;
+			name = FactoryMethodConceptual;
+			productName = FactoryConceptual;
+			productReference = 919C8AED20DD897E006EE57D /* FactoryMethodConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8AF920DD8A98006EE57D /* PrototypeStructure */ = {
+		919C8AF920DD8A98006EE57D /* PrototypeConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8AFF20DD8A98006EE57D /* Build configuration list for PBXNativeTarget "PrototypeStructure" */;
+			buildConfigurationList = 919C8AFF20DD8A98006EE57D /* Build configuration list for PBXNativeTarget "PrototypeConceptual" */;
 			buildPhases = (
 				919C8AF620DD8A98006EE57D /* Sources */,
 				919C8AF720DD8A98006EE57D /* Frameworks */,
@@ -1927,14 +1927,14 @@
 			);
 			dependencies = (
 			);
-			name = PrototypeStructure;
-			productName = PrototypeStructure;
-			productReference = 919C8AFA20DD8A98006EE57D /* PrototypeStructure.xctest */;
+			name = PrototypeConceptual;
+			productName = PrototypeConceptual;
+			productReference = 919C8AFA20DD8A98006EE57D /* PrototypeConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8B0620DD8AF0006EE57D /* PrototypeReal */ = {
+		919C8B0620DD8AF0006EE57D /* PrototypeRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8B0C20DD8AF0006EE57D /* Build configuration list for PBXNativeTarget "PrototypeReal" */;
+			buildConfigurationList = 919C8B0C20DD8AF0006EE57D /* Build configuration list for PBXNativeTarget "PrototypeRealWorld" */;
 			buildPhases = (
 				919C8B0320DD8AF0006EE57D /* Sources */,
 				919C8B0420DD8AF0006EE57D /* Frameworks */,
@@ -1944,14 +1944,14 @@
 			);
 			dependencies = (
 			);
-			name = PrototypeReal;
-			productName = PrototypeReal;
-			productReference = 919C8B0720DD8AF0006EE57D /* PrototypeReal.xctest */;
+			name = PrototypeRealWorld;
+			productName = PrototypeRealWorld;
+			productReference = 919C8B0720DD8AF0006EE57D /* PrototypeRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8B1320DD8B59006EE57D /* SingletonStructure */ = {
+		919C8B1320DD8B59006EE57D /* SingletonConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8B1920DD8B59006EE57D /* Build configuration list for PBXNativeTarget "SingletonStructure" */;
+			buildConfigurationList = 919C8B1920DD8B59006EE57D /* Build configuration list for PBXNativeTarget "SingletonConceptual" */;
 			buildPhases = (
 				919C8B1020DD8B59006EE57D /* Sources */,
 				919C8B1120DD8B59006EE57D /* Frameworks */,
@@ -1961,14 +1961,14 @@
 			);
 			dependencies = (
 			);
-			name = SingletonStructure;
-			productName = SingletonStructure;
-			productReference = 919C8B1420DD8B59006EE57D /* SingletonStructure.xctest */;
+			name = SingletonConceptual;
+			productName = SingletonConceptual;
+			productReference = 919C8B1420DD8B59006EE57D /* SingletonConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		919C8B2020DD8BA9006EE57D /* SingletonReal */ = {
+		919C8B2020DD8BA9006EE57D /* SingletonRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 919C8B2620DD8BA9006EE57D /* Build configuration list for PBXNativeTarget "SingletonReal" */;
+			buildConfigurationList = 919C8B2620DD8BA9006EE57D /* Build configuration list for PBXNativeTarget "SingletonRealWorld" */;
 			buildPhases = (
 				919C8B1D20DD8BA9006EE57D /* Sources */,
 				919C8B1E20DD8BA9006EE57D /* Frameworks */,
@@ -1978,14 +1978,14 @@
 			);
 			dependencies = (
 			);
-			name = SingletonReal;
-			productName = SingletonReal;
-			productReference = 919C8B2120DD8BA9006EE57D /* SingletonReal.xctest */;
+			name = SingletonRealWorld;
+			productName = SingletonRealWorld;
+			productReference = 919C8B2120DD8BA9006EE57D /* SingletonRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B1206A20F610E400730C37 /* ChainOfResponsibilityStructure */ = {
+		91B1206A20F610E400730C37 /* ChainOfResponsibilityConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B1207020F610E400730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityStructure" */;
+			buildConfigurationList = 91B1207020F610E400730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityConceptual" */;
 			buildPhases = (
 				91B1206720F610E400730C37 /* Sources */,
 				91B1206820F610E400730C37 /* Frameworks */,
@@ -1995,14 +1995,14 @@
 			);
 			dependencies = (
 			);
-			name = ChainOfResponsibilityStructure;
-			productName = ChainOfResponsibilityStructure;
-			productReference = 91B1206B20F610E400730C37 /* ChainOfResponsibilityStructure.xctest */;
+			name = ChainOfResponsibilityConceptual;
+			productName = ChainOfResponsibilityConceptual;
+			productReference = 91B1206B20F610E400730C37 /* ChainOfResponsibilityConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B1207620F6114A00730C37 /* ChainOfResponsibilityReal */ = {
+		91B1207620F6114A00730C37 /* ChainOfResponsibilityRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B1207C20F6114A00730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityReal" */;
+			buildConfigurationList = 91B1207C20F6114A00730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityRealWorld" */;
 			buildPhases = (
 				91B1207320F6114A00730C37 /* Sources */,
 				91B1207420F6114A00730C37 /* Frameworks */,
@@ -2012,14 +2012,14 @@
 			);
 			dependencies = (
 			);
-			name = ChainOfResponsibilityReal;
-			productName = ChainOfResponsibilityReal;
-			productReference = 91B1207720F6114A00730C37 /* ChainOfResponsibilityReal.xctest */;
+			name = ChainOfResponsibilityRealWorld;
+			productName = ChainOfResponsibilityRealWorld;
+			productReference = 91B1207720F6114A00730C37 /* ChainOfResponsibilityRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B1208220F611DA00730C37 /* CommandStructure */ = {
+		91B1208220F611DA00730C37 /* CommandConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B1208820F611DA00730C37 /* Build configuration list for PBXNativeTarget "CommandStructure" */;
+			buildConfigurationList = 91B1208820F611DA00730C37 /* Build configuration list for PBXNativeTarget "CommandConceptual" */;
 			buildPhases = (
 				91B1207F20F611DA00730C37 /* Sources */,
 				91B1208020F611DA00730C37 /* Frameworks */,
@@ -2029,14 +2029,14 @@
 			);
 			dependencies = (
 			);
-			name = CommandStructure;
-			productName = CommandStructure;
-			productReference = 91B1208320F611DA00730C37 /* CommandStructure.xctest */;
+			name = CommandConceptual;
+			productName = CommandConceptual;
+			productReference = 91B1208320F611DA00730C37 /* CommandConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B1208F20F6120C00730C37 /* CommandReal */ = {
+		91B1208F20F6120C00730C37 /* CommandRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B1209520F6120C00730C37 /* Build configuration list for PBXNativeTarget "CommandReal" */;
+			buildConfigurationList = 91B1209520F6120C00730C37 /* Build configuration list for PBXNativeTarget "CommandRealWorld" */;
 			buildPhases = (
 				91B1208C20F6120C00730C37 /* Sources */,
 				91B1208D20F6120C00730C37 /* Frameworks */,
@@ -2046,14 +2046,14 @@
 			);
 			dependencies = (
 			);
-			name = CommandReal;
-			productName = CommandReal;
-			productReference = 91B1209020F6120C00730C37 /* CommandReal.xctest */;
+			name = CommandRealWorld;
+			productName = CommandRealWorld;
+			productReference = 91B1209020F6120C00730C37 /* CommandRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B1209C20F6125500730C37 /* IteratorStructure */ = {
+		91B1209C20F6125500730C37 /* IteratorConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B120A220F6125500730C37 /* Build configuration list for PBXNativeTarget "IteratorStructure" */;
+			buildConfigurationList = 91B120A220F6125500730C37 /* Build configuration list for PBXNativeTarget "IteratorConceptual" */;
 			buildPhases = (
 				91B1209920F6125500730C37 /* Sources */,
 				91B1209A20F6125500730C37 /* Frameworks */,
@@ -2063,14 +2063,14 @@
 			);
 			dependencies = (
 			);
-			name = IteratorStructure;
-			productName = IteratorStructure;
-			productReference = 91B1209D20F6125500730C37 /* IteratorStructure.xctest */;
+			name = IteratorConceptual;
+			productName = IteratorConceptual;
+			productReference = 91B1209D20F6125500730C37 /* IteratorConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B120A820F6127400730C37 /* IteratorReal */ = {
+		91B120A820F6127400730C37 /* IteratorRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B120AE20F6127400730C37 /* Build configuration list for PBXNativeTarget "IteratorReal" */;
+			buildConfigurationList = 91B120AE20F6127400730C37 /* Build configuration list for PBXNativeTarget "IteratorRealWorld" */;
 			buildPhases = (
 				91B120A520F6127400730C37 /* Sources */,
 				91B120A620F6127400730C37 /* Frameworks */,
@@ -2080,14 +2080,14 @@
 			);
 			dependencies = (
 			);
-			name = IteratorReal;
-			productName = IteratorReal;
-			productReference = 91B120A920F6127400730C37 /* IteratorReal.xctest */;
+			name = IteratorRealWorld;
+			productName = IteratorRealWorld;
+			productReference = 91B120A920F6127400730C37 /* IteratorRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B120B520F6130900730C37 /* ProxyStructure */ = {
+		91B120B520F6130900730C37 /* ProxyConceptual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B120BB20F6130A00730C37 /* Build configuration list for PBXNativeTarget "ProxyStructure" */;
+			buildConfigurationList = 91B120BB20F6130A00730C37 /* Build configuration list for PBXNativeTarget "ProxyConceptual" */;
 			buildPhases = (
 				91B120B220F6130900730C37 /* Sources */,
 				91B120B320F6130900730C37 /* Frameworks */,
@@ -2097,14 +2097,14 @@
 			);
 			dependencies = (
 			);
-			name = ProxyStructure;
-			productName = ProxyStructure;
-			productReference = 91B120B620F6130900730C37 /* ProxyStructure.xctest */;
+			name = ProxyConceptual;
+			productName = ProxyConceptual;
+			productReference = 91B120B620F6130900730C37 /* ProxyConceptual.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		91B120C120F6132E00730C37 /* ProxyReal */ = {
+		91B120C120F6132E00730C37 /* ProxyRealWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91B120C720F6132E00730C37 /* Build configuration list for PBXNativeTarget "ProxyReal" */;
+			buildConfigurationList = 91B120C720F6132E00730C37 /* Build configuration list for PBXNativeTarget "ProxyRealWorld" */;
 			buildPhases = (
 				91B120BE20F6132E00730C37 /* Sources */,
 				91B120BF20F6132E00730C37 /* Frameworks */,
@@ -2114,9 +2114,9 @@
 			);
 			dependencies = (
 			);
-			name = ProxyReal;
-			productName = ProxyReal;
-			productReference = 91B120C220F6132E00730C37 /* ProxyReal.xctest */;
+			name = ProxyRealWorld;
+			productName = ProxyRealWorld;
+			productReference = 91B120C220F6132E00730C37 /* ProxyRealWorld.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -2320,50 +2320,50 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				919C8A0420DD7F3C006EE57D /* AbstractFactoryStructure */,
-				919C89F020DD7EE4006EE57D /* AbstractFactoryReal */,
-				919C8A5E20DD849A006EE57D /* AdapterStructure */,
-				919C8A6B20DD858C006EE57D /* AdapterReal */,
-				919C8A3820DD82F0006EE57D /* BridgeStructure */,
-				919C8A4520DD8393006EE57D /* BridgeReal */,
-				919C8A7920DD8688006EE57D /* BuilderStructure */,
-				919C8A8620DD86DC006EE57D /* BuilderReal */,
-				919C8A1220DD81D0006EE57D /* FacadeStructure */,
-				919C8A1F20DD8261006EE57D /* FacadeReal */,
-				919C8AA120DD878D006EE57D /* CompositeStructure */,
-				919C8AAE20DD87F2006EE57D /* CompositeReal */,
-				919C8AC620DD8873006EE57D /* DecoratorStructure */,
-				919C8AD320DD88C6006EE57D /* DecoratorReal */,
-				919C8AEC20DD897E006EE57D /* FactoryMethodStructure */,
-				919C8ADF20DD893E006EE57D /* FactoryMethodReal */,
-				919C8AF920DD8A98006EE57D /* PrototypeStructure */,
-				919C8B0620DD8AF0006EE57D /* PrototypeReal */,
-				919C8B1320DD8B59006EE57D /* SingletonStructure */,
-				919C8B2020DD8BA9006EE57D /* SingletonReal */,
-				91301AD120F55C25003B4FC0 /* FlyweightStructure */,
-				91301ADE20F55CAA003B4FC0 /* FlyweightReal */,
-				91B1206A20F610E400730C37 /* ChainOfResponsibilityStructure */,
-				91B1207620F6114A00730C37 /* ChainOfResponsibilityReal */,
-				91B1208220F611DA00730C37 /* CommandStructure */,
-				91B1208F20F6120C00730C37 /* CommandReal */,
-				91B1209C20F6125500730C37 /* IteratorStructure */,
-				91B120A820F6127400730C37 /* IteratorReal */,
-				91B120B520F6130900730C37 /* ProxyStructure */,
-				91B120C120F6132E00730C37 /* ProxyReal */,
-				912C5CDE210BC33D007DC364 /* MediatorStructure */,
-				912C5CEB210BC3A4007DC364 /* MediatorReal */,
-				912C5CF7210BC3F5007DC364 /* MementoStructure */,
-				912C5D0A210BC4D8007DC364 /* MementoReal */,
-				912C5D17210BC553007DC364 /* ObserverStructure */,
-				912C5D23210BC594007DC364 /* ObserverReal */,
-				912C5D2F210BC5E1007DC364 /* StateStructure */,
-				912C5D3C210BC62D007DC364 /* StateReal */,
-				912C5D49210BC6A8007DC364 /* StrategyStructure */,
-				912C5D55210BC6F0007DC364 /* StrategyReal */,
-				912C5D61210BC749007DC364 /* TemplateMethodStructure */,
-				912C5D6E210BC7B1007DC364 /* TemplateMethodReal */,
-				912C5D7B210BC81E007DC364 /* VisitorStructure */,
-				912C5D87210BC865007DC364 /* VisitorReal */,
+				919C8A0420DD7F3C006EE57D /* AbstractFactoryConceptual */,
+				919C89F020DD7EE4006EE57D /* AbstractFactoryRealWorld */,
+				919C8A5E20DD849A006EE57D /* AdapterConceptual */,
+				919C8A6B20DD858C006EE57D /* AdapterRealWorld */,
+				919C8A3820DD82F0006EE57D /* BridgeConceptual */,
+				919C8A4520DD8393006EE57D /* BridgeRealWorld */,
+				919C8A7920DD8688006EE57D /* BuilderConceptual */,
+				919C8A8620DD86DC006EE57D /* BuilderRealWorld */,
+				919C8A1220DD81D0006EE57D /* FacadeConceptual */,
+				919C8A1F20DD8261006EE57D /* FacadeRealWorld */,
+				919C8AA120DD878D006EE57D /* CompositeConceptual */,
+				919C8AAE20DD87F2006EE57D /* CompositeRealWorld */,
+				919C8AC620DD8873006EE57D /* DecoratorConceptual */,
+				919C8AD320DD88C6006EE57D /* DecoratorRealWorld */,
+				919C8AEC20DD897E006EE57D /* FactoryMethodConceptual */,
+				919C8ADF20DD893E006EE57D /* FactoryMethodRealWorld */,
+				919C8AF920DD8A98006EE57D /* PrototypeConceptual */,
+				919C8B0620DD8AF0006EE57D /* PrototypeRealWorld */,
+				919C8B1320DD8B59006EE57D /* SingletonConceptual */,
+				919C8B2020DD8BA9006EE57D /* SingletonRealWorld */,
+				91301AD120F55C25003B4FC0 /* FlyweightConceptual */,
+				91301ADE20F55CAA003B4FC0 /* FlyweightRealWorld */,
+				91B1206A20F610E400730C37 /* ChainOfResponsibilityConceptual */,
+				91B1207620F6114A00730C37 /* ChainOfResponsibilityRealWorld */,
+				91B1208220F611DA00730C37 /* CommandConceptual */,
+				91B1208F20F6120C00730C37 /* CommandRealWorld */,
+				91B1209C20F6125500730C37 /* IteratorConceptual */,
+				91B120A820F6127400730C37 /* IteratorRealWorld */,
+				91B120B520F6130900730C37 /* ProxyConceptual */,
+				91B120C120F6132E00730C37 /* ProxyRealWorld */,
+				912C5CDE210BC33D007DC364 /* MediatorConceptual */,
+				912C5CEB210BC3A4007DC364 /* MediatorRealWorld */,
+				912C5CF7210BC3F5007DC364 /* MementoConceptual */,
+				912C5D0A210BC4D8007DC364 /* MementoRealWorld */,
+				912C5D17210BC553007DC364 /* ObserverConceptual */,
+				912C5D23210BC594007DC364 /* ObserverRealWorld */,
+				912C5D2F210BC5E1007DC364 /* StateConceptual */,
+				912C5D3C210BC62D007DC364 /* StateRealWorld */,
+				912C5D49210BC6A8007DC364 /* StrategyConceptual */,
+				912C5D55210BC6F0007DC364 /* StrategyRealWorld */,
+				912C5D61210BC749007DC364 /* TemplateMethodConceptual */,
+				912C5D6E210BC7B1007DC364 /* TemplateMethodRealWorld */,
+				912C5D7B210BC81E007DC364 /* VisitorConceptual */,
+				912C5D87210BC865007DC364 /* VisitorRealWorld */,
 			);
 		};
 /* End PBXProject section */
@@ -3083,9 +3083,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Mediator/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Mediator/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3096,9 +3096,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Mediator/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Mediator/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3109,9 +3109,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Mediator/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Mediator/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3122,9 +3122,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Mediator/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Mediator/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MediatorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3135,9 +3135,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Memento/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Memento/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3148,9 +3148,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Memento/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Memento/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3161,9 +3161,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Memento/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Memento/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3174,9 +3174,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Memento/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Memento/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.MementoRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3187,9 +3187,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Observer/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Observer/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3200,9 +3200,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Observer/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Observer/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3213,9 +3213,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Observer/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Observer/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3226,9 +3226,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Observer/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Observer/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ObserverRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3239,9 +3239,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/State/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/State/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3252,9 +3252,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/State/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/State/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3265,9 +3265,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/State/Real/Info.plist;
+				INFOPLIST_FILE = Sources/State/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3278,9 +3278,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/State/Real/Info.plist;
+				INFOPLIST_FILE = Sources/State/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StateRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3291,9 +3291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Strategy/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Strategy/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3304,9 +3304,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Strategy/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Strategy/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3317,9 +3317,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Strategy/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Strategy/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3330,9 +3330,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Strategy/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Strategy/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.StrategyRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3343,9 +3343,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/TemplateMethod/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/TemplateMethod/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3356,9 +3356,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/TemplateMethod/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/TemplateMethod/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3369,9 +3369,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/TemplateMethod/Real/Info.plist;
+				INFOPLIST_FILE = Sources/TemplateMethod/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3382,9 +3382,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/TemplateMethod/Real/Info.plist;
+				INFOPLIST_FILE = Sources/TemplateMethod/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.TemplateMethodRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3395,9 +3395,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Visitor/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Visitor/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3408,9 +3408,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Visitor/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Visitor/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3421,9 +3421,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Visitor/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Visitor/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3434,9 +3434,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Visitor/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Visitor/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.VisitorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3447,9 +3447,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Flyweight/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Flyweight/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3460,9 +3460,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Flyweight/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Flyweight/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3473,9 +3473,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Flyweight/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Flyweight/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3486,9 +3486,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Flyweight/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Flyweight/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FlyweightRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3612,9 +3612,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/AbstractFactory/Real/Info.plist;
+				INFOPLIST_FILE = Sources/AbstractFactory/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3625,9 +3625,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/AbstractFactory/Real/Info.plist;
+				INFOPLIST_FILE = Sources/AbstractFactory/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3638,9 +3638,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/AbstractFactory/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/AbstractFactory/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3651,9 +3651,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/AbstractFactory/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/AbstractFactory/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AbstractFactoryConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3664,9 +3664,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Facade/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Facade/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3677,9 +3677,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Facade/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Facade/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3690,9 +3690,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Facade/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Facade/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3703,9 +3703,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Facade/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Facade/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FacadeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3716,9 +3716,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Bridge/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Bridge/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3729,9 +3729,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Bridge/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Bridge/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3742,9 +3742,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Bridge/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Bridge/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3755,9 +3755,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Bridge/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Bridge/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BridgeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3768,9 +3768,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Adapter/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Adapter/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3781,9 +3781,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Adapter/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Adapter/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3794,9 +3794,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Adapter/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Adapter/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3807,9 +3807,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Adapter/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Adapter/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.AdapterRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3820,9 +3820,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Builder/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Builder/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3833,9 +3833,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Builder/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Builder/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3846,9 +3846,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Builder/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Builder/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3859,9 +3859,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Builder/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Builder/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.BuilderRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3872,9 +3872,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Composite/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Composite/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3885,9 +3885,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Composite/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Composite/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3898,9 +3898,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Composite/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Composite/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3911,9 +3911,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Composite/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Composite/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CompositeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3924,9 +3924,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Decorator/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Decorator/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3937,9 +3937,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Decorator/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Decorator/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3950,9 +3950,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Decorator/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Decorator/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3963,9 +3963,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Decorator/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Decorator/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.DecoratorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3976,9 +3976,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/FactoryMethod/Real/Info.plist;
+				INFOPLIST_FILE = Sources/FactoryMethod/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryMethodReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryMethodRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3989,9 +3989,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/FactoryMethod/Real/Info.plist;
+				INFOPLIST_FILE = Sources/FactoryMethod/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryMethodReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryMethodRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4002,9 +4002,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/FactoryMethod/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/FactoryMethod/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4015,9 +4015,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/FactoryMethod/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/FactoryMethod/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.FactoryConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4028,9 +4028,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Prototype/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Prototype/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4041,9 +4041,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Prototype/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Prototype/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4054,9 +4054,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Prototype/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Prototype/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4067,9 +4067,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Prototype/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Prototype/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.PrototypeRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4080,9 +4080,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Singleton/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Singleton/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4093,9 +4093,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Singleton/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Singleton/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4106,9 +4106,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Singleton/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Singleton/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4119,9 +4119,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Singleton/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Singleton/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.SingletonRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4132,9 +4132,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/ChainOfResponsibility/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/ChainOfResponsibility/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4145,9 +4145,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/ChainOfResponsibility/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/ChainOfResponsibility/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4158,9 +4158,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/ChainOfResponsibility/Real/Info.plist;
+				INFOPLIST_FILE = Sources/ChainOfResponsibility/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4171,9 +4171,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/ChainOfResponsibility/Real/Info.plist;
+				INFOPLIST_FILE = Sources/ChainOfResponsibility/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ChainOfResponsibilityRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4184,9 +4184,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Command/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Command/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4197,9 +4197,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Command/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Command/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4210,9 +4210,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Command/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Command/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4223,9 +4223,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Command/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Command/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.CommandRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4236,9 +4236,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Iterator/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Iterator/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4249,9 +4249,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Iterator/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Iterator/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4262,9 +4262,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Iterator/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Iterator/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4275,9 +4275,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Iterator/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Iterator/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.IteratorRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4288,9 +4288,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Proxy/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Proxy/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4301,9 +4301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Proxy/Structure/Info.plist;
+				INFOPLIST_FILE = Sources/Proxy/Conceptual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyStructure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyConceptual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4314,9 +4314,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Proxy/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Proxy/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4327,9 +4327,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Sources/Proxy/Real/Info.plist;
+				INFOPLIST_FILE = Sources/Proxy/RealWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyReal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxim.eremenko.ProxyRealWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4339,7 +4339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		912C5CE4210BC33E007DC364 /* Build configuration list for PBXNativeTarget "MediatorStructure" */ = {
+		912C5CE4210BC33E007DC364 /* Build configuration list for PBXNativeTarget "MediatorConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5CE5210BC33E007DC364 /* Debug */,
@@ -4348,7 +4348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5CF1210BC3A4007DC364 /* Build configuration list for PBXNativeTarget "MediatorReal" */ = {
+		912C5CF1210BC3A4007DC364 /* Build configuration list for PBXNativeTarget "MediatorRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5CF2210BC3A4007DC364 /* Debug */,
@@ -4357,7 +4357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5CFD210BC3F5007DC364 /* Build configuration list for PBXNativeTarget "MementoStructure" */ = {
+		912C5CFD210BC3F5007DC364 /* Build configuration list for PBXNativeTarget "MementoConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5CFE210BC3F5007DC364 /* Debug */,
@@ -4366,7 +4366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D10210BC4D9007DC364 /* Build configuration list for PBXNativeTarget "MementoReal" */ = {
+		912C5D10210BC4D9007DC364 /* Build configuration list for PBXNativeTarget "MementoRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D11210BC4D9007DC364 /* Debug */,
@@ -4375,7 +4375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D1D210BC553007DC364 /* Build configuration list for PBXNativeTarget "ObserverStructure" */ = {
+		912C5D1D210BC553007DC364 /* Build configuration list for PBXNativeTarget "ObserverConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D1E210BC553007DC364 /* Debug */,
@@ -4384,7 +4384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D29210BC594007DC364 /* Build configuration list for PBXNativeTarget "ObserverReal" */ = {
+		912C5D29210BC594007DC364 /* Build configuration list for PBXNativeTarget "ObserverRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D2A210BC594007DC364 /* Debug */,
@@ -4393,7 +4393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D35210BC5E1007DC364 /* Build configuration list for PBXNativeTarget "StateStructure" */ = {
+		912C5D35210BC5E1007DC364 /* Build configuration list for PBXNativeTarget "StateConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D36210BC5E1007DC364 /* Debug */,
@@ -4402,7 +4402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D42210BC62D007DC364 /* Build configuration list for PBXNativeTarget "StateReal" */ = {
+		912C5D42210BC62D007DC364 /* Build configuration list for PBXNativeTarget "StateRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D43210BC62D007DC364 /* Debug */,
@@ -4411,7 +4411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D4F210BC6A8007DC364 /* Build configuration list for PBXNativeTarget "StrategyStructure" */ = {
+		912C5D4F210BC6A8007DC364 /* Build configuration list for PBXNativeTarget "StrategyConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D50210BC6A8007DC364 /* Debug */,
@@ -4420,7 +4420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D5B210BC6F1007DC364 /* Build configuration list for PBXNativeTarget "StrategyReal" */ = {
+		912C5D5B210BC6F1007DC364 /* Build configuration list for PBXNativeTarget "StrategyRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D5C210BC6F1007DC364 /* Debug */,
@@ -4429,7 +4429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D67210BC749007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodStructure" */ = {
+		912C5D67210BC749007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D68210BC749007DC364 /* Debug */,
@@ -4438,7 +4438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D74210BC7B1007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodReal" */ = {
+		912C5D74210BC7B1007DC364 /* Build configuration list for PBXNativeTarget "TemplateMethodRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D75210BC7B1007DC364 /* Debug */,
@@ -4447,7 +4447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D81210BC81E007DC364 /* Build configuration list for PBXNativeTarget "VisitorStructure" */ = {
+		912C5D81210BC81E007DC364 /* Build configuration list for PBXNativeTarget "VisitorConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D82210BC81E007DC364 /* Debug */,
@@ -4456,7 +4456,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		912C5D8D210BC865007DC364 /* Build configuration list for PBXNativeTarget "VisitorReal" */ = {
+		912C5D8D210BC865007DC364 /* Build configuration list for PBXNativeTarget "VisitorRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				912C5D8E210BC865007DC364 /* Debug */,
@@ -4465,7 +4465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91301AD720F55C25003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightStructure" */ = {
+		91301AD720F55C25003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91301AD820F55C25003B4FC0 /* Debug */,
@@ -4474,7 +4474,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91301AE420F55CAA003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightReal" */ = {
+		91301AE420F55CAA003B4FC0 /* Build configuration list for PBXNativeTarget "FlyweightRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91301AE520F55CAA003B4FC0 /* Debug */,
@@ -4492,7 +4492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C89F820DD7EE4006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryReal" */ = {
+		919C89F820DD7EE4006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C89F620DD7EE4006EE57D /* Debug */,
@@ -4501,7 +4501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A0A20DD7F3C006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryStructure" */ = {
+		919C8A0A20DD7F3C006EE57D /* Build configuration list for PBXNativeTarget "AbstractFactoryConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A0B20DD7F3C006EE57D /* Debug */,
@@ -4510,7 +4510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A1820DD81D0006EE57D /* Build configuration list for PBXNativeTarget "FacadeStructure" */ = {
+		919C8A1820DD81D0006EE57D /* Build configuration list for PBXNativeTarget "FacadeConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A1920DD81D0006EE57D /* Debug */,
@@ -4519,7 +4519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A2520DD8261006EE57D /* Build configuration list for PBXNativeTarget "FacadeReal" */ = {
+		919C8A2520DD8261006EE57D /* Build configuration list for PBXNativeTarget "FacadeRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A2620DD8261006EE57D /* Debug */,
@@ -4528,7 +4528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A3E20DD82F0006EE57D /* Build configuration list for PBXNativeTarget "BridgeStructure" */ = {
+		919C8A3E20DD82F0006EE57D /* Build configuration list for PBXNativeTarget "BridgeConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A3F20DD82F0006EE57D /* Debug */,
@@ -4537,7 +4537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A4B20DD8393006EE57D /* Build configuration list for PBXNativeTarget "BridgeReal" */ = {
+		919C8A4B20DD8393006EE57D /* Build configuration list for PBXNativeTarget "BridgeRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A4C20DD8393006EE57D /* Debug */,
@@ -4546,7 +4546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A6420DD849B006EE57D /* Build configuration list for PBXNativeTarget "AdapterStructure" */ = {
+		919C8A6420DD849B006EE57D /* Build configuration list for PBXNativeTarget "AdapterConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A6520DD849B006EE57D /* Debug */,
@@ -4555,7 +4555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A7120DD858C006EE57D /* Build configuration list for PBXNativeTarget "AdapterReal" */ = {
+		919C8A7120DD858C006EE57D /* Build configuration list for PBXNativeTarget "AdapterRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A7220DD858C006EE57D /* Debug */,
@@ -4564,7 +4564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A7F20DD8688006EE57D /* Build configuration list for PBXNativeTarget "BuilderStructure" */ = {
+		919C8A7F20DD8688006EE57D /* Build configuration list for PBXNativeTarget "BuilderConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A8020DD8688006EE57D /* Debug */,
@@ -4573,7 +4573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8A8C20DD86DC006EE57D /* Build configuration list for PBXNativeTarget "BuilderReal" */ = {
+		919C8A8C20DD86DC006EE57D /* Build configuration list for PBXNativeTarget "BuilderRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8A8D20DD86DC006EE57D /* Debug */,
@@ -4582,7 +4582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8AA720DD878E006EE57D /* Build configuration list for PBXNativeTarget "CompositeStructure" */ = {
+		919C8AA720DD878E006EE57D /* Build configuration list for PBXNativeTarget "CompositeConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8AA820DD878E006EE57D /* Debug */,
@@ -4591,7 +4591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8AB420DD87F2006EE57D /* Build configuration list for PBXNativeTarget "CompositeReal" */ = {
+		919C8AB420DD87F2006EE57D /* Build configuration list for PBXNativeTarget "CompositeRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8AB520DD87F2006EE57D /* Debug */,
@@ -4600,7 +4600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8ACC20DD8873006EE57D /* Build configuration list for PBXNativeTarget "DecoratorStructure" */ = {
+		919C8ACC20DD8873006EE57D /* Build configuration list for PBXNativeTarget "DecoratorConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8ACD20DD8873006EE57D /* Debug */,
@@ -4609,7 +4609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8AD920DD88C6006EE57D /* Build configuration list for PBXNativeTarget "DecoratorReal" */ = {
+		919C8AD920DD88C6006EE57D /* Build configuration list for PBXNativeTarget "DecoratorRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8ADA20DD88C6006EE57D /* Debug */,
@@ -4618,7 +4618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8AE520DD893E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodReal" */ = {
+		919C8AE520DD893E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8AE620DD893E006EE57D /* Debug */,
@@ -4627,7 +4627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8AF220DD897E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodStructure" */ = {
+		919C8AF220DD897E006EE57D /* Build configuration list for PBXNativeTarget "FactoryMethodConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8AF320DD897E006EE57D /* Debug */,
@@ -4636,7 +4636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8AFF20DD8A98006EE57D /* Build configuration list for PBXNativeTarget "PrototypeStructure" */ = {
+		919C8AFF20DD8A98006EE57D /* Build configuration list for PBXNativeTarget "PrototypeConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8B0020DD8A98006EE57D /* Debug */,
@@ -4645,7 +4645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8B0C20DD8AF0006EE57D /* Build configuration list for PBXNativeTarget "PrototypeReal" */ = {
+		919C8B0C20DD8AF0006EE57D /* Build configuration list for PBXNativeTarget "PrototypeRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8B0D20DD8AF0006EE57D /* Debug */,
@@ -4654,7 +4654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8B1920DD8B59006EE57D /* Build configuration list for PBXNativeTarget "SingletonStructure" */ = {
+		919C8B1920DD8B59006EE57D /* Build configuration list for PBXNativeTarget "SingletonConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8B1A20DD8B59006EE57D /* Debug */,
@@ -4663,7 +4663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		919C8B2620DD8BA9006EE57D /* Build configuration list for PBXNativeTarget "SingletonReal" */ = {
+		919C8B2620DD8BA9006EE57D /* Build configuration list for PBXNativeTarget "SingletonRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				919C8B2720DD8BA9006EE57D /* Debug */,
@@ -4672,7 +4672,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B1207020F610E400730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityStructure" */ = {
+		91B1207020F610E400730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B1207120F610E400730C37 /* Debug */,
@@ -4681,7 +4681,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B1207C20F6114A00730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityReal" */ = {
+		91B1207C20F6114A00730C37 /* Build configuration list for PBXNativeTarget "ChainOfResponsibilityRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B1207D20F6114A00730C37 /* Debug */,
@@ -4690,7 +4690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B1208820F611DA00730C37 /* Build configuration list for PBXNativeTarget "CommandStructure" */ = {
+		91B1208820F611DA00730C37 /* Build configuration list for PBXNativeTarget "CommandConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B1208920F611DA00730C37 /* Debug */,
@@ -4699,7 +4699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B1209520F6120C00730C37 /* Build configuration list for PBXNativeTarget "CommandReal" */ = {
+		91B1209520F6120C00730C37 /* Build configuration list for PBXNativeTarget "CommandRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B1209620F6120C00730C37 /* Debug */,
@@ -4708,7 +4708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B120A220F6125500730C37 /* Build configuration list for PBXNativeTarget "IteratorStructure" */ = {
+		91B120A220F6125500730C37 /* Build configuration list for PBXNativeTarget "IteratorConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B120A320F6125500730C37 /* Debug */,
@@ -4717,7 +4717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B120AE20F6127400730C37 /* Build configuration list for PBXNativeTarget "IteratorReal" */ = {
+		91B120AE20F6127400730C37 /* Build configuration list for PBXNativeTarget "IteratorRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B120AF20F6127400730C37 /* Debug */,
@@ -4726,7 +4726,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B120BB20F6130A00730C37 /* Build configuration list for PBXNativeTarget "ProxyStructure" */ = {
+		91B120BB20F6130A00730C37 /* Build configuration list for PBXNativeTarget "ProxyConceptual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B120BC20F6130A00730C37 /* Debug */,
@@ -4735,7 +4735,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91B120C720F6132E00730C37 /* Build configuration list for PBXNativeTarget "ProxyReal" */ = {
+		91B120C720F6132E00730C37 /* Build configuration list for PBXNativeTarget "ProxyRealWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91B120C820F6132E00730C37 /* Debug */,
