@@ -1,71 +1,39 @@
-import XCTest
-
 /// EN: Iterator Design Pattern
 ///
 /// Intent: Provide a way to traverse the elements of an aggregate object without
 /// exposing its underlying representation.
 ///
-/// The client code may or may not know about the Concrete Iterator or
-/// Collection classes, depending on the level of indirection you want to keep in
-/// your program.
-///
-/// Example:
-/// Both IteratorProtocol and AnyIterator can be used to traverse a collection.
-/// Different collection-classes are used to separate iterators.
-///
 /// RU: Паттерн Итератор
 ///
 /// Назначение: Предоставляет возможность обходить элементы составного объекта,
 /// не раскрывая его внутреннего представления.
+
+import XCTest
+
+/// EN: Swift has a built-in iterator support:
 ///
-/// Клиентский код может знать или не знать о Конкретном Итераторе или
-/// классах Коллекций, в зависимости от уровня косвенности, который вы хотите
-/// сохранить в своей программе.
+/// - The `IteratorProtocol` provides a simple iterator protocol:
+///   https://developer.apple.com/documentation/swift/iteratorprotocol
 ///
-/// Пример:
-/// IteratorProtocol и AnyIterator могут быть использованы для обхода коллекции.
-/// Для разделение итераторов используются разные классы коллекции.
+/// - The `AnyIterator<Element>` struct provides basic iterator implementation:
+///   https://developer.apple.com/documentation/swift/anyiterator
+///
+/// In this examples we'll see how to use both of these mechanisms.
+///
+/// RU: Язык Swift имеет встроенную поддержку итераторов:
+///
+/// - Протокол `IteratorProtocol` описывает базовый интерфейс итератора:
+///   https://developer.apple.com/documentation/swift/iteratorprotocol
+///
+/// - Структура `AnyIterator<Element>` предоставляет простую реализацию итератора по-умолчанию:
+///   https://developer.apple.com/documentation/swift/anyiterator
+///
+/// В этом примере мы увидим как работают оба этих механизма.
 
-class IteratorStructureExample: XCTestCase {
 
-    /// EN: There's a built-in interface for collections:
-    ///
-    /// RU: Также есть встроенный интерфейс для коллекций:
-    ///
-    /// IteratorProtocol: https://developer.apple.com/documentation/swift/iteratorprotocol
-    /// AnyIterator: https://developer.apple.com/documentation/swift/anyiterator
-
-    func testIteratorProtocol() {
-
-        let words = WordsCollection()
-        words.append("First")
-        words.append("Second")
-        words.append("Third")
-
-        print("Straight traversal using IteratorProtocol:")
-        clientCode(sequence: words)
-    }
-
-    func testAnyIterator() {
-
-        let numbers = NumbersCollection()
-        numbers.append(1)
-        numbers.append(2)
-        numbers.append(3)
-
-        print("\nReverse traversal using AnyIterator:")
-        clientCode(sequence: numbers)
-    }
-
-    func clientCode<S: Sequence>(sequence: S) {
-
-        /// Note: Client does not know the internal representation of a given sequence.
-        for item in sequence {
-            print(item)
-        }
-    }
-}
-
+/// EN: This is a collection that we're going to iterate through using an iterator derived from IteratorProtocol.
+///
+/// RU: Это коллекция, которую мы будем перебирать используя итератор, реализующий IteratorProtocol.
 class WordsCollection {
 
     fileprivate lazy var items = [String]()
@@ -75,31 +43,10 @@ class WordsCollection {
     }
 }
 
-class NumbersCollection {
-
-    fileprivate lazy var items = [Int]()
-
-    func append(_ item: Int) {
-        self.items.append(item)
-    }
-}
-
 extension WordsCollection: Sequence {
 
     func makeIterator() -> WordsIterator {
         return WordsIterator(self)
-    }
-}
-
-extension NumbersCollection: Sequence {
-
-    func makeIterator() -> AnyIterator<Int> {
-        var index = self.items.count - 1
-
-        return AnyIterator {
-            defer { index -= 1 }
-            return index >= 0 ? self.items[index] : nil
-        }
     }
 }
 
@@ -121,5 +68,71 @@ class WordsIterator: IteratorProtocol {
     func next() -> String? {
         defer { index += 1 }
         return index < collection.items.count ? collection.items[index] : nil
+    }
+}
+
+
+/// EN: This is another collection that we'll provide AnyIterator for traversing its items.
+///
+/// RU: Это другая коллекция, которая будет возвращать AnyIterator, способный перебирать её элементы.
+class NumbersCollection {
+
+    fileprivate lazy var items = [Int]()
+
+    func append(_ item: Int) {
+        self.items.append(item)
+    }
+}
+
+extension NumbersCollection: Sequence {
+
+    func makeIterator() -> AnyIterator<Int> {
+        var index = self.items.count - 1
+
+        return AnyIterator {
+            defer { index -= 1 }
+            return index >= 0 ? self.items[index] : nil
+        }
+    }
+}
+
+/// EN: Client does not know the internal representation of a given sequence.
+///
+/// RU: Клиент не знает о внутреннем представлении данной последовательности.
+class Client {
+    // ...
+    static func clientCode<S: Sequence>(sequence: S) {
+        for item in sequence {
+            print(item)
+        }
+    }
+    // ...
+}
+
+/// EN: Let's see how it all works together.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class IteratorStructureExample: XCTestCase {
+
+    func testIteratorProtocol() {
+
+        let words = WordsCollection()
+        words.append("First")
+        words.append("Second")
+        words.append("Third")
+
+        print("Straight traversal using IteratorProtocol:")
+        Client.clientCode(sequence: words)
+    }
+
+    func testAnyIterator() {
+
+        let numbers = NumbersCollection()
+        numbers.append(1)
+        numbers.append(2)
+        numbers.append(3)
+
+        print("\nReverse traversal using AnyIterator:")
+        Client.clientCode(sequence: numbers)
     }
 }

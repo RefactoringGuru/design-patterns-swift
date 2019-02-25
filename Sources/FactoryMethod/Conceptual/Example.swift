@@ -131,7 +131,7 @@ class Client {
     // ...
 }
 
-/// EN: Let's see how it all works.
+/// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class FactoryMethodConceptualExample: XCTestCase {

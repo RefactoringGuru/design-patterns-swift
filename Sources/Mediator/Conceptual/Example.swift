@@ -13,36 +13,24 @@
 
 import XCTest
 
-class MediatorStructure: XCTestCase {
-
-    func test() {
-
-        let component1 = Component1()
-        let component2 = Component2()
-
-        let mediator = ConcreteMediator(component1, component2)
-        print("Client triggers operation A.")
-        component1.doA()
-
-        print("\nClient triggers operation D.")
-        component2.doD()
-
-        print(mediator)
-    }
-}
-
+/// EN: The Mediator interface declares a method used by components to notify the
+/// mediator about various events. The Mediator may react to these events and
+/// pass the execution to other components.
+///
+/// RU: Интерфейс Посредника предоставляет метод, используемый компонентами для
+/// уведомления посредника о различных событиях. Посредник может реагировать на
+/// эти события и передавать исполнение другим компонентам.
 protocol Mediator: AnyObject {
 
     func notify(sender: BaseComponent, event: String)
 }
 
+/// EN: Concrete Mediators implement cooperative behavior by coordinating several
+/// components.
+///
+/// RU: Конкретные Посредники реализуют совместное поведение, координируя
+/// отдельные компоненты.
 class ConcreteMediator: Mediator {
-
-    /// EN: Concrete Mediators implement cooperative behavior by coordinating several
-    /// components.
-    ///
-    /// RU: Конкретные Посредники реализуют совместное поведение, координируя
-    /// отдельные компоненты.
 
     private var component1: Component1
     private var component2: Component2
@@ -73,7 +61,6 @@ class ConcreteMediator: Mediator {
 ///
 /// RU: Базовый Компонент обеспечивает базовую функциональность хранения
 /// экземпляра посредника внутри объектов компонентов.
-
 class BaseComponent {
 
     fileprivate weak var mediator: Mediator?
@@ -93,7 +80,6 @@ class BaseComponent {
 /// RU: Конкретные Компоненты реализуют различную функциональность. Они не
 /// зависят от других компонентов. Они также не зависят от каких-либо конкретных
 /// классов посредников.
-
 class Component1: BaseComponent {
 
     func doA() {
@@ -117,5 +103,26 @@ class Component2: BaseComponent {
     func doD() {
         print("Component 2 does D.")
         mediator?.notify(sender: self, event: "D")
+    }
+}
+
+/// EN: Let's see how it all works together.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class MediatorStructure: XCTestCase {
+
+    func test() {
+
+        let component1 = Component1()
+        let component2 = Component2()
+
+        let mediator = ConcreteMediator(component1, component2)
+        print("Client triggers operation A.")
+        component1.doA()
+
+        print("\nClient triggers operation D.")
+        component2.doD()
+
+        print(mediator)
     }
 }

@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Memento Design Pattern
 ///
 /// Intent: Capture and externalize an object's internal state so that the object
@@ -8,44 +6,18 @@ import XCTest
 /// RU: Паттерн Снимок
 ///
 /// Назначение: Фиксирует и восстанавливает внутреннее состояние объекта таким
-/// образом, чтобы  в дальнейшем объект можно было восстановить в этом состоянии
+/// образом, чтобы в дальнейшем объект можно было восстановить в этом состоянии
 /// без нарушения инкапсуляции.
 
-class MementoStructure: XCTestCase {
+import XCTest
 
-    /// EN: The Originator holds some important state that may change over time. It
-    /// also defines a method for saving the state inside a memento and another
-    /// method for restoring the state from it.
-    ///
-    /// RU: Создатель содержит некоторое важное состояние, которое может со временем
-    /// меняться. Он также объявляет метод сохранения состояния внутри снимка и метод
-    /// восстановления состояния из него.
-
-    func test() {
-
-        let originator = Originator(state: "Super-duper-super-puper-super.")
-        let caretaker = Caretaker(originator: originator)
-
-        caretaker.backup()
-        originator.doSomething()
-
-        caretaker.backup()
-        originator.doSomething()
-
-        caretaker.backup()
-        originator.doSomething()
-
-        print("\n")
-        caretaker.showHistory()
-
-        print("\nClient: Now, let's rollback!\n\n")
-        caretaker.undo()
-
-        print("\nClient: Once more!\n\n")
-        caretaker.undo()
-    }
-}
-
+/// EN: The Originator holds some important state that may change over time. It
+/// also defines a method for saving the state inside a memento and another
+/// method for restoring the state from it.
+///
+/// RU: Создатель содержит некоторое важное состояние, которое может со временем
+/// меняться. Он также объявляет метод сохранения состояния внутри снимка и метод
+/// восстановления состояния из него.
 class Originator {
 
     /// EN: For the sake of simplicity, the originator's state is
@@ -53,7 +25,6 @@ class Originator {
     ///
     /// RU: Для удобства состояние создателя хранится внутри одной
     /// переменной.
-
     private var state: String
 
     init(state: String) {
@@ -68,7 +39,6 @@ class Originator {
     /// RU: Бизнес-логика Создателя может повлиять на его внутреннее состояние.
     /// Поэтому клиент должен выполнить резервное копирование состояния с помощью
     /// метода save перед запуском методов бизнес-логики.
-
     func doSomething() {
         print("Originator: I'm doing something important.")
         state = generateRandomString()
@@ -81,8 +51,7 @@ class Originator {
 
     /// EN: Saves the current state inside a memento.
     ///
-    /// RU: Сохранияет текущее состояние внутри снимка.
-
+    /// RU: Сохраняет текущее состояние внутри снимка.
     func save() -> Memento {
         return ConcreteMemento(state: state)
     }
@@ -90,7 +59,6 @@ class Originator {
     /// EN: Restores the Originator's state from a memento object.
     ///
     /// RU: Восстанавливает состояние Создателя из объекта снимка.
-
     func restore(memento: Memento) {
         guard let memento = memento as? ConcreteMemento else { return }
         self.state = memento.state
@@ -104,7 +72,6 @@ class Originator {
 ///
 /// RU: Интерфейс Снимка предоставляет способ извлечения метаданных снимка, таких
 /// как дата создания или название. Однако он не раскрывает состояние Создателя.
-
 protocol Memento {
 
     var name: String { get }
@@ -116,13 +83,12 @@ protocol Memento {
 ///
 /// RU: Конкретный снимок содержит инфраструктуру для хранения состояния
 /// Создателя.
-
 class ConcreteMemento: Memento {
 
-    /// EN: The Originator uses these properties when restoring its state.
+    /// EN: The Originator uses this method when restoring its state.
     ///
-    /// RU: Создатель использует эти свойства, когда восстанавливает своё состояние.
-
+    /// RU: Создатель использует этот метод, когда восстанавливает своё
+    /// состояние.
     private(set) var state: String
     private(set) var date: Date
 
@@ -131,10 +97,10 @@ class ConcreteMemento: Memento {
         self.date = Date()
     }
 
-    /// EN: The rest of the methods are used by the Caretaker to display metadata.
+    /// EN: The rest of the methods are used by the Caretaker to display
+    /// metadata.
     ///
     /// RU: Остальные методы используются Опекуном для отображения метаданных.
-
     var name: String { return state + " " + date.description.suffix(14).prefix(8) }
 }
 
@@ -145,7 +111,6 @@ class ConcreteMemento: Memento {
 /// RU: Опекун не зависит от класса Конкретного Снимка. Таким образом, он не
 /// имеет доступа к состоянию создателя, хранящемуся внутри снимка. Он работает
 /// со всеми снимками через базовый интерфейс Снимка.
-
 class Caretaker {
 
     private lazy var mementos = [Memento]()
@@ -172,5 +137,35 @@ class Caretaker {
     func showHistory() {
         print("Caretaker: Here's the list of mementos:\n")
         mementos.forEach({ print($0.name) })
+    }
+}
+
+/// EN: Let's see how it all works together.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class MementoStructure: XCTestCase {
+
+    func test() {
+
+        let originator = Originator(state: "Super-duper-super-puper-super.")
+        let caretaker = Caretaker(originator: originator)
+
+        caretaker.backup()
+        originator.doSomething()
+
+        caretaker.backup()
+        originator.doSomething()
+
+        caretaker.backup()
+        originator.doSomething()
+
+        print("\n")
+        caretaker.showHistory()
+
+        print("\nClient: Now, let's rollback!\n\n")
+        caretaker.undo()
+
+        print("\nClient: Once more!\n\n")
+        caretaker.undo()
     }
 }
