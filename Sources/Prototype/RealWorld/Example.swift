@@ -65,7 +65,7 @@ private class Page: NSCopying {
         comments.append(comment)
     }
 
-    ///MARK: - NSCopying
+    /// MARK: - NSCopying
 
     func copy(with zone: NSZone? = nil) -> Any {
         return Page(title: "Copy of '" + title + "'", contents: contents, author: author)

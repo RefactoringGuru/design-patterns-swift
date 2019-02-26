@@ -62,8 +62,8 @@ class ConcreteFactory2: AbstractFactory {
     }
 }
 
-/// EN: Each distinct product of a product family should have a base proocol.
-/// All variations of the product must implement this proocol.
+/// EN: Each distinct product of a product family should have a base proocol. All
+/// variations of the product must implement this proocol.
 ///
 /// RU: Каждый отдельный продукт семейства продуктов должен иметь базовый
 /// протокол. Все вариации продукта должны реализовывать этот протокол.
@@ -89,9 +89,9 @@ class ConcreteProductA2: AbstractProductA {
     }
 }
 
-/// EN: The base protocol of another product. All products can interact with
-/// each other, but proper interaction is possible only between products of the
-/// same concrete variation.
+/// EN: The base protocol of another product. All products can interact with each
+/// other, but proper interaction is possible only between products of the same
+/// concrete variation.
 ///
 /// RU: Базовый протокол другого продукта. Все продукты могут взаимодействовать
 /// друг с другом, но правильное взаимодействие возможно только между продуктами
@@ -105,13 +105,13 @@ protocol AbstractProductB {
 
     /// EN: ...but it also can collaborate with the ProductA.
     ///
-    /// The Abstract Factory makes sure that all products it creates are of
-    /// the same variation and thus, compatible.
+    /// The Abstract Factory makes sure that all products it creates are of the
+    /// same variation and thus, compatible.
     ///
     /// RU: ...а также взаимодействовать с Продуктами Б той же вариации.
     ///
-    /// Абстрактная Фабрика гарантирует, что все продукты, которые она
-    /// создает, имеют одинаковую вариацию и, следовательно, совместимы.
+    /// Абстрактная Фабрика гарантирует, что все продукты, которые она создает,
+    /// имеют одинаковую вариацию и, следовательно, совместимы.
     func anotherUsefulFunctionB(collaborator: AbstractProductA) -> String
 }
 

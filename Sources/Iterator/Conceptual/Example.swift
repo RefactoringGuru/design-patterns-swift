@@ -6,10 +6,10 @@
 /// Swift language has a built-in iterator support:
 ///
 /// - The `IteratorProtocol` provides a simple iterator protocol:
-///   https://developer.apple.com/documentation/swift/iteratorprotocol
+/// https://developer.apple.com/documentation/swift/iteratorprotocol
 ///
 /// - The `AnyIterator<Element>` struct provides basic iterator implementation:
-///   https://developer.apple.com/documentation/swift/anyiterator
+/// https://developer.apple.com/documentation/swift/anyiterator
 ///
 /// In this examples we'll see how to use both of these mechanisms.
 ///
@@ -21,18 +21,21 @@
 /// Язык Swift имеет встроенную поддержку итераторов:
 ///
 /// - Протокол `IteratorProtocol` описывает базовый интерфейс итератора:
-///   https://developer.apple.com/documentation/swift/iteratorprotocol
+/// https://developer.apple.com/documentation/swift/iteratorprotocol
 ///
-/// - Структура `AnyIterator<Element>` предоставляет простую реализацию итератора по-умолчанию:
-///   https://developer.apple.com/documentation/swift/anyiterator
+/// - Структура `AnyIterator<Element>` предоставляет простую реализацию итератора
+/// по-умолчанию:
+/// https://developer.apple.com/documentation/swift/anyiterator
 ///
 /// В этом примере мы увидим как работают оба этих механизма.
 
 import XCTest
 
-/// EN: This is a collection that we're going to iterate through using an iterator derived from IteratorProtocol.
+/// EN: This is a collection that we're going to iterate through using an
+/// iterator derived from IteratorProtocol.
 ///
-/// RU: Это коллекция, которую мы будем перебирать используя итератор, реализующий IteratorProtocol.
+/// RU: Это коллекция, которую мы будем перебирать используя итератор,
+/// реализующий IteratorProtocol.
 class WordsCollection {
 
     fileprivate lazy var items = [String]()
@@ -70,9 +73,11 @@ class WordsIterator: IteratorProtocol {
 }
 
 
-/// EN: This is another collection that we'll provide AnyIterator for traversing its items.
+/// EN: This is another collection that we'll provide AnyIterator for traversing
+/// its items.
 ///
-/// RU: Это другая коллекция, которая будет возвращать AnyIterator, способный перебирать её элементы.
+/// RU: Это другая коллекция, которая будет возвращать AnyIterator, способный
+/// перебирать её элементы.
 class NumbersCollection {
 
     fileprivate lazy var items = [Int]()

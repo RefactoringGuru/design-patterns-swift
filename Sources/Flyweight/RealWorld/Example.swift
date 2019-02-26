@@ -77,8 +77,8 @@ class Cell {
 
 struct Animal: Equatable {
 
-    /// This is an external context that contains specific values
-    /// and an object with a common state.
+    /// This is an external context that contains specific values and an object
+    /// with a common state.
     ///
     /// Note: The object of appearance will be lazily created when it is needed
 

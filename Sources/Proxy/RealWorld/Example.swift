@@ -13,8 +13,8 @@ class ProxyRealWorldExample: XCTestCase {
     /// RU: Паттерн Заместитель
     ///
     /// Назначение: Предоставляет заменитель или местозаполнитель для другого
-    /// объекта, чтобы контролировать доступ к оригинальному объекту или добавлять
-    /// другие обязанности.
+    /// объекта, чтобы контролировать доступ к оригинальному объекту или
+    /// добавлять другие обязанности.
     ///
     /// Пример: Существует бесчисленное множество направлений, где могут быть
     /// использованы заместители: кэширование, логирование, контроль доступа,
@@ -137,8 +137,8 @@ class BiometricsService {
     }
 
     static func checkAccess() -> Access {
-        /// The service uses Face ID, Touch ID or a plain old password to determine
-        /// whether the current user is an owner of the device.
+        /// The service uses Face ID, Touch ID or a plain old password to
+        /// determine whether the current user is an owner of the device.
 
         /// Let's assume that in our example a user forgot a password :)
         return .denied

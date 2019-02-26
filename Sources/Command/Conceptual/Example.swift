@@ -6,9 +6,9 @@
 ///
 /// RU: Паттерн Команда
 ///
-/// Назначение: Инкапсулирует запрос как объект, позволяя тем
-/// самым параметризовать клиентов с различными запросами (например, запросами
-/// очереди или логирования) и поддерживать отмену операций.
+/// Назначение: Инкапсулирует запрос как объект, позволяя тем самым
+/// параметризовать клиентов с различными запросами (например, запросами очереди
+/// или логирования) и поддерживать отмену операций.
 
 import XCTest
 
@@ -55,7 +55,8 @@ class ComplexCommand: Command {
     /// with any context data via the constructor.
     ///
     /// RU: Сложные команды могут принимать один или несколько
-    /// объектов-получателей вместе с любыми данными о контексте через конструктор.
+    /// объектов-получателей вместе с любыми данными о контексте через
+    /// конструктор.
     init(_ receiver: Receiver, _ a: String, _ b: String) {
         self.receiver = receiver
         self.a = a
@@ -113,7 +114,8 @@ class Invoker {
     }
 
     /// EN: The Invoker does not depend on concrete command or receiver classes.
-    /// The Invoker passes a request to a receiver indirectly, by executing a command.
+    /// The Invoker passes a request to a receiver indirectly, by executing a
+    /// command.
     ///
     /// RU: Отправитель не зависит от классов конкретных команд и получателей.
     /// Отправитель передаёт запрос получателю косвенно, выполняя команду.
@@ -138,7 +140,8 @@ class CommandStructureExample: XCTestCase {
     func test() {
         /// EN: The client code can parameterize an invoker with any commands.
         ///
-        /// RU: Клиентский код может параметризовать отправителя любыми командами.
+        /// RU: Клиентский код может параметризовать отправителя любыми
+        /// командами.
 
         let invoker = Invoker()
         invoker.setOnStart(SimpleCommand("Say Hi!"))

@@ -4,8 +4,8 @@ class StudentSignUpView: UIView, AuthView {
 
     private class StudentSignUpContentView: UIView {
 
-        /// This view contains a number of features available
-        /// only during a STUDENT authorization.
+        /// This view contains a number of features available only during a
+        /// STUDENT authorization.
     }
 
     var contentView: UIView = StudentSignUpContentView()

@@ -9,21 +9,19 @@ import UIKit
 
 class AdapterRealWorldExample: XCTestCase {
 
-    /// Example.
-    /// Let's assume that our app perfectly works with Facebook authorization.
-    /// However, users ask you to add sign in via Twitter.
+    /// Example. Let's assume that our app perfectly works with Facebook
+    /// authorization. However, users ask you to add sign in via Twitter.
     ///
     /// Unfortunately, Twitter SDK has a different authorization method.
     ///
-    /// Firstly, you have to create the new protocol 'AuthService'
-    /// and insert the authorization method of Facebook SDK.
+    /// Firstly, you have to create the new protocol 'AuthService' and insert the
+    /// authorization method of Facebook SDK.
     ///
-    /// Secondly, write an extension for Twitter SDK and implement methods
-    /// of AuthService protocol, just a simple redirect.
+    /// Secondly, write an extension for Twitter SDK and implement methods of
+    /// AuthService protocol, just a simple redirect.
     ///
-    /// Thirdly, write an extension for Facebook SDK.
-    /// You should not write any code at this point as methods
-    /// already implemented by Facebook SDK.
+    /// Thirdly, write an extension for Facebook SDK. You should not write any
+    /// code at this point as methods already implemented by Facebook SDK.
     ///
     /// It just tells a compiler that both SDKs have the same interface.
 
@@ -70,8 +68,8 @@ extension TwitterAuthSDK: AuthService {
 
     /// This is an adapter
     ///
-    /// Yeah, we are able to not create another class
-    /// and just extend an existing one
+    /// Yeah, we are able to not create another class and just extend an existing
+    /// one
 
     func presentAuthFlow(from viewController: UIViewController) {
         print("The Adapter is called! Redirecting to the original method...")
@@ -80,6 +78,6 @@ extension TwitterAuthSDK: AuthService {
 }
 
 extension FacebookAuthSDK: AuthService {
-    /// This extension just tells a compiler
-    /// that both SDKs have the same interface.
+    /// This extension just tells a compiler that both SDKs have the same
+    /// interface.
 }

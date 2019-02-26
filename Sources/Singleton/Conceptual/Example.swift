@@ -10,30 +10,28 @@
 
 import XCTest
 
-/// EN: The Singleton class defines the `shared` field that lets clients
-/// access the unique singleton instance.
+/// EN: The Singleton class defines the `shared` field that lets clients access
+/// the unique singleton instance.
 ///
-/// RU: Класс Одиночка предоставляет поле `shared`, которое позволяет
-/// клиентам получать доступ к уникальному экземпляру одиночки.
+/// RU: Класс Одиночка предоставляет поле `shared`, которое позволяет клиентам
+/// получать доступ к уникальному экземпляру одиночки.
 class Singleton {
 
     /// EN: The static field that controls the access to the singleton instance.
     ///
-    /// This implementation let you extend the Singleton class while keeping
-    /// just one instance of each subclass around.
+    /// This implementation let you extend the Singleton class while keeping just
+    /// one instance of each subclass around.
     ///
     /// RU: Статическое поле, управляющие доступом к экземпляру одиночки.
     ///
-    /// Эта реализация позволяет вам расширять класс Одиночки,
-    /// сохраняя повсюду только один экземпляр каждого подкласса.
+    /// Эта реализация позволяет вам расширять класс Одиночки, сохраняя повсюду
+    /// только один экземпляр каждого подкласса.
     static var shared: Singleton = {
         let instance = Singleton()
-        // EN: ...
-        // configure the instance
+        // EN: ... configure the instance
         // ...
         //
-        // RU: ...
-        // настройка объекта
+        // RU: ... настройка объекта
         // ...
         return instance
     }()
@@ -41,8 +39,8 @@ class Singleton {
     /// EN: The Singleton's initializer should always be private to prevent
     /// direct construction calls with the `new` operator.
     ///
-    /// RU: Инициализатор Одиночки всегда должен быть скрытым, чтобы предотвратить
-    /// прямое создание объекта через инициализатор.
+    /// RU: Инициализатор Одиночки всегда должен быть скрытым, чтобы
+    /// предотвратить прямое создание объекта через инициализатор.
     private init() {}
 
     /// EN: Finally, any singleton should define some business logic, which can

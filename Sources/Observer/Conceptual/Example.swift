@@ -11,14 +11,13 @@
 ///
 /// Swift language has multiple ways of implementing the Observer pattern:
 ///
-/// 1. KVO
-/// Here is a great example of how to implement it in a dozen lines of code.
+/// - KVO. Here is an example of how to implement it in a dozen lines of code:
 /// https://www.objc.io/blog/2018/04/24/bindings-with-kvo-and-keypaths/
 ///
-/// 2. NotificationCenter
+/// - NotificationCenter
 /// https://developer.apple.com/documentation/foundation/notificationcenter
 ///
-/// 3. RxSwift
+/// - RxSwift:
 /// https://github.com/ReactiveX/RxSwift
 ///
 /// In this example we'll implement a custom observer from scratch.
@@ -26,8 +25,8 @@
 /// RU: Паттерн Наблюдатель
 ///
 /// Назначение: Устанавливает между объектами зависимость «один ко многим» таким
-/// образом, что когда изменяется состояние одного объекта, все зависимые от
-/// него объекты оповещаются и обновляются автоматически.
+/// образом, что когда изменяется состояние одного объекта, все зависимые от него
+/// объекты оповещаются и обновляются автоматически.
 ///
 /// Обратите внимание, что существует множество различных терминов с похожими
 /// значениями, связанных с этим паттерном. Просто помните, что Субъекта также
@@ -35,16 +34,17 @@
 /// Также глаголы «наблюдать», «слушать» или «отслеживать» обычно означают одно и
 /// то же.
 ///
-/// Язык Swift имеет несколько способов реализации Наблюдателя. Вот некоторые из них:
+/// Язык Swift имеет несколько способов реализации Наблюдателя. Вот некоторые из
+/// них:
 ///
-/// 1. KVO
-/// Вот замечательный пример того, как можно реализовать паттерн с помощью дюжины строк кода.
+/// - KVO. Вот замечательный пример того, как можно реализовать паттерн с помощью
+/// дюжины строк кода:
 /// https://www.objc.io/blog/2018/04/24/bindings-with-kvo-and-keypaths/
 ///
-/// 2. NotificationCenter
+/// - NotificationCenter:
 /// https://developer.apple.com/documentation/foundation/notificationcenter
 ///
-/// 3. RxSwift
+/// - RxSwift:
 /// https://github.com/ReactiveX/RxSwift
 ///
 /// В этом примере, однако, мы попробуем реализовать Наблюдатель самостоятельно.
@@ -58,8 +58,8 @@ import XCTest
 /// его изменениях.
 class Subject {
 
-    /// For the sake of simplicity, the Subject's state, essential to all subscribers,
-    /// is stored in this variable.
+    /// EN: For the sake of simplicity, the Subject's state, essential to all
+    /// subscribers, is stored in this variable.
     ///
     /// RU: Для удобства в этой переменной хранится состояние Издателя,
     /// необходимое всем подписчикам.
@@ -69,7 +69,8 @@ class Subject {
     /// can be stored more comprehensively (categorized by event type, etc.).
     ///
     /// RU: @var array Список подписчиков. В реальной жизни список подписчиков
-    /// может храниться в более подробном виде (классифицируется по типу события и т.д.)
+    /// может храниться в более подробном виде (классифицируется по типу события
+    /// и т.д.)
     private lazy var observers = [Observer]()
 
     /// EN: The subscription management methods.
@@ -114,7 +115,8 @@ class Subject {
 
 /// EN: The Observer protocol declares the update method, used by subjects.
 ///
-/// RU: Наблюдатель объявляет метод уведомления, который используют издатели для оповещения.
+/// RU: Наблюдатель объявляет метод уведомления, который используют издатели для
+/// оповещения.
 protocol Observer: class {
 
     func update(subject: Subject)

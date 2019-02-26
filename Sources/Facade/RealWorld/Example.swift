@@ -8,22 +8,22 @@ import XCTest
 
 class FacadeRealWorldExample: XCTestCase {
 
-    /// In the real project, you probably will use third-party libraries.
-    /// For instance, to download images.
+    /// In the real project, you probably will use third-party libraries. For
+    /// instance, to download images.
     ///
     /// Therefore, facade and wrapping it is a good way to use a third party API
-    /// in the client code. Even if it is your own library that is connected
-    /// to a project.
+    /// in the client code. Even if it is your own library that is connected to a
+    /// project.
     ///
     /// The benefits here are:
     ///
-    /// 1) If you need to change a current image downloader it should be done only
-    /// in the one place of a project. A number of lines of the client code
+    /// 1) If you need to change a current image downloader it should be done
+    /// only in the one place of a project. A number of lines of the client code
     /// will stay work.
     ///
-    /// 2) The facade provides an access to a fraction of a functionality
-    /// that fits most client needs. Moreover, it can set frequently used
-    /// or default parameters.
+    /// 2) The facade provides an access to a fraction of a functionality that
+    /// fits most client needs. Moreover, it can set frequently used or default
+    /// parameters.
 
     func testFacedeReal() {
 
@@ -78,10 +78,8 @@ private class ImageDownloader {
                    placeholder: UIImage? = nil,
                    progress: Progress? = nil,
                    completion: Completion) {
-        /// ...
-        /// Set up a network stack
-        /// ...
-        /// Downloading an image
+        /// ... Set up a network stack
+        /// ... Downloading an image
         /// ...
         completion(UIImage(), nil)
     }

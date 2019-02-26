@@ -17,13 +17,13 @@ import XCTest
 /// RU: Контекст определяет интерфейс, представляющий интерес для клиентов.
 class Context {
 
-    /// EN: The Context maintains a reference to one of the
-    /// Strategy objects. The Context does not know the concrete class of a
-    /// strategy. It should work with all strategies via the Strategy interface.
+    /// EN: The Context maintains a reference to one of the Strategy objects. The
+    /// Context does not know the concrete class of a strategy. It should work
+    /// with all strategies via the Strategy interface.
     ///
-    /// RU: Контекст хранит ссылку на один из объектов Стратегии.
-    /// Контекст не знает конкретного класса стратегии. Он должен работать со
-    /// всеми стратегиями через интерфейс Стратегии.
+    /// RU: Контекст хранит ссылку на один из объектов Стратегии. Контекст не
+    /// знает конкретного класса стратегии. Он должен работать со всеми
+    /// стратегиями через интерфейс Стратегии.
     private var strategy: Strategy
 
     /// EN: Usually, the Context accepts a strategy through the constructor, but
@@ -37,7 +37,8 @@ class Context {
 
     /// EN: Usually, the Context allows replacing a Strategy object at runtime.
     ///
-    /// RU: Обычно Контекст позволяет заменить объект Стратегии во время выполнения.
+    /// RU: Обычно Контекст позволяет заменить объект Стратегии во время
+    /// выполнения.
     func update(strategy: Strategy) {
         self.strategy = strategy
     }
@@ -97,13 +98,13 @@ class StrategyStructure: XCTestCase {
 
     func test() {
 
-        /// EN: The client code picks a concrete strategy and passes it to the context.
-        /// The client should be aware of the differences between strategies in order to
-        /// make the right choice.
+        /// EN: The client code picks a concrete strategy and passes it to the
+        /// context. The client should be aware of the differences between
+        /// strategies in order to make the right choice.
         ///
-        /// RU: Клиентский код выбирает конкретную стратегию и передаёт её в контекст.
-        /// Клиент должен знать о различиях между стратегиями, чтобы сделать правильный
-        /// выбор.
+        /// RU: Клиентский код выбирает конкретную стратегию и передаёт её в
+        /// контекст. Клиент должен знать о различиях между стратегиями, чтобы
+        /// сделать правильный выбор.
 
         let context = Context(strategy: ConcreteStrategyA())
         print("Client: Strategy is set to normal sorting.\n")

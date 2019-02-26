@@ -19,8 +19,8 @@ import XCTest
 /// для сложных объектов структуры.
 protocol Component {
 
-    /// EN: The base Component may optionally declare methods for setting
-    /// and accessing a parent of the component in a tree structure. It can also
+    /// EN: The base Component may optionally declare methods for setting and
+    /// accessing a parent of the component in a tree structure. It can also
     /// provide some default implementation for these methods.
     ///
     /// RU: При необходимости базовый Компонент может объявить интерфейс для
@@ -139,16 +139,18 @@ class Composite: Component {
 
 class Client {
 
-    /// EN: The client code works with all of the components via the base interface.
+    /// EN: The client code works with all of the components via the base
+    /// interface.
     ///
-    /// RU: Клиентский код работает со всеми компонентами через базовый интерфейс.
+    /// RU: Клиентский код работает со всеми компонентами через базовый
+    /// интерфейс.
     static func someClientCode(component: Component) {
         print("Result: " + component.operation())
     }
 
-    /// EN: Thanks to the fact that the child-management operations are also declared in
-    /// the base Component class, the client code can work with both simple
-    /// or complex components.
+    /// EN: Thanks to the fact that the child-management operations are also
+    /// declared in the base Component class, the client code can work with both
+    /// simple or complex components.
     ///
     /// RU: Благодаря тому, что операции управления потомками объявлены в базовом
     /// классе Компонента, клиентский код может работать как с простыми, так и со
@@ -167,7 +169,8 @@ class Client {
 class CompositeConceptualExample: XCTestCase {
     func testCompositeStructure() {
 
-        /// EN: This way the client code can support the simple leaf components...
+        /// EN: This way the client code can support the simple leaf
+        /// components...
         ///
         /// RU: Таким образом, клиентский код может поддерживать простые
         /// компоненты-листья...

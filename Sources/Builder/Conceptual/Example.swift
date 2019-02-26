@@ -5,9 +5,9 @@
 ///
 /// RU: Паттерн Строитель
 ///
-/// Назначение: Отделяет построение сложного объекта от его
-/// представления так,  что один и тот же процесс построения может создавать
-/// разные представления объекта.
+/// Назначение: Отделяет построение сложного объекта от его представления так,
+/// что один и тот же процесс построения может создавать разные представления
+/// объекта.
 
 import XCTest
 
@@ -183,9 +183,11 @@ class Client {
         director.buildFullFeaturedProduct()
         print(builder.retrieveProduct().listParts())
 
-        // EN: Remember, the Builder pattern can be used without a Director class.
+        // EN: Remember, the Builder pattern can be used without a Director
+        // class.
         //
-        // RU: Помните, что паттерн Строитель можно использовать без класса Директор.
+        // RU: Помните, что паттерн Строитель можно использовать без класса
+        // Директор.
         print("Custom product:")
         builder.producePartA()
         builder.producePartC()

@@ -18,9 +18,9 @@ class VisitorRealWorldExample: XCTestCase {
 
 extension VisitorRealWorldExample {
 
-    /// Client code traverses notifications with visitors and checks whether
-    /// a notification is in a blacklist and should be shown in accordance with
-    /// a current SilencePolicy
+    /// Client code traverses notifications with visitors and checks whether a
+    /// notification is in a blacklist and should be shown in accordance with a
+    /// current SilencePolicy
 
     func clientCode(handle notifications: [Notification], with policy: NotificationPolicy) {
 

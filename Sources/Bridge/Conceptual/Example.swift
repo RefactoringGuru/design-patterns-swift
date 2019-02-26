@@ -3,23 +3,22 @@
 /// Intent: Decouple an abstraction from its implementation so that the two can
 /// vary independently.
 ///
-///               A
-///            /     \                        A         N
-///          Aa      Ab        ===>        /     \     / \
-///         / \     /  \                 Aa(N) Ab(N)  1   2
-///       Aa1 Aa2  Ab1 Ab2
+///                   A
+///                /     \                        A         N
+///              Aa      Ab        ===>        /     \     / \
+///             / \     /  \                 Aa(N) Ab(N)  1   2
+///           Aa1 Aa2  Ab1 Ab2
 ///
 /// RU: Паттерн Мост
 ///
 /// Назначение: Разделяет абстракцию и реализацию, что позволяет изменять их
 /// независимо друг от друга.
 ///
-///               A
-///            /     \                        A         N
-///          Aa      Ab        ===>        /     \     / \
-///         / \     /  \                 Aa(N) Ab(N)  1   2
-///       Aa1 Aa2  Ab1 Ab2
-///
+///                   A
+///                /     \                        A         N
+///              Aa      Ab        ===>        /     \     / \
+///             / \     /  \                 Aa(N) Ab(N)  1   2
+///           Aa1 Aa2  Ab1 Ab2
 
 import XCTest
 
@@ -117,8 +116,8 @@ class BridgeConceptualExample: XCTestCase {
         // EN: The client code should be able to work with any pre-configured
         // abstraction-implementation combination.
         //
-        // RU: Клиентский код должен работать с любой предварительно сконфигурированной
-        // комбинацией абстракции и реализации.
+        // RU: Клиентский код должен работать с любой предварительно
+        // сконфигурированной комбинацией абстракции и реализации.
         let implementation = ConcreteImplementationA()
         Client.someClientCode(abstraction: Abstraction(implementation))
 

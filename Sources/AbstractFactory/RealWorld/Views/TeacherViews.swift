@@ -4,8 +4,8 @@ class TeacherSignUpView: UIView, AuthView {
 
     class TeacherSignUpContentView: UIView {
 
-        /// This view contains a number of features available
-        ///only during a TEACHER authorization.
+        /// This view contains a number of features available only during a
+        /// TEACHER authorization.
     }
 
     var contentView: UIView = TeacherSignUpContentView()

@@ -2,8 +2,8 @@ import XCTest
 
 /// Singleton Design Pattern
 ///
-/// Intent: Ensure that class has a single instance, and provide a global
-/// point of access to it.
+/// Intent: Ensure that class has a single instance, and provide a global point
+/// of access to it.
 
 class SingletonRealWorldExample: XCTestCase {
 
@@ -14,16 +14,15 @@ class SingletonRealWorldExample: XCTestCase {
         /// MessagesListVC displays a list of last messages from a user's chats.
         /// ChatVC displays a chat with a friend.
         ///
-        /// FriendsChatService fetches messages from a server
-        /// and provides all subscribers (view controllers in our example)
-        /// with new and removed messages.
+        /// FriendsChatService fetches messages from a server and provides all
+        /// subscribers (view controllers in our example) with new and removed
+        /// messages.
         ///
-        /// FriendsChatService is used by both view controllers.
-        /// It can be implemented as an instance of a class
-        /// as well as a global variable.
+        /// FriendsChatService is used by both view controllers. It can be
+        /// implemented as an instance of a class as well as a global variable.
         ///
-        /// In this example, it is important to have only one instance
-        /// that performs resource-intensive work.
+        /// In this example, it is important to have only one instance that
+        /// performs resource-intensive work.
 
         let listVC = MessagesListVC()
         let chatVC = ChatVC()
@@ -48,10 +47,10 @@ class BaseVC: UIViewController, MessageSubscriber {
 
     func startReceiveMessages() {
 
-        /// The singleton can be injected as a dependency.
-        /// However, from an informational perspective, this example calls
-        /// FriendsChatService directly to illustrate the intent of the pattern,
-        /// which is: "...to provide the global point of access to the instance..."
+        /// The singleton can be injected as a dependency. However, from an
+        /// informational perspective, this example calls FriendsChatService
+        /// directly to illustrate the intent of the pattern, which is: "...to
+        /// provide the global point of access to the instance..."
 
         FriendsChatService.shared.add(subscriber: self)
     }
@@ -128,8 +127,8 @@ class FriendsChatService: MessageService {
         /// In this example, fetching starts again by adding a new subscriber
         subscribers.append(subscriber)
 
-        /// Please note, the first subscriber will receive messages again
-        /// when the second subscriber is added
+        /// Please note, the first subscriber will receive messages again when
+        /// the second subscriber is added
         startFetching()
     }
 

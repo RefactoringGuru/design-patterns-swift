@@ -84,8 +84,7 @@ class WifiProjector: Projector {
     }
 
     func update(with page: Int) {
-        /// ...
-        /// scroll page via WiFi connection
+        /// ... scroll page via WiFi connection
         /// ...
         currentPage = page
     }
@@ -100,8 +99,7 @@ class BluetoothProjector: Projector {
     }
 
     func update(with page: Int) {
-        /// ...
-        /// scroll page via Bluetooth connection
+        /// ... scroll page via Bluetooth connection
         /// ...
         currentPage = page
     }
@@ -117,8 +115,8 @@ private class ClientCode {
 
         guard let projector = currentProjector else {
 
-            /// 'currentProjector' variable is nil.
-            /// Create a new projector and start presentation.
+            /// 'currentProjector' variable is nil. Create a new projector and
+            /// start presentation.
 
             let projector = factory.createProjector()
             projector.present(info: info)
@@ -126,8 +124,8 @@ private class ClientCode {
             return
         }
 
-        /// Client code already has a projector.
-        /// Let's sync pages of the old projector with a new one.
+        /// Client code already has a projector. Let's sync pages of the old
+        /// projector with a new one.
 
         self.currentProjector = factory.syncedProjector(with: projector)
         self.currentProjector?.present(info: info)

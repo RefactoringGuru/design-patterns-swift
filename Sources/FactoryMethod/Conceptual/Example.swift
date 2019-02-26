@@ -12,9 +12,9 @@
 
 import XCTest
 
-/// EN: The Creator protocol declares the factory method that's supposed to return
-/// a new object of a Product class. The Creator's subclasses usually provide the
-/// implementation of this method.
+/// EN: The Creator protocol declares the factory method that's supposed to
+/// return a new object of a Product class. The Creator's subclasses usually
+/// provide the implementation of this method.
 ///
 /// RU: Класс Создатель объявляет фабричный метод, который должен возвращать
 /// объект класса Продукт. Подклассы Создателя обычно предоставляют реализацию
@@ -44,11 +44,11 @@ protocol Creator {
     func someOperation() -> String
 }
 
-/// EN: This extension implements the default behavior of the Creator.
-/// This behavior can be overridden in subclasses.
+/// EN: This extension implements the default behavior of the Creator. This
+/// behavior can be overridden in subclasses.
 ///
-/// RU: Это расширение реализует базовое поведение Создателя. Оно может
-/// быть переопределено в подклассах.
+/// RU: Это расширение реализует базовое поведение Создателя. Оно может быть
+/// переопределено в подклассах.
 extension Creator {
 
     func someOperation() -> String {
@@ -145,11 +145,11 @@ class FactoryMethodConceptualExample: XCTestCase {
 
     func testFactoryMethod() {
 
-        /// EN: The Application picks a creator's type depending on the configuration or
-        /// environment.
+        /// EN: The Application picks a creator's type depending on the
+        /// configuration or environment.
         ///
-        /// RU: Приложение выбирает тип создателя в зависимости от конфигурации или
-        /// среды.
+        /// RU: Приложение выбирает тип создателя в зависимости от конфигурации
+        /// или среды.
 
         print("App: Launched with the ConcreteCreator1.");
         Client.someClientCode(creator: ConcreteCreator1())

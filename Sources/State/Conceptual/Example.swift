@@ -38,9 +38,11 @@ class Context {
         self.state.update(context: self)
     }
 
-    /// EN: The Context delegates part of its behavior to the current State object.
+    /// EN: The Context delegates part of its behavior to the current State
+    /// object.
     ///
-    /// RU: Контекст делегирует часть своего поведения текущему объекту Состояния.
+    /// RU: Контекст делегирует часть своего поведения текущему объекту
+    /// Состояния.
     func request1() {
         state.handle1()
     }
@@ -79,7 +81,8 @@ class BaseState: State {
     func handle2() {}
 }
 
-/// EN: Concrete States implement various behaviors, associated with a state of the Context.
+/// EN: Concrete States implement various behaviors, associated with a state of
+/// the Context.
 ///
 /// RU: Конкретные Состояния реализуют различные модели поведения, связанные с
 /// состоянием Контекста.

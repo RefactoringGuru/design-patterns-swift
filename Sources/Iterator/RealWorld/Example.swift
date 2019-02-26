@@ -55,7 +55,8 @@ class Tree<T> {
         }
 
         /// Note:
-        /// AnyIterator is used to hide the type signature of an internal iterator.
+        /// AnyIterator is used to hide the type signature of an internal
+        /// iterator.
         return AnyIterator(items.makeIterator())
     }
 

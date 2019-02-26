@@ -28,8 +28,8 @@ extension CommandRealWorldExample {
 
     func prepareTestEnvironment(_ execution: () -> ()) {
 
-        /// This method tells Xcode to wait for async operations.
-        /// Otherwise the main test is done immediately.
+        /// This method tells Xcode to wait for async operations. Otherwise the
+        /// main test is done immediately.
 
         let expectation = self.expectation(description: "Expectation for async operations")
 

@@ -49,9 +49,9 @@ protocol AbstractProtocol {
     func requiredOperation2()
 
     /// EN: These are "hooks." Subclasses may override them, but it's not
-    /// mandatory since the hooks already have default (but empty) implementation.
-    /// Hooks provide additional extension points in some crucial places
-    /// of the algorithm.
+    /// mandatory since the hooks already have default (but empty)
+    /// implementation. Hooks provide additional extension points in some crucial
+    /// places of the algorithm.
     ///
     /// RU: Это «хуки». Подклассы могут переопределять их, но это не обязательно,
     /// поскольку у хуков уже есть стандартная (но пустая) реализация. Хуки
@@ -113,9 +113,11 @@ class ConcreteClass1: AbstractProtocol {
     }
 }
 
-/// EN: Usually, concrete classes override only a fraction of base class' operations.
+/// EN: Usually, concrete classes override only a fraction of base class'
+/// operations.
 ///
-/// RU: Обычно конкретные классы переопределяют только часть операций базового класса.
+/// RU: Обычно конкретные классы переопределяют только часть операций базового
+/// класса.
 class ConcreteClass2: AbstractProtocol {
 
     func requiredOperations1() {
@@ -133,8 +135,8 @@ class ConcreteClass2: AbstractProtocol {
 
 /// EN: The client code calls the template method to execute the algorithm.
 /// Client code does not have to know the concrete class of an object it works
-/// with, as long as it works with objects through the interface of their
-/// base class.
+/// with, as long as it works with objects through the interface of their base
+/// class.
 ///
 /// RU: Клиентский код вызывает шаблонный метод для выполнения алгоритма.
 /// Клиентский код не должен знать конкретный класс объекта, с которым работает,

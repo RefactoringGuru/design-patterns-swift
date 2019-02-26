@@ -93,8 +93,8 @@ class DogHandler: Handler {
     }
 }
 
-/// EN: The client code is usually suited to work with a single handler.
-/// In most cases, it is not even aware that the handler is part of a chain.
+/// EN: The client code is usually suited to work with a single handler. In most
+/// cases, it is not even aware that the handler is part of a chain.
 ///
 /// RU: Обычно клиентский код приспособлен для работы с единственным
 /// обработчиком. В большинстве случаев клиенту даже неизвестно, что этот
@@ -136,8 +136,8 @@ class ChainOfResponsibilityStructureExample: XCTestCase {
         let dog = DogHandler()
         monkey.setNext(handler: squirrel).setNext(handler: dog)
 
-        /// EN: The client should be able to send a request to any handler,
-        /// not just the first one in the chain.
+        /// EN: The client should be able to send a request to any handler, not
+        /// just the first one in the chain.
         ///
         /// RU: Клиент должен иметь возможность отправлять запрос любому
         /// обработчику, а не только первому в цепочке.

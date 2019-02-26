@@ -22,8 +22,7 @@ class DecoratorRealWorldExample: XCTestCase {
 
     func clientCode(editor: ImageEditor) {
         let image = editor.apply()
-        /// Note.
-        /// You can stop an execution in Xcode to see an image preview.
+        /// Note. You can stop an execution in Xcode to see an image preview.
         print("Client: all changes have been applied for \(image)")
     }
 }
@@ -32,7 +31,7 @@ private extension DecoratorRealWorldExample {
 
     func loadImage() -> UIImage {
 
-        let urlString = "https://refactoring.guru/images/content-public/logos/logo-new-3x.png"
+        let urlString = "https:// refactoring.guru/images/content-public/logos/logo-new-3x.png"
 
         /// Note:
         /// Do not download images the following way in a production code.

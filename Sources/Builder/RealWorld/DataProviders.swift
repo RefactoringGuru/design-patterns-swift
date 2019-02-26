@@ -1,7 +1,7 @@
 import Foundation
 
-/// Data Providers contain a logic how to fetch models.
-/// Builders accumulate operations and then update providers to fetch the data.
+/// Data Providers contain a logic how to fetch models. Builders accumulate
+/// operations and then update providers to fetch the data.
 
 class RealmProvider {
 

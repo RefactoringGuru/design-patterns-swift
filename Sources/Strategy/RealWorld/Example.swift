@@ -2,8 +2,8 @@ import XCTest
 
 class StrategyReal: XCTestCase {
 
-    /// This example shows a simple implementation of a list controller that
-    /// is able to display models from different data sources:
+    /// This example shows a simple implementation of a list controller that is
+    /// able to display models from different data sources:
     ///
     /// (MemoryStorage, CoreDataStorage, RealmStorage)
 

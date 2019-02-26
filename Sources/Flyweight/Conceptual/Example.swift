@@ -58,9 +58,11 @@ class FlyweightFactory {
         self.flyweights = flyweights
     }
 
-    /// EN: Returns an existing Flyweight with a given state or creates a new one.
+    /// EN: Returns an existing Flyweight with a given state or creates a new
+    /// one.
     ///
-    /// RU: Возвращает существующий Легковес с заданным состоянием или создает новый.
+    /// RU: Возвращает существующий Легковес с заданным состоянием или создает
+    /// новый.
     func flyweight(for state: [String]) -> Flyweight {
 
         let key = state.key
@@ -99,11 +101,11 @@ class FlyweightStructureExample: XCTestCase {
 
     func testFlyweight() {
 
-        /// EN: The client code usually creates a bunch of pre-populated flyweights in
-        /// the initialization stage of the application.
+        /// EN: The client code usually creates a bunch of pre-populated
+        /// flyweights in the initialization stage of the application.
         ///
-        /// RU: Клиентский код обычно создает кучу предварительно заполненных легковесов
-        /// на этапе инициализации приложения.
+        /// RU: Клиентский код обычно создает кучу предварительно заполненных
+        /// легковесов на этапе инициализации приложения.
 
         let factory = FlyweightFactory(states:
         [
