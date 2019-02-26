@@ -9,6 +9,20 @@
 /// Publisher and the Observer is often called the Subscriber and vice versa.
 /// Also the verbs "observe", "listen" or "track" usually mean the same thing.
 ///
+/// Swift language has multiple ways of implementing the Observer pattern:
+///
+/// 1. KVO
+/// Here is a great example of how to implement it in a dozen lines of code.
+/// https://www.objc.io/blog/2018/04/24/bindings-with-kvo-and-keypaths/
+///
+/// 2. NotificationCenter
+/// https://developer.apple.com/documentation/foundation/notificationcenter
+///
+/// 3. RxSwift
+/// https://github.com/ReactiveX/RxSwift
+///
+/// In this example we'll implement a custom observer from scratch.
+///
 /// RU: Паттерн Наблюдатель
 ///
 /// Назначение: Устанавливает между объектами зависимость «один ко многим» таким
@@ -20,23 +34,8 @@
 /// называют Издателем, а Наблюдателя часто называют Подписчиком и наоборот.
 /// Также глаголы «наблюдать», «слушать» или «отслеживать» обычно означают одно и
 /// то же.
-
-import XCTest
-
-/// EN: Swift has a number of ways to implement and use Observer pattern.
 ///
-/// 1. KVO
-/// Here is a great example of how to implement it in a dozen lines of code.
-/// https://www.objc.io/blog/2018/04/24/bindings-with-kvo-and-keypaths/
-///
-/// 2. NotificationCenter
-/// https://developer.apple.com/documentation/foundation/notificationcenter
-///
-/// 3. Rx
-///
-/// In this example we'll implement a custom observer from scratch.
-///
-/// RU: Swift имеет множество способов реализации Наблюдателя. Вот некоторые из них:
+/// Язык Swift имеет несколько способов реализации Наблюдателя. Вот некоторые из них:
 ///
 /// 1. KVO
 /// Вот замечательный пример того, как можно реализовать паттерн с помощью дюжины строк кода.
@@ -45,18 +44,12 @@ import XCTest
 /// 2. NotificationCenter
 /// https://developer.apple.com/documentation/foundation/notificationcenter
 ///
-/// 3. Rx
+/// 3. RxSwift
+/// https://github.com/ReactiveX/RxSwift
 ///
 /// В этом примере, однако, мы попробуем реализовать Наблюдатель самостоятельно.
 
-
-/// EN: The Observer protocol declares the update method, used by subjects.
-///
-/// RU: Наблюдатель объявляет метод уведомления, который используют издатели для оповещения.
-protocol Observer: class {
-
-    func update(subject: Subject)
-}
+import XCTest
 
 /// EN: The Subject owns some important state and notifies observers when the
 /// state changes.
@@ -117,6 +110,14 @@ class Subject
         print("Subject: My state has just changed to: \(state)\n")
         notify()
     }
+}
+
+/// EN: The Observer protocol declares the update method, used by subjects.
+///
+/// RU: Наблюдатель объявляет метод уведомления, который используют издатели для оповещения.
+protocol Observer: class {
+
+    func update(subject: Subject)
 }
 
 /// EN: Concrete Observers react to the updates issued by the Subject they had
