@@ -16,6 +16,7 @@ import XCTest
 /// RU: Целевой класс объявляет интерфейс, с которым может работать клиентский
 /// код.
 class Target {
+
     func request() -> String {
         return "Target: The default target's behavior."
     }
@@ -30,6 +31,7 @@ class Target {
 /// нуждается в некоторой доработке,  прежде чем клиентский код сможет его
 /// использовать.
 class Adaptee {
+
     public func specificRequest() -> String {
         return ".eetpadA eht fo roivaheb laicepS"
     }
@@ -41,6 +43,7 @@ class Adaptee {
 /// RU: Адаптер делает интерфейс Адаптируемого класса совместимым с целевым
 /// интерфейсом.
 class Adapter: Target {
+
     private var adaptee: Adaptee
 
     init(_ adaptee: Adaptee) {
@@ -67,6 +70,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class AdapterConceptualExample: XCTestCase {
+
     func testAdapterStructure() {
         print("Client: I can work just fine with the Target objects:")
         Client.someClientCode(target: Target())

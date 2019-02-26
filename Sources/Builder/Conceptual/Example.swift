@@ -17,6 +17,7 @@ import XCTest
 /// RU: Интерфейс Строителя объявляет создающие методы для различных частей
 /// объектов Продуктов.
 protocol Builder {
+
     func producePartA()
     func producePartB()
     func producePartC()
@@ -30,6 +31,7 @@ protocol Builder {
 /// конкретные реализации шагов построения. Ваша программа может иметь несколько
 /// вариантов Строителей, реализованных по-разному.
 class ConcreteBuilder1: Builder {
+
     /// EN: A fresh builder instance should contain a blank product object, which
     /// is used in further assembly.
     ///
@@ -104,6 +106,7 @@ class ConcreteBuilder1: Builder {
 /// порядке или особой конфигурации. Строго говоря, класс Директор необязателен,
 /// так как клиент может напрямую управлять строителями.
 class Director {
+
     private var builder: Builder?
 
     /// EN: The Director works with any builder instance that the client code
@@ -147,6 +150,7 @@ class Director {
 /// могут производить несвязанные продукты. Другими словами, результаты различных
 /// строителей  могут не всегда  следовать одному и тому же интерфейсу.
 class Product1 {
+
     private var parts = [String]()
 
     func add(part: String) {
@@ -194,6 +198,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class BuilderConceptualExample: XCTestCase {
+
     func testStructureBuilder() {
         var director = Director();
         Client.someClientCode(director: director)

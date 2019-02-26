@@ -18,6 +18,7 @@ import XCTest
 /// RU: Базовый интерфейс Компонента определяет поведение, которое изменяется
 /// декораторами.
 protocol Component {
+
     func operation() -> String
 }
 
@@ -27,6 +28,7 @@ protocol Component {
 /// RU: Конкретные Компоненты предоставляют реализации поведения по умолчанию.
 /// Может быть несколько вариаций этих классов.
 class ConcreteComponent: Component {
+
     func operation() -> String {
         return "ConcreteComponent"
     }
@@ -44,6 +46,7 @@ class ConcreteComponent: Component {
 /// включать в себя  поле для хранения завёрнутого компонента и средства его
 /// инициализации.
 class Decorator: Component {
+
     private var component: Component
 
     init(_ component: Component) {
@@ -64,6 +67,7 @@ class Decorator: Component {
 /// RU: Конкретные Декораторы вызывают обёрнутый объект и изменяют его результат
 /// некоторым образом.
 class ConcreteDecoratorA: Decorator {
+
     /// EN: Decorators may call parent implementation of the operation, instead
     /// of calling the wrapped object directly. This approach simplifies
     /// extension of decorator classes.
@@ -107,6 +111,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class DecoratorConceptualExample: XCTestCase {
+
     func testDecoratorStructure() {
         // EN: This way the client code can support both simple components...
         //

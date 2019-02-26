@@ -56,8 +56,8 @@ import XCTest
 ///
 /// RU: Издатель владеет некоторым важным состоянием и оповещает наблюдателей о
 /// его изменениях.
-class Subject
-{
+class Subject {
+
     /// For the sake of simplicity, the Subject's state, essential to all subscribers,
     /// is stored in this variable.
     ///

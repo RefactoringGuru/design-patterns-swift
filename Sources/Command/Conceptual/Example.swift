@@ -130,7 +130,11 @@ class Invoker {
     }
 }
 
+/// EN: Let's see how it all comes together.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
 class CommandStructureExample: XCTestCase {
+
     func test() {
         /// EN: The client code can parameterize an invoker with any commands.
         ///

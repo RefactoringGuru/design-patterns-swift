@@ -18,6 +18,7 @@ import XCTest
 /// RU: Базовый класс Компонент объявляет общие операции как для простых, так и
 /// для сложных объектов структуры.
 protocol Component {
+
     /// EN: The base Component may optionally declare methods for setting
     /// and accessing a parent of the component in a tree structure. It can also
     /// provide some default implementation for these methods.
@@ -58,6 +59,7 @@ protocol Component {
 }
 
 extension Component {
+
     func add(component: Component) {}
     func remove(component: Component) {}
     func isComposite() -> Bool {
@@ -77,6 +79,7 @@ extension Component {
 /// Обычно объекты Листьев выполняют фактическую работу, тогда как объекты
 /// Контейнера лишь делегируют работу своим подкомпонентам.
 class Leaf: Component {
+
     var parent: Component?
 
     func operation() -> String {
@@ -92,6 +95,7 @@ class Leaf: Component {
 /// вложенные компоненты. Обычно объекты Контейнеры делегируют фактическую работу
 /// своим детям, а затем «суммируют» результат.
 class Composite: Component {
+
     var parent: Component?
 
     /// EN: This fields contains the conponent subtree.
@@ -134,6 +138,7 @@ class Composite: Component {
 }
 
 class Client {
+
     /// EN: The client code works with all of the components via the base interface.
     ///
     /// RU: Клиентский код работает со всеми компонентами через базовый интерфейс.

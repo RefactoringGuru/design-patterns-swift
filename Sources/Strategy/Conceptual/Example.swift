@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Strategy Design Pattern
 ///
 /// Intent: Define a family of algorithms, encapsulate each one, and make them
@@ -12,32 +10,11 @@ import XCTest
 /// делает взаимозаменяемыми. Стратегия позволяет изменять алгоритм независимо от
 /// клиентов, которые его используют.
 
-class StrategyStructure: XCTestCase {
-
-    func test() {
-
-        /// EN: The client code picks a concrete strategy and passes it to the context.
-        /// The client should be aware of the differences between strategies in order to
-        /// make the right choice.
-        ///
-        /// RU: Клиентский код выбирает конкретную стратегию и передаёт её в контекст.
-        /// Клиент должен знать о различиях между стратегиями, чтобы сделать правильный
-        /// выбор.
-
-        let context = Context(strategy: ConcreteStrategyA())
-        print("Client: Strategy is set to normal sorting.\n")
-        context.doSomeBusinessLogic()
-
-        print("\nClient: Strategy is set to reverse sorting.\n")
-        context.update(strategy: ConcreteStrategyB())
-        context.doSomeBusinessLogic()
-    }
-}
+import XCTest
 
 /// EN: The Context defines the interface of interest to clients.
 ///
 /// RU: Контекст определяет интерфейс, представляющий интерес для клиентов.
-
 class Context {
 
     /// EN: The Context maintains a reference to one of the
@@ -47,7 +24,6 @@ class Context {
     /// RU: Контекст хранит ссылку на один из объектов Стратегии.
     /// Контекст не знает конкретного класса стратегии. Он должен работать со
     /// всеми стратегиями через интерфейс Стратегии.
-
     private var strategy: Strategy
 
     /// EN: Usually, the Context accepts a strategy through the constructor, but
@@ -55,7 +31,6 @@ class Context {
     ///
     /// RU: Обычно Контекст принимает стратегию через конструктор, а также
     /// предоставляет сеттер для её изменения во время выполнения.
-
     init(strategy: Strategy) {
         self.strategy = strategy
     }
@@ -63,7 +38,6 @@ class Context {
     /// EN: Usually, the Context allows replacing a Strategy object at runtime.
     ///
     /// RU: Обычно Контекст позволяет заменить объект Стратегии во время выполнения.
-
     func update(strategy: Strategy) {
         self.strategy = strategy
     }
@@ -73,7 +47,6 @@ class Context {
     ///
     /// RU: Вместо того, чтобы самостоятельно реализовывать множественные версии
     /// алгоритма, Контекст делегирует некоторую работу объекту Стратегии.
-
     func doSomeBusinessLogic() {
         print("Context: Sorting data using the strategy (not sure how it'll do it)\n")
 
@@ -93,7 +66,6 @@ class Context {
 ///
 /// Контекст использует этот интерфейс для вызова алгоритма, определённого
 /// Конкретными Стратегиями.
-
 protocol Strategy {
 
     func doAlgorithm<T: Comparable>(_ data: [T]) -> [T]
@@ -104,7 +76,6 @@ protocol Strategy {
 ///
 /// RU: Конкретные Стратегии реализуют алгоритм, следуя базовому интерфейсу
 /// Стратегии. Этот интерфейс делает их взаимозаменяемыми в Контексте.
-
 class ConcreteStrategyA: Strategy {
 
     func doAlgorithm<T: Comparable>(_ data: [T]) -> [T] {
@@ -116,5 +87,30 @@ class ConcreteStrategyB: Strategy {
 
     func doAlgorithm<T: Comparable>(_ data: [T]) -> [T] {
         return data.sorted(by: >)
+    }
+}
+
+/// EN: Let's see how it all works together.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class StrategyStructure: XCTestCase {
+
+    func test() {
+
+        /// EN: The client code picks a concrete strategy and passes it to the context.
+        /// The client should be aware of the differences between strategies in order to
+        /// make the right choice.
+        ///
+        /// RU: Клиентский код выбирает конкретную стратегию и передаёт её в контекст.
+        /// Клиент должен знать о различиях между стратегиями, чтобы сделать правильный
+        /// выбор.
+
+        let context = Context(strategy: ConcreteStrategyA())
+        print("Client: Strategy is set to normal sorting.\n")
+        context.doSomeBusinessLogic()
+
+        print("\nClient: Strategy is set to reverse sorting.\n")
+        context.update(strategy: ConcreteStrategyB())
+        context.doSomeBusinessLogic()
     }
 }

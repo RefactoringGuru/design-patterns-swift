@@ -124,6 +124,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class ChainOfResponsibilityStructureExample: XCTestCase {
+ 
     func test() {
 
         /// EN: The other part of the client code constructs the actual chain.

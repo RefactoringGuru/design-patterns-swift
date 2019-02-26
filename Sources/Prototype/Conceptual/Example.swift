@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Prototype Design Pattern
 ///
 /// Intent: Produce new objects by copying existing ones without compromising
@@ -10,6 +8,7 @@ import XCTest
 /// Назначение: Создаёт новые объекты, копируя существующие без нарушения их
 /// внутренней структуры.
 
+import XCTest
 
 /// EN: Swift has built-in cloning support. To add cloning support to your
 /// class, you need to implement the NSCopying protocol in that class
@@ -19,6 +18,7 @@ import XCTest
 /// клонируемым, вам нужно реализовать в нём протокол NSCopying, а именно
 /// метод `copy`.
 class BaseClass: NSCopying, Equatable {
+
     private var intValue = 1
     private var stringValue = "Value"
 
@@ -50,6 +50,7 @@ class BaseClass: NSCopying, Equatable {
 /// скопировать данные собственного класса. Но в этом случае всегда сперва
 /// вызывайте родительскую реализацию метод копирования.
 class SubClass: BaseClass {
+
     private var boolValue = true
 
     func copy() -> Any {
@@ -93,6 +94,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class PrototypeConceptualExample: XCTestCase {
+
     func testPrototype_NSCopying() {
         Client.someClientCode();
     }

@@ -23,6 +23,7 @@ import XCTest
 /// взаимодействовать между собой. Семейство продуктов может иметь несколько
 /// вариаций,  но продукты одной вариации несовместимы с продуктами другой.
 protocol AbstractFactory {
+
     func createProductA() -> AbstractProductA
     func createProductB() -> AbstractProductB
 }
@@ -37,6 +38,7 @@ protocol AbstractFactory {
 /// сигнатуры методов Конкретной Фабрики возвращают абстрактный продукт, в то
 /// время как внутри метода создается экземпляр  конкретного продукта.
 class ConcreteFactory1: AbstractFactory {
+
     func createProductA() -> AbstractProductA {
         return ConcreteProductA1()
     }
@@ -50,6 +52,7 @@ class ConcreteFactory1: AbstractFactory {
 ///
 /// RU: Каждая Конкретная Фабрика имеет соответствующую вариацию продукта.
 class ConcreteFactory2: AbstractFactory {
+
     func createProductA() -> AbstractProductA {
         return ConcreteProductA2()
     }
@@ -65,6 +68,7 @@ class ConcreteFactory2: AbstractFactory {
 /// RU: Каждый отдельный продукт семейства продуктов должен иметь базовый
 /// протокол. Все вариации продукта должны реализовывать этот протокол.
 protocol AbstractProductA {
+
     func usefulFunctionA() -> String
 }
 
@@ -72,12 +76,14 @@ protocol AbstractProductA {
 ///
 /// RU: Конкретные продукты создаются соответствующими Конкретными Фабриками.
 class ConcreteProductA1: AbstractProductA {
+
     func usefulFunctionA() -> String {
         return "The result of the product A1."
     }
 }
 
 class ConcreteProductA2: AbstractProductA {
+
     func usefulFunctionA() -> String {
         return "The result of the product A2."
     }
@@ -91,6 +97,7 @@ class ConcreteProductA2: AbstractProductA {
 /// друг с другом, но правильное взаимодействие возможно только между продуктами
 /// одной и той же конкретной вариации.
 protocol AbstractProductB {
+
     /// EN: Product B is able to do its own thing...
     ///
     /// RU: Продукт B способен работать самостоятельно...
@@ -112,6 +119,7 @@ protocol AbstractProductB {
 ///
 /// RU: Конкретные Продукты создаются соответствующими Конкретными Фабриками.
 class ConcreteProductB1: AbstractProductB {
+
     func usefulFunctionB() -> String {
         return "The result of the product B1."
     }
@@ -130,6 +138,7 @@ class ConcreteProductB1: AbstractProductB {
 }
 
 class ConcreteProductB2: AbstractProductB {
+
     func usefulFunctionB() -> String {
         return "The result of the product B2."
     }
@@ -170,6 +179,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class AbstractFactoryConceptualExample: XCTestCase {
+
     func testAbstractFactoryStructure() {
 
         /// EN: The client code can work with any concrete factory class.

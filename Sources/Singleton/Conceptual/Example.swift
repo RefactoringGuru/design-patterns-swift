@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: Singleton Design Pattern
 ///
 /// Intent: Ensure that a class has a single instance, and provide a global point
@@ -10,6 +8,7 @@ import XCTest
 /// Назначение: Гарантирует существование единственного экземпляра класса и
 /// предоставляет глобальную точку доступа к нему.
 
+import XCTest
 
 /// EN: The Singleton class defines the `shared` field that lets clients
 /// access the unique singleton instance.
@@ -17,6 +16,7 @@ import XCTest
 /// RU: Класс Одиночка предоставляет поле `shared`, которое позволяет
 /// клиентам получать доступ к уникальному экземпляру одиночки.
 class Singleton {
+
     /// EN: The static field that controls the access to the singleton instance.
     ///
     /// This implementation let you extend the Singleton class while keeping
@@ -60,6 +60,7 @@ class Singleton {
 ///
 /// RU: Одиночки не должны быть клонируемыми.
 extension Singleton: NSCopying {
+
     func copy(with zone: NSZone? = nil) -> Any {
         return self
     }

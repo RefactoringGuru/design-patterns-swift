@@ -31,6 +31,7 @@ import XCTest
 /// классов. Она содержит ссылку на объект из иерархии Реализации и делегирует
 /// ему всю настоящую работу.
 class Abstraction {
+
     fileprivate var implementation: Implementation
 
     init(_ implementation: Implementation) {
@@ -48,6 +49,7 @@ class Abstraction {
 ///
 /// RU: Можно расширить Абстракцию без изменения классов Реализации.
 class ExtendedAbstraction: Abstraction {
+
     override func operation() -> String {
         let operation = implementation.operationImplementation()
         return "ExtendedAbstraction: Extended operation with:\n" + operation
@@ -66,6 +68,7 @@ class ExtendedAbstraction: Abstraction {
 /// предоставляет только примитивные операции,  в то время как Абстракция
 /// определяет операции более высокого уровня, основанные на этих примитивах.
 protocol Implementation {
+
     func operationImplementation() -> String
 }
 
@@ -75,12 +78,14 @@ protocol Implementation {
 /// RU: Каждая Конкретная Реализация соответствует определённой платформе  и
 /// реализует интерфейс Реализации с использованием API этой платформы.
 class ConcreteImplementationA: Implementation {
+
     func operationImplementation() -> String {
         return "ConcreteImplementationA: Here's the result on the platform A.\n"
     }
 }
 
 class ConcreteImplementationB: Implementation {
+
     func operationImplementation() -> String {
         return "ConcreteImplementationB: Here's the result on the platform B\n"
     }
@@ -107,6 +112,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class BridgeConceptualExample: XCTestCase {
+
     func testBridgeStructure() {
         // EN: The client code should be able to work with any pre-configured
         // abstraction-implementation combination.

@@ -1,5 +1,3 @@
-import XCTest
-
 /// EN: State Design Pattern
 ///
 /// Intent: Allow an object to alter its behavior when its internal state
@@ -10,14 +8,7 @@ import XCTest
 /// Назначение: Позволяет объекту менять поведение при изменении его внутреннего
 /// состояния. Со стороны может казаться, что объект меняет свой класс.
 
-class StateStructureExample: XCTestCase {
-
-    func test() {
-        let context = Context(ConcreteStateA())
-        context.request1()
-        context.request2()
-    }
-}
+import XCTest
 
 /// EN: The Context defines the interface of interest to clients. It also
 /// maintains a reference to an instance of a State subclass, which represents
@@ -26,9 +17,11 @@ class StateStructureExample: XCTestCase {
 /// RU: Контекст определяет интерфейс, представляющий интерес для клиентов. Он
 /// также хранит ссылку на экземпляр подкласса Состояния, который отображает
 /// текущее состояние Контекста.
-
 class Context {
 
+    /// EN: A reference to the current state of the Context.
+    ///
+    /// RU: Ссылка на текущее состояние Контекста.
     private var state: State
 
     init(_ state: State) {
@@ -36,11 +29,10 @@ class Context {
         transitionTo(state: state)
     }
 
+    /// EN: The Context allows changing the State object at runtime.
+    ///
+    /// RU: Контекст позволяет изменять объект Состояния во время выполнения.
     func transitionTo(state: State) {
-        /// EN: The Context allows changing the State object at runtime.
-        ///
-        /// RU: Контекст позволяет изменять объект Состояния во время выполнения.
-
         print("Context: Transition to " + String(describing: state))
         self.state = state
         self.state.update(context: self)
@@ -49,7 +41,6 @@ class Context {
     /// EN: The Context delegates part of its behavior to the current State object.
     ///
     /// RU: Контекст делегирует часть своего поведения текущему объекту Состояния.
-
     func request1() {
         state.handle1()
     }
@@ -68,7 +59,6 @@ class Context {
 /// Конкретные Состояния, а также предоставляет обратную ссылку на объект
 /// Контекст, связанный с Состоянием. Эта обратная ссылка может использоваться
 /// Состояниями для передачи Контекста другому Состоянию.
-
 protocol State: class {
 
     func update(context: Context)
@@ -93,7 +83,6 @@ class BaseState: State {
 ///
 /// RU: Конкретные Состояния реализуют различные модели поведения, связанные с
 /// состоянием Контекста.
-
 class ConcreteStateA: BaseState {
 
     override func handle1() {
@@ -117,5 +106,17 @@ class ConcreteStateB: BaseState {
         print("ConcreteStateB handles request2.")
         print("ConcreteStateB wants to change the state of the context.\n")
         context?.transitionTo(state: ConcreteStateA())
+    }
+}
+
+/// EN: Let's see how it all works together.
+///
+/// RU: Давайте посмотрим как всё это будет работать.
+class StateStructureExample: XCTestCase {
+
+    func test() {
+        let context = Context(ConcreteStateA())
+        context.request1()
+        context.request2()
     }
 }

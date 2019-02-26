@@ -20,6 +20,7 @@ import XCTest
 /// объект класса Продукт. Подклассы Создателя обычно предоставляют реализацию
 /// этого метода.
 protocol Creator {
+
     /// EN: Note that the Creator may also provide some default implementation of
     /// the factory method.
     ///
@@ -49,6 +50,7 @@ protocol Creator {
 /// RU: Это расширение реализует базовое поведение Создателя. Оно может
 /// быть переопределено в подклассах.
 extension Creator {
+
     func someOperation() -> String {
         // EN: Call the factory method to create a Product object.
         //
@@ -68,6 +70,7 @@ extension Creator {
 /// RU: Конкретные Создатели переопределяют фабричный метод для того, чтобы
 /// изменить тип результирующего продукта.
 class ConcreteCreator1: Creator {
+
     /// EN: Note that the signature of the method still uses the abstract product
     /// type, even though the concrete product is actually returned from the
     /// method. This way the Creator can stay independent of concrete product
@@ -83,6 +86,7 @@ class ConcreteCreator1: Creator {
 }
 
 class ConcreteCreator2: Creator {
+
     public func factoryMethod() -> Product {
         return ConcreteProduct2()
     }
@@ -94,6 +98,7 @@ class ConcreteCreator2: Creator {
 /// RU: Протокол Продукта объявляет операции, которые должны выполнять все
 /// конкретные продукты.
 protocol Product {
+
     func operation() -> String
 }
 
@@ -103,12 +108,14 @@ protocol Product {
 /// RU: Конкретные Продукты предоставляют различные реализации протокола
 /// Продукта.
 class ConcreteProduct1: Product {
+
     func operation() -> String {
         return "{Result of the ConcreteProduct1}"
     }
 }
 
 class ConcreteProduct2: Product {
+
     func operation() -> String {
         return "{Result of the ConcreteProduct2}"
     }
@@ -135,6 +142,7 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class FactoryMethodConceptualExample: XCTestCase {
+
     func testFactoryMethod() {
 
         /// EN: The Application picks a creator's type depending on the configuration or

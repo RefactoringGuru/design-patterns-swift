@@ -3,14 +3,7 @@
 /// Intent: Provide a way to traverse the elements of an aggregate object without
 /// exposing its underlying representation.
 ///
-/// RU: Паттерн Итератор
-///
-/// Назначение: Предоставляет возможность обходить элементы составного объекта,
-/// не раскрывая его внутреннего представления.
-
-import XCTest
-
-/// EN: Swift has a built-in iterator support:
+/// Swift language has a built-in iterator support:
 ///
 /// - The `IteratorProtocol` provides a simple iterator protocol:
 ///   https://developer.apple.com/documentation/swift/iteratorprotocol
@@ -20,7 +13,12 @@ import XCTest
 ///
 /// In this examples we'll see how to use both of these mechanisms.
 ///
-/// RU: Язык Swift имеет встроенную поддержку итераторов:
+/// RU: Паттерн Итератор
+///
+/// Назначение: Предоставляет возможность обходить элементы составного объекта,
+/// не раскрывая его внутреннего представления.
+///
+/// Язык Swift имеет встроенную поддержку итераторов:
 ///
 /// - Протокол `IteratorProtocol` описывает базовый интерфейс итератора:
 ///   https://developer.apple.com/documentation/swift/iteratorprotocol
@@ -30,6 +28,7 @@ import XCTest
 ///
 /// В этом примере мы увидим как работают оба этих механизма.
 
+import XCTest
 
 /// EN: This is a collection that we're going to iterate through using an iterator derived from IteratorProtocol.
 ///
@@ -50,13 +49,12 @@ extension WordsCollection: Sequence {
     }
 }
 
+/// EN: Concrete Iterators implement various traversal algorithms. These classes
+/// store the current traversal position at all times.
+///
+/// RU: Конкретные Итераторы реализуют различные алгоритмы обхода. Эти классы
+/// постоянно хранят текущее положение обхода.
 class WordsIterator: IteratorProtocol {
-
-    /// EN: Concrete Iterators implement various traversal algorithms. These classes
-    /// store the current traversal position at all times.
-    ///
-    /// RU: Конкретные Итераторы реализуют различные алгоритмы обхода. Эти классы
-    /// постоянно хранят текущее положение обхода.
 
     private let collection: WordsCollection
     private var index = 0
