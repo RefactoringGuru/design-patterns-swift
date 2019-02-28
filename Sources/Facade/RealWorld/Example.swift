@@ -2,9 +2,8 @@ import XCTest
 
 /// Facade Design Pattern
 ///
-/// Intent: Provide a unified interface to a number of classes/interfaces of a
-/// complex subsystem. The Facade pattern defines a higher-level interface that
-/// makes the subsystem easier to use.
+/// Intent: Provides a simplified interface to a library, a framework, or any
+/// other complex set of classes.
 
 class FacadeRealWorldExample: XCTestCase {
 
