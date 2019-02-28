@@ -17,11 +17,11 @@ import XCTest
 /// variations, but the products of one variation are incompatible with products
 /// of another.
 ///
-/// RU: Протокол Абстрактной Фабрики объявляет набор методов, которые возвращают
-/// различные абстрактные продукты.  Эти продукты называются семейством и связаны
+/// RU: Интерфейс Абстрактной Фабрики объявляет набор методов, которые возвращают
+/// различные абстрактные продукты. Эти продукты называются семейством и связаны
 /// темой или концепцией высокого уровня. Продукты одного семейства обычно могут
 /// взаимодействовать между собой. Семейство продуктов может иметь несколько
-/// вариаций,  но продукты одной вариации несовместимы с продуктами другой.
+/// вариаций, но продукты одной вариации несовместимы с продуктами другой.
 protocol AbstractFactory {
 
     func createProductA() -> AbstractProductA
@@ -34,9 +34,9 @@ protocol AbstractFactory {
 /// product, while inside the method a concrete product is instantiated.
 ///
 /// RU: Конкретная Фабрика производит семейство продуктов одной вариации. Фабрика
-/// гарантирует совместимость полученных продуктов.  Обратите внимание, что
+/// гарантирует совместимость полученных продуктов. Обратите внимание, что
 /// сигнатуры методов Конкретной Фабрики возвращают абстрактный продукт, в то
-/// время как внутри метода создается экземпляр  конкретного продукта.
+/// время как внутри метода создается экземпляр конкретного продукта.
 class ConcreteFactory1: AbstractFactory {
 
     func createProductA() -> AbstractProductA {
@@ -62,11 +62,11 @@ class ConcreteFactory2: AbstractFactory {
     }
 }
 
-/// EN: Each distinct product of a product family should have a base proocol. All
-/// variations of the product must implement this proocol.
+/// EN: Each distinct product of a product family should have a base protocol.
+/// All variations of the product must implement this protocol.
 ///
 /// RU: Каждый отдельный продукт семейства продуктов должен иметь базовый
-/// протокол. Все вариации продукта должны реализовывать этот протокол.
+/// интерфейс. Все вариации продукта должны реализовывать этот интерфейс.
 protocol AbstractProductA {
 
     func usefulFunctionA() -> String
@@ -93,7 +93,7 @@ class ConcreteProductA2: AbstractProductA {
 /// other, but proper interaction is possible only between products of the same
 /// concrete variation.
 ///
-/// RU: Базовый протокол другого продукта. Все продукты могут взаимодействовать
+/// RU: Базовый интерфейс другого продукта. Все продукты могут взаимодействовать
 /// друг с другом, но правильное взаимодействие возможно только между продуктами
 /// одной и той же конкретной вариации.
 protocol AbstractProductB {

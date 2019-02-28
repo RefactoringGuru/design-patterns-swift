@@ -63,9 +63,7 @@ class ConcreteBuilder1: Builder {
     /// retrieving results. That's because various types of builders may create
     /// entirely different products that don't follow the same interface.
     /// Therefore, such methods cannot be declared in the base Builder interface
-    /// (at least in a statically typed programming language). Note that PHP is a
-    /// dynamically typed language and this method CAN be in the base interface.
-    /// However, we won't declare it there for the sake of clarity.
+    /// (at least in a statically typed programming language).
     ///
     /// Usually, after returning the end result to the client, a builder instance
     /// is expected to be ready to start producing another product. That's why
@@ -79,9 +77,7 @@ class ConcreteBuilder1: Builder {
     /// могут создавать совершенно разные продукты с разными интерфейсами.
     /// Поэтому такие методы не могут быть объявлены в базовом интерфейсе
     /// Строителя (по крайней мере, в статически типизированном языке
-    /// программирования). Обратите внимание, что PHP является динамически
-    /// типизированным языком, и этот метод может быть в базовом интерфейсе.
-    /// Однако мы не будем объявлять его здесь для ясности.
+    /// программирования).
     ///
     /// Как правило, после возвращения конечного результата клиенту, экземпляр
     /// строителя должен быть готов к началу производства следующего продукта.
@@ -148,7 +144,7 @@ class Director {
 ///
 /// В отличие от других порождающих паттернов, различные конкретные строители
 /// могут производить несвязанные продукты. Другими словами, результаты различных
-/// строителей  могут не всегда  следовать одному и тому же интерфейсу.
+/// строителей могут не всегда следовать одному и тому же интерфейсу.
 class Product1 {
 
     private var parts = [String]()
@@ -167,7 +163,7 @@ class Product1 {
 /// builder object.
 ///
 /// RU: Клиентский код создаёт объект-строитель, передаёт его директору, а затем
-/// инициирует  процесс построения. Конечный результат извлекается из
+/// инициирует процесс построения. Конечный результат извлекается из
 /// объекта-строителя.
 class Client {
     // ...
