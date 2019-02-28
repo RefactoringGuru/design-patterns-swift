@@ -5,7 +5,7 @@ import XCTest
 /// Intent: Provides a simplified interface to a library, a framework, or any
 /// other complex set of classes.
 
-class FacadeRealWorldExample: XCTestCase {
+class FacadeRealWorld: XCTestCase {
 
     /// In the real project, you probably will use third-party libraries. For
     /// instance, to download images.

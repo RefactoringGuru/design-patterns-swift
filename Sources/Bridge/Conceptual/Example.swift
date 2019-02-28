@@ -111,7 +111,7 @@ class Client {
 /// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class BridgeConceptualExample: XCTestCase {
+class BridgeConceptual: XCTestCase {
 
     func testBridgeStructure() {
         // EN: The client code should be able to work with any pre-configured

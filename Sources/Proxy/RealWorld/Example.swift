@@ -1,6 +1,6 @@
 import XCTest
 
-class ProxyRealWorldExample: XCTestCase {
+class ProxyRealWorld: XCTestCase {
 
     /// EN: Proxy Design Pattern
     ///

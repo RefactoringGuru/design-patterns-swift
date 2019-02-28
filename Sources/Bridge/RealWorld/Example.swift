@@ -1,6 +1,6 @@
 import XCTest
 
-private class BridgeRealWorldExample: XCTestCase {
+private class BridgeRealWorld: XCTestCase {
 
     func testBridgeReal() {
 

@@ -196,7 +196,7 @@ class Client {
 /// EN: Let's see how it all comes together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class BuilderConceptualExample: XCTestCase {
+class BuilderConceptual: XCTestCase {
 
     func testStructureBuilder() {
         var director = Director();

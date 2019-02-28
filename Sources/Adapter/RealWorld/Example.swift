@@ -7,7 +7,7 @@ import UIKit
 /// Adapter lets classes work together that couldn't work otherwise because of
 /// incompatible interfaces.
 
-class AdapterRealWorldExample: XCTestCase {
+class AdapterRealWorld: XCTestCase {
 
     /// Example. Let's assume that our app perfectly works with Facebook
     /// authorization. However, users ask you to add sign in via Twitter.

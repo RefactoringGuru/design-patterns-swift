@@ -1,6 +1,6 @@
 import XCTest
 
-class FactoryMethodRealWorldExample: XCTestCase {
+class FactoryMethodRealWorld: XCTestCase {
 
     func testFactoryMethodReal() {
 

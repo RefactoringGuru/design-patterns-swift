@@ -5,7 +5,7 @@ import XCTest
 /// Intent: Ensure that class has a single instance, and provide a global point
 /// of access to it.
 
-class SingletonRealWorldExample: XCTestCase {
+class SingletonRealWorld: XCTestCase {
 
     func testSingleton_Real() {
 

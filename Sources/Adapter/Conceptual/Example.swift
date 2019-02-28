@@ -69,7 +69,7 @@ class Client {
 /// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class AdapterConceptualExample: XCTestCase {
+class AdapterConceptual: XCTestCase {
 
     func testAdapterStructure() {
         print("Client: I can work just fine with the Target objects:")

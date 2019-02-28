@@ -1,6 +1,6 @@
 import XCTest
 
-class StateRealWorldExample: XCTestCase {
+class StateRealWorld: XCTestCase {
 
     func test() {
 

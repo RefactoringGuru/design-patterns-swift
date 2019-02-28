@@ -1,6 +1,6 @@
 import XCTest
 
-class PrototypeRealWorldExample: XCTestCase {
+class PrototypeRealWorld: XCTestCase {
 
     func testPrototypeReal() {
 

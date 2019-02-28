@@ -1,7 +1,7 @@
 import XCTest
 import UIKit
 
-class FlyweightRealWorldExample: XCTestCase {
+class FlyweightRealWorld: XCTestCase {
 
     func testFlyweight() {
 
@@ -39,7 +39,7 @@ class FlyweightRealWorldExample: XCTestCase {
     }
 }
 
-extension FlyweightRealWorldExample {
+extension FlyweightRealWorld {
 
     func display(animals: [Animal]) {
 
