@@ -14,8 +14,8 @@ class AdapterRealWorldExample: XCTestCase {
     ///
     /// Unfortunately, Twitter SDK has a different authorization method.
     ///
-    /// Firstly, you have to create the new protocol 'AuthService' and insert the
-    /// authorization method of Facebook SDK.
+    /// Firstly, you have to create the new protocol 'AuthService' and insert
+    /// the authorization method of Facebook SDK.
     ///
     /// Secondly, write an extension for Twitter SDK and implement methods of
     /// AuthService protocol, just a simple redirect.
@@ -68,8 +68,8 @@ extension TwitterAuthSDK: AuthService {
 
     /// This is an adapter
     ///
-    /// Yeah, we are able to not create another class and just extend an existing
-    /// one
+    /// Yeah, we are able to not create another class and just extend an
+    /// existing one
 
     func presentAuthFlow(from viewController: UIViewController) {
         print("The Adapter is called! Redirecting to the original method...")

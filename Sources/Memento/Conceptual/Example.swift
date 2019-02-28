@@ -1,7 +1,7 @@
 /// EN: Memento Design Pattern
 ///
-/// Intent: Capture and externalize an object's internal state so that the object
-/// can be restored to this state later, without violating encapsulation.
+/// Intent: Capture and externalize an object's internal state so that the
+/// object can be restored to this state later, without violating encapsulation.
 ///
 /// RU: Паттерн Снимок
 ///
@@ -16,12 +16,12 @@ import XCTest
 /// method for restoring the state from it.
 ///
 /// RU: Создатель содержит некоторое важное состояние, которое может со временем
-/// меняться. Он также объявляет метод сохранения состояния внутри снимка и метод
-/// восстановления состояния из него.
+/// меняться. Он также объявляет метод сохранения состояния внутри снимка и
+/// метод восстановления состояния из него.
 class Originator {
 
-    /// EN: For the sake of simplicity, the originator's state is stored inside a
-    /// single variable.
+    /// EN: For the sake of simplicity, the originator's state is stored inside
+    /// a single variable.
     ///
     /// RU: Для удобства состояние создателя хранится внутри одной переменной.
     private var state: String
@@ -32,12 +32,12 @@ class Originator {
     }
 
     /// EN: The Originator's business logic may affect its internal state.
-    /// Therefore, the client should backup the state before launching methods of
-    /// the business logic via the save() method.
+    /// Therefore, the client should backup the state before launching methods
+    /// of the business logic via the save() method.
     ///
     /// RU: Бизнес-логика Создателя может повлиять на его внутреннее состояние.
-    /// Поэтому клиент должен выполнить резервное копирование состояния с помощью
-    /// метода save перед запуском методов бизнес-логики.
+    /// Поэтому клиент должен выполнить резервное копирование состояния с
+    /// помощью метода save перед запуском методов бизнес-логики.
     func doSomething() {
         print("Originator: I'm doing something important.")
         state = generateRandomString()
@@ -69,8 +69,9 @@ class Originator {
 /// such as creation date or name. However, it doesn't expose the Originator's
 /// state.
 ///
-/// RU: Интерфейс Снимка предоставляет способ извлечения метаданных снимка, таких
-/// как дата создания или название. Однако он не раскрывает состояние Создателя.
+/// RU: Интерфейс Снимка предоставляет способ извлечения метаданных снимка,
+/// таких как дата создания или название. Однако он не раскрывает состояние
+/// Создателя.
 protocol Memento {
 
     var name: String { get }
@@ -103,9 +104,9 @@ class ConcreteMemento: Memento {
     var name: String { return state + " " + date.description.suffix(14).prefix(8) }
 }
 
-/// EN: The Caretaker doesn't depend on the Concrete Memento class. Therefore, it
-/// doesn't have access to the originator's state, stored inside the memento. It
-/// works with all mementos via the base Memento interface.
+/// EN: The Caretaker doesn't depend on the Concrete Memento class. Therefore,
+/// it doesn't have access to the originator's state, stored inside the memento.
+/// It works with all mementos via the base Memento interface.
 ///
 /// RU: Опекун не зависит от класса Конкретного Снимка. Таким образом, он не
 /// имеет доступа к состоянию создателя, хранящемуся внутри снимка. Он работает

@@ -11,7 +11,8 @@
 
 import XCTest
 
-/// EN: The Target defines the domain-specific interface used by the client code.
+/// EN: The Target defines the domain-specific interface used by the client
+/// code.
 ///
 /// RU: Целевой класс объявляет интерфейс, с которым может работать клиентский
 /// код.
@@ -23,8 +24,8 @@ class Target {
 }
 
 /// EN: The Adaptee contains some useful behavior, but its interface is
-/// incompatible with the existing client code. The Adaptee needs some adaptation
-/// before the client code can use it.
+/// incompatible with the existing client code. The Adaptee needs some
+/// adaptation before the client code can use it.
 ///
 /// RU: Адаптируемый класс содержит некоторое полезное поведение, но его
 /// интерфейс несовместим с существующим клиентским кодом. Адаптируемый класс

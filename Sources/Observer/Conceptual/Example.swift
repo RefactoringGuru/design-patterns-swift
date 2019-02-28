@@ -25,20 +25,20 @@
 /// RU: Паттерн Наблюдатель
 ///
 /// Назначение: Устанавливает между объектами зависимость «один ко многим» таким
-/// образом, что когда изменяется состояние одного объекта, все зависимые от него
-/// объекты оповещаются и обновляются автоматически.
+/// образом, что когда изменяется состояние одного объекта, все зависимые от
+/// него объекты оповещаются и обновляются автоматически.
 ///
 /// Обратите внимание, что существует множество различных терминов с похожими
 /// значениями, связанных с этим паттерном. Просто помните, что Субъекта также
 /// называют Издателем, а Наблюдателя часто называют Подписчиком и наоборот.
-/// Также глаголы «наблюдать», «слушать» или «отслеживать» обычно означают одно и
-/// то же.
+/// Также глаголы «наблюдать», «слушать» или «отслеживать» обычно означают одно
+/// и то же.
 ///
 /// Язык Swift имеет несколько способов реализации Наблюдателя. Вот некоторые из
 /// них:
 ///
-/// - KVO. Вот замечательный пример того, как можно реализовать паттерн с помощью
-/// дюжины строк кода:
+/// - KVO. Вот замечательный пример того, как можно реализовать паттерн с
+/// помощью дюжины строк кода:
 /// https://www.objc.io/blog/2018/04/24/bindings-with-kvo-and-keypaths/
 ///
 /// - NotificationCenter:
@@ -65,8 +65,9 @@ class Subject {
     /// необходимое всем подписчикам.
     var state: Int = { return Int(arc4random_uniform(10)) }()
 
-    /// EN: @var array List of subscribers. In real life, the list of subscribers
-    /// can be stored more comprehensively (categorized by event type, etc.).
+    /// EN: @var array List of subscribers. In real life, the list of
+    /// subscribers can be stored more comprehensively (categorized by event
+    /// type, etc.).
     ///
     /// RU: @var array Список подписчиков. В реальной жизни список подписчиков
     /// может храниться в более подробном виде (классифицируется по типу события
@@ -97,14 +98,14 @@ class Subject {
     }
 
     /// EN: Usually, the subscription logic is only a fraction of what a Subject
-    /// can really do. Subjects commonly hold some important business logic, that
-    /// triggers a notification method whenever something important is about to
-    /// happen (or after it).
+    /// can really do. Subjects commonly hold some important business logic,
+    /// that triggers a notification method whenever something important is
+    /// about to happen (or after it).
     ///
     /// RU: Обычно логика подписки – только часть того, что делает Издатель.
-    /// Издатели часто содержат некоторую важную бизнес-логику, которая запускает
-    /// метод уведомления всякий раз, когда должно произойти что-то важное (или
-    /// после этого).
+    /// Издатели часто содержат некоторую важную бизнес-логику, которая
+    /// запускает метод уведомления всякий раз, когда должно произойти что-то
+    /// важное (или после этого).
     func someBusinessLogic() {
         print("\nSubject: I'm doing something important.\n")
         state = Int(arc4random_uniform(10))

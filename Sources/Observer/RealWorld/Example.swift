@@ -2,18 +2,6 @@ import XCTest
 
 class ObserverReal: XCTestCase {
 
-    /// There are a number of ways to implement and use Observer pattern.
-    ///
-    /// KVO Here is a great example of how to implement it in a dozen lines of
-    /// code. https://www.objc.io/blog/2018/04/24/bindings-with-kvo-and-keypaths/
-    ///
-    /// NotificationCenter
-    /// https://developer.apple.com/documentation/foundation/notificationcenter
-    ///
-    /// Rx
-    ///
-    /// And any other custom implementation of this pattern.
-
     func test() {
 
         let cartManager = CartManager()

@@ -12,15 +12,15 @@
 
 import XCTest
 
-/// EN: The Flyweight stores a common portion of the state (also called intrinsic
-/// state) that belongs to multiple real business entities. The Flyweight accepts
-/// the rest of the state (extrinsic state, unique for each entity) via its
-/// method parameters.
+/// EN: The Flyweight stores a common portion of the state (also called
+/// intrinsic state) that belongs to multiple real business entities. The
+/// Flyweight accepts the rest of the state (extrinsic state, unique for each
+/// entity) via its method parameters.
 ///
 /// RU: Легковес хранит общую часть состояния (также называемую внутренним
 /// состоянием), которая принадлежит нескольким реальным бизнес-объектам.
-/// Легковес принимает  оставшуюся часть состояния (внешнее состояние, уникальное
-/// для каждого объекта)  через его параметры метода.
+/// Легковес принимает  оставшуюся часть состояния (внешнее состояние,
+/// уникальное для каждого объекта)  через его параметры метода.
 class Flyweight {
 
     private let sharedState: [String]
@@ -41,8 +41,8 @@ class Flyweight {
 ///
 /// RU: Фабрика Легковесов создает объекты-Легковесы и управляет ими. Она
 /// обеспечивает правильное разделение легковесов. Когда клиент запрашивает
-/// легковес, фабрика либо возвращает существующий экземпляр, либо создает новый,
-/// если он ещё не существует.
+/// легковес, фабрика либо возвращает существующий экземпляр, либо создает
+/// новый, если он ещё не существует.
 class FlyweightFactory {
 
     private var flyweights: [String: Flyweight]
@@ -152,8 +152,8 @@ class FlyweightStructureExample: XCTestCase {
         /// EN: The client code either stores or calculates extrinsic state and
         /// passes it to the flyweight's methods.
         ///
-        /// RU: Клиентский код либо сохраняет, либо вычисляет внешнее состояние и
-        /// передает его методам легковеса.
+        /// RU: Клиентский код либо сохраняет, либо вычисляет внешнее состояние
+        /// и передает его методам легковеса.
         flyweight.operation(uniqueState: [plates, owner])
     }
 }

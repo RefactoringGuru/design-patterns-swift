@@ -76,9 +76,9 @@ class ProfileProxy: ProfileService {
             failure(error)
         } else {
             /// Note:
-            /// At this point, the `success` and `failure` closures can be passed
-            /// directly to the original service (as it is now) or expanded here
-            /// to handle a result (for example, to cache).
+            /// At this point, the `success` and `failure` closures can be
+            /// passed directly to the original service (as it is now) or
+            /// expanded here to handle a result (for example, to cache).
 
             keychain.loadProfile(with: fields, success: success, failure: failure)
         }

@@ -12,8 +12,8 @@ class FacadeRealWorldExample: XCTestCase {
     /// instance, to download images.
     ///
     /// Therefore, facade and wrapping it is a good way to use a third party API
-    /// in the client code. Even if it is your own library that is connected to a
-    /// project.
+    /// in the client code. Even if it is your own library that is connected to
+    /// a project.
     ///
     /// The benefits here are:
     ///

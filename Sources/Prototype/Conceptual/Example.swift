@@ -10,9 +10,9 @@
 
 import XCTest
 
-/// EN: Swift has built-in cloning support. To add cloning support to your class,
-/// you need to implement the NSCopying protocol in that class and provide the
-/// implementation for the `copy` method.
+/// EN: Swift has built-in cloning support. To add cloning support to your
+/// class, you need to implement the NSCopying protocol in that class and
+/// provide the implementation for the `copy` method.
 ///
 /// RU: Swift имеет встроенную поддержку клонирования. Чтобы сделать класс
 /// клонируемым, вам нужно реализовать в нём протокол NSCopying, а именно метод

@@ -1,8 +1,8 @@
 /// EN: Template Method Design Pattern
 ///
-/// Intent: Define the skeleton of an algorithm, deferring implementation of some
-/// steps to subclasses. Template Method lets subclasses redefine specific steps
-/// of an algorithm without changing the algorithm's structure.
+/// Intent: Define the skeleton of an algorithm, deferring implementation of
+/// some steps to subclasses. Template Method lets subclasses redefine specific
+/// steps of an algorithm without changing the algorithm's structure.
 ///
 /// RU: Паттерн Шаблонный метод
 ///
@@ -17,8 +17,8 @@ import XCTest
 /// contains a skeleton of some algorithm, composed of calls to (usually)
 /// abstract primitive operations.
 ///
-/// Concrete subclasses should implement these operations, but leave the template
-/// method itself intact.
+/// Concrete subclasses should implement these operations, but leave the
+/// template method itself intact.
 ///
 /// RU: Абстрактный Протокол и его расширение определяет шаблонный метод,
 /// содержащий скелет некоторого алгоритма, состоящего из вызовов (обычно)
@@ -50,13 +50,13 @@ protocol AbstractProtocol {
 
     /// EN: These are "hooks." Subclasses may override them, but it's not
     /// mandatory since the hooks already have default (but empty)
-    /// implementation. Hooks provide additional extension points in some crucial
-    /// places of the algorithm.
+    /// implementation. Hooks provide additional extension points in some
+    /// crucial places of the algorithm.
     ///
-    /// RU: Это «хуки». Подклассы могут переопределять их, но это не обязательно,
-    /// поскольку у хуков уже есть стандартная (но пустая) реализация. Хуки
-    /// предоставляют дополнительные точки расширения в некоторых критических
-    /// местах алгоритма.
+    /// RU: Это «хуки». Подклассы могут переопределять их, но это не
+    /// обязательно, поскольку у хуков уже есть стандартная (но пустая)
+    /// реализация. Хуки предоставляют дополнительные точки расширения в
+    /// некоторых критических местах алгоритма.
     func hook1()
     func hook2()
 }

@@ -6,8 +6,8 @@
 ///
 /// RU: Паттерн Посетитель
 ///
-/// Назначение: Позволяет добавлять в программу новые операции, не изменяя классы
-/// объектов, над которыми эти операции могут выполняться.
+/// Назначение: Позволяет добавлять в программу новые операции, не изменяя
+/// классы объектов, над которыми эти операции могут выполняться.
 
 import XCTest
 
@@ -25,7 +25,8 @@ protocol Component {
 /// that it calls the visitor's method corresponding to the component's class.
 ///
 /// RU: Каждый Конкретный Компонент должен реализовать метод принятия таким
-/// образом, чтобы он вызывал метод посетителя, соотвествующий классу компонента.
+/// образом, чтобы он вызывал метод посетителя, соотвествующий классу
+/// компонента.
 class ConcreteComponentA: Component {
 
     /// EN: Note that we're calling `visitConcreteComponentA`, which matches the
@@ -78,8 +79,8 @@ protocol Visitor {
     func visitConcreteComponentB(element: ConcreteComponentB)
 }
 
-/// EN: Concrete Visitors implement several versions of the same algorithm, which
-/// can work with all concrete component classes.
+/// EN: Concrete Visitors implement several versions of the same algorithm,
+/// which can work with all concrete component classes.
 ///
 /// You can experience the biggest benefit of the Visitor pattern when using it
 /// with a complex object structure, such as a Composite tree. In this case, it

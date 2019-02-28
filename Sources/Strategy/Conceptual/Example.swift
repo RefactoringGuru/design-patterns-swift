@@ -7,8 +7,8 @@
 /// RU: Паттерн Стратегия
 ///
 /// Назначение: Определяет семейство алгоритмов, инкапсулирует каждый из них и
-/// делает взаимозаменяемыми. Стратегия позволяет изменять алгоритм независимо от
-/// клиентов, которые его используют.
+/// делает взаимозаменяемыми. Стратегия позволяет изменять алгоритм независимо
+/// от клиентов, которые его используют.
 
 import XCTest
 
@@ -17,9 +17,9 @@ import XCTest
 /// RU: Контекст определяет интерфейс, представляющий интерес для клиентов.
 class Context {
 
-    /// EN: The Context maintains a reference to one of the Strategy objects. The
-    /// Context does not know the concrete class of a strategy. It should work
-    /// with all strategies via the Strategy interface.
+    /// EN: The Context maintains a reference to one of the Strategy objects.
+    /// The Context does not know the concrete class of a strategy. It should
+    /// work with all strategies via the Strategy interface.
     ///
     /// RU: Контекст хранит ссылку на один из объектов Стратегии. Контекст не
     /// знает конкретного класса стратегии. Он должен работать со всеми

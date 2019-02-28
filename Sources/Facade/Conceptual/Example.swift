@@ -6,9 +6,9 @@
 ///
 /// RU: Паттерн Фасад
 ///
-/// Назначение: Предоставляет единый интерфейс к ряду классов/интерфейсов сложной
-/// подсистемы. Паттерн Фасад определяет интерфейс более высокого уровня, который
-/// упрощает использование подсистемы.
+/// Назначение: Предоставляет единый интерфейс к ряду классов/интерфейсов
+/// сложной подсистемы. Паттерн Фасад определяет интерфейс более высокого
+/// уровня, который упрощает использование подсистемы.
 
 import XCTest
 
@@ -18,8 +18,8 @@ import XCTest
 /// managing their lifecycle. All of this shields the client from the undesired
 /// complexity of the subsystem.
 ///
-/// RU: Класс Фасада предоставляет простой интерфейс для сложной логики одной или
-/// нескольких подсистем. Фасад делегирует запросы клиентов соответствующим
+/// RU: Класс Фасада предоставляет простой интерфейс для сложной логики одной
+/// или нескольких подсистем. Фасад делегирует запросы клиентов соответствующим
 /// объектам внутри подсистемы. Фасад также отвечает за управление их жизненным
 /// циклом. Все это защищает клиента от нежелательной сложности подсистемы.
 class Facade {
@@ -28,8 +28,8 @@ class Facade {
     private var subsystem2: Subsystem2
 
     /// EN: Depending on your application's needs, you can provide the Facade
-    /// with existing subsystem objects or force the Facade to create them on its
-    /// own.
+    /// with existing subsystem objects or force the Facade to create them on
+    /// its own.
     ///
     /// RU: В зависимости от потребностей вашего приложения вы можете
     /// предоставить Фасаду существующие объекты подсистемы или заставить Фасад
@@ -95,14 +95,14 @@ class Subsystem2 {
 }
 
 /// EN: The client code works with complex subsystems through a simple interface
-/// provided by the Facade. When a facade manages the lifecycle of the subsystem,
-/// the client might not even know about the existence of the subsystem. This
-/// approach lets you keep the complexity under control.
+/// provided by the Facade. When a facade manages the lifecycle of the
+/// subsystem, the client might not even know about the existence of the
+/// subsystem. This approach lets you keep the complexity under control.
 ///
-/// RU: Клиентский код работает со сложными подсистемами через простой интерфейс,
-/// предоставляемый Фасадом. Когда фасад управляет жизненным циклом подсистемы,
-/// клиент может даже не знать о существовании подсистемы. Такой подход позволяет
-/// держать сложность под контролем.
+/// RU: Клиентский код работает со сложными подсистемами через простой
+/// интерфейс, предоставляемый Фасадом. Когда фасад управляет жизненным циклом
+/// подсистемы, клиент может даже не знать о существовании подсистемы. Такой
+/// подход позволяет держать сложность под контролем.
 class Client {
     // ...
     static func clientCode(facade: Facade) {
@@ -125,8 +125,8 @@ class FacadeConceptualExample: XCTestCase {
         ///
         /// RU: В клиентском коде могут быть уже созданы некоторые объекты
         /// подсистемы. В этом случае может оказаться целесообразным
-        /// инициализировать Фасад с этими объектами вместо того, чтобы позволить
-        /// Фасаду создавать новые экземпляры.
+        /// инициализировать Фасад с этими объектами вместо того, чтобы
+        /// позволить Фасаду создавать новые экземпляры.
 
         let subsystem1 = Subsystem1()
         let subsystem2 = Subsystem2()

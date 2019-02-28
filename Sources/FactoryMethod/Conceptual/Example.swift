@@ -1,8 +1,8 @@
 /// EN: Factory Method Design Pattern
 ///
-/// Intent: Define an interface for creating an object, but let subclasses decide
-/// which class to instantiate. Factory Method lets a class defer instantiation
-/// to subclasses.
+/// Intent: Define an interface for creating an object, but let subclasses
+/// decide which class to instantiate. Factory Method lets a class defer
+/// instantiation to subclasses.
 ///
 /// RU: Паттерн Фабричный Метод
 ///
@@ -21,8 +21,8 @@ import XCTest
 /// этого метода.
 protocol Creator {
 
-    /// EN: Note that the Creator may also provide some default implementation of
-    /// the factory method.
+    /// EN: Note that the Creator may also provide some default implementation
+    /// of the factory method.
     ///
     /// RU: Обратите внимание, что Создатель может также обеспечить реализацию
     /// фабричного метода по умолчанию.
@@ -71,10 +71,10 @@ extension Creator {
 /// изменить тип результирующего продукта.
 class ConcreteCreator1: Creator {
 
-    /// EN: Note that the signature of the method still uses the abstract product
-    /// type, even though the concrete product is actually returned from the
-    /// method. This way the Creator can stay independent of concrete product
-    /// classes.
+    /// EN: Note that the signature of the method still uses the abstract
+    /// product type, even though the concrete product is actually returned from
+    /// the method. This way the Creator can stay independent of concrete
+    /// product classes.
     ///
     /// RU: Обратите внимание, что сигнатура метода по-прежнему использует тип
     /// абстрактного продукта, хотя фактически из метода возвращается конкретный
@@ -126,9 +126,9 @@ class ConcreteProduct2: Product {
 /// through its base protocol. As long as the client keeps working with the
 /// creator via the base protocol, you can pass it any creator's subclass.
 ///
-/// RU: Клиентский код работает с экземпляром конкретного создателя, хотя и через
-/// его базовый протокол. Пока клиент продолжает работать с создателем через
-/// базовый протокол, вы можете передать ему любой подкласс создателя.
+/// RU: Клиентский код работает с экземпляром конкретного создателя, хотя и
+/// через его базовый протокол. Пока клиент продолжает работать с создателем
+/// через базовый протокол, вы можете передать ему любой подкласс создателя.
 class Client {
     // ...
     static func someClientCode(creator: Creator) {

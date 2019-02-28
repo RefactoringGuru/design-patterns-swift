@@ -8,14 +8,14 @@
 ///
 /// Назначение: Определяет объект, который инкапсулирует взаимодействие набора
 /// объектов. Посредник способствует слабой связанности, удерживая объекты от
-/// обращения друг к другу напрямую, и это позволяет вам менять их взаимодействие
-/// независимо.
+/// обращения друг к другу напрямую, и это позволяет вам менять их
+/// взаимодействие независимо.
 
 import XCTest
 
-/// EN: The Mediator interface declares a method used by components to notify the
-/// mediator about various events. The Mediator may react to these events and
-/// pass the execution to other components.
+/// EN: The Mediator interface declares a method used by components to notify
+/// the mediator about various events. The Mediator may react to these events
+/// and pass the execution to other components.
 ///
 /// RU: Интерфейс Посредника предоставляет метод, используемый компонентами для
 /// уведомления посредника о различных событиях. Посредник может реагировать на
@@ -25,8 +25,8 @@ protocol Mediator: AnyObject {
     func notify(sender: BaseComponent, event: String)
 }
 
-/// EN: Concrete Mediators implement cooperative behavior by coordinating several
-/// components.
+/// EN: Concrete Mediators implement cooperative behavior by coordinating
+/// several components.
 ///
 /// RU: Конкретные Посредники реализуют совместное поведение, координируя
 /// отдельные компоненты.
@@ -74,8 +74,9 @@ class BaseComponent {
     }
 }
 
-/// EN: Concrete Components implement various functionality. They don't depend on
-/// other components. They also don't depend on any concrete mediator classes.
+/// EN: Concrete Components implement various functionality. They don't depend
+/// on other components. They also don't depend on any concrete mediator
+/// classes.
 ///
 /// RU: Конкретные Компоненты реализуют различную функциональность. Они не
 /// зависят от других компонентов. Они также не зависят от каких-либо конкретных

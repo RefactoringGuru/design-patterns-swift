@@ -1,8 +1,8 @@
 /// EN: Composite Design Pattern
 ///
 /// Intent: Compose objects into tree structures to represent part-whole
-/// hierarchies. Composite lets clients treat individual objects and compositions
-/// of objects uniformly.
+/// hierarchies. Composite lets clients treat individual objects and
+/// compositions of objects uniformly.
 ///
 /// RU: Паттерн Компоновщик
 ///
@@ -30,28 +30,28 @@ protocol Component {
     var parent: Component? { get set }
 
     /// EN: In some cases, it would be beneficial to define the child-management
-    /// operations right in the base Component class. This way, you won't need to
-    /// expose any concrete component classes to the client code, even during the
-    /// object tree assembly. The downside is that these methods will be empty
-    /// for the leaf-level components.
+    /// operations right in the base Component class. This way, you won't need
+    /// to expose any concrete component classes to the client code, even during
+    /// the object tree assembly. The downside is that these methods will be
+    /// empty for the leaf-level components.
     ///
     /// RU: В некоторых случаях целесообразно определить операции управления
     /// потомками прямо в базовом классе Компонент. Таким образом, вам не нужно
-    /// будет предоставлять  конкретные классы компонентов клиентскому коду, даже
-    /// во время сборки дерева объектов. Недостаток такого подхода в том, что эти
-    /// методы будут пустыми для компонентов уровня листа.
+    /// будет предоставлять  конкретные классы компонентов клиентскому коду,
+    /// даже во время сборки дерева объектов. Недостаток такого подхода в том,
+    /// что эти методы будут пустыми для компонентов уровня листа.
     func add(component: Component)
     func remove(component: Component)
 
-    /// EN: You can provide a method that lets the client code figure out whether
-    /// a component can bear children.
+    /// EN: You can provide a method that lets the client code figure out
+    /// whether a component can bear children.
     ///
     /// RU: Вы можете предоставить метод, который позволит клиентскому коду
     /// понять, может ли компонент иметь вложенные объекты.
     func isComposite() -> Bool
 
-    /// EN: The base Component may implement some default behavior or leave it to
-    /// concrete classes.
+    /// EN: The base Component may implement some default behavior or leave it
+    /// to concrete classes.
     ///
     /// RU: Базовый Компонент может сам реализовать некоторое поведение по
     /// умолчанию или поручить это конкретным классам.
@@ -92,8 +92,8 @@ class Leaf: Component {
 /// children and then "sum-up" the result.
 ///
 /// RU: Класс Контейнер содержит сложные компоненты, которые могут иметь
-/// вложенные компоненты. Обычно объекты Контейнеры делегируют фактическую работу
-/// своим детям, а затем «суммируют» результат.
+/// вложенные компоненты. Обычно объекты Контейнеры делегируют фактическую
+/// работу своим детям, а затем «суммируют» результат.
 class Composite: Component {
 
     var parent: Component?
@@ -103,8 +103,8 @@ class Composite: Component {
     /// RU: Это поле содержит поддерево компонентов.
     private var children = [Component]()
 
-    /// EN: A composite object can add or remove other components (both simple or
-    /// complex) to or from its child list.
+    /// EN: A composite object can add or remove other components (both simple
+    /// or complex) to or from its child list.
     ///
     /// RU: Объект контейнера может как добавлять компоненты в свой список
     /// вложенных компонентов, так и удалять их, как простые, так и сложные.
@@ -152,9 +152,9 @@ class Client {
     /// declared in the base Component class, the client code can work with both
     /// simple or complex components.
     ///
-    /// RU: Благодаря тому, что операции управления потомками объявлены в базовом
-    /// классе Компонента, клиентский код может работать как с простыми, так и со
-    /// сложными компонентами.
+    /// RU: Благодаря тому, что операции управления потомками объявлены в
+    /// базовом классе Компонента, клиентский код может работать как с простыми,
+    /// так и со сложными компонентами.
     static func moreComplexClientCode(leftComponent: Component, rightComponent: Component) {
         if leftComponent.isComposite() {
             leftComponent.add(component: rightComponent)

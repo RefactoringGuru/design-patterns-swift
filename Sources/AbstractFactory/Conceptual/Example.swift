@@ -17,11 +17,12 @@ import XCTest
 /// variations, but the products of one variation are incompatible with products
 /// of another.
 ///
-/// RU: Интерфейс Абстрактной Фабрики объявляет набор методов, которые возвращают
-/// различные абстрактные продукты. Эти продукты называются семейством и связаны
-/// темой или концепцией высокого уровня. Продукты одного семейства обычно могут
-/// взаимодействовать между собой. Семейство продуктов может иметь несколько
-/// вариаций, но продукты одной вариации несовместимы с продуктами другой.
+/// RU: Интерфейс Абстрактной Фабрики объявляет набор методов, которые
+/// возвращают различные абстрактные продукты. Эти продукты называются
+/// семейством и связаны темой или концепцией высокого уровня. Продукты одного
+/// семейства обычно могут взаимодействовать между собой. Семейство продуктов
+/// может иметь несколько вариаций, но продукты одной вариации несовместимы с
+/// продуктами другой.
 protocol AbstractFactory {
 
     func createProductA() -> AbstractProductA
@@ -33,10 +34,10 @@ protocol AbstractFactory {
 /// Note that signatures of the Concrete Factory's methods return an abstract
 /// product, while inside the method a concrete product is instantiated.
 ///
-/// RU: Конкретная Фабрика производит семейство продуктов одной вариации. Фабрика
-/// гарантирует совместимость полученных продуктов. Обратите внимание, что
-/// сигнатуры методов Конкретной Фабрики возвращают абстрактный продукт, в то
-/// время как внутри метода создается экземпляр конкретного продукта.
+/// RU: Конкретная Фабрика производит семейство продуктов одной вариации.
+/// Фабрика гарантирует совместимость полученных продуктов. Обратите внимание,
+/// что сигнатуры методов Конкретной Фабрики возвращают абстрактный продукт, в
+/// то время как внутри метода создается экземпляр конкретного продукта.
 class ConcreteFactory1: AbstractFactory {
 
     func createProductA() -> AbstractProductA {
@@ -89,9 +90,9 @@ class ConcreteProductA2: AbstractProductA {
     }
 }
 
-/// EN: The base protocol of another product. All products can interact with each
-/// other, but proper interaction is possible only between products of the same
-/// concrete variation.
+/// EN: The base protocol of another product. All products can interact with
+/// each other, but proper interaction is possible only between products of the
+/// same concrete variation.
 ///
 /// RU: Базовый интерфейс другого продукта. Все продукты могут взаимодействовать
 /// друг с другом, но правильное взаимодействие возможно только между продуктами
@@ -157,12 +158,13 @@ class ConcreteProductB2: AbstractProductB {
 }
 
 /// EN: The client code works with factories and products only through abstract
-/// types: AbstractFactory and AbstractProduct. This lets you pass any factory or
-/// product subclass to the client code without breaking it.
+/// types: AbstractFactory and AbstractProduct. This lets you pass any factory
+/// or product subclass to the client code without breaking it.
 ///
-/// RU: Клиентский код работает с фабриками и продуктами только через абстрактные
-/// типы: Абстрактная Фабрика и Абстрактный Продукт. Это позволяет передавать
-/// любой подкласс фабрики или продукта клиентскому коду, не нарушая его.
+/// RU: Клиентский код работает с фабриками и продуктами только через
+/// абстрактные типы: Абстрактная Фабрика и Абстрактный Продукт. Это позволяет
+/// передавать любой подкласс фабрики или продукта клиентскому коду, не нарушая
+/// его.
 class Client {
     // ...
     static func someClientCode(factory: AbstractFactory) {
@@ -184,7 +186,8 @@ class AbstractFactoryConceptualExample: XCTestCase {
 
         /// EN: The client code can work with any concrete factory class.
         ///
-        /// RU: Клиентский код может работать с любым конкретным классом фабрики.
+        /// RU: Клиентский код может работать с любым конкретным классом
+        /// фабрики.
 
         print("Client: Testing client code with the first factory type:")
         Client.someClientCode(factory: ConcreteFactory1())

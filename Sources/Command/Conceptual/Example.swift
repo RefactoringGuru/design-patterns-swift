@@ -73,9 +73,9 @@ class ComplexCommand: Command {
     }
 }
 
-/// EN: The Receiver classes contain some important business logic. They know how
-/// to perform all kinds of operations, associated with carrying out a request.
-/// In fact, any class may serve as a Receiver.
+/// EN: The Receiver classes contain some important business logic. They know
+/// how to perform all kinds of operations, associated with carrying out a
+/// request. In fact, any class may serve as a Receiver.
 ///
 /// RU: Классы Получателей содержат некую важную бизнес-логику. Они умеют
 /// выполнять все виды операций, связанных с выполнением запроса. Фактически,
@@ -94,8 +94,8 @@ class Receiver {
 /// EN: The Invoker is associated with one or several commands. It sends a
 /// request to the command.
 ///
-/// RU: Отпрвитель связан с одной или несколькими командами. Он отправляет запрос
-/// команде.
+/// RU: Отпрвитель связан с одной или несколькими командами. Он отправляет
+/// запрос команде.
 class Invoker {
 
     private var onStart: Command?

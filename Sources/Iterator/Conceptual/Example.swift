@@ -1,7 +1,7 @@
 /// EN: Iterator Design Pattern
 ///
-/// Intent: Provide a way to traverse the elements of an aggregate object without
-/// exposing its underlying representation.
+/// Intent: Provide a way to traverse the elements of an aggregate object
+/// without exposing its underlying representation.
 ///
 /// Swift language has a built-in iterator support:
 ///
@@ -23,8 +23,8 @@
 /// - Протокол `IteratorProtocol` описывает базовый интерфейс итератора:
 /// https://developer.apple.com/documentation/swift/iteratorprotocol
 ///
-/// - Структура `AnyIterator<Element>` предоставляет простую реализацию итератора
-/// по-умолчанию:
+/// - Структура `AnyIterator<Element>` предоставляет простую реализацию
+/// итератора по-умолчанию:
 /// https://developer.apple.com/documentation/swift/anyiterator
 ///
 /// В этом примере мы увидим как работают оба этих механизма.

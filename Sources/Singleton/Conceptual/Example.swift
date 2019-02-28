@@ -1,7 +1,7 @@
 /// EN: Singleton Design Pattern
 ///
-/// Intent: Ensure that a class has a single instance, and provide a global point
-/// of access to it.
+/// Intent: Ensure that a class has a single instance, and provide a global
+/// point of access to it.
 ///
 /// RU: Паттерн Одиночка
 ///
@@ -19,8 +19,8 @@ class Singleton {
 
     /// EN: The static field that controls the access to the singleton instance.
     ///
-    /// This implementation let you extend the Singleton class while keeping just
-    /// one instance of each subclass around.
+    /// This implementation let you extend the Singleton class while keeping
+    /// just one instance of each subclass around.
     ///
     /// RU: Статическое поле, управляющие доступом к экземпляру одиночки.
     ///
