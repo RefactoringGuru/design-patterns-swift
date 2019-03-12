@@ -3,11 +3,11 @@ import AVFoundation
 import CoreLocation
 import Photos
 
-class TemplateMethodReal: XCTestCase {
+class TemplateMethodRealWorld: XCTestCase {
 
     /// A good example of Template Method is a life cycle of UIViewController
 
-    func test() {
+    func testTemplateMethodReal() {
 
         let accessors = [CameraAccessor(), MicrophoneAccessor(), PhotoLibraryAccessor()]
 

@@ -3,7 +3,7 @@ import UIKit
 
 class FlyweightRealWorld: XCTestCase {
 
-    func testFlyweight() {
+    func testFlyweightRealWorld() {
 
         let maineCoon = Animal(name: "Maine Coon",
                                country: "USA",

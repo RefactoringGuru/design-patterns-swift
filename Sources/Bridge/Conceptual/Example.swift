@@ -113,7 +113,7 @@ class Client {
 /// RU: Давайте посмотрим как всё это будет работать.
 class BridgeConceptual: XCTestCase {
 
-    func testBridgeStructure() {
+    func testBridgeConceptual() {
         // EN: The client code should be able to work with any pre-configured
         // abstraction-implementation combination.
         //

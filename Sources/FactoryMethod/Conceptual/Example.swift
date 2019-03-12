@@ -141,7 +141,7 @@ class Client {
 /// RU: Давайте посмотрим как всё это будет работать.
 class FactoryMethodConceptual: XCTestCase {
 
-    func testFactoryMethod() {
+    func testFactoryMethodConceptual() {
 
         /// EN: The Application picks a creator's type depending on the
         /// configuration or environment.

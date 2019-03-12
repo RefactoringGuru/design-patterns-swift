@@ -97,7 +97,7 @@ extension Array where Element == String {
 }
 
 
-class FlyweightStructureExample: XCTestCase {
+class FlyweightConceptual: XCTestCase {
 
     func testFlyweight() {
 

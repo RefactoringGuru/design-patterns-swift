@@ -198,7 +198,7 @@ class Client {
 /// RU: Давайте посмотрим как всё это будет работать.
 class BuilderConceptual: XCTestCase {
 
-    func testStructureBuilder() {
+    func testBuilderConceptual() {
         var director = Director();
         Client.someClientCode(director: director)
     }

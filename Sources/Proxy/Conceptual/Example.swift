@@ -117,7 +117,7 @@ class Client {
 /// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class ProxyStructureExample: XCTestCase {
+class ProxyConceptual: XCTestCase {
 
     func test() {
         print("Client: Executing the client code with a real subject:")

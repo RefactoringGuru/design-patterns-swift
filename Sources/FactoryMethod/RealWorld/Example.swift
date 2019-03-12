@@ -2,7 +2,7 @@ import XCTest
 
 class FactoryMethodRealWorld: XCTestCase {
 
-    func testFactoryMethodReal() {
+    func testFactoryMethodRealWorld() {
 
         let info = "Very important info of the presentation"
 

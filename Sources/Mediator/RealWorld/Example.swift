@@ -1,6 +1,6 @@
 import XCTest
 
-class MediatorReal: XCTestCase {
+class MediatorRealWorld: XCTestCase {
 
     func test() {
 

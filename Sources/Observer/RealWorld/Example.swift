@@ -1,6 +1,6 @@
 import XCTest
 
-class ObserverReal: XCTestCase {
+class ObserverRealWorld: XCTestCase {
 
     func test() {
 

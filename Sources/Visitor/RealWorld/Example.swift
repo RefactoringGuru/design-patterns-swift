@@ -124,7 +124,7 @@ class BlackListVisitor: NotificationPolicy {
 
 class VisitorRealWorld: XCTestCase {
 
-    func test() {
+    func testVisitorRealWorld() {
 
         let email = Email(emailOfSender: "some@email.com")
         let sms = SMS(phoneNumberOfSender: "+3806700000")

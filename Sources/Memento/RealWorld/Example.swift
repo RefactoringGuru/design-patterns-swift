@@ -1,6 +1,6 @@
 import XCTest
 
-class MementoReal: XCTestCase {
+class MementoRealWorld: XCTestCase {
 
     /// State and Command are often used together when the previous state of the
     /// object should be restored in case of failure of some operation.

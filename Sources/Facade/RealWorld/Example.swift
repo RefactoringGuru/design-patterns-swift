@@ -24,7 +24,7 @@ class FacadeRealWorld: XCTestCase {
     /// fits most client needs. Moreover, it can set frequently used or default
     /// parameters.
 
-    func testFacedeReal() {
+    func testFacedeRealWorld() {
 
         let imageView = UIImageView()
 

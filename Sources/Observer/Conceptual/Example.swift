@@ -149,9 +149,9 @@ class ConcreteObserverB: Observer {
 /// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class ObserverStructure: XCTestCase {
+class ObserverConceptual: XCTestCase {
 
-    func test() {
+    func testObserverConceptual() {
 
         let subject = Subject()
 

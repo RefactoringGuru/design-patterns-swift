@@ -182,7 +182,7 @@ class Client {
 /// RU: Давайте посмотрим как всё это будет работать.
 class AbstractFactoryConceptual: XCTestCase {
 
-    func testAbstractFactoryStructure() {
+    func testAbstractFactoryConceptual() {
 
         /// EN: The client code can work with any concrete factory class.
         ///

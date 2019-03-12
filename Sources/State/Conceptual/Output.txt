@@ -1,10 +1,10 @@
-Context: Transition to StateStructure.ConcreteStateA
+Context: Transition to StateConceptual.ConcreteStateA
 ConcreteStateA handles request1.
 ConcreteStateA wants to change the state of the context.
 
-Context: Transition to StateStructure.ConcreteStateB
+Context: Transition to StateConceptual.ConcreteStateB
 ConcreteStateB handles request2.
 ConcreteStateB wants to change the state of the context.
 
-Context: Transition to StateStructure.ConcreteStateA
+Context: Transition to StateConceptual.ConcreteStateA
 

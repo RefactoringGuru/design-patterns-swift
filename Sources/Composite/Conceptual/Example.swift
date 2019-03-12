@@ -165,7 +165,8 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class CompositeConceptual: XCTestCase {
-    func testCompositeStructure() {
+
+    func testCompositeConceptual() {
 
         /// EN: This way the client code can support the simple leaf
         /// components...

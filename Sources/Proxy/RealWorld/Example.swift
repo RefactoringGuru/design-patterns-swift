@@ -20,7 +20,7 @@ class ProxyRealWorld: XCTestCase {
     /// использованы заместители: кэширование, логирование, контроль доступа,
     /// отложенная инициализация и т.д.
 
-    func test() {
+    func testProxyRealWorld() {
 
         print("Client: Loading a profile WITHOUT proxy")
         loadBasicProfile(with: Keychain())

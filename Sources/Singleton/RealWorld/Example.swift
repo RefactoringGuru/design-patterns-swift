@@ -7,7 +7,7 @@ import XCTest
 
 class SingletonRealWorld: XCTestCase {
 
-    func testSingleton_Real() {
+    func testSingletonRealWorld() {
 
         /// There are two view controllers.
         ///

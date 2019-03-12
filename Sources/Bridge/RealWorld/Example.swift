@@ -2,7 +2,7 @@ import XCTest
 
 private class BridgeRealWorld: XCTestCase {
 
-    func testBridgeReal() {
+    func testBridgeRealWorld() {
 
         print("Client: Pushing Photo View Controller...")
         push(PhotoViewController())

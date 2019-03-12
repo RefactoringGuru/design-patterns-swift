@@ -25,7 +25,7 @@ class AdapterRealWorld: XCTestCase {
     ///
     /// It just tells a compiler that both SDKs have the same interface.
 
-    func testAdapterReal() {
+    func testAdapterRealWorld() {
 
         print("Starting an authorization via Facebook")
         startAuthorization(with: FacebookAuthSDK())

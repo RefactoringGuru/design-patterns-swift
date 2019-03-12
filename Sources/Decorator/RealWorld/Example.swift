@@ -148,7 +148,7 @@ class Resizer: ImageDecorator {
 
 class DecoratorRealWorld: XCTestCase {
 
-    func testDecoratorReal() {
+    func testDecoratorRealWorld() {
 
         let image = loadImage()
 

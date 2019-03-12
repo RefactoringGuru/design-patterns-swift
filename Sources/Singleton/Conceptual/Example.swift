@@ -86,7 +86,8 @@ class Client {
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
 class SingletonConceptual: XCTestCase {
-    func testSingletonStructure() {
+
+    func testSingletonConceptual() {
         Client.someClientCode();
     }
 }

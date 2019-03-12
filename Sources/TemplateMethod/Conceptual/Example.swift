@@ -155,7 +155,7 @@ class Client {
 /// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class TemplateMethodStructureExample: XCTestCase {
+class TemplateMethodConceptual: XCTestCase {
 
     func test() {
 

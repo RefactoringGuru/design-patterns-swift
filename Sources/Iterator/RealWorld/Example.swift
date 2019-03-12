@@ -1,6 +1,6 @@
 import XCTest
 
-class IteratorReal: XCTestCase {
+class IteratorRealWorld: XCTestCase {
 
     func test() {
 

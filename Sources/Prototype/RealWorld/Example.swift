@@ -2,7 +2,7 @@ import XCTest
 
 class PrototypeRealWorld: XCTestCase {
 
-    func testPrototypeReal() {
+    func testPrototypeRealWorld() {
 
         let author = Author(id: 10, username: "Ivan_83")
         let page = Page(title: "My First Page", contents: "Hello world!", author: author)

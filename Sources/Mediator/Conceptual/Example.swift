@@ -108,9 +108,9 @@ class Component2: BaseComponent {
 /// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class MediatorStructure: XCTestCase {
+class MediatorConceptual: XCTestCase {
 
-    func test() {
+    func testMediatorConceptual() {
 
         let component1 = Component1()
         let component2 = Component2()

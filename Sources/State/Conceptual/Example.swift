@@ -115,7 +115,7 @@ class ConcreteStateB: BaseState {
 /// EN: Let's see how it all works together.
 ///
 /// RU: Давайте посмотрим как всё это будет работать.
-class StateStructureExample: XCTestCase {
+class StateConceptual: XCTestCase {
 
     func test() {
         let context = Context(ConcreteStateA())

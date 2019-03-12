@@ -89,7 +89,7 @@ class TaxiOperation: DelayedOperation {
 
 class CommandRealWorld: XCTestCase {
 
-    func test() {
+    func testCommandRealWorld() {
         prepareTestEnvironment {
 
             let siri = SiriShortcuts.shared

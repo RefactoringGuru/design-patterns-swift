@@ -151,7 +151,7 @@ private struct User: DomainModel {
 
 class BuilderRealWorld: XCTestCase {
 
-    func testRealBuilder() {
+    func testBuilderRealWorld() {
         print("Client: Start fetching data from Realm")
         clientCode(builder: RealmQueryBuilder<User>())
 

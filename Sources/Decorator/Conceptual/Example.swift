@@ -110,7 +110,7 @@ class Client {
 /// RU: Давайте посмотрим как всё это будет работать.
 class DecoratorConceptual: XCTestCase {
 
-    func testDecoratorStructure() {
+    func testDecoratorConceptual() {
         // EN: This way the client code can support both simple components...
         //
         // RU: Таким образом, клиентский код может поддерживать как простые

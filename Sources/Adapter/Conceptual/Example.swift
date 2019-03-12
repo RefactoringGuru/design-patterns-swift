@@ -71,7 +71,7 @@ class Client {
 /// RU: Давайте посмотрим как всё это будет работать.
 class AdapterConceptual: XCTestCase {
 
-    func testAdapterStructure() {
+    func testAdapterConceptual() {
         print("Client: I can work just fine with the Target objects:")
         Client.someClientCode(target: Target())
 

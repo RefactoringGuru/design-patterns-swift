@@ -114,7 +114,7 @@ class Client {
 /// RU: Давайте посмотрим как всё это будет работать.
 class FacadeConceptual: XCTestCase {
 
-    func testFacadeStructure() {
+    func testFacadeConceptual() {
 
         /// EN: The client code may have some of the subsystem's objects already
         /// created. In this case, it might be worthwhile to initialize the

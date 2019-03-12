@@ -231,7 +231,7 @@ class SignUpViewController: BaseAuthViewController {
 
 class ChainOfResponsibilityRealWorld: XCTestCase {
 
-    func test() {
+    func testChainOfResponsibilityRealWorld() {
 
         print("Client: Let's test Login flow!")
 

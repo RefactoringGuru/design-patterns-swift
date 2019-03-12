@@ -195,7 +195,7 @@ private class ClientCode {
 
 class AbstractFactoryRealWorld: XCTestCase {
 
-    func testFactoryMethod_Real() {
+    func testFactoryMethodRealWorld() {
 
         #if teacherMode
             let clientCode = ClientCode(factoryType: StudentAuthViewFactory.self)

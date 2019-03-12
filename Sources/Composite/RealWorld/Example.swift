@@ -120,7 +120,7 @@ struct NightLabelTheme: LabelTheme {
 
 class CompositeRealWorld: XCTestCase {
 
-    func test() {
+    func testCompositeRealWorld() {
 
         print("\nClient: Applying 'default' theme for 'UIButton'")
         apply(theme: DefaultButtonTheme(), for: UIButton())
