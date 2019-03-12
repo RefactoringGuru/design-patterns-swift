@@ -23,20 +23,6 @@
 		912C5D8B210BC865007DC364 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C5D8A210BC865007DC364 /* Example.swift */; };
 		91301AD520F55C25003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AD420F55C25003B4FC0 /* Example.swift */; };
 		91301AE220F55CAA003B4FC0 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91301AE120F55CAA003B4FC0 /* Example.swift */; };
-		913E0138210CA53800B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0137210CA53800B7D71E /* Output.txt */; };
-		913E013A210CA54F00B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0139210CA54F00B7D71E /* Output.txt */; };
-		913E013C210CA55A00B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E013B210CA55A00B7D71E /* Output.txt */; };
-		913E013E210CA56000B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E013D210CA56000B7D71E /* Output.txt */; };
-		913E0140210CA57200B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E013F210CA57200B7D71E /* Output.txt */; };
-		913E0142210CA57900B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0141210CA57900B7D71E /* Output.txt */; };
-		913E0144210CA58300B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0143210CA58300B7D71E /* Output.txt */; };
-		913E0146210CA58900B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0145210CA58900B7D71E /* Output.txt */; };
-		913E0148210CA59400B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0147210CA59400B7D71E /* Output.txt */; };
-		913E014A210CA59A00B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0149210CA59A00B7D71E /* Output.txt */; };
-		913E014C210CA5A200B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E014B210CA5A200B7D71E /* Output.txt */; };
-		913E014E210CA5AE00B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E014D210CA5AE00B7D71E /* Output.txt */; };
-		913E0150210CA5B800B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E014F210CA5B800B7D71E /* Output.txt */; };
-		913E0152210CA5BE00B7D71E /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913E0151210CA5BE00B7D71E /* Output.txt */; };
 		919C89FA20DD7F03006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB220B5D0A600266EF8 /* Example.swift */; };
 		919C8A0D20DD7F58006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFB620B5D0A600266EF8 /* Example.swift */; };
 		919C8A1B20DD81E7006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B889F20BC6E6800BA92DF /* Example.swift */; };
@@ -57,8 +43,6 @@
 		919C8B0F20DD8B12006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFEA20B5D0A700266EF8 /* Example.swift */; };
 		919C8B1C20DD8B70006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFCC20B5D0A700266EF8 /* Example.swift */; };
 		919C8B2920DD8BC3006EE57D /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187BFC920B5D0A700266EF8 /* Example.swift */; };
-		91B1206320F56BFA00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B1206220F56BFA00730C37 /* Output.txt */; };
-		91B1206520F56C0100730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B1206420F56C0100730C37 /* Output.txt */; };
 		91B1206E20F610E400730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1206D20F610E400730C37 /* Example.swift */; };
 		91B1207A20F6114A00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1207920F6114A00730C37 /* Example.swift */; };
 		91B1208620F611DA00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B1208520F611DA00730C37 /* Example.swift */; };
@@ -67,16 +51,6 @@
 		91B120AC20F6127400730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120AB20F6127400730C37 /* Example.swift */; };
 		91B120B920F6130A00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120B820F6130A00730C37 /* Example.swift */; };
 		91B120C520F6132E00730C37 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B120C420F6132E00730C37 /* Example.swift */; };
-		91B120CB20F61BAD00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CA20F61BAD00730C37 /* Output.txt */; };
-		91B120CD20F61BBC00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CC20F61BBC00730C37 /* Output.txt */; };
-		91B120CF20F61BC600730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120CE20F61BC600730C37 /* Output.txt */; };
-		91B120D120F61BD000730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D020F61BD000730C37 /* Output.txt */; };
-		91B120D320F61BDA00730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D220F61BDA00730C37 /* Output.txt */; };
-		91B120D520F61BE300730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D420F61BE300730C37 /* Output.txt */; };
-		91B120D720F61BE900730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D620F61BE900730C37 /* Output.txt */; };
-		91B120D920F61BF000730C37 /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91B120D820F61BF000730C37 /* Output.txt */; };
-		91F0DA9620E6552A001F1C1A /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91F0DA9520E6552A001F1C1A /* Output.txt */; };
-		91F0DAAD20E68AAD001F1C1A /* Output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91F0DAAC20E68AAD001F1C1A /* Output.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -2430,30 +2404,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91B1206320F56BFA00730C37 /* Output.txt in Resources */,
-				913E0152210CA5BE00B7D71E /* Output.txt in Resources */,
-				913E014A210CA59A00B7D71E /* Output.txt in Resources */,
-				913E0146210CA58900B7D71E /* Output.txt in Resources */,
-				913E0150210CA5B800B7D71E /* Output.txt in Resources */,
-				913E0140210CA57200B7D71E /* Output.txt in Resources */,
-				913E013A210CA54F00B7D71E /* Output.txt in Resources */,
-				91B120D920F61BF000730C37 /* Output.txt in Resources */,
-				91B120D720F61BE900730C37 /* Output.txt in Resources */,
-				91B120D520F61BE300730C37 /* Output.txt in Resources */,
-				91B120D120F61BD000730C37 /* Output.txt in Resources */,
-				91B120CF20F61BC600730C37 /* Output.txt in Resources */,
-				913E013C210CA55A00B7D71E /* Output.txt in Resources */,
-				913E0142210CA57900B7D71E /* Output.txt in Resources */,
-				913E0144210CA58300B7D71E /* Output.txt in Resources */,
-				913E014C210CA5A200B7D71E /* Output.txt in Resources */,
-				91B120CD20F61BBC00730C37 /* Output.txt in Resources */,
-				91B120CB20F61BAD00730C37 /* Output.txt in Resources */,
-				913E0148210CA59400B7D71E /* Output.txt in Resources */,
-				91B1206520F56C0100730C37 /* Output.txt in Resources */,
-				91B120D320F61BDA00730C37 /* Output.txt in Resources */,
-				913E0138210CA53800B7D71E /* Output.txt in Resources */,
-				913E013E210CA56000B7D71E /* Output.txt in Resources */,
-				913E014E210CA5AE00B7D71E /* Output.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2524,7 +2474,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F0DAAD20E68AAD001F1C1A /* Output.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2539,7 +2488,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F0DA9620E6552A001F1C1A /* Output.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
