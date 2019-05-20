@@ -40,7 +40,7 @@ extension Component where Self: UILabel {
 
 extension Component where Self: UIButton {
 
-    func accept<T: ButtomTheme>(theme: T) {
+    func accept<T: ButtonTheme>(theme: T) {
 
         print("\t\(description): has applied \(theme.description)")
 
@@ -56,7 +56,7 @@ protocol Theme: CustomStringConvertible {
     var backgroundColor: UIColor { get }
 }
 
-protocol ButtomTheme: Theme {
+protocol ButtonTheme: Theme {
 
     var textColor: UIColor { get }
 
@@ -74,7 +74,7 @@ protocol LabelTheme: Theme {
 
 /// Button Themes
 
-struct DefaultButtonTheme: ButtomTheme {
+struct DefaultButtonTheme: ButtonTheme {
 
     var textColor = UIColor.red
 
@@ -85,7 +85,7 @@ struct DefaultButtonTheme: ButtomTheme {
     var description: String { return "Default Buttom Theme" }
 }
 
-struct NightButtonTheme: ButtomTheme {
+struct NightButtonTheme: ButtonTheme {
 
     var textColor = UIColor.white
 
