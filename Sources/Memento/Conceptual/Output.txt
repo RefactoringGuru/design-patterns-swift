@@ -1,0 +1,35 @@
+Originator: My initial state is: Super-duper-super-puper-super.
+
+Caretaker: Saving Originator's state...
+
+Originator: I'm doing something important.
+Originator: and my state has changed to: 1923
+
+Caretaker: Saving Originator's state...
+
+Originator: I'm doing something important.
+Originator: and my state has changed to: 74FB
+
+Caretaker: Saving Originator's state...
+
+Originator: I'm doing something important.
+Originator: and my state has changed to: 3681
+
+
+Caretaker: Here's the list of mementos:
+
+Super-duper-super-puper-super. 11:45:44
+1923 11:45:44
+74FB 11:45:44
+
+Client: Now, let's rollback!
+
+
+Caretaker: Restoring state to: 74FB 11:45:44
+Originator: My state has changed to: 74FB
+
+Client: Once more!
+
+
+Caretaker: Restoring state to: 1923 11:45:44
+Originator: My state has changed to: 1923
