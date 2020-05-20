@@ -96,6 +96,6 @@ class Client {
 class PrototypeConceptual: XCTestCase {
 
     func testPrototype_NSCopying() {
-        Client.someClientCode();
+        Client.someClientCode()
     }
 }

@@ -131,7 +131,7 @@ class Client {
     // ...
     static func someClientCode(creator: Creator) {
         print("Client: I'm not aware of the creator's class, but it still works.\n"
-            + creator.someOperation());
+            + creator.someOperation())
     }
     // ...
 }
@@ -149,10 +149,10 @@ class FactoryMethodConceptual: XCTestCase {
         /// RU: Приложение выбирает тип создателя в зависимости от конфигурации
         /// или среды.
 
-        print("App: Launched with the ConcreteCreator1.");
+        print("App: Launched with the ConcreteCreator1.")
         Client.someClientCode(creator: ConcreteCreator1())
 
-        print("\nApp: Launched with the ConcreteCreator2.");
+        print("\nApp: Launched with the ConcreteCreator2.")
         Client.someClientCode(creator: ConcreteCreator2())
     }
 }

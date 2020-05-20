@@ -79,7 +79,7 @@ class MicrophoneAccessor: PermissionAccessor {
     }
 
     override func hasAccess() -> Bool {
-        return AVAudioSession.sharedInstance().recordPermission() == .granted
+        return AVAudioSession.sharedInstance().recordPermission == .granted
     }
 
     override var description: String { return "Microphone" }
