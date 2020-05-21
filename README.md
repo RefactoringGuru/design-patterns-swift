@@ -13,7 +13,7 @@ There are two examples for each of the patterns:
 
 ## Requirements
 
-For the best experience, we recommend working with examples with [Swift 4](https://github.com/apple/swift) and [Xcode](https://developer.apple.com/xcode/) IDE.
+For the best experience, we recommend working with examples with [Swift 5](https://github.com/apple/swift) and [Xcode](https://developer.apple.com/xcode/) IDE.
 
 
 ## Usage
