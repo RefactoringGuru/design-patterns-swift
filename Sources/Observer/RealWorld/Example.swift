@@ -80,12 +80,12 @@ class CartManager {
     }
 
     func remove(subscriber filter: (CartSubscriber) -> (Bool)) {
-        guard let index = subscribers.index(where: filter) else { return }
+        guard let index = subscribers.firstIndex(where: filter) else { return }
         subscribers.remove(at: index)
     }
 
     func remove(product: Product) {
-        guard let index = cart.index(where: { $0.isEqual(to: product) }) else { return }
+        guard let index = cart.firstIndex(where: { $0.isEqual(to: product) }) else { return }
         print("\nCartManager: Product '\(product.name)' is removed from a cart")
         cart.remove(at: index)
         notifySubscribers()

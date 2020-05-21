@@ -199,7 +199,7 @@ class Client {
 class BuilderConceptual: XCTestCase {
 
     func testBuilderConceptual() {
-        var director = Director();
+        let director = Director()
         Client.someClientCode(director: director)
     }
 }

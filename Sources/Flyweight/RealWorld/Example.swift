@@ -43,7 +43,7 @@ extension FlyweightRealWorld {
 
     func display(animals: [Animal]) {
 
-        var cells = loadCells(count: animals.count)
+        let cells = loadCells(count: animals.count)
 
         for index in 0..<animals.count {
             cells[index].update(with: animals[index])

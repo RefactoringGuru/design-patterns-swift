@@ -81,7 +81,7 @@ class Subject {
     }
 
     func detach(_ observer: Observer) {
-        if let idx = observers.index(where: { $0 === observer }) {
+        if let idx = observers.firstIndex(where: { $0 === observer }) {
             observers.remove(at: idx)
             print("Subject: Detached an observer.\n")
         }

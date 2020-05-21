@@ -74,9 +74,9 @@ class Client {
         let instance2 = Singleton.shared
 
         if (instance1 === instance2) {
-            print("Singleton works, both variables contain the same instance.");
+            print("Singleton works, both variables contain the same instance.")
         } else {
-            print("Singleton failed, variables contain different instances.");
+            print("Singleton failed, variables contain different instances.")
         }
     }
     // ...
@@ -88,6 +88,6 @@ class Client {
 class SingletonConceptual: XCTestCase {
 
     func testSingletonConceptual() {
-        Client.someClientCode();
+        Client.someClientCode()
     }
 }
