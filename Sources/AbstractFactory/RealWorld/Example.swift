@@ -198,9 +198,9 @@ class AbstractFactoryRealWorld: XCTestCase {
     func testFactoryMethodRealWorld() {
 
         #if teacherMode
-            let clientCode = ClientCode(factoryType: StudentAuthViewFactory.self)
-        #else
             let clientCode = ClientCode(factoryType: TeacherAuthViewFactory.self)
+        #else
+            let clientCode = ClientCode(factoryType: StudentAuthViewFactory.self)
         #endif
 
         /// Present LogIn flow
