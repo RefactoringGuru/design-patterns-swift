@@ -31,7 +31,7 @@ class PermissionAccessor: CustomStringConvertible {
         willReceiveAccess()
 
         requestAccess { status in
-            status ? self.didReceiveAcesss() : self.didRejectAcesss()
+            status ? self.didReceiveAccess() : self.didRejectAccess()
 
             completion(status)
         }
@@ -50,9 +50,9 @@ class PermissionAccessor: CustomStringConvertible {
     /// Hooks
     func willReceiveAccess() {}
 
-    func didReceiveAcesss() {}
+    func didReceiveAccess() {}
 
-    func didRejectAcesss() {}
+    func didRejectAccess() {}
 }
 
 class CameraAccessor: PermissionAccessor {
@@ -99,12 +99,12 @@ class PhotoLibraryAccessor: PermissionAccessor {
 
     override var description: String { return "PhotoLibrary" }
 
-    override func didReceiveAcesss() {
+    override func didReceiveAccess() {
         /// We want to track how many people give access to the PhotoLibrary.
         print("PhotoLibrary Accessor: Receive access. Updating analytics...")
     }
 
-    override func didRejectAcesss() {
+    override func didRejectAccess() {
         /// ... and also we want to track how many people rejected access.
         print("PhotoLibrary Accessor: Rejected with access. Updating analytics...")
     }
