@@ -42,7 +42,7 @@ class RealmQueryBuilder<Model: DomainModel>: BaseQueryBuilder<Model> {
     }
 
     override func fetch() -> [Model] {
-        print("RealmQueryBuilder: Initializing CoreDataProvider with \(operations.count) operations:")
+        print("RealmQueryBuilder: Initializing RealmDataProvider with \(operations.count) operations:")
         return RealmProvider().fetch(operations)
     }
 }

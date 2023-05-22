@@ -1,5 +1,5 @@
 Client: Start fetching data from Realm
-RealmQueryBuilder: Initializing CoreDataProvider with 2 operations:
+RealmQueryBuilder: Initializing RealmDataProvider with 2 operations:
 RealmProvider: Retrieving data from Realm...
 RealmProvider: executing the 'filter' operation.
 RealmProvider: executing the 'limit' operation.
