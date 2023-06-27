@@ -71,7 +71,7 @@ extension Projector {
     /// Base implementation of Projector methods
 
     func sync(with projector: Projector) {
-        projector.update(with: currentPage)
+        update(with: projector.currentPage)
     }
 }
 
