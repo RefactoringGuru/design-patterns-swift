@@ -32,7 +32,7 @@
 import XCTest
 
 /// EN: This is a collection that we're going to iterate through using an
-/// iterator that conforms to IteratorProtocol
+/// iterator that conforms to IteratorProtocol.
 ///
 /// RU: Это коллекция, которую мы будем перебирать используя итератор,
 /// реализующий IteratorProtocol.
