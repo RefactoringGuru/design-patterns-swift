@@ -38,11 +38,11 @@ class SingletonRealWorld: XCTestCase {
 class BaseVC: UIViewController, MessageSubscriber {
 
     func accept(new messages: [Message]) {
-        /// handle new messages in the base class
+        /// Handles new messages in the base class
     }
 
     func accept(removed messages: [Message]) {
-        /// handle removed messages in the base class
+        /// Hanldes removed messages in the base class
     }
 
     func startReceiveMessages() {
@@ -60,12 +60,12 @@ class MessagesListVC: BaseVC {
 
     override func accept(new messages: [Message]) {
         print("MessagesListVC accepted 'new messages'")
-        /// handle new messages in the child class
+        /// Handles new messages in the child class
     }
 
     override func accept(removed messages: [Message]) {
         print("MessagesListVC accepted 'removed messages'")
-        /// handle removed messages in the child class
+        /// Handles removed messages in the child class
     }
 
     override func startReceiveMessages() {
@@ -78,12 +78,12 @@ class ChatVC: BaseVC {
 
     override func accept(new messages: [Message]) {
         print("ChatVC accepted 'new messages'")
-        /// handle new messages in the child class
+        /// Handles new messages in the child class
     }
 
     override func accept(removed messages: [Message]) {
         print("ChatVC accepted 'removed messages'")
-        /// handle removed messages in the child class
+        /// Handles removed messages in the child class
     }
 
     override func startReceiveMessages() {
