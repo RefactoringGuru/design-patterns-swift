@@ -66,13 +66,13 @@ class Facade {
 class Subsystem1 {
 
     func operation1() -> String {
-        return "Sybsystem1: Ready!\n"
+        return "Subsystem1: Ready!\n"
     }
 
     // ...
 
     func operationN() -> String {
-        return "Sybsystem1: Go!\n"
+        return "Subsystem1: Go!\n"
     }
 }
 
@@ -82,13 +82,13 @@ class Subsystem1 {
 class Subsystem2 {
 
     func operation1() -> String {
-        return "Sybsystem2: Get ready!\n"
+        return "Subsystem2: Get ready!\n"
     }
 
     // ...
 
     func operationZ() -> String {
-        return "Sybsystem2: Fire!\n"
+        return "Subsystem2: Fire!\n"
     }
 }
 
