@@ -17,7 +17,7 @@ import XCTest
 ///
 /// RU: Интерфейс Обработчика объявляет метод построения цепочки обработчиков.
 /// Он также объявляет метод для выполнения запроса.
-protocol Handler: class {
+protocol Handler: AnyObject {
 
     @discardableResult
     func setNext(handler: Handler) -> Handler
