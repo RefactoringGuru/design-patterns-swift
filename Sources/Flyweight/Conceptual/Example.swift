@@ -30,7 +30,7 @@ class Flyweight {
     }
 
     func operation(uniqueState: [String]) {
-        print("Flyweight: Displaying shared (\(sharedState)) and unique (\(uniqueState) state.\n")
+        print("Flyweight: Displaying shared (\(sharedState)) and unique (\(uniqueState)) state.\n")
     }
 }
 
