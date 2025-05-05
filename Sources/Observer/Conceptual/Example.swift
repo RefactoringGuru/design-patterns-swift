@@ -116,7 +116,7 @@ class Subject {
 ///
 /// RU: Наблюдатель объявляет метод уведомления, который используют издатели для
 /// оповещения.
-protocol Observer: class {
+protocol Observer: AnyObject {
 
     func update(subject: Subject)
 }

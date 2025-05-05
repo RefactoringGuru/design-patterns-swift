@@ -68,13 +68,13 @@ class Tree<T> {
 
     private func preOrder(_ body: Block) {
         body(value)
-        left?.inOrder(body)
-        right?.inOrder(body)
+        left?.preOrder(body)
+        right?.preOrder(body)
     }
 
     private func postOrder(_ body: Block) {
-        left?.inOrder(body)
-        right?.inOrder(body)
+        left?.postOrder(body)
+        right?.postOrder(body)
         body(value)
     }
 }

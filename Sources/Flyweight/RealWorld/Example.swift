@@ -27,7 +27,7 @@ class FlyweightRealWorld: XCTestCase {
 
         /// Displaying objects for the 2-nd time.
         ///
-        /// Note: Cached object of the appearance will be reused this time.
+        /// Note: The cached appearance object will be reused this time.
 
         print("\nClient: I have a new dog, let's show it the same way!\n")
 
@@ -93,7 +93,7 @@ struct Animal: Equatable {
 
 struct Appearance: Equatable {
 
-    /// This object contains a predefined appearance of every cell
+    /// This object contains the predefined appearance for each cell.
 
     let photos: [UIImage]
     let backgroundColor: UIColor

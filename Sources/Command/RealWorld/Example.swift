@@ -2,7 +2,7 @@ import Foundation
 import XCTest
 
 
-class DelayedOperation: Operation {
+class DelayedOperation: Operation, @unchecked Sendable {
 
     private var delay: TimeInterval
 
@@ -58,7 +58,7 @@ class DelayedOperation: Operation {
     }
 }
 
-class WindowOperation: DelayedOperation {
+class WindowOperation: DelayedOperation, @unchecked Sendable {
 
     override func main() {
         print("\(self): Windows are closed via HomeKit.")
@@ -67,7 +67,7 @@ class WindowOperation: DelayedOperation {
     override var description: String { return "WindowOperation" }
 }
 
-class DoorOperation: DelayedOperation {
+class DoorOperation: DelayedOperation, @unchecked Sendable {
 
     override func main() {
         print("\(self): Doors are closed via HomeKit.")
@@ -76,7 +76,7 @@ class DoorOperation: DelayedOperation {
     override var description: String { return "DoorOperation" }
 }
 
-class TaxiOperation: DelayedOperation {
+class TaxiOperation: DelayedOperation, @unchecked Sendable {
 
     override func main() {
         print("\(self): Taxi is ordered via Uber")

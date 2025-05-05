@@ -11,7 +11,7 @@
 /// - The `AnyIterator<Element>` struct provides basic iterator implementation:
 /// https://developer.apple.com/documentation/swift/anyiterator
 ///
-/// In this examples we'll see how to use both of these mechanisms.
+/// In this example, we'll see how to use both of these mechanisms.
 ///
 /// RU: Паттерн Итератор
 ///
@@ -32,7 +32,7 @@
 import XCTest
 
 /// EN: This is a collection that we're going to iterate through using an
-/// iterator derived from IteratorProtocol.
+/// iterator that conforms to IteratorProtocol.
 ///
 /// RU: Это коллекция, которую мы будем перебирать используя итератор,
 /// реализующий IteratorProtocol.

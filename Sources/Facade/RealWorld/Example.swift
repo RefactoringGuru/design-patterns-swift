@@ -10,7 +10,7 @@ class FacadeRealWorld: XCTestCase {
     /// In the real project, you probably will use third-party libraries. For
     /// instance, to download images.
     ///
-    /// Therefore, facade and wrapping it is a good way to use a third party API
+    /// Therefore, facade and wrapping it is a good way to use a third-party API
     /// in the client code. Even if it is your own library that is connected to
     /// a project.
     ///
@@ -24,7 +24,7 @@ class FacadeRealWorld: XCTestCase {
     /// fits most client needs. Moreover, it can set frequently used or default
     /// parameters.
 
-    func testFacedeRealWorld() {
+    func testFacadeRealWorld() {
 
         let imageView = UIImageView()
 
@@ -46,7 +46,7 @@ class FacadeRealWorld: XCTestCase {
 
 private extension UIImageView {
 
-    /// This extension plays a facede role.
+    /// This extension plays a facade role.
 
     func downloadImage(at url: URL?) {
 
@@ -68,7 +68,7 @@ private extension UIImageView {
 
 private class ImageDownloader {
 
-    /// Third party library or your own solution (subsystem)
+    /// Third-party library or your own solution (subsystem)
 
     typealias Completion = (UIImage, Error?) -> ()
     typealias Progress = (Int, Int) -> ()

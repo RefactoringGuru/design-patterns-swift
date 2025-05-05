@@ -111,7 +111,7 @@ private class ClientCode {
 
     func present(info: String, with factory: ProjectorFactory) {
 
-        /// Check wheater a client code already present smth...
+        /// Check whether the client code is already presenting something...
 
         guard let projector = currentProjector else {
 
